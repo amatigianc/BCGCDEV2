@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Ops_Question_subject__c</fullName>
+    <description>This describes specific subjects based on the selected Sales Operation Question area value</description>
+    <label>SalesOps Question subject</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SalesOps_Question_Area__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3rd Party Resell</fullName>
+                <default>false</default>
+                <label>3rd Party Resell</label>
+            </value>
+            <value>
+                <fullName>Amend contract</fullName>
+                <default>false</default>
+                <label>Amend contract</label>
+            </value>
+            <value>
+                <fullName>Approval issue</fullName>
+                <default>false</default>
+                <label>Approval issue</label>
+            </value>
+            <value>
+                <fullName>Beacon Live</fullName>
+                <default>false</default>
+                <label>Beacon Live</label>
+            </value>
+            <value>
+                <fullName>BGS</fullName>
+                <default>false</default>
+                <label>BGS</label>
+            </value>
+            <value>
+                <fullName>Bundle issue</fullName>
+                <default>false</default>
+                <label>Bundle issue</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Contract add-on</fullName>
+                <default>false</default>
+                <label>Contract add-on</label>
+            </value>
+            <value>
+                <fullName>Contract naming</fullName>
+                <default>false</default>
+                <label>Contract naming</label>
+            </value>
+            <value>
+                <fullName>Contract renewal</fullName>
+                <default>false</default>
+                <label>Contract renewal</label>
+            </value>
+            <value>
+                <fullName>Custom Bundle</fullName>
+                <default>false</default>
+                <label>Custom Bundle</label>
+            </value>
+            <value>
+                <fullName>Discounts</fullName>
+                <default>false</default>
+                <label>Discounts</label>
+            </value>
+            <value>
+                <fullName>Enterprise BYOCDN</fullName>
+                <default>false</default>
+                <label>Enterprise BYOCDN</label>
+            </value>
+            <value>
+                <fullName>Enterprise DRM</fullName>
+                <default>false</default>
+                <label>Enterprise DRM</label>
+            </value>
+            <value>
+                <fullName>Entry Points Pricing</fullName>
+                <default>false</default>
+                <label>Entry Points Pricing</label>
+            </value>
+            <value>
+                <fullName>Evergent</fullName>
+                <default>false</default>
+                <label>Evergent</label>
+            </value>
+            <value>
+                <fullName>Feature request</fullName>
+                <default>false</default>
+                <label>Feature request</label>
+            </value>
+            <value>
+                <fullName>Legacy Contract</fullName>
+                <default>false</default>
+                <label>Legacy Contract</label>
+            </value>
+            <value>
+                <fullName>Multi CDN</fullName>
+                <default>false</default>
+                <label>Multi CDN</label>
+            </value>
+            <value>
+                <fullName>One Off Request</fullName>
+                <default>false</default>
+                <label>One Off Request</label>
+            </value>
+            <value>
+                <fullName>Oppty xMRR - xACV</fullName>
+                <default>false</default>
+                <label>Oppty xMRR - xACV</label>
+            </value>
+            <value>
+                <fullName>PAS LA</fullName>
+                <default>false</default>
+                <label>PAS LA</label>
+            </value>
+            <value>
+                <fullName>Price books</fullName>
+                <default>false</default>
+                <label>Price books</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>false</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>Quote approval</fullName>
+                <default>false</default>
+                <label>Quote approval</label>
+            </value>
+            <value>
+                <fullName>Quote custom item</fullName>
+                <default>false</default>
+                <label>Quote custom item</label>
+            </value>
+            <value>
+                <fullName>Quote Pricing</fullName>
+                <default>false</default>
+                <label>Quote Pricing</label>
+            </value>
+            <value>
+                <fullName>Quote standard item</fullName>
+                <default>false</default>
+                <label>Quote standard item</label>
+            </value>
+            <value>
+                <fullName>Rate Cards manual adjustment</fullName>
+                <default>false</default>
+                <label>Rate Cards manual adjustment</label>
+            </value>
+            <value>
+                <fullName>VMS Starter Add-Ons</fullName>
+                <default>false</default>
+                <label>VMS Starter Add-Ons</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>Amend contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Approval issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>Contract naming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Bundle issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Contract add-on</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Contract renewal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Discounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Feature request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Oppty xMRR - xACV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Price books</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Quote approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Quote custom item</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Quote Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Quote standard item</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Rate Cards manual adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>3rd Party Resell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Beacon Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>BGS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Custom Bundle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Enterprise BYOCDN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Enterprise DRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Entry Points Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Evergent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Legacy Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Multi CDN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>One Off Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>PAS LA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>VMS Starter Add-Ons</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

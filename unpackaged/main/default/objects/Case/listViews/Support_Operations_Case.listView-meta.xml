@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Operations_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>JIRA_Status__c</columns>
+    <columns>JIRA_Key__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Real_Created_Date__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Support_Operations</value>
+    </filters>
+    <label>Support Operations</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Technical_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Technical_Support_Rep</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

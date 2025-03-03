@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICP_Sell_Product_Quadrant__c</fullName>
+    <description>ICP Sell Product - Quadrant Value</description>
+    <inlineHelpText>ICP Sell Product - Quadrant Value</inlineHelpText>
+    <label>ICP Sell Product - Quadrant</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquire 1</fullName>
+                <default>false</default>
+                <label>Acquire 1</label>
+            </value>
+            <value>
+                <fullName>Acquire 2</fullName>
+                <default>false</default>
+                <label>Acquire 2</label>
+            </value>
+            <value>
+                <fullName>Opportunistic 1</fullName>
+                <default>false</default>
+                <label>Opportunistic 1</label>
+            </value>
+            <value>
+                <fullName>Opportunistic 2</fullName>
+                <default>false</default>
+                <label>Opportunistic 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

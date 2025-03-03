@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This Event is used to facilitate the deletion of Opportunities with the Record Type of &quot;Lead&quot; and the Deal Type of &quot;Add-On&quot; after an Opportunity with the Record Type of &quot;Add-On&quot; is created.  This allows the system to delete the records after a user without the explicit permission to delete has created the new Add-On Opp.</description>
+    <eventType>HighVolume</eventType>
+    <label>Add On Lead Opp Cleanup</label>
+    <pluralLabel>Add On Lead Opp Cleanup</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Reason_Detail__c</fullName>
+    <label>Cancellation Reason Detail</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>One time campaign</fullName>
+                <default>false</default>
+                <label>One time campaign</label>
+            </value>
+            <value>
+                <fullName>Out of business</fullName>
+                <default>false</default>
+                <label>Out of business</label>
+            </value>
+            <value>
+                <fullName>Budget cut</fullName>
+                <default>false</default>
+                <label>Budget cut</label>
+            </value>
+            <value>
+                <fullName>Overage costs</fullName>
+                <default>false</default>
+                <label>Overage costs</label>
+            </value>
+            <value>
+                <fullName>Employee turnover</fullName>
+                <default>false</default>
+                <label>Employee turnover</label>
+            </value>
+            <value>
+                <fullName>Lack of invoicing</fullName>
+                <default>false</default>
+                <label>Lack of invoicing</label>
+            </value>
+            <value>
+                <fullName>Rigid package structure</fullName>
+                <default>false</default>
+                <label>Rigid package structure</label>
+            </value>
+            <value>
+                <fullName>Project cancelled</fullName>
+                <default>false</default>
+                <label>Project cancelled</label>
+            </value>
+            <value>
+                <fullName>No longer using video</fullName>
+                <default>false</default>
+                <label>No longer using video</label>
+            </value>
+            <value>
+                <fullName>Unresponsive to ticket</fullName>
+                <default>false</default>
+                <label>Unresponsive to ticket</label>
+            </value>
+            <value>
+                <fullName>Misunderstood issue</fullName>
+                <default>false</default>
+                <label>Misunderstood issue</label>
+            </value>
+            <value>
+                <fullName>Bug</fullName>
+                <default>false</default>
+                <label>Bug</label>
+            </value>
+            <value>
+                <fullName>Too much back &amp; forth</fullName>
+                <default>false</default>
+                <label>Too much back &amp; forth</label>
+            </value>
+            <value>
+                <fullName>SLA too long</fullName>
+                <default>false</default>
+                <label>SLA too long</label>
+            </value>
+            <value>
+                <fullName>Responses too technical</fullName>
+                <default>false</default>
+                <label>Responses too technical</label>
+            </value>
+            <value>
+                <fullName>JW Player</fullName>
+                <default>false</default>
+                <label>JW Player</label>
+            </value>
+            <value>
+                <fullName>Vimeo</fullName>
+                <default>false</default>
+                <label>Vimeo</label>
+            </value>
+            <value>
+                <fullName>Kitdigital</fullName>
+                <default>false</default>
+                <label>Kitdigital</label>
+            </value>
+            <value>
+                <fullName>Vzaar</fullName>
+                <default>false</default>
+                <label>Vzaar</label>
+            </value>
+            <value>
+                <fullName>YouTube</fullName>
+                <default>false</default>
+                <label>YouTube</label>
+            </value>
+            <value>
+                <fullName>Amazon S3</fullName>
+                <default>false</default>
+                <label>Amazon S3</label>
+            </value>
+            <value>
+                <fullName>DIY</fullName>
+                <default>false</default>
+                <label>DIY</label>
+            </value>
+            <value>
+                <fullName>Oculu</fullName>
+                <default>false</default>
+                <label>Oculu</label>
+            </value>
+            <value>
+                <fullName>Ooyala</fullName>
+                <default>false</default>
+                <label>Ooyala</label>
+            </value>
+            <value>
+                <fullName>Flow Player</fullName>
+                <default>false</default>
+                <label>Flow Player</label>
+            </value>
+            <value>
+                <fullName>Foldering</fullName>
+                <default>false</default>
+                <label>Foldering</label>
+            </value>
+            <value>
+                <fullName>Related videos</fullName>
+                <default>false</default>
+                <label>Related videos</label>
+            </value>
+            <value>
+                <fullName>UGC</fullName>
+                <default>false</default>
+                <label>UGC</label>
+            </value>
+            <value>
+                <fullName>SEO</fullName>
+                <default>false</default>
+                <label>SEO</label>
+            </value>
+            <value>
+                <fullName>Analytics - video level</fullName>
+                <default>false</default>
+                <label>Analytics - video level</label>
+            </value>
+            <value>
+                <fullName>Closed captioning</fullName>
+                <default>false</default>
+                <label>Closed captioning</label>
+            </value>
+            <value>
+                <fullName>Lack of API access</fullName>
+                <default>false</default>
+                <label>Lack of API access</label>
+            </value>
+            <value>
+                <fullName>Not intuitive</fullName>
+                <default>false</default>
+                <label>Not intuitive</label>
+            </value>
+            <value>
+                <fullName>Lack of flexibility</fullName>
+                <default>false</default>
+                <label>Lack of flexibility</label>
+            </value>
+            <value>
+                <fullName>Advertising capability</fullName>
+                <default>false</default>
+                <label>Advertising capability</label>
+            </value>
+            <value>
+                <fullName>Paywall</fullName>
+                <default>false</default>
+                <label>Paywall</label>
+            </value>
+            <value>
+                <fullName>Wistia</fullName>
+                <default>false</default>
+                <label>Wistia</label>
+            </value>
+            <value>
+                <fullName>Viddler</fullName>
+                <default>false</default>
+                <label>Viddler</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

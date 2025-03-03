@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pursuit_Lead__c</fullName>
+    <label>Pursuit Lead</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Erica Wight</fullName>
+                <default>false</default>
+                <label>Erica Wight</label>
+            </value>
+            <value>
+                <fullName>Eric Knutson</fullName>
+                <default>false</default>
+                <label>Eric Knutson</label>
+            </value>
+            <value>
+                <fullName>James Livingstone</fullName>
+                <default>false</default>
+                <label>James Livingstone</label>
+            </value>
+            <value>
+                <fullName>Mark Lendrum</fullName>
+                <default>false</default>
+                <label>Mark Lendrum</label>
+            </value>
+            <value>
+                <fullName>Sudheer Parameswaran</fullName>
+                <default>false</default>
+                <label>Sudheer Parameswaran</label>
+            </value>
+            <value>
+                <fullName>Toshi Kuniya</fullName>
+                <default>false</default>
+                <label>Toshi Kuniya</label>
+            </value>
+            <value>
+                <fullName>Ben Lupton</fullName>
+                <default>false</default>
+                <label>Ben Lupton</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

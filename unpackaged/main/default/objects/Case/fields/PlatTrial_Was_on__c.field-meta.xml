@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlatTrial_Was_on__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set to count how many Cases are open during the Platinum Trial</description>
+    <label>PlatTrial Was on</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

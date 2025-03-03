@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Account_Open_Cases</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 And 6</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Case_Status__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Real_Created_Date__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed as Duplicate,Closed - Spam</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.NOC_Cases,Case.Technical_Support</value>
+    </filters>
+    <filters>
+        <field>CASES.EMAIL</field>
+        <operation>notContain</operation>
+        <value>brightcove.com</value>
+    </filters>
+    <filters>
+        <field>BC_Internal_employee__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Real_Created_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2018 12:00 AM</value>
+    </filters>
+    <label>Community: Account Open Cases</label>
+</ListView>

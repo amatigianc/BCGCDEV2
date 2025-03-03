@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Block_Pricing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If selected this will take the price and divide by the effective quantity during calculation, mimicking block pricing. Used for Legacy pricing only</inlineHelpText>
+    <label>Use Block Pricing</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

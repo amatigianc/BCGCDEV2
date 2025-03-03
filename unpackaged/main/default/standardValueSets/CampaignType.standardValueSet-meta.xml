@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Global Campaign</fullName>
+        <default>false</default>
+        <label>Global Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Big Event Campaign</fullName>
+        <default>false</default>
+        <label>Big Event Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Event Campaign</fullName>
+        <default>false</default>
+        <label>Regional Event Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Campaign</fullName>
+        <default>false</default>
+        <label>Regional Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Campaign</fullName>
+        <default>false</default>
+        <label>Customer Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evergreen</fullName>
+        <default>false</default>
+        <label>Evergreen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+</StandardValueSet>

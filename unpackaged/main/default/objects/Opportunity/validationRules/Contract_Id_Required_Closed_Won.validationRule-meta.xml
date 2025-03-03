@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Id_Required_Closed_Won</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(StageName) &amp;&amp; ISPICKVAL(StageName, &quot;Closed Won&quot;) &amp;&amp; ISBLANK(Contract_Id__c)</errorConditionFormula>
+    <errorDisplayField>Contract_Id__c</errorDisplayField>
+    <errorMessage>Contract ID must be filled out before you can mark this Opportunity as Closed Won.</errorMessage>
+</ValidationRule>

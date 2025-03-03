@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Human_readable_Testing_Time__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Test_Date__c) , 	 
+CASE(Month_to_test__c,
+&quot;01&quot;, &quot;January &quot;,
+&quot;02&quot;, &quot;February &quot;,
+&quot;03&quot;, &quot;March &quot;,
+&quot;04&quot;, &quot;April &quot;,
+&quot;05&quot;, &quot;May &quot;,
+&quot;06&quot;, &quot;June &quot;,
+&quot;07&quot;, &quot;July &quot;,
+&quot;08&quot;, &quot;August &quot;,
+&quot;09&quot;, &quot;September &quot;,
+&quot;10&quot;, &quot;October &quot;,
+&quot;11&quot;, &quot;November &quot;,
+&quot;12&quot;, &quot;December &quot;,
+&quot;ERROR&quot;
+) &amp;
+TEXT(Day_to_Test__c) &amp; &quot;, &quot; &amp; TEXT(Year_to_test__c) &amp; &quot; &quot; &amp;
+TEXT(Time_to_test_hour__c) &amp; &quot;:&quot; &amp; TEXT(Time_to_test_minute__c) &amp; &quot; &quot; &amp;
+&quot; [&quot; &amp; RIGHT( TEXT(Timezone__c) , LEN((TEXT(Timezone__c))) - 12)&amp;&quot;]&quot; , 
+
+CASE(MONTH(Test_Date__c),
+1, &quot;January &quot;,
+2, &quot;February &quot;,
+3, &quot;March &quot;,
+4, &quot;April &quot;,
+5, &quot;May &quot;,
+6, &quot;June &quot;,
+7, &quot;July &quot;,
+8, &quot;August &quot;,
+9, &quot;September &quot;,
+10, &quot;October &quot;, 
+11, &quot;November &quot;,
+12, &quot;December &quot;,
+&quot;ERROR&quot;
+) &amp;  TEXT(DAY(Test_Date__c))&amp;&quot;, &quot;&amp; TEXT(YEAR(Test_Date__c))&amp;&quot; &quot;&amp; LEFT(TEXT(Test_Start_Time__c), 5) &amp;&quot; &quot;&amp; &quot; [&quot; &amp; RIGHT( TEXT(Timezone__c) , LEN((TEXT(Timezone__c))) - 12)&amp;&quot;]&quot;)</formula>
+    <label>Human-readable Testing Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

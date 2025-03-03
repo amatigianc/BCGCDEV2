@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Forecast__c</fullName>
+    <inlineHelpText>Confidence the deal will close in this quarter.</inlineHelpText>
+    <label>Forecast</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+                <label>Pipeline</label>
+            </value>
+            <value>
+                <fullName>Commit</fullName>
+                <default>false</default>
+                <label>Commit</label>
+            </value>
+            <value>
+                <fullName>Upside</fullName>
+                <default>false</default>
+                <label>Upside</label>
+            </value>
+            <value>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+                <label>Omitted</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>1 - Discovery</controllingFieldValue>
+            <controllingFieldValue>2 - Demo</controllingFieldValue>
+            <controllingFieldValue>3 - Solution Design &amp; Evaluation</controllingFieldValue>
+            <controllingFieldValue>4 - Negotiation</controllingFieldValue>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Pipeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1 - Discovery</controllingFieldValue>
+            <controllingFieldValue>2 - Demo</controllingFieldValue>
+            <controllingFieldValue>3 - Solution Design &amp; Evaluation</controllingFieldValue>
+            <controllingFieldValue>4 - Negotiation</controllingFieldValue>
+            <valueName>Commit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1 - Discovery</controllingFieldValue>
+            <controllingFieldValue>2 - Demo</controllingFieldValue>
+            <controllingFieldValue>3 - Solution Design &amp; Evaluation</controllingFieldValue>
+            <controllingFieldValue>4 - Negotiation</controllingFieldValue>
+            <valueName>Upside</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0 - Meeting Pending</controllingFieldValue>
+            <controllingFieldValue>0 - Meeting Scheduled</controllingFieldValue>
+            <controllingFieldValue>0 - Meeting Occurred</controllingFieldValue>
+            <controllingFieldValue>0 - Disqualified</controllingFieldValue>
+            <valueName>Omitted</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

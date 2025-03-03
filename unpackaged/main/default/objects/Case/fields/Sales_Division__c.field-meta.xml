@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Division__c</fullName>
+    <externalId>false</externalId>
+    <formula>Account.Sales_Division__c
+/*CASE(Account.Sales_Division_2__c,
+&quot;Americas&quot;,&quot;Americas&quot;,
+&quot;APAC&quot;,&quot;APAC&quot;,
+&quot;EMEA&quot;,&quot;EMEA&quot;,
+&quot;Japan&quot;,&quot;Japan&quot;,
+&quot;ROW&quot;,&quot;ROW&quot;,
+&quot;&quot;)
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sales Division</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesOps_Case_Resolution__c</fullName>
+    <label>SalesOps Case Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SalesOps_Question_Area__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Answer provided</fullName>
+                <default>false</default>
+                <label>Answer provided</label>
+            </value>
+            <value>
+                <fullName>ACV/TotalACV adjustment</fullName>
+                <default>false</default>
+                <label>ACV/TotalACV adjustment</label>
+            </value>
+            <value>
+                <fullName>client hand-off</fullName>
+                <default>false</default>
+                <label>Client hand-off</label>
+            </value>
+            <value>
+                <fullName>Client Termination</fullName>
+                <default>false</default>
+                <label>Client Termination</label>
+            </value>
+            <value>
+                <fullName>Closed Duplicated</fullName>
+                <default>false</default>
+                <label>Closed Duplicate</label>
+            </value>
+            <value>
+                <fullName>Compensation issue</fullName>
+                <default>false</default>
+                <label>Compensation issue</label>
+            </value>
+            <value>
+                <fullName>Contract ID update</fullName>
+                <default>false</default>
+                <label>Contract ID update</label>
+            </value>
+            <value>
+                <fullName>Data Cleanup</fullName>
+                <default>false</default>
+                <label>Data Cleanup</label>
+            </value>
+            <value>
+                <fullName>Documentation Created</fullName>
+                <default>false</default>
+                <label>Documentation Created</label>
+            </value>
+            <value>
+                <fullName>Documentation Provided</fullName>
+                <default>false</default>
+                <label>Documentation Provided</label>
+            </value>
+            <value>
+                <fullName>Duplicate Case</fullName>
+                <default>false</default>
+                <label>Duplicate Case</label>
+            </value>
+            <value>
+                <fullName>E-MRR adjustment</fullName>
+                <default>false</default>
+                <label>E/MRR adjustment</label>
+            </value>
+            <value>
+                <fullName>Manual Adjustment</fullName>
+                <default>false</default>
+                <label>Manual Adjustment</label>
+            </value>
+            <value>
+                <fullName>New MRR adjustment</fullName>
+                <default>false</default>
+                <label>New MRR adjustment</label>
+            </value>
+            <value>
+                <fullName>Opportunity Created</fullName>
+                <default>false</default>
+                <label>Opportunity Created or Removed</label>
+            </value>
+            <value>
+                <fullName>Opportunity Splits/Team</fullName>
+                <default>false</default>
+                <label>Opportunity Splits/Team</label>
+            </value>
+            <value>
+                <fullName>Oppty - Workflow Create</fullName>
+                <default>false</default>
+                <label>Oppty - Workflow Create</label>
+            </value>
+            <value>
+                <fullName>Oppty - Workflow Edit</fullName>
+                <default>false</default>
+                <label>Oppty - Workflow Edit</label>
+            </value>
+            <value>
+                <fullName>Owner change</fullName>
+                <default>false</default>
+                <label>Owner change</label>
+            </value>
+            <value>
+                <fullName>Parent account update</fullName>
+                <default>false</default>
+                <label>Parent account update</label>
+            </value>
+            <value>
+                <fullName>Product item customization</fullName>
+                <default>false</default>
+                <label>Product item customization</label>
+            </value>
+            <value>
+                <fullName>Provided or Removed Tool Access</fullName>
+                <default>false</default>
+                <label>Provided or Removed Tool Access</label>
+            </value>
+            <value>
+                <fullName>Rate cards issue</fullName>
+                <default>false</default>
+                <label>Rate cards issue</label>
+            </value>
+            <value>
+                <fullName>Redirected To Appropropriate Resource</fullName>
+                <default>false</default>
+                <label>Redirected To Appropropriate Resource</label>
+            </value>
+            <value>
+                <fullName>Report Created</fullName>
+                <default>false</default>
+                <label>Report Created</label>
+            </value>
+            <value>
+                <fullName>RevOps portal</fullName>
+                <default>false</default>
+                <label>RevOps portal</label>
+            </value>
+            <value>
+                <fullName>Routing region update</fullName>
+                <default>false</default>
+                <label>Routing region update</label>
+            </value>
+            <value>
+                <fullName>Routing rule update</fullName>
+                <default>false</default>
+                <label>Routing rule update</label>
+            </value>
+            <value>
+                <fullName>Routing team update</fullName>
+                <default>false</default>
+                <label>Routing team update</label>
+            </value>
+            <value>
+                <fullName>Salesforce Permission Change</fullName>
+                <default>false</default>
+                <label>Salesforce Permission Change</label>
+            </value>
+            <value>
+                <fullName>Sent to Pricing Committee</fullName>
+                <default>false</default>
+                <label>Sent to Pricing Committee</label>
+            </value>
+            <value>
+                <fullName>SFDC Field Created</fullName>
+                <default>false</default>
+                <label>SFDC Field Edited, Updated or Created</label>
+            </value>
+            <value>
+                <fullName>SFDCHelp</fullName>
+                <default>false</default>
+                <label>SFDCHelp</label>
+            </value>
+            <value>
+                <fullName>SFDC Record Merge</fullName>
+                <default>false</default>
+                <label>SFDC Record Merge</label>
+            </value>
+            <value>
+                <fullName>SFDC Workflow Created</fullName>
+                <default>false</default>
+                <label>SFDC Rule or Workflow Created</label>
+            </value>
+            <value>
+                <fullName>Status Update</fullName>
+                <default>false</default>
+                <label>Status Update</label>
+            </value>
+            <value>
+                <fullName>User - Activation</fullName>
+                <default>false</default>
+                <label>User - Activation</label>
+            </value>
+            <value>
+                <fullName>User - Deactivate</fullName>
+                <default>false</default>
+                <label>User - Deactivate</label>
+            </value>
+            <value>
+                <fullName>User - Group management</fullName>
+                <default>false</default>
+                <label>User - Group management</label>
+            </value>
+            <value>
+                <fullName>User - Profile management</fullName>
+                <default>false</default>
+                <label>User - Profile management</label>
+            </value>
+            <value>
+                <fullName>User - Role management</fullName>
+                <default>false</default>
+                <label>User - Role management</label>
+            </value>
+            <value>
+                <fullName>6Sense</fullName>
+                <default>false</default>
+                <label>6Sense</label>
+            </value>
+            <value>
+                <fullName>Alyce</fullName>
+                <default>false</default>
+                <label>Alyce</label>
+            </value>
+            <value>
+                <fullName>Datanyze</fullName>
+                <default>false</default>
+                <label>Datanyze</label>
+            </value>
+            <value>
+                <fullName>DiscoverOrg</fullName>
+                <default>false</default>
+                <label>DiscoverOrg</label>
+            </value>
+            <value>
+                <fullName>DocuSign</fullName>
+                <default>false</default>
+                <label>DocuSign</label>
+            </value>
+            <value>
+                <fullName>Eloqua</fullName>
+                <default>false</default>
+                <label>Eloqua</label>
+            </value>
+            <value>
+                <fullName>Gainsight</fullName>
+                <default>false</default>
+                <label>Gainsight</label>
+            </value>
+            <value>
+                <fullName>Gong.io</fullName>
+                <default>false</default>
+                <label>Gong.io</label>
+            </value>
+            <value>
+                <fullName>InsightSquare</fullName>
+                <default>false</default>
+                <label>InsightSquare</label>
+            </value>
+            <value>
+                <fullName>Kapost</fullName>
+                <default>false</default>
+                <label>Kapost</label>
+            </value>
+            <value>
+                <fullName>Kimble</fullName>
+                <default>false</default>
+                <label>Kimble</label>
+            </value>
+            <value>
+                <fullName>Outreach</fullName>
+                <default>false</default>
+                <label>Outreach</label>
+            </value>
+            <value>
+                <fullName>Sales Navigator</fullName>
+                <default>false</default>
+                <label>Sales Navigator</label>
+            </value>
+            <value>
+                <fullName>Tableau</fullName>
+                <default>false</default>
+                <label>Tableau</label>
+            </value>
+            <value>
+                <fullName>ZoomInfo</fullName>
+                <default>false</default>
+                <label>ZoomInfo</label>
+            </value>
+            <value>
+                <fullName>Yesware</fullName>
+                <default>false</default>
+                <label>Yesware</label>
+            </value>
+            <value>
+                <fullName>Xactly - Obero</fullName>
+                <default>false</default>
+                <label>Xactly - Obero</label>
+            </value>
+            <value>
+                <fullName>Closed - BSTS Jira Submitted</fullName>
+                <default>false</default>
+                <label>Closed - BSTS Jira Submitted</label>
+            </value>
+            <value>
+                <fullName>Closed - Issue solved by Employee</fullName>
+                <default>false</default>
+                <label>Closed - Issue solved by Employee</label>
+            </value>
+            <value>
+                <fullName>Closed - Quote created or Adjusted</fullName>
+                <default>false</default>
+                <label>Closed - Quote created or Adjusted</label>
+            </value>
+            <value>
+                <fullName>Closed - Rate Card Adjustment</fullName>
+                <default>false</default>
+                <label>Closed - Rate Card Adjustment</label>
+            </value>
+            <value>
+                <fullName>Closed - Price book updated</fullName>
+                <default>false</default>
+                <label>Closed - Price book updated</label>
+            </value>
+            <value>
+                <fullName>Closed - Order form updated in PDF/Word</fullName>
+                <default>false</default>
+                <label>Closed - Order form updated in PDF/Word</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Reporting</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>Answer provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Reporting</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>Closed Duplicated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>Duplicate Case</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>Data Cleanup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC - Reporting</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Onboarding_and_training</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>Documentation Created</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC - Reporting</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Onboarding_and_training</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Documentation Provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Reporting</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>Routing requests</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Onboarding_and_training</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>Manual Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC - Reporting</controllingFieldValue>
+            <controllingFieldValue>Routing requests</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Onboarding_and_training</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Redirected To Appropropriate Resource</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC - Reporting</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Onboarding_and_training</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Report Created</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Onboarding_and_training</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Salesforce Permission Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>SFDC Field Created</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>SFDC Record Merge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Leads &amp; Activities</controllingFieldValue>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>SFDC Workflow Created</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>Duplicate Case</controllingFieldValue>
+            <valueName>Duplicate Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Miscellaneous</controllingFieldValue>
+            <controllingFieldValue>Routing requests</controllingFieldValue>
+            <controllingFieldValue>Billing Questions</controllingFieldValue>
+            <controllingFieldValue>Compensation</controllingFieldValue>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <controllingFieldValue>Onboarding_and_training</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Provided or Removed Tool Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>ACV/TotalACV adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>client hand-off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Client Termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>Compensation issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>Contract ID update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>E-MRR adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>New MRR adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>Opportunity Created</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <valueName>Opportunity Splits/Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>Routing requests</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Owner change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <valueName>Status Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Closed - BSTS Jira Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Closed - Issue solved by Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Closed - Quote created or Adjusted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Closed - Rate Card Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Closed - Price book updated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Opportunities</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Closed - Order form updated in PDF/Word</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - BCAccount</controllingFieldValue>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <valueName>Parent account update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Routing requests</controllingFieldValue>
+            <valueName>Routing region update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Routing requests</controllingFieldValue>
+            <valueName>Routing rule update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Routing requests</controllingFieldValue>
+            <valueName>Routing team update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Product item customization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CPQ</controllingFieldValue>
+            <valueName>Rate cards issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Products_and_Pricing</controllingFieldValue>
+            <valueName>Sent to Pricing Committee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>RevOps portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>6Sense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Datanyze</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>DiscoverOrg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>DocuSign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Eloqua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Gainsight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Gong.io</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>InsightSquare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Kapost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Kimble</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Outreach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Sales Navigator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Tableau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>ZoomInfo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Yesware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Tools</controllingFieldValue>
+            <valueName>Xactly - Obero</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC_Accounts</controllingFieldValue>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>SFDCHelp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>Oppty - Workflow Create</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>Oppty - Workflow Edit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>User - Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>User - Deactivate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>User - Group management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>User - Profile management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFDC - Administration</controllingFieldValue>
+            <valueName>User - Role management</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

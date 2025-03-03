@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Slack_Channel_Created__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>WIll be enabled when a Slack channel is created to communicate with the customer</description>
+    <inlineHelpText>A slack channel was created to communicate with the customer</inlineHelpText>
+    <label>Active Slack Channel</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

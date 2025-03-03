@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketplace_Resell_Split_Percent__c</fullName>
+    <description>Indicates the percentage of the Partner&#39;s ACV contract value that Brightcove is able to retain. In other words, our mark-up over our discounted price, or the percent of our discount over list.</description>
+    <label>Marketplace Resell Split Percent</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

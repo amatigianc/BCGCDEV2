@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Case_Reason__c</fullName>
+    <label>BC Case Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Access</fullName>
+                <default>false</default>
+                <label>Access</label>
+            </value>
+            <value>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+                <label>Account Settings</label>
+            </value>
+            <value>
+                <fullName>Account Settings - AI</fullName>
+                <default>false</default>
+                <label>Account Settings - AI</label>
+            </value>
+            <value>
+                <fullName>Account Settings - ZC</fullName>
+                <default>false</default>
+                <label>Account Settings - ZC</label>
+            </value>
+            <value>
+                <fullName>Ad Insights</fullName>
+                <default>false</default>
+                <label>Ad Insights</label>
+            </value>
+            <value>
+                <fullName>Administration</fullName>
+                <default>false</default>
+                <label>Administration</label>
+            </value>
+            <value>
+                <fullName>Administration - ZC</fullName>
+                <default>false</default>
+                <label>Administration - ZC</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Analytics and Billing</fullName>
+                <default>false</default>
+                <label>Analytics and Billing</label>
+            </value>
+            <value>
+                <fullName>API and Custom Dev</fullName>
+                <default>false</default>
+                <label>API and Custom Dev</label>
+            </value>
+            <value>
+                <fullName>API and Custom Dev - ZC</fullName>
+                <default>false</default>
+                <label>API and Custom Dev - ZC</label>
+            </value>
+            <value>
+                <fullName>Audience</fullName>
+                <default>false</default>
+                <label>Audience</label>
+            </value>
+            <value>
+                <fullName>Audience Sync &amp; Segment Sync</fullName>
+                <default>false</default>
+                <label>Audience Sync &amp; Segment Sync</label>
+            </value>
+            <value>
+                <fullName>Audio/Video Quality</fullName>
+                <default>false</default>
+                <label>Audio/Video Quality</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Brightcove Live</fullName>
+                <default>false</default>
+                <label>Brightcove ALive</label>
+            </value>
+            <value>
+                <fullName>Brightcove BLive</fullName>
+                <default>false</default>
+                <label>Brightcove BLive</label>
+            </value>
+            <value>
+                <fullName>Brightcove Campaign</fullName>
+                <default>false</default>
+                <label>Brightcove Campaign</label>
+            </value>
+            <value>
+                <fullName>Brightcove Engage</fullName>
+                <default>false</default>
+                <label>Brightcove Engage</label>
+            </value>
+            <value>
+                <fullName>Interactivity</fullName>
+                <default>false</default>
+                <label>Brightcove Interactivity</label>
+            </value>
+            <value>
+                <fullName>Cloud Playout</fullName>
+                <default>false</default>
+                <label>Cloud Playout</label>
+            </value>
+            <value>
+                <fullName>Content Delivery</fullName>
+                <default>false</default>
+                <label>Content Delivery</label>
+            </value>
+            <value>
+                <fullName>Content Feedback</fullName>
+                <default>false</default>
+                <label>Content Feedback</label>
+            </value>
+            <value>
+                <fullName>CS - Documentation (CS site/ Localization)</fullName>
+                <default>false</default>
+                <label>CS - Documentation (CS site/ Localization)</label>
+            </value>
+            <value>
+                <fullName>CS Portal</fullName>
+                <default>false</default>
+                <label>CS Portal</label>
+            </value>
+            <value>
+                <fullName>Custom Domain/SSL</fullName>
+                <default>false</default>
+                <label>Custom Domain/SSL</label>
+            </value>
+            <value>
+                <fullName>Custom Task</fullName>
+                <default>false</default>
+                <label>Custom Task</label>
+            </value>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Distribution (Social)</fullName>
+                <default>false</default>
+                <label>Distribution (Social)</label>
+            </value>
+            <value>
+                <fullName>Encoding Settings</fullName>
+                <default>false</default>
+                <label>Encoding Settings</label>
+            </value>
+            <value>
+                <fullName>Engagement Data</fullName>
+                <default>false</default>
+                <label>Engagement Data</label>
+            </value>
+            <value>
+                <fullName>Enhancement Request</fullName>
+                <default>false</default>
+                <label>Enhancement Request</label>
+            </value>
+            <value>
+                <fullName>FAST - Frequency</fullName>
+                <default>false</default>
+                <label>FAST - Frequency</label>
+            </value>
+            <value>
+                <fullName>File Transfers</fullName>
+                <default>false</default>
+                <label>File Transfers</label>
+            </value>
+            <value>
+                <fullName>Gallery</fullName>
+                <default>false</default>
+                <label>Gallery</label>
+            </value>
+            <value>
+                <fullName>HapYak</fullName>
+                <default>false</default>
+                <label>HapYak</label>
+            </value>
+            <value>
+                <fullName>Ingestion</fullName>
+                <default>false</default>
+                <label>Ingestion</label>
+            </value>
+            <value>
+                <fullName>Job Failures</fullName>
+                <default>false</default>
+                <label>Job Failures</label>
+            </value>
+            <value>
+                <fullName>Live Event Coverage</fullName>
+                <default>false</default>
+                <label>Live Event Coverage</label>
+            </value>
+            <value>
+                <fullName>Live NOC</fullName>
+                <default>false</default>
+                <label>Live NOC</label>
+            </value>
+            <value>
+                <fullName>Live Streaming (Akamai Legacy/Manual)</fullName>
+                <default>false</default>
+                <label>Live Streaming (Akamai Legacy/Manual)</label>
+            </value>
+            <value>
+                <fullName>Metadata</fullName>
+                <default>false</default>
+                <label>Metadata</label>
+            </value>
+            <value>
+                <fullName>Migration</fullName>
+                <default>false</default>
+                <label>Migration</label>
+            </value>
+            <value>
+                <fullName>Missing Data</fullName>
+                <default>false</default>
+                <label>Missing Data</label>
+            </value>
+            <value>
+                <fullName>Mobile Development</fullName>
+                <default>false</default>
+                <label>Mobile Development</label>
+            </value>
+            <value>
+                <fullName>New problem</fullName>
+                <default>false</default>
+                <label>New problem</label>
+            </value>
+            <value>
+                <fullName>OTT Flow</fullName>
+                <default>false</default>
+                <label>OTT Flow</label>
+            </value>
+            <value>
+                <fullName>Playback</fullName>
+                <default>false</default>
+                <label>Playback</label>
+            </value>
+            <value>
+                <fullName>Playback Restrictions</fullName>
+                <default>false</default>
+                <label>Playback Restrictions</label>
+            </value>
+            <value>
+                <fullName>QoE</fullName>
+                <default>false</default>
+                <label>QoE</label>
+            </value>
+            <value>
+                <fullName>QoE Insights</fullName>
+                <default>false</default>
+                <label>QoE Insights</label>
+            </value>
+            <value>
+                <fullName>Reports/Exports/Segments</fullName>
+                <default>false</default>
+                <label>Reports/Exports/Segments</label>
+            </value>
+            <value>
+                <fullName>Retail Integrations</fullName>
+                <default>false</default>
+                <label>Retail Integrations</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Salesforce Sales Cloud Integration</fullName>
+                <default>false</default>
+                <label>Salesforce Sales Cloud Integration</label>
+            </value>
+            <value>
+                <fullName>Smart TV - Development</fullName>
+                <default>false</default>
+                <label>Smart TV - Development</label>
+            </value>
+            <value>
+                <fullName>Studio</fullName>
+                <default>false</default>
+                <label>Studio</label>
+            </value>
+            <value>
+                <fullName>Support Operations</fullName>
+                <default>false</default>
+                <label>Support Operations</label>
+            </value>
+            <value>
+                <fullName>Support Portal</fullName>
+                <default>false</default>
+                <label>Support Portal</label>
+            </value>
+            <value>
+                <fullName>TV App Agency</fullName>
+                <default>false</default>
+                <label>TV App Agency</label>
+            </value>
+            <value>
+                <fullName>Video.js</fullName>
+                <default>false</default>
+                <label>Video.js</label>
+            </value>
+            <value>
+                <fullName>Virtual Events</fullName>
+                <default>false</default>
+                <label>Virtual Events</label>
+            </value>
+            <value>
+                <fullName>Web Player</fullName>
+                <default>false</default>
+                <label>Web Player</label>
+            </value>
+            <value>
+                <fullName>Websites</fullName>
+                <default>false</default>
+                <label>Websites</label>
+            </value>
+            <value>
+                <fullName>Zapier</fullName>
+                <default>false</default>
+                <label>Zapier</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Audience Insights</controllingFieldValue>
+            <valueName>Account Settings - AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience Insights</controllingFieldValue>
+            <valueName>Audience Sync &amp; Segment Sync</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience Insights</controllingFieldValue>
+            <valueName>Engagement Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience Insights</controllingFieldValue>
+            <valueName>QoE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience Insights</controllingFieldValue>
+            <valueName>QoE Insights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience Insights</controllingFieldValue>
+            <valueName>Salesforce Sales Cloud Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Perform</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Account Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Administration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <valueName>Administration - ZC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <valueName>API and Custom Dev - ZC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <valueName>Audio/Video Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Perform</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>CS - Documentation (CS site/ Localization)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>CS Portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <valueName>Encoding Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <valueName>File Transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <valueName>Job Failures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Live Event Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zencoder</controllingFieldValue>
+            <valueName>Video.js</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <valueName>HapYak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <valueName>Brightcove Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <valueName>Brightcove Engage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Gallery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Virtual Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Advertising</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Analytics and Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>API and Custom Dev</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Content Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>Enhancement Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Ingestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Live NOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Metadata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Migration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Mobile Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ooyala</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Playback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>Beacon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>OTT Flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>TV App Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Perform</controllingFieldValue>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PlayTV</controllingFieldValue>
+            <valueName>Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SupportOps</controllingFieldValue>
+            <valueName>Custom Task</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SupportOps</controllingFieldValue>
+            <valueName>Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SupportOps</controllingFieldValue>
+            <valueName>Zapier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Brightcove Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Brightcove BLive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Interactivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Cloud Playout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Distribution (Social)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>FAST - Frequency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Live Streaming (Akamai Legacy/Manual)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Playback Restrictions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Retail Integrations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Smart TV - Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Studio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Support Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Support Portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Web Player</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video Cloud</controllingFieldValue>
+            <valueName>Websites</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

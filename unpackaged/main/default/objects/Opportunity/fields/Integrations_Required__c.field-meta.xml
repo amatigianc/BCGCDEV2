@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integrations_Required__c</fullName>
+    <description>Are there any 3rd party or partner integrations to consider? (Accedo, Iris.TV, Google Analytics, CRM, etc...)</description>
+    <inlineHelpText>Are there any 3rd party or partner integrations to consider? (Accedo, Iris.TV, Google Analytics, CRM, etc...)</inlineHelpText>
+    <label>Integrations Required</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

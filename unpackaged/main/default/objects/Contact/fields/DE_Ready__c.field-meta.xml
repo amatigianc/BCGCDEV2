@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Ready__c</fullName>
+    <formula>OR(
+
+AND(
+NOT(CONTAINS(Email, &quot;@brightcove.com&quot;)),
+NOT ( ISBLANK(DE_Offer_Type__c )),
+NOT(ISBLANK(MailingCountry ))
+),
+
+AND(
+/*ISBLANK(DE_offer_type__c ),*/
+
+DE_Offer_Type__c = &quot;Generic&quot;,
+NOT(CONTAINS(Email, &quot;@brightcove.com&quot;)),
+
+DE_DaysFromCreate__c &gt; 1 /*,If after a day nothing happens then redistribute*/
+
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DE - Ready</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<apex:page contentType="application/json">
+    {
+        "profileName": "{!$Profile.Name}",
+        "userLanguage": "{!TEXT($User.LanguageLocaleKey)}"
+    }
+</apex:page>

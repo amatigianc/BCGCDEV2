@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Root_Cause__c</fullName>
+    <label>Root Cause</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>New_Case_Reason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3rd Party</fullName>
+                <default>false</default>
+                <label>3rd Party</label>
+            </value>
+            <value>
+                <fullName>Bug</fullName>
+                <default>false</default>
+                <label>Bug</label>
+            </value>
+            <value>
+                <fullName>CDN Slowness</fullName>
+                <default>false</default>
+                <label>CDN Slowness</label>
+            </value>
+            <value>
+                <fullName>Client/delivery error</fullName>
+                <default>false</default>
+                <label>Client/delivery error</label>
+            </value>
+            <value>
+                <fullName>CSM/Sales/BGS/Finance</fullName>
+                <default>false</default>
+                <label>CSM/Sales/BGS/Finance</label>
+            </value>
+            <value>
+                <fullName>Customer training gaps</fullName>
+                <default>false</default>
+                <label>Customer training gaps</label>
+            </value>
+            <value>
+                <fullName>Data not available</fullName>
+                <default>false</default>
+                <label>Data not available</label>
+            </value>
+            <value>
+                <fullName>Data processing</fullName>
+                <default>false</default>
+                <label>Data processing</label>
+            </value>
+            <value>
+                <fullName>Enhancement Request</fullName>
+                <default>false</default>
+                <label>Enhancement Request</label>
+            </value>
+            <value>
+                <fullName>False-positive alert</fullName>
+                <default>false</default>
+                <label>False-positive alert</label>
+            </value>
+            <value>
+                <fullName>Input latency</fullName>
+                <default>false</default>
+                <label>Input latency</label>
+            </value>
+            <value>
+                <fullName>Live system failure</fullName>
+                <default>false</default>
+                <label>Live system failure</label>
+            </value>
+            <value>
+                <fullName>Source Encoder</fullName>
+                <default>false</default>
+                <label>Source Encoder</label>
+            </value>
+            <value>
+                <fullName>Source Issue (network, upload speed, ISP)</fullName>
+                <default>false</default>
+                <label>Source Issue (network, upload speed, ISP)</label>
+            </value>
+            <value>
+                <fullName>System Issue</fullName>
+                <default>false</default>
+                <label>System Issue</label>
+            </value>
+            <value>
+                <fullName>Task</fullName>
+                <default>false</default>
+                <label>Task</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>User Error</fullName>
+                <default>false</default>
+                <label>User Error</label>
+            </value>
+            <value>
+                <fullName>EOL (End of Life)</fullName>
+                <default>false</default>
+                <label>EOL (End of Life)</label>
+            </value>
+            <value>
+                <fullName>Product Issue</fullName>
+                <default>false</default>
+                <label>Product Issue</label>
+            </value>
+            <value>
+                <fullName>No Recommendations Needed</fullName>
+                <default>false</default>
+                <label>No Recommendations Needed</label>
+            </value>
+            <value>
+                <fullName>Recommendations Provided</fullName>
+                <default>false</default>
+                <label>Recommendations Provided</label>
+            </value>
+            <value>
+                <fullName>QoE Enabled</fullName>
+                <default>false</default>
+                <label>QoE Enabled</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Support Operations</controllingFieldValue>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Content Feedback</controllingFieldValue>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <controllingFieldValue>Custom Domain/SSL</controllingFieldValue>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Enhancement Request</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <controllingFieldValue>Missing Data</controllingFieldValue>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <controllingFieldValue>Smart TV - Development</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>3rd Party</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Support Operations</controllingFieldValue>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Content Feedback</controllingFieldValue>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <controllingFieldValue>Custom Domain/SSL</controllingFieldValue>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Enhancement Request</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <controllingFieldValue>Missing Data</controllingFieldValue>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <controllingFieldValue>Smart TV - Development</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>Bug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <controllingFieldValue>Content Feedback</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>Custom Domain/SSL</controllingFieldValue>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Enhancement Request</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>CSM/Sales/BGS/Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Support Operations</controllingFieldValue>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Content Feedback</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <controllingFieldValue>Custom Domain/SSL</controllingFieldValue>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Enhancement Request</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <controllingFieldValue>Smart TV - Development</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>Enhancement Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Support Operations</controllingFieldValue>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Content Feedback</controllingFieldValue>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <controllingFieldValue>Custom Domain/SSL</controllingFieldValue>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Enhancement Request</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>System Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Support Operations</controllingFieldValue>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Content Feedback</controllingFieldValue>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <controllingFieldValue>Custom Domain/SSL</controllingFieldValue>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Enhancement Request</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <controllingFieldValue>Smart TV - Development</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>Task</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Support Operations</controllingFieldValue>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>HapYak</controllingFieldValue>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Content Feedback</controllingFieldValue>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <controllingFieldValue>Custom Domain/SSL</controllingFieldValue>
+            <controllingFieldValue>Discovery</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Enhancement Request</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <controllingFieldValue>New problem</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <controllingFieldValue>Smart TV - Development</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>User Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Engagement Data</controllingFieldValue>
+            <valueName>Data not available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Engagement Data</controllingFieldValue>
+            <valueName>Data processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QoE</controllingFieldValue>
+            <valueName>No Recommendations Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QoE</controllingFieldValue>
+            <valueName>Recommendations Provided</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QoE</controllingFieldValue>
+            <valueName>QoE Enabled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>CDN Slowness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Customer training gaps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>False-positive alert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Input latency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Live system failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Source Encoder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Source Issue (network, upload speed, ISP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <valueName>EOL (End of Life)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

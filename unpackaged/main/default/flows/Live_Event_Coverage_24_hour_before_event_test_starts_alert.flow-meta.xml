@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Live_Event_Coverage_24_hour_before_event_test_starts_alert</name>
+        <label>Live Event Coverage - 24 hour before event test starts alert</label>
+        <locationX>242</locationX>
+        <locationY>384</locationY>
+        <actionName>Live_Event_Coverage__c.Live_Event_Coverage_24_hour_before_event_test_starts_alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Live_Event_Coverage__c.Live_Event_Coverage_24_hour_before_event_test_starts_alert</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>hasBypassflow</name>
+        <label>hasBypassflow</label>
+        <locationX>374</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Live_Event_Coverage_24_hour_before_event_test_starts_alert</targetReference>
+            </connector>
+            <label>NO</label>
+        </rules>
+    </decisions>
+    <description>Live Event Coverage - 24 hour before the event test starts alert
+v2: Removed an email alert that is already sent when the live event is created on a different flow</description>
+    <environments>Default</environments>
+    <interviewLabel>Live Event Coverage - 24 hour before event test starts alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Live Event Coverage - 24 hour before event test starts alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <object>Live_Event_Coverage__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>X1dayBeforePreferredDate</name>
+            <connector>
+                <targetReference>hasBypassflow</targetReference>
+            </connector>
+            <label>1dayBeforePreferredDate</label>
+            <offsetNumber>-1</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>Preferred_date_and_time_for_testing__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

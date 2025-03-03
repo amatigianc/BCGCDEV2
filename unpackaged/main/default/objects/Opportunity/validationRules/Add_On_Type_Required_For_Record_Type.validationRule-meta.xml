@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_On_Type_Required_For_Record_Type</fullName>
+    <active>true</active>
+    <description>Add-On Type Field must be completed for this record type</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISCHANGED(StageName),
+ISPICKVAL(StageName,&#39;2 - Demo&#39;),
+OR(RecordType.DeveloperName = &#39;Renewal_Growth_Add_on&#39;,
+RecordType.DeveloperName = &#39;Add_On&#39;,
+RecordType.DeveloperName = &#39;Services_Record_Type&#39;
+),
+ISPICKVAL(Add_On_Type__c,&#39;&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Add_On_Type__c</errorDisplayField>
+    <errorMessage>Add-On Type is required</errorMessage>
+</ValidationRule>

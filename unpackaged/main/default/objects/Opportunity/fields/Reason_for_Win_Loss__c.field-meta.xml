@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Win_Loss__c</fullName>
+    <label>Reason for Win / Loss</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Business Change</fullName>
+                <default>false</default>
+                <label>Business Change</label>
+            </value>
+            <value>
+                <fullName>Business Priority or Budget</fullName>
+                <default>false</default>
+                <label>Business Priority or Budget</label>
+            </value>
+            <value>
+                <fullName>External Factor</fullName>
+                <default>false</default>
+                <label>External Factor</label>
+            </value>
+            <value>
+                <fullName>Not a Brightcove Priority</fullName>
+                <default>false</default>
+                <label>Not a Brightcove Priority</label>
+            </value>
+            <value>
+                <fullName>Price to Value (Closed Lost)</fullName>
+                <default>false</default>
+                <label>Price to Value (Closed Lost)</label>
+            </value>
+            <value>
+                <fullName>Price to Value (Closed Won)</fullName>
+                <default>false</default>
+                <label>Price to Value (Closed Won)</label>
+            </value>
+            <value>
+                <fullName>Relationship (Closed Lost)</fullName>
+                <default>false</default>
+                <label>Relationship (Closed Lost)</label>
+            </value>
+            <value>
+                <fullName>Relationship (Closed Won)</fullName>
+                <default>false</default>
+                <label>Relationship (Closed Won)</label>
+            </value>
+            <value>
+                <fullName>Salesforce Correction</fullName>
+                <default>false</default>
+                <label>Salesforce Correction</label>
+            </value>
+            <value>
+                <fullName>Technology or Capability (Closed Lost)</fullName>
+                <default>false</default>
+                <label>Technology or Capability (Closed Lost)</label>
+            </value>
+            <value>
+                <fullName>Technology or Capability (Closed Won)</fullName>
+                <default>false</default>
+                <label>Technology or Capability (Closed Won)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Business Priority or Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>External Factor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Not a Brightcove Priority</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Price to Value (Closed Lost)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Relationship (Closed Lost)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Technology or Capability (Closed Lost)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Price to Value (Closed Won)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Relationship (Closed Won)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Technology or Capability (Closed Won)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubReason_for_winloss__c</fullName>
+    <label>Sub-Reason for Win / Loss</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Reason_for_Win_Loss__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Better solution, not worth the price</fullName>
+                <default>false</default>
+                <label>Better solution, not worth the price</label>
+            </value>
+            <value>
+                <fullName>Better solution, worth the price</fullName>
+                <default>false</default>
+                <label>Better solution, worth the price</label>
+            </value>
+            <value>
+                <fullName>BGS/Services ability to create a highly custom solution</fullName>
+                <default>false</default>
+                <label>BGS/Services ability to create a highly custom solution</label>
+            </value>
+            <value>
+                <fullName>BGS/Services cost too high</fullName>
+                <default>false</default>
+                <label>BGS/Services cost too high</label>
+            </value>
+            <value>
+                <fullName>Brightcove used on other teams in organization</fullName>
+                <default>false</default>
+                <label>Brightcove used on other teams in organization</label>
+            </value>
+            <value>
+                <fullName>Challenging customer</fullName>
+                <default>false</default>
+                <label>Challenging customer</label>
+            </value>
+            <value>
+                <fullName>Change of company control</fullName>
+                <default>false</default>
+                <label>Change of company control</label>
+            </value>
+            <value>
+                <fullName>Company-wide budget freezes or RIFS</fullName>
+                <default>false</default>
+                <label>Company-wide budget freezes or RIFS</label>
+            </value>
+            <value>
+                <fullName>Contact not the ultimate buyer</fullName>
+                <default>false</default>
+                <label>Contact not the ultimate buyer</label>
+            </value>
+            <value>
+                <fullName>Customer non-payments</fullName>
+                <default>false</default>
+                <label>Customer non-payments</label>
+            </value>
+            <value>
+                <fullName>Executive or board level relationships</fullName>
+                <default>false</default>
+                <label>Executive or board level relationships</label>
+            </value>
+            <value>
+                <fullName>Expected deal size is too small</fullName>
+                <default>false</default>
+                <label>Expected deal size is too small</label>
+            </value>
+            <value>
+                <fullName>Insufficient ROI</fullName>
+                <default>false</default>
+                <label>Insufficient ROI</label>
+            </value>
+            <value>
+                <fullName>Integrated into our tech stack</fullName>
+                <default>false</default>
+                <label>Integrated into our tech stack</label>
+            </value>
+            <value>
+                <fullName>Lack of solution completeness</fullName>
+                <default>false</default>
+                <label>Lack of solution completeness</label>
+            </value>
+            <value>
+                <fullName>M&amp;A</fullName>
+                <default>false</default>
+                <label>M&amp;A</label>
+            </value>
+            <value>
+                <fullName>Missing tablestakes feature/unable to serve use case</fullName>
+                <default>false</default>
+                <label>Missing tablestakes feature/unable to serve use case</label>
+            </value>
+            <value>
+                <fullName>Non-responsive contact / Decision maker left</fullName>
+                <default>false</default>
+                <label>Non-responsive contact / Decision maker left</label>
+            </value>
+            <value>
+                <fullName>Only one who could solve the problem / uniquely able to solve</fullName>
+                <default>false</default>
+                <label>Only one who could solve the problem / uniquely able to solve</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Poor buyer experience</fullName>
+                <default>false</default>
+                <label>Poor buyer experience</label>
+            </value>
+            <value>
+                <fullName>Prior experience with Brightcove (didn&#39;t consider alternatives)</fullName>
+                <default>false</default>
+                <label>Prior experience with Brightcove (didn&#39;t consider alternatives)</label>
+            </value>
+            <value>
+                <fullName>Reliability/Scalability/Customer Support</fullName>
+                <default>false</default>
+                <label>Reliability/Scalability/Customer Support</label>
+            </value>
+            <value>
+                <fullName>Salesforce Correction</fullName>
+                <default>false</default>
+                <label>Salesforce Correction</label>
+            </value>
+            <value>
+                <fullName>Similar solution, not the best price</fullName>
+                <default>false</default>
+                <label>Similar solution, not the best price</label>
+            </value>
+            <value>
+                <fullName>Similar solution, won on price</fullName>
+                <default>false</default>
+                <label>Similar solution, won on price</label>
+            </value>
+            <value>
+                <fullName>Solution completeness</fullName>
+                <default>false</default>
+                <label>Solution completeness</label>
+            </value>
+            <value>
+                <fullName>Too difficult to onboard or switch from existing solution</fullName>
+                <default>false</default>
+                <label>Too difficult to onboard or switch from existing solution</label>
+            </value>
+            <value>
+                <fullName>Trusted sales advisor</fullName>
+                <default>false</default>
+                <label>Trusted sales advisor</label>
+            </value>
+            <value>
+                <fullName>Unable to come to legal or contractual terms</fullName>
+                <default>false</default>
+                <label>Unable to come to legal or contractual terms</label>
+            </value>
+            <value>
+                <fullName>Uncompetitive feature set</fullName>
+                <default>false</default>
+                <label>Uncompetitive feature set</label>
+            </value>
+            <value>
+                <fullName>Video budget is not a priority</fullName>
+                <default>false</default>
+                <label>Video budget is not a priority</label>
+            </value>
+            <value>
+                <fullName>Wrong buyer relationship</fullName>
+                <default>false</default>
+                <label>Wrong buyer relationship</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Price to Value (Closed Lost)</controllingFieldValue>
+            <valueName>Better solution, not worth the price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Price to Value (Closed Lost)</controllingFieldValue>
+            <valueName>BGS/Services cost too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Price to Value (Closed Lost)</controllingFieldValue>
+            <controllingFieldValue>Price to Value (Closed Won)</controllingFieldValue>
+            <controllingFieldValue>Relationship (Closed Lost)</controllingFieldValue>
+            <controllingFieldValue>Relationship (Closed Won)</controllingFieldValue>
+            <controllingFieldValue>Technology or Capability (Closed Lost)</controllingFieldValue>
+            <controllingFieldValue>Technology or Capability (Closed Won)</controllingFieldValue>
+            <controllingFieldValue>External Factor</controllingFieldValue>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Price to Value (Closed Lost)</controllingFieldValue>
+            <valueName>Similar solution, not the best price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Price to Value (Closed Won)</controllingFieldValue>
+            <valueName>Better solution, worth the price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Price to Value (Closed Won)</controllingFieldValue>
+            <valueName>Similar solution, won on price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Lost)</controllingFieldValue>
+            <valueName>Challenging customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Lost)</controllingFieldValue>
+            <valueName>Contact not the ultimate buyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Lost)</controllingFieldValue>
+            <valueName>Non-responsive contact / Decision maker left</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Lost)</controllingFieldValue>
+            <valueName>Poor buyer experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Lost)</controllingFieldValue>
+            <valueName>Unable to come to legal or contractual terms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Lost)</controllingFieldValue>
+            <valueName>Wrong buyer relationship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Won)</controllingFieldValue>
+            <valueName>Brightcove used on other teams in organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Won)</controllingFieldValue>
+            <valueName>Executive or board level relationships</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Won)</controllingFieldValue>
+            <valueName>Prior experience with Brightcove (didn&#39;t consider alternatives)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relationship (Closed Won)</controllingFieldValue>
+            <valueName>Trusted sales advisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Correction</controllingFieldValue>
+            <valueName>Salesforce Correction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Lost)</controllingFieldValue>
+            <valueName>Lack of solution completeness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Lost)</controllingFieldValue>
+            <valueName>Missing tablestakes feature/unable to serve use case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Lost)</controllingFieldValue>
+            <valueName>Too difficult to onboard or switch from existing solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Lost)</controllingFieldValue>
+            <valueName>Uncompetitive feature set</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Won)</controllingFieldValue>
+            <valueName>BGS/Services ability to create a highly custom solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Won)</controllingFieldValue>
+            <valueName>Integrated into our tech stack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Won)</controllingFieldValue>
+            <valueName>Only one who could solve the problem / uniquely able to solve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Won)</controllingFieldValue>
+            <valueName>Reliability/Scalability/Customer Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology or Capability (Closed Won)</controllingFieldValue>
+            <valueName>Solution completeness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Priority or Budget</controllingFieldValue>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>Insufficient ROI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Priority or Budget</controllingFieldValue>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>Video budget is not a priority</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Factor</controllingFieldValue>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>Change of company control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External Factor</controllingFieldValue>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>Company-wide budget freezes or RIFS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not a Brightcove Priority</controllingFieldValue>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>Expected deal size is too small</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>Customer non-payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Change</controllingFieldValue>
+            <valueName>M&amp;A</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

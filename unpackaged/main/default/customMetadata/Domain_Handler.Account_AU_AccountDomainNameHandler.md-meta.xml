@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Account AU AccountDomainNameHandler</label>
+    <protected>false</protected>
+    <values>
+        <field>Handler_Class__c</field>
+        <value xsi:type="xsd:string">AccountDomainNameHandler</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">9999.0</value>
+    </values>
+    <values>
+        <field>SObject_Name__c</field>
+        <value xsi:type="xsd:string">Account</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">Active</value>
+    </values>
+    <values>
+        <field>Trigger_Event__c</field>
+        <value xsi:type="xsd:string">AFTER_UPDATE</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Region__c</fullName>
+    <description>User&#39;s region in CS Department (if applicable). Used for reports and tracking.</description>
+    <label>CS Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>APAC - Chennai</fullName>
+                <default>false</default>
+                <label>APAC - Chennai</label>
+            </value>
+            <value>
+                <fullName>APAC - Korea</fullName>
+                <default>false</default>
+                <label>APAC - Korea</label>
+            </value>
+            <value>
+                <fullName>APAC - Sydney</fullName>
+                <default>false</default>
+                <label>APAC - Sydney</label>
+            </value>
+            <value>
+                <fullName>EMEA - London</fullName>
+                <default>false</default>
+                <label>EMEA - London</label>
+            </value>
+            <value>
+                <fullName>JAPAN - Japan</fullName>
+                <default>false</default>
+                <label>JAPAN - Japan</label>
+            </value>
+            <value>
+                <fullName>NA - GDL</fullName>
+                <default>false</default>
+                <label>NA - GDL</label>
+            </value>
+            <value>
+                <fullName>NA - Scottsdale</fullName>
+                <default>false</default>
+                <label>NA - Scottsdale</label>
+            </value>
+            <value>
+                <fullName>NA - US</fullName>
+                <default>false</default>
+                <label>NA - US</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+.borderedDivs {
+    border: solid rgb(212, 212, 212) 1px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border-radius: 2.5px;
+}
+
+.nonBorderedDivs {
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border-radius: 2.5px;
+}

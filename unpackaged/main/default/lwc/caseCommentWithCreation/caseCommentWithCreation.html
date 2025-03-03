@@ -1,0 +1,21 @@
+<template>
+    <lightning-button label={label.refresh} title="Non-primary action" onclick={handleClick}
+        class="slds-m-left_x-small"></lightning-button>
+    <template for:each={comments.data} for:item="comment">
+        <lightning-card key={comment.cComment.id}>
+            <h3 slot="title">
+                <lightning-icon icon-name="action:description" size="small"></lightning-icon>
+                {comment.commentCreator}
+            </h3>
+            <p class="slds-p-horizontal_small">{comment.commentText}</p>
+            <div slot="footer">
+                <template if:true={comment.hasRelatedAttachmentID}>
+                    <lightning-formatted-url value={comment.relatedAttachmentID} label={label.viewAttachment}
+                        target="_blank"></lightning-formatted-url>&nbsp;|&nbsp;
+                    <lightning-button name="delete" label={label.deleteAttachmentLabel} onclick={deleteAttachmentjs}
+                        data-recordid={comment.attachmentID}> </lightning-button>
+                </template>
+            </div>
+        </lightning-card>
+    </template>
+</template>

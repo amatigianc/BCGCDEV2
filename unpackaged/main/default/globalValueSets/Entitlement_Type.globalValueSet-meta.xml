@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>24/7 Live Streaming Channel</fullName>
+        <default>false</default>
+        <label>24/7 Live Streaming Channel</label>
+    </customValue>
+    <customValue>
+        <fullName>Active Subscribers</fullName>
+        <default>false</default>
+        <label>Active Subscribers</label>
+    </customValue>
+    <customValue>
+        <fullName>Active Viewers</fullName>
+        <default>false</default>
+        <label>Active Viewers</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto-Captioning Minutes</fullName>
+        <default>false</default>
+        <label>Auto-Captioning Minutes</label>
+    </customValue>
+    <customValue>
+        <fullName>Bandwidth</fullName>
+        <default>false</default>
+        <label>Bandwidth</label>
+    </customValue>
+    <customValue>
+        <fullName>CloudPlayout Channel</fullName>
+        <default>false</default>
+        <label>CloudPlayout Channel</label>
+    </customValue>
+    <customValue>
+        <fullName>DRM Licenses</fullName>
+        <default>false</default>
+        <label>DRM Licenses</label>
+    </customValue>
+    <customValue>
+        <fullName>DRM License Serving - Tier 2</fullName>
+        <default>false</default>
+        <label>DRM License Serving - Tier 2</label>
+    </customValue>
+    <customValue>
+        <fullName>IRIS.TV Streams</fullName>
+        <default>false</default>
+        <label>IRIS.TV Streams</label>
+    </customValue>
+    <customValue>
+        <fullName>Live Event Hours</fullName>
+        <default>false</default>
+        <label>Live Event Hours</label>
+    </customValue>
+    <customValue>
+        <fullName>Live Hours</fullName>
+        <default>false</default>
+        <label>Live Hours</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed Content</fullName>
+        <default>false</default>
+        <label>Managed Content</label>
+    </customValue>
+    <customValue>
+        <fullName>Minutes Out</fullName>
+        <default>false</default>
+        <label>Minutes Out</label>
+    </customValue>
+    <customValue>
+        <fullName>Origin Serving</fullName>
+        <default>false</default>
+        <label>Origin Serving</label>
+    </customValue>
+    <customValue>
+        <fullName>Player Only Streams</fullName>
+        <default>false</default>
+        <label>Player Only Streams</label>
+    </customValue>
+    <customValue>
+        <fullName>Plays (Marketing Studio)</fullName>
+        <default>false</default>
+        <label>Plays (Marketing Studio)</label>
+    </customValue>
+    <customValue>
+        <fullName>Plays (Media Studio)</fullName>
+        <default>false</default>
+        <label>Plays (Media Studio)</label>
+    </customValue>
+    <customValue>
+        <fullName>SSAI - Streams</fullName>
+        <default>false</default>
+        <label>SSAI - Streams</label>
+    </customValue>
+    <customValue>
+        <fullName>Storage</fullName>
+        <default>false</default>
+        <label>Storage</label>
+    </customValue>
+    <customValue>
+        <fullName>Subscribers</fullName>
+        <default>false</default>
+        <label>Subscribers</label>
+    </customValue>
+    <customValue>
+        <fullName>Transcoding</fullName>
+        <default>false</default>
+        <label>Transcoding</label>
+    </customValue>
+    <customValue>
+        <fullName>Viewers</fullName>
+        <default>false</default>
+        <label>Viewers</label>
+    </customValue>
+    <customValue>
+        <fullName>Event-Based Interactivity</fullName>
+        <default>false</default>
+        <label>Event-Based Interactivity</label>
+    </customValue>
+    <customValue>
+        <fullName>QOE</fullName>
+        <default>false</default>
+        <label>QOE</label>
+    </customValue>
+    <customValue>
+        <fullName>Devices</fullName>
+        <default>false</default>
+        <label>Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>Participants</fullName>
+        <default>false</default>
+        <label>Participants</label>
+    </customValue>
+    <customValue>
+        <fullName>FAST Bandwidth</fullName>
+        <default>false</default>
+        <label>FAST Bandwidth</label>
+    </customValue>
+    <customValue>
+        <fullName>FAST SSAI</fullName>
+        <default>false</default>
+        <label>FAST SSAI</label>
+    </customValue>
+    <customValue>
+        <fullName>Frameformer Minutes</fullName>
+        <default>false</default>
+        <label>Frameformer Minutes</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed Users</fullName>
+        <default>false</default>
+        <label>Managed Users</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery Subscribers</fullName>
+        <default>false</default>
+        <label>Discovery Subscribers</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery Streams</fullName>
+        <default>false</default>
+        <label>Discovery Streams</label>
+    </customValue>
+    <customValue>
+        <fullName>Monthly Active User</fullName>
+        <default>false</default>
+        <label>Monthly Active User</label>
+    </customValue>
+    <customValue>
+        <fullName>Plays</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Plays</label>
+    </customValue>
+    <masterLabel>Entitlement Type</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

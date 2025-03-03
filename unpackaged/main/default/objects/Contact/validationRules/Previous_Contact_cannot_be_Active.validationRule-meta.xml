@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Contact_cannot_be_Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>Previous_Contact__r.Active__c =true</errorConditionFormula>
+    <errorDisplayField>Previous_Contact__c</errorDisplayField>
+    <errorMessage>The Previous Contact record that was selected is still Active.  Please deactivate that Contact before assigning it as the Previous Contact.</errorMessage>
+</ValidationRule>

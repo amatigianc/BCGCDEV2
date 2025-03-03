@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRR_Commit_cannot_exceed_Existing_MRR</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+(ROUND(MRR_Commit__c, 2) &gt; ROUND(Existing_MRR__c, 2)),
+/*MRR_Commit__c &gt; Existing_MRR__c, JP 05-12: put round logic back in to prevent errors*/
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>MRR_Commit__c</errorDisplayField>
+    <errorMessage>MRR Commit cannot exceed Existing MRR</errorMessage>
+</ValidationRule>

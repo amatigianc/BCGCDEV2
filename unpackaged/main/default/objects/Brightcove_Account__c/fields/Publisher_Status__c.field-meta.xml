@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publisher_Status__c</fullName>
+    <description>Current status of the publisher&#39;s account.</description>
+    <inlineHelpText>Current status of the publisher&#39;s account. Updated via sync from origin-services account.</inlineHelpText>
+    <label>Publisher Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>APPROVED</fullName>
+                <default>false</default>
+                <label>APPROVED</label>
+            </value>
+            <value>
+                <fullName>UNREQUESTED</fullName>
+                <default>false</default>
+                <label>UNREQUESTED</label>
+            </value>
+            <value>
+                <fullName>PENDING</fullName>
+                <default>false</default>
+                <label>PENDING</label>
+            </value>
+            <value>
+                <fullName>ENROLLED</fullName>
+                <default>false</default>
+                <label>ENROLLED</label>
+            </value>
+            <value>
+                <fullName>DENIED</fullName>
+                <default>false</default>
+                <label>DENIED</label>
+            </value>
+            <value>
+                <fullName>CLOSED</fullName>
+                <default>false</default>
+                <label>CLOSED</label>
+            </value>
+            <value>
+                <fullName>LOCKED</fullName>
+                <default>false</default>
+                <label>LOCKED</label>
+            </value>
+            <value>
+                <fullName>LOCKED_NON_PAYMENT</fullName>
+                <default>false</default>
+                <label>LOCKED_NON_PAYMENT</label>
+            </value>
+            <value>
+                <fullName>LOCKED_TRIAL_EXPIRED</fullName>
+                <default>false</default>
+                <label>LOCKED_TRIAL_EXPIRED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

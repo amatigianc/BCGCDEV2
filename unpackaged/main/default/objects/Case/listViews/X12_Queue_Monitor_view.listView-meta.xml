@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X12_Queue_Monitor_view</fullName>
+    <booleanFilter>((6 AND 4) OR (4 AND 5) OR (3) OR (8 AND 6)OR (9 AND 6)) AND 1 AND 7 AND 2 And 10</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Case_Title__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>First_Response__c</columns>
+    <columns>SLA_due_Date_Time__c</columns>
+    <columns>Support_Package__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Case_Owner_full_name__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Incoming_email_count__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>New_Case_Reason__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Sales_Division__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Technical_Support</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>First_Response__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Support_Package__c</field>
+        <operation>contains</operation>
+        <value>Platinum,Platinum+</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Customer has replied,Closed - Customer has replied</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>contains</operation>
+        <value>Unassigned,Automated Process,T2 Production,T2 Development,Task</value>
+    </filters>
+    <filters>
+        <field>Case_Owner_full_name__c</field>
+        <operation>notContain</operation>
+        <value>Higel,Amati</value>
+    </filters>
+    <filters>
+        <field>New_Case_Reason__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Incoming_email_count__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>notEqual</operation>
+        <value>[Postmaster] Email Delivery Failure</value>
+    </filters>
+    <label>12 - Queue Monitor view</label>
+    <sharedTo>
+        <role>Technical_Support_Manager</role>
+        <role>Technical_Support_Rep</role>
+    </sharedTo>
+</ListView>

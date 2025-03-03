@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Role__c</fullName>
+    <description>User&#39;s role in CS Department (if applicable). Used for reports and tracking.</description>
+    <label>CS Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>CSR</fullName>
+                <default>false</default>
+                <label>CSR</label>
+            </value>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2 Production</fullName>
+                <default>false</default>
+                <label>Tier 2 Production</label>
+            </value>
+            <value>
+                <fullName>Tier 2 Development</fullName>
+                <default>false</default>
+                <label>Tier 2 Development</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Tier 3</fullName>
+                <default>false</default>
+                <label>Tier 3</label>
+            </value>
+            <value>
+                <fullName>NOC</fullName>
+                <default>false</default>
+                <label>NOC</label>
+            </value>
+            <value>
+                <fullName>Manager NOC</fullName>
+                <default>false</default>
+                <label>Manager NOC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Language_Code__c</fullName>
+    <description>This Code is based on Language field.  It is to be used in trigger to determine email template version.</description>
+    <externalId>false</externalId>
+    <formula>CASE( Language__c ,
+&#39;English&#39;, &#39;EN&#39;,
+&#39;French&#39;, &#39;FR&#39;,
+&#39;German&#39;, &#39;GE&#39;,
+&#39;Italian&#39;, &#39;IT&#39;,
+&#39;Spanish&#39;, &#39;SP&#39;,
+&#39;Korean&#39;, &#39;KO&#39;,
+&#39;Japanese&#39;, &#39;JA&#39;,
+&#39;Catalan&#39;, &#39;CA&#39;,
+&#39;&#39;
+)</formula>
+    <label>Language Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Memo_Next_Steps_is_Required</fullName>
+    <active>true</active>
+    <description>This validation rule makes Call Memo/Next Steps a required field.</description>
+    <errorConditionFormula>AND(
+    $UserRole.Id &lt;&gt; &quot;00E30000000xue0&quot;,
+    LEN( Call_Memo_Next_Steps__c ) = 0
+)</errorConditionFormula>
+    <errorDisplayField>Call_Memo_Next_Steps__c</errorDisplayField>
+    <errorMessage>The Call Memo/Next Steps field is required.</errorMessage>
+</ValidationRule>

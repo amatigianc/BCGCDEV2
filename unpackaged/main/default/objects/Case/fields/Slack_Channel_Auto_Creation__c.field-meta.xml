@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Slack_Channel_Auto_Creation__c</fullName>
+    <description>This case will get an slack channel automatically created if the value is true</description>
+    <formula>Account.Support_Slack_Channel_Auto_Creation__c</formula>
+    <label>Support Slack Channel Auto Creation</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

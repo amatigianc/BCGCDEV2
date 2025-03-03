@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brightcove_to_Kollective_Sync__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ONLY for Kollective. Review that the video has been synchronized from Brightcove to Kollective using the syndication app</description>
+    <inlineHelpText>ONLY for Kollective. Review that the video has been synchronized from Brightcove to Kollective using the syndication app</inlineHelpText>
+    <label>Brightcove to Kollective Sync</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

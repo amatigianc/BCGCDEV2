@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotesOnWinLossRequired</fullName>
+    <active>true</active>
+    <description>The &#39;Notes on win / loss&#39; is alwasy required</description>
+    <errorConditionFormula>AND(
+
+OR(ISPICKVAL(StageName, &quot;Closed Won&quot;),
+ISPICKVAL(StageName, &quot;Closed Lost&quot;)
+),
+
+ISBLANK( Notes_reason_win_loss__c ),
+$User.Id &lt;&gt; &quot;0058c00000COTSE&quot;, /*Lorena Zenovei Kimble team*/
+$UserRole.Name &lt;&gt; &quot;Salesforce Team&quot;
+,
+NOT ( $Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>Notes_reason_win_loss__c</errorDisplayField>
+    <errorMessage>Notes Reason on Win Loss: this field is required before closing the opportunity. If it doesn&#39;t apply please use N/A</errorMessage>
+</ValidationRule>

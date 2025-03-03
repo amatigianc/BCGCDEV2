@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketplace_Contract_Type__c</fullName>
+    <description>Indicates the highest level of contract a partner in the Marketplace has engaged in with Brightcove.  The contract should be linked to in the Partner Contract URL field.</description>
+    <label>Marketplace Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketplace Partner Technology Agreement</fullName>
+                <default>true</default>
+                <label>Marketplace Partner Technology Agreement</label>
+            </value>
+            <value>
+                <fullName>Marketplace Brightcove to Partner Referral</fullName>
+                <default>false</default>
+                <label>Marketplace Brightcove to Partner Referral</label>
+            </value>
+            <value>
+                <fullName>Marketplace Bi-Lateral Referral Addendum</fullName>
+                <default>false</default>
+                <label>Marketplace Bi-Lateral Referral Addendum</label>
+            </value>
+            <value>
+                <fullName>Marketplace Resold Partner Addendum</fullName>
+                <default>false</default>
+                <label>Marketplace Resold Partner Addendum</label>
+            </value>
+            <value>
+                <fullName>Product OEM/White-Label Technology Agreement</fullName>
+                <default>false</default>
+                <label>Product OEM/White-Label Technology Agreement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

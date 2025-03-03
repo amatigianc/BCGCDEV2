@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Round_Sync_Price__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If checked and Sync Currencies is selected the pricing for non USD records will be rounded based on system settings. These can be adjusted under the Price Rounding Custom Metadata Type.</inlineHelpText>
+    <label>Round Sync Price</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

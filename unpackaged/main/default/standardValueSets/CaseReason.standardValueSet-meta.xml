@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Access</fullName>
+        <default>false</default>
+        <label>Access</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Account - General</fullName>
+        <default>false</default>
+        <label>Account - General</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Settings</fullName>
+        <default>false</default>
+        <label>Account Settings</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Settings - AI</fullName>
+        <default>false</default>
+        <label>Account Settings - AI</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Settings - ZC</fullName>
+        <default>false</default>
+        <label>Account Settings - ZC</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Administration</fullName>
+        <default>false</default>
+        <label>Administration</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Administration - ZC</fullName>
+        <default>false</default>
+        <label>Administration - ZC</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Advertising</fullName>
+        <default>false</default>
+        <label>Advertising</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Analytics and Billing</fullName>
+        <default>false</default>
+        <label>Analytics and Billing</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>API and Custom Dev</fullName>
+        <default>false</default>
+        <label>API and Custom Dev</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>API and Custom Dev - ZC</fullName>
+        <default>false</default>
+        <label>API and Custom Dev - ZC</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Audience</fullName>
+        <default>false</default>
+        <label>Audience</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Audio/Video Quality</fullName>
+        <default>false</default>
+        <label>Audio/Video Quality</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Beacon</fullName>
+        <default>false</default>
+        <label>Beacon</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Brightcove Campaign</fullName>
+        <default>false</default>
+        <label>Brightcove Campaign</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Brightcove Engage</fullName>
+        <default>false</default>
+        <label>Brightcove Engage</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Brightcove Live</fullName>
+        <default>false</default>
+        <label>Brightcove Live</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cloud Playout</fullName>
+        <default>false</default>
+        <label>Cloud Playout</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Content Delivery</fullName>
+        <default>false</default>
+        <label>Content Delivery</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>CS - Documentation (CS site/ Localization)</fullName>
+        <default>false</default>
+        <label>CS - Documentation (CS site/ Localization)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>CS Portal</fullName>
+        <default>false</default>
+        <label>CS Portal</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Custom Domain/SSL</fullName>
+        <default>false</default>
+        <label>Custom Domain/SSL</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Discovery</fullName>
+        <default>false</default>
+        <label>Discovery</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Distribution (Social)</fullName>
+        <default>false</default>
+        <label>Distribution (Social)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Encoding Settings</fullName>
+        <default>false</default>
+        <label>Encoding Settings</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Engagement Data</fullName>
+        <default>false</default>
+        <label>Engagement Data</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Enhancement Request</fullName>
+        <default>false</default>
+        <label>Enhancement Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>File Transfers</fullName>
+        <default>false</default>
+        <label>File Transfers</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Gallery</fullName>
+        <default>false</default>
+        <label>Gallery</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ingestion</fullName>
+        <default>false</default>
+        <label>Ingestion</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Job Failures</fullName>
+        <default>false</default>
+        <label>Job Failures</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Live Event Coverage</fullName>
+        <default>false</default>
+        <label>Live Event Coverage</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Live NOC</fullName>
+        <default>false</default>
+        <label>Live NOC</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Live Streaming (Akamai Legacy/Manual)</fullName>
+        <default>false</default>
+        <label>Live Streaming (Akamai Legacy/Manual)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Metadata</fullName>
+        <default>false</default>
+        <label>Metadata</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Migration</fullName>
+        <default>false</default>
+        <label>Migration</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Missing Data</fullName>
+        <default>false</default>
+        <label>Missing Data</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Mobile Development</fullName>
+        <default>false</default>
+        <label>Mobile Development</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New problem</fullName>
+        <default>false</default>
+        <label>New problem</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>OTT Flow</fullName>
+        <default>false</default>
+        <label>OTT Flow</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Playback</fullName>
+        <default>false</default>
+        <label>Playback</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Playback Restrictions</fullName>
+        <default>false</default>
+        <label>Playback Restrictions</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reports/Exports/Segments</fullName>
+        <default>false</default>
+        <label>Reports/Exports/Segments</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Retail Integrations</fullName>
+        <default>false</default>
+        <label>Retail Integrations</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Studio</fullName>
+        <default>false</default>
+        <label>Studio</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Support Operations</fullName>
+        <default>false</default>
+        <label>Support Operations</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Support Portal</fullName>
+        <default>false</default>
+        <label>Support Portal</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>TV App Agency</fullName>
+        <default>false</default>
+        <label>TV App Agency</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Video.js</fullName>
+        <default>false</default>
+        <label>Video.js</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Virtual Events</fullName>
+        <default>false</default>
+        <label>Virtual Events</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Player</fullName>
+        <default>false</default>
+        <label>Web Player</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Websites</fullName>
+        <default>false</default>
+        <label>Websites</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

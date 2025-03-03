@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disqualifed_Requires_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(StageName, &quot;0 - Disqualified&quot;) &amp;&amp; ISPICKVAL(Qualified_Out_Reason__c, &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Qualified_Out_Reason__c</errorDisplayField>
+    <errorMessage>A Qualified Out Reason must be selected to mark the Opportunity Stage as Disqualified.</errorMessage>
+</ValidationRule>

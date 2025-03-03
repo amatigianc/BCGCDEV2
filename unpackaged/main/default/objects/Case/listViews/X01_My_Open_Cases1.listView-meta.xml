@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X01_My_Open_Cases1</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Case_Title__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Support_Package__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>Case_Age_days__c</columns>
+    <columns>Days_since_last_email_sent_2__c</columns>
+    <columns>JIRA_Key__c</columns>
+    <columns>JIRA_Status__c</columns>
+    <columns>Case_Close_Summary__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>01 - My Open Cases</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Technical_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Technical_Support_Rep</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

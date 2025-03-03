@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_won_requires_Solution_Document</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ OR(RecordType.DeveloperName = &#39;New_Business&#39;, RecordType.DeveloperName = &#39;Add_On&#39;
+),
+ ISPICKVAL( StageName , &#39;Closed Won&#39;),
+ ISBLANK(Solution_Document__c) ,
+$User.Id &lt;&gt; &quot;0058c00000COTSE&quot;, /*Lorena Zenovei Kimble team*/
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>Solution_Document__c</errorDisplayField>
+    <errorMessage>Solution Document must be complete before Closed Won</errorMessage>
+</ValidationRule>

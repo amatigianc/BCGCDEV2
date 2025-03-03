@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_Project_managed_effectively__c</fullName>
+    <description>KM:  Content Migration survey pushed from ClickTools</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How would you rate the following for your Content Migration Project:
+Project was managed effectively</inlineHelpText>
+    <label>CM Project managed effectively</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

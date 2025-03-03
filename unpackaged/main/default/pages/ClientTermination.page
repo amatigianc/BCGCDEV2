@@ -1,0 +1,257 @@
+<apex:page showHeader="false" standardController="Opportunity" extensions="ClientTerminationController" sidebar="false" >
+     <style>
+    .producterror { color: red; font-weight: strong;}
+    </style>
+
+    <apex:sectionHeader title="{!title}"/>
+    <apex:form id="formId" >
+        <apex:messages styleClass="producterror" /> 
+        <apex:pageblock mode="edit" >
+            <apex:pageblocksection title="Request Information">
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Requester" />
+                    <apex:outputtext value="{!accountManagerName}"/>
+                </apex:pageBlockSectionitem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Termination Rights" />
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:inputField value="{!opp.Client_Termination_Rights__c}" required="true"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>                
+                
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Account" />
+                    <apex:outputtext value="{!opp.Account.Name}"/>
+                </apex:pageBlockSectionitem>
+                                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Termination Type" />
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:inputField value="{!opp.Termination_Type__c}" required="true"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>  
+
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Account Owner" />
+                    <apex:outputText value="{!opp.Account.Owner.Name}" id="ownerfieldOutput1"/>
+                </apex:pageBlockSectionitem> 
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Request Narrative for Finance Review" />
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:inputField value="{!opp.Request_Narrative_for_Finance_Review__c}" required="true"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Opportunity" />
+                    <apex:outputtext value="{!opp.name}"/>
+                </apex:pageBlockSectionitem> 
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Notification Date" />
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:inputField value="{!opp.Client_Termination_Date__c}" required="true"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Opportunity Owner" />
+                    <apex:outputText value="{!opp.Owner.Name}" id="ownerfieldOutput2"/>
+                </apex:pageBlockSectionitem> 
+
+                <apex:pageBlockSectionItem helpText="{!$ObjectType.Opportunity.Fields.Deactivation_Date__c.inlineHelpText}">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.Deactivation_Date__c.label}" />
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:inputField value="{!opp.Deactivation_Date__c}" required="true"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Existing MRR" />
+                    <apex:outputtext value="{!opp.Existing_MRR__c}"/>
+                </apex:pageBlockSectionitem> 
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Effective Date" />
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:inputField value="{!opp.Effective_Date__c}" required="true"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>              
+
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Close Date" />
+                    <apex:outputText value="{0, date,  MM/dd/yyyy}" >
+                        <apex:param value="{!opp.CloseDate}" />
+                    </apex:outputText>
+                </apex:pageBlockSectionitem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Contract URL" />
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                        <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                        <apex:inputField value="{!opp.Contract_URL__c}" required="true"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem> 
+                
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Reason for Win/Loss" />
+                    <apex:outputtext value="{!opp.Reason_for_Win_Loss__c}"/>
+                </apex:pageBlockSectionitem> 
+                <apex:pageBlockSectionItem />
+                
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Sub-Reason for Win/Los" />
+                    <apex:outputtext value="{!opp.SubReason_for_winloss__c}"/>
+                </apex:pageBlockSectionitem> 
+                <apex:pageBlockSectionItem />
+                
+               <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Won/Lost Against" />
+                    <apex:outputtext value="{!opp.Won_Lost_Against__c}"/>
+                </apex:pageBlockSectionitem>                 
+                <apex:pageBlockSectionItem />
+                
+               <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="Won/Lost Story" />
+                    <apex:outputtext value="{!opp.Won_Lost_Story__c}"/>
+                </apex:pageBlockSectionitem> 
+                <apex:pageBlockSectionItem />       
+            </apex:pageblocksection>
+        </apex:pageblock>
+
+        <apex:outputPanel >
+        <apex:pageblock mode="edit">
+            <apex:actionRegion >
+            <apex:pageblocksection title="BC Accounts Information" columns="1">
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel value="          " />
+                <apex:panelGrid columns="3" id="BCAccount1">
+                     <apex:panelGroup >
+                         <apex:outputLabel style="font-weight:bold" value="Available BC Accounts" />
+                          <br/>
+                        <apex:selectList label="Available BC Accounts" id="sel1" value="{!selectedBCAccountIds}" multiselect="true" style="width:250px" size="5">
+                            <apex:selectOptions value="{!AvailableBCAccounts}" />
+                        </apex:selectList>
+                    </apex:panelGroup>
+                    <apex:panelGroup >
+                        <br/> <br/>
+                       
+                        <apex:commandLink action="{!add}" reRender="BCAccount1">
+                            <img src="/s.gif" alt="Add" class="picklistArrowRight" id="arrow1" style="cursor:pointer;" title="Add"/>
+                        </apex:commandLink>
+                        <br/>
+                        <apex:commandLink action="{!remove}" reRender="BCAccount1">
+                            <img src="/s.gif" alt="Remove" class="picklistArrowLeft" id="arrow2" style="cursor:pointer;" title="Remove"/>        
+                        </apex:commandLink>
+                    
+                    </apex:panelGroup>
+                    
+                    <apex:panelGroup >
+                        <apex:outputLabel style="font-weight:bold" value="BC Accounts for Termination" />
+                            <br/>
+                        <apex:selectList label="BC Accounts for Termination" id="sel2" value="{!removedBCAccountIds}" multiselect="true" style="width:250px" size="5">
+                            <apex:selectOptions value="{!SelectedBCAccounts}" />
+                        </apex:selectList>
+                    </apex:panelGroup>
+                </apex:panelGrid>       
+                </apex:pageBlockSectionItem> 
+            </apex:pageblocksection>
+        </apex:actionRegion>
+        </apex:pageblock>
+        </apex:outputPanel>
+
+        <apex:outputPanel >
+        <apex:pageblock mode="edit">
+            <apex:actionRegion >
+            <apex:pageblocksection title="Contract(s) to Terminate" columns="1">
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel value="          " />
+                <apex:panelGrid columns="3" id="ContractsToTerminateId">
+                     <apex:panelGroup >
+                         <apex:outputLabel style="font-weight:bold" value="Available Contracts" />
+                          <br/>
+                        <apex:selectList label="Available Contracts" id="sel1" value="{!selectedContractIds}" multiselect="true" style="width:250px" size="5">
+                            <apex:selectOptions value="{!AvailableContracts}" />
+                        </apex:selectList>
+                    </apex:panelGroup>
+                    <apex:panelGroup >
+                        <br/> <br/>
+                        <apex:commandLink action="{!addContracts}" reRender="ContractsToTerminateId">
+                            <img src="/s.gif" alt="Add" class="picklistArrowRight" id="arrow1" style="cursor:pointer;" title="Add"/>
+                        </apex:commandLink>
+                        <br/>
+                        <apex:commandLink action="{!removeContracts}" reRender="ContractsToTerminateId">
+                            <img src="/s.gif" alt="Remove" class="picklistArrowLeft" id="arrow2" style="cursor:pointer;" title="Remove"/>        
+                        </apex:commandLink>
+                    </apex:panelGroup>
+                    <apex:panelGroup >
+                        <apex:outputLabel style="font-weight:bold" value="Contracts for Termination" />
+                            <br/>
+                        <apex:selectList label="Contracts for Termination" id="sel2" value="{!removedContractIds}" multiselect="true" style="width:250px" size="5">
+                            <apex:selectOptions value="{!SelectedContracts}" />
+                        </apex:selectList>
+                    </apex:panelGroup>
+                </apex:panelGrid>       
+                </apex:pageBlockSectionItem> 
+            </apex:pageblocksection>
+        </apex:actionRegion>
+        </apex:pageblock>
+        </apex:outputPanel>
+        
+        <div align="center">
+            <apex:actionStatus id="saveStatus" onstop="closeAndRefreshparent('{!parentURL}','{!confirmMode}');">
+                <apex:facet name="stop">
+                    <apex:commandButton value="Save" action="{!saveClientTermination}" rerender="formId" status="saveStatus"/>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:outputtext value="In progress ..." />
+                    <apex:outputPanel >
+                       <apex:image value="/img/loading32.gif" style="height: 15px;"/>
+                       <apex:commandButton value="Processing..." status="saveStatus" disabled="true"/>
+                    </apex:outputPanel>
+               </apex:facet>
+            </apex:actionStatus>            
+            &nbsp;
+            <apex:commandButton value="Cancel" action="{!cancel}" />
+        </div>
+    </apex:form>
+
+    <script type="text/javascript">
+        
+        
+        function closeAndRefreshparent(parentWindowUrl, confirmMode){
+            //alert(parentWindowUrl);
+            if(confirmMode == false){
+                return;
+            }
+
+            if(confirmMode == 'true'){
+                window.top.close();
+                window.opener.location.href= parentWindowUrl;
+                window.opener.location.reload();
+                //window.top.close();
+                var win = window.open('','_parent','');
+                win.close();
+            }
+        }
+                
+        function confirmCancel() {
+             var winMain=window.opener;
+              if (null==winMain)
+              {
+                 winMain=window.parent.opener;
+              }
+              winMain.closePopup();
+              return true;
+        }  
+    </script>
+
+</apex:page>

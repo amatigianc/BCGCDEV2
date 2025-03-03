@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOW_Needed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Please select this box a SOW will be needed in order to close this deal</inlineHelpText>
+    <label>SOW Needed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

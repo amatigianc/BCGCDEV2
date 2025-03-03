@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Type__c</fullName>
+    <description>What type of opportunity is this?</description>
+    <inlineHelpText>New Business = brand new logo
+
+Upgrade = upgrading an Express customer to higher edition
+
+Add-on = selling to existing customer
+
+Renewal = existing deal renewed at end of its term
+
+Early Renewal = existing deal renewed before current term is up</inlineHelpText>
+    <label>Deal Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Add-On</fullName>
+                <default>false</default>
+                <label>Add-On</label>
+            </value>
+            <value>
+                <fullName>Debook</fullName>
+                <default>false</default>
+                <label>Debook</label>
+            </value>
+            <value>
+                <fullName>Early Renewal</fullName>
+                <default>false</default>
+                <label>Early Renewal</label>
+            </value>
+            <value>
+                <fullName>New Business</fullName>
+                <default>false</default>
+                <label>New Business</label>
+            </value>
+            <value>
+                <fullName>Renewal</fullName>
+                <default>false</default>
+                <label>Renewal</label>
+            </value>
+            <value>
+                <fullName>Renewal Growth</fullName>
+                <default>false</default>
+                <label>Renewal Growth</label>
+            </value>
+            <value>
+                <fullName>Services Record Type</fullName>
+                <default>false</default>
+                <label>Services Record Type</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

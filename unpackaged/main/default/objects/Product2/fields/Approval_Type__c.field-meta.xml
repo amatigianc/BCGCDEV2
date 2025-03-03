@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Type__c</fullName>
+    <label>Approval Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accedo One Products</fullName>
+                <default>false</default>
+                <label>Accedo One Products</label>
+            </value>
+            <value>
+                <fullName>Bandwidth Product</fullName>
+                <default>false</default>
+                <label>Bandwidth Product</label>
+            </value>
+            <value>
+                <fullName>Brightcove Global Services (BGS)</fullName>
+                <default>false</default>
+                <label>Brightcove Global Services (BGS)</label>
+            </value>
+            <value>
+                <fullName>Brightcove Product</fullName>
+                <default>false</default>
+                <label>Brightcove Product</label>
+            </value>
+            <value>
+                <fullName>Customer Support Product</fullName>
+                <default>false</default>
+                <label>Customer Support Product</label>
+            </value>
+            <value>
+                <fullName>Custom Priced Product</fullName>
+                <default>false</default>
+                <label>Custom Priced Product</label>
+            </value>
+            <value>
+                <fullName>Third Party Product</fullName>
+                <default>false</default>
+                <label>Third Party Product</label>
+            </value>
+            <value>
+                <fullName>Beacon App</fullName>
+                <default>false</default>
+                <label>Beacon App</label>
+            </value>
+            <value>
+                <fullName>Channel Monitoring</fullName>
+                <default>false</default>
+                <label>Channel Monitoring</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+            <value>
+                <fullName>Gold</fullName>
+                <default>false</default>
+                <label>Gold</label>
+            </value>
+            <value>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+                <label>Platinum</label>
+            </value>
+            <value>
+                <fullName>Platinum Plus</fullName>
+                <default>false</default>
+                <label>Platinum Plus</label>
+            </value>
+            <value>
+                <fullName>Accedo App</fullName>
+                <default>false</default>
+                <label>Accedo App</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

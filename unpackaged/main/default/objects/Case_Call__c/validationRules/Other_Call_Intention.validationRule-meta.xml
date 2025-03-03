@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Call_Intention</fullName>
+    <active>true</active>
+    <description>This validation rule is used to ensure that the &quot;Other&quot; call intention is specified if needed.</description>
+    <errorConditionFormula>AND(
+ $UserRole.Id &lt;&gt; &quot;00E30000000xue0&quot;,
+ ISPICKVAL( Intention_of_the_call__c , &quot;Other&quot;),
+ ISBLANK( Other_Call_Intention__c ) 
+)</errorConditionFormula>
+    <errorMessage>Please specify the call intention</errorMessage>
+</ValidationRule>

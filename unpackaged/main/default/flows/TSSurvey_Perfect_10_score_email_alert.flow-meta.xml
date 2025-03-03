@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>When the CSAT survey has a perfect score of 10 an email alert will go to the managers</description>
+        <name>CSAT_survey_has_a_perfect_score_of_10_an_email_alert_will_go_to_the_man</name>
+        <label>CSAT survey has a perfect score of 10 an email alert will go to the managers</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>TSSurvey__c.When_the_CSAT_survey_has_a_perfect_score_of_10_an_email_alert_will_go_to_the_man</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>TSSurvey_Perfect_5</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TSSurvey__c.When_the_CSAT_survey_has_a_perfect_score_of_10_an_email_alert_will_go_to_the_man</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>TSSurvey - Perfect 5</description>
+        <name>TSSurvey_Perfect_5</name>
+        <label>TSSurvey - Perfect 5</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>TSSurvey__c.TSSurvey_Perfect_5</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>TSSurvey__c.TSSurvey_Perfect_5</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>UserHasBypassValidation</name>
+        <label>UserHasBypassValidation</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CSAT_survey_has_a_perfect_score_of_10_an_email_alert_will_go_to_the_man</targetReference>
+            </connector>
+            <label>NO</label>
+        </rules>
+    </decisions>
+    <description>TSSurvey - Perfect 5 score email alert</description>
+    <environments>Default</environments>
+    <interviewLabel>TSSurvey - Perfect 10 score email alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TSSurvey - Perfect 5 score email alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>UserHasBypassValidation</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Survey_Score_5_pts_scale__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </filters>
+        <object>TSSurvey__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AHC_Rate_Ad_Techs_recommendations__c</fullName>
+    <description>Do you feel that the Ad Tech Manager was able recommend best practices and suggest ways to optimize your use of Brightcove&#39;s advertising features and performance? (1 being Strongly Disagree, 10 being Strongly Agree)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do you feel that the Ad Tech Manager was able recommend best practices and suggest ways to optimize your use of Brightcove&#39;s advertising features and performance? (1 being Strongly Disagree, 10 being Strongly Agree)</inlineHelpText>
+    <label>AHC Rate Ad Techs recommendations</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

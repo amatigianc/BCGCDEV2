@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>LET_Create_live_event_Testing_Rep_JP</name>
+        <label>LET - Create live event Testing Rep (JP)</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>Live_Event_Checklist__c.LET_Create_live_event_Testing_RepJP</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Live_Event_Checklist__c.LET_Create_live_event_Testing_RepJP</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>LET_Create_Live_Event_Testing_Report</name>
+        <label>LET - Create Live Event Testing Report</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <actionName>Live_Event_Checklist__c.LET_Create_Live_Event_Testing_Report</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Live_Event_Checklist__c.LET_Create_Live_Event_Testing_Report</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>isLanguage</name>
+        <label>isLanguage</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>LET_Create_Live_Event_Testing_Report</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Japanese</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Language__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Japanese</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LET_Create_live_event_Testing_Rep_JP</targetReference>
+            </connector>
+            <label>Japanese</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>LiveEventCheckList - CreateReport {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LiveEventCheckList - CreateReport</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>isLanguage</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Live_Event_Testing_Report_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Create Live Event Testing Report</stringValue>
+            </value>
+        </filters>
+        <object>Live_Event_Checklist__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

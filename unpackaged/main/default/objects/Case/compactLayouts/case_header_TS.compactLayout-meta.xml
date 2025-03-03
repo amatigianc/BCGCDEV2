@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>case_header_TS</fullName>
+    <fields>Priority</fields>
+    <fields>Console_Case_Link__c</fields>
+    <fields>Status</fields>
+    <fields>Title__c</fields>
+    <fields>OwnerId</fields>
+    <fields>AccountId</fields>
+    <label>case header TS</label>
+</CompactLayout>

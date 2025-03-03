@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Merge_Review__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is used by the SFDC Team during the instance migration to facilitate merging of account records.  When multiple Customer Accounts with an Account Stage of &quot;Customer&quot; are identified, the business will need to review to determine the primary record for merging.  Setting this value to true will skip any affected records during the scheduled merge process.</description>
+    <label>Pending Merge Review</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Since_Snapshot__c</fullName>
+    <description>Subtracts date of snapshot from current date. This makes is easy to pull snapshots from yesterday or one week ago by filtering by 1 or 7 in this field.</description>
+    <externalId>false</externalId>
+    <formula>TODAY() - Snapshot_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Since Snapshot</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

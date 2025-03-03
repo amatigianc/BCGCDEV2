@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_OEM_Email__c</fullName>
+    <description>KM:  To capture the CS rep (OEM or CSM) email address so an alert can be sent to them when a Survey is submitted by one of their customers.</description>
+    <externalId>false</externalId>
+    <label>CS OEM Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

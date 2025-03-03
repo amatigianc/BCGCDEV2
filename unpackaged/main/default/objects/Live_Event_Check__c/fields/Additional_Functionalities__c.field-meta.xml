@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Functionalities__c</fullName>
+    <defaultValue>(&quot;No issues observed&quot;)</defaultValue>
+    <inlineHelpText>Subtitles, custom workflows, SSAI, etc.</inlineHelpText>
+    <label>Additional Functionalities Performance</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

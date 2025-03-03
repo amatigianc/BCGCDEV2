@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Event_Category__c</fullName>
+    <description>Live Event Category pick the kind of live event</description>
+    <label>Live Event Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commerce - Auction</fullName>
+                <default>false</default>
+                <label>Commerce - Auction</label>
+            </value>
+            <value>
+                <fullName>Commerce - Product Launch</fullName>
+                <default>false</default>
+                <label>Commerce - Product Launch</label>
+            </value>
+            <value>
+                <fullName>Conference - Sales</fullName>
+                <default>false</default>
+                <label>Conference - Sales</label>
+            </value>
+            <value>
+                <fullName>Conference - Religion</fullName>
+                <default>false</default>
+                <label>Conference - Religion</label>
+            </value>
+            <value>
+                <fullName>Conference - Education</fullName>
+                <default>false</default>
+                <label>Conference - Education</label>
+            </value>
+            <value>
+                <fullName>Conference - Technology</fullName>
+                <default>false</default>
+                <label>Conference - Technology</label>
+            </value>
+            <value>
+                <fullName>Conference - Other</fullName>
+                <default>false</default>
+                <label>Conference - Other</label>
+            </value>
+            <value>
+                <fullName>Corporate Meetings</fullName>
+                <default>false</default>
+                <label>Corporate Meetings</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Sports</fullName>
+                <default>false</default>
+                <label>Entertainment - Sports</label>
+            </value>
+            <value>
+                <fullName>Entertainment - eSports</fullName>
+                <default>false</default>
+                <label>Entertainment - eSports</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Music</fullName>
+                <default>false</default>
+                <label>Entertainment - Music</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Cinema</fullName>
+                <default>false</default>
+                <label>Entertainment - Cinema</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Fashion</fullName>
+                <default>false</default>
+                <label>Entertainment - Fashion</label>
+            </value>
+            <value>
+                <fullName>Entertainment - Other</fullName>
+                <default>false</default>
+                <label>Entertainment - Other</label>
+            </value>
+            <value>
+                <fullName>Government - Meeting/Townhall</fullName>
+                <default>false</default>
+                <label>Government - Meeting/Townhall</label>
+            </value>
+            <value>
+                <fullName>NGO - Meeting</fullName>
+                <default>false</default>
+                <label>NGO - Meeting</label>
+            </value>
+            <value>
+                <fullName>News - Politics</fullName>
+                <default>false</default>
+                <label>News - Politics</label>
+            </value>
+            <value>
+                <fullName>News - Event</fullName>
+                <default>false</default>
+                <label>News - Event</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

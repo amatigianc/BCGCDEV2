@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Report</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Create Report</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://hooks.zapier.com/hooks/catch/11225083/baig9x1/?customer_name={!Live_Event_Check__c.Customer_Name__c}&amp;event_name={!Live_Event_Check__c.Name}&amp;format={!Live_Event_Check__c.Format__c}&amp;DRM={!Live_Event_Check__c.DRM__c}&amp;SSAI={!Live_Event_Check__c.SSAI__c}&amp;geo={!Live_Event_Check__c.Geo_Restriction__c}&amp;cloud_playout={!Live_Event_Check__c.Cloud_Playout__c}&amp;event_start={!Live_Event_Check__c.Event_Start_Date_and_Time__c}&amp;event_end={!Live_Event_Check__c.Event_End_Date_and_Time__c}&amp;on_duty={!Live_Event_Check__c.On_Duty__c}&amp;channel_status={!Live_Event_Check__c.Live_Events_all_channels__c}&amp;loop_detection={!Live_Event_Check__c.Looping__c}&amp;disconnections={!Live_Event_Check__c.Source_Stream_Disconnections__c}&amp;failed_job={!Live_Event_Check__c.Failure_of_Live_Jobs_or_Redundancy_Group__c}&amp;additional={!Live_Event_Check__c.Additional_Functionalities__c}&amp;quality_defects={!Live_Event_Check__c.Video_Audio_Quality_Defects__c}&amp;black_screen={!Live_Event_Check__c.Black_Screen_or_Slate_Detection__c}&amp;output_stream={!Live_Event_Check__c.Output_Stream__c}&amp;cdn_performance={!Live_Event_Check__c.CDN_Performance__c}&amp;origin_performance={!Live_Event_Check__c.Origin_Performance_Issues__c}&amp;cdn_regional={!Live_Event_Check__c.CDN_Regional_Performance_Issues__c}&amp;input_drift={!Live_Event_Check__c.Input_Drift_3__c}&amp;output_drift={!Live_Event_Check__c.Output_Drift_12s__c}&amp;drift_notes={!Live_Event_Check__c.Drift_Notes__c}&amp;job_health={!Live_Event_Check__c.Job_Health_0__c}&amp;health_notes={!Live_Event_Check__c.Job_Health_Notes__c}&amp;simulive={!Live_Event_Check__c.Simulive__c}&amp;simulive_exp={!Live_Event_Check__c.Simulive_Experience_Overall__c}&amp;simulive_notes={!Live_Event_Check__c.Simulive_Notes__c}&amp;additional_func={!Live_Event_Check__c.Additional_Functionalities2__c}&amp;clip_completed={!Live_Event_Check__c.Clip_completed_Pass__c}&amp;clip_quality={!Live_Event_Check__c.Clip_quality_similar_to_input_stream__c}&amp;clip_notes={!Live_Event_Check__c.Notes__c}&amp;language={!Live_Event_Check__c.Language__c}&amp;Check_ID={!Live_Event_Check__c.Id}</url>
+</WebLink>

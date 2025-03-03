@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LiveEventHoursAvailableNotAvailable</fullName>
+    <active>false</active>
+    <description>It&#39;s triggered If on the ACCOUNT there are not enough live event hours</description>
+    <errorConditionFormula>Full_Coverage_duration_hours__c &gt;  Account__r.Live_Event_Support_hours_available__c</errorConditionFormula>
+    <errorMessage>Please review the &#39;Live Event Support hours available&#39; field on the account. The amount available is not enough to cover the current request.</errorMessage>
+</ValidationRule>

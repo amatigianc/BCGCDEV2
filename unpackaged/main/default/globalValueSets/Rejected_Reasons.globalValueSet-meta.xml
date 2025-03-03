@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bad contact information</fullName>
+        <default>false</default>
+        <label>Bad contact information</label>
+    </customValue>
+    <customValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </customValue>
+    <customValue>
+        <fullName>Left organization</fullName>
+        <default>false</default>
+        <label>Left organization</label>
+    </customValue>
+    <customValue>
+        <fullName>Not a business</fullName>
+        <default>false</default>
+        <label>Not a business</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Trash (Spam)</fullName>
+        <default>false</default>
+        <label>Trash (Spam)</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendor</fullName>
+        <default>false</default>
+        <label>Vendor</label>
+    </customValue>
+    <masterLabel>Rejected Reasons</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

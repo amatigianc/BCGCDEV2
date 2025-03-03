@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zapier_slackUsername__c</fullName>
+    <description>Get the slack user.
+
+Patched with Darius slack username, his email doesn&#39;t match Slack.</description>
+    <externalId>false</externalId>
+    <formula>IF(Owner:User.Email  = &quot;djones@brightcove.com&quot;,&quot;doleskevicius&quot;, LEFT(Owner:User.Email, FIND(&quot;@&quot;, Owner:User.Email)-1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Zapier Slack Username</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

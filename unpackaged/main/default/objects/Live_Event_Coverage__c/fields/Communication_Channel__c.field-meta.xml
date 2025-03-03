@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Communication_Channel__c</fullName>
+    <label>Communication Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Slack (Brightcove&#39;s Workspace)</fullName>
+                <default>false</default>
+                <label>Slack (Brightcove&#39;s Workspace)</label>
+            </value>
+            <value>
+                <fullName>Gotomeeting (Brightcove&#39;s account)</fullName>
+                <default>false</default>
+                <label>Gotomeeting (Brightcove&#39;s account)</label>
+            </value>
+            <value>
+                <fullName>Customer will provide access to their Instant Messanger</fullName>
+                <default>false</default>
+                <label>Customer will provide access to their Instant Messanger</label>
+            </value>
+            <value>
+                <fullName>Customer will provide a phone bridge</fullName>
+                <default>false</default>
+                <label>Customer will provide a phone bridge</label>
+            </value>
+            <value>
+                <fullName>Not yet defined</fullName>
+                <default>false</default>
+                <label>Not yet defined</label>
+            </value>
+            <value>
+                <fullName>Salesforce Case/Emails</fullName>
+                <default>false</default>
+                <label>Salesforce Case/Emails</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

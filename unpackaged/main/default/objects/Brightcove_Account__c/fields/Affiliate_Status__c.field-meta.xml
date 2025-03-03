@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affiliate_Status__c</fullName>
+    <label>Affiliate Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UNREQUESTED</fullName>
+                <default>false</default>
+                <label>UNREQUESTED</label>
+            </value>
+            <value>
+                <fullName>PENDING</fullName>
+                <default>false</default>
+                <label>PENDING</label>
+            </value>
+            <value>
+                <fullName>ENROLLED</fullName>
+                <default>false</default>
+                <label>ENROLLED</label>
+            </value>
+            <value>
+                <fullName>DENIED</fullName>
+                <default>false</default>
+                <label>DENIED</label>
+            </value>
+            <value>
+                <fullName>CLOSED</fullName>
+                <default>false</default>
+                <label>CLOSED</label>
+            </value>
+            <value>
+                <fullName>LOCKED</fullName>
+                <default>false</default>
+                <label>LOCKED</label>
+            </value>
+            <value>
+                <fullName>LOCKED FOR NON-PAYMENT</fullName>
+                <default>false</default>
+                <label>LOCKED FOR NON-PAYMENT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

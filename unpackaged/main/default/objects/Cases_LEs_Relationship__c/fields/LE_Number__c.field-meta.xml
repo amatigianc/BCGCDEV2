@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LE_Number__c</fullName>
+    <label>LENAME</label>
+    <referenceTo>Live_Event_Coverage__c</referenceTo>
+    <relationshipLabel>Link Cases to LEs</relationshipLabel>
+    <relationshipName>CaseLEsAssociations</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

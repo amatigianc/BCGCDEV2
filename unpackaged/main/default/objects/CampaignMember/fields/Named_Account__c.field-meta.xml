@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Named_Account__c</fullName>
+    <formula>IF 
+(
+ContactId != &quot;&quot; , Contact.Account.Named_Account__c ,
+
+IF(Lead.DE_Match_Account_Status__c = &#39;named&#39;, true, false)
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Named Account</label>
+    <type>Checkbox</type>
+</CustomField>

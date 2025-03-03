@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadGen_H2_Value__c</fullName>
+    <description>Linkedin Lead Gen field used to map the Value of Hidden Field 2 from the LeadGen WedForm</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Linkedin Lead Gen field used to map the Value of Hidden Field 2 from the LeadGen WedForm</inlineHelpText>
+    <label>LeadGen - H2 - Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Segment__c</fullName>
+    <label>Campaign Segment</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arts &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Arts &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Broadcaster</fullName>
+                <default>false</default>
+                <label>Broadcaster</label>
+            </value>
+            <value>
+                <fullName>Festivals</fullName>
+                <default>false</default>
+                <label>Festivals</label>
+            </value>
+            <value>
+                <fullName>Publishers</fullName>
+                <default>false</default>
+                <label>Publishers</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Sports</fullName>
+                <default>false</default>
+                <label>Sports</label>
+            </value>
+            <value>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+                <label>Enterprise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

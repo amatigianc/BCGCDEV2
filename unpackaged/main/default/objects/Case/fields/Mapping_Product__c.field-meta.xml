@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mapping_Product__c</fullName>
+    <description>Field to mapping the Products portal value into the Product Salesforce Case</description>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Product_Portal__c),
+&quot;Video Cloud&quot;, &quot;Video Cloud&quot;,
+&quot;Zencoder&quot;, &quot;Zencoder&quot;,
+&quot;Gallery&quot;, &quot;Gallery&quot;,
+/*&quot;Ooyala&quot;, &quot;Ooyala&quot;,*/
+&quot;TV App Agency&quot;, &quot;OTT&quot;,
+&quot;Beacon&quot;, &quot;OTT&quot;,
+&quot;Engage&quot;, &quot;Brightcove Engage&quot;,
+&quot;Campaign&quot;, &quot;Brightcove Campaign&quot;,
+&quot;Wicket Labs&quot;, &quot;Wicket Labs&quot;,
+&quot;Brightcove Interactivity (HapYak)&quot;, &quot;HapYak&quot;,
+NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mapping Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Level__c</fullName>
+    <label>Support Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Silver Support</fullName>
+                <default>false</default>
+                <label>Silver Support</label>
+            </value>
+            <value>
+                <fullName>Gold Support</fullName>
+                <default>false</default>
+                <label>Gold Support</label>
+            </value>
+            <value>
+                <fullName>Platinum Support</fullName>
+                <default>false</default>
+                <label>Platinum Support</label>
+            </value>
+            <value>
+                <fullName>Platinum Plus Support</fullName>
+                <default>false</default>
+                <label>Platinum Plus Support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

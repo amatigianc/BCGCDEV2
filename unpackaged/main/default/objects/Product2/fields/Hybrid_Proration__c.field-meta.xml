@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hybrid_Proration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Products that the Fee is prorated, but quantity is NOT</description>
+    <label>Hybrid Proration</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

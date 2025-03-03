@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T1_GDL_Annie_Gonzalez</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Days_since_last_email_sent_2__c</columns>
+    <columns>JIRA_Key__c</columns>
+    <columns>JIRA_Status__c</columns>
+    <columns>Case_Age_days__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>contains</operation>
+        <value>agonzale</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Unresolved,Closed - First Response,Closed - Spam,Closed - No Response,Closed - Duplicate</value>
+    </filters>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>GDL T2  - Annie Gonzalez</label>
+    <sharedTo>
+        <role>Technical_Support_Manager</role>
+        <role>Technical_Support_Rep</role>
+    </sharedTo>
+</ListView>

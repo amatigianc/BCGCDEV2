@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plat_Trigger_Time_05_SLA__c</fullName>
+    <description>This is a trigger set to 55 minute of the SLA time to trigger the Hipchat notification</description>
+    <formula>IF(NOT( ISBLANK(Plat_Trigger_Time_SLA__c) ), Plat_Trigger_Time_SLA__c - 0.052083333, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Plat Trigger Time 05 SLA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

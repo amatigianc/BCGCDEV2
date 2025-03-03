@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Downtime_minutes__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>The time in minutes that the live stream or 24/7 channel was down due to the issue on the support case</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The time in minutes that the live stream or 24/7 channel was down due to the issue on the support case</inlineHelpText>
+    <label>Downtime minutes</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

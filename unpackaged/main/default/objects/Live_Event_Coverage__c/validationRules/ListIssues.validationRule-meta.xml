@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ListIssues</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+    NOT($User.Id = &quot;0051400000B2QNH&quot;), /*Support Architect aka. Woody */
+    RecordType.Name  = &quot;Live_Event_Support&quot;,
+    OR ( TEXT( Status__c ) = &quot;Closed - Completed [Off-Hours]&quot;,  
+         TEXT( Status__c ) = &quot;Closed - Completed [Business Hours]&quot;), 
+     ISBLANK( Reported_Issues__c )
+     )</errorConditionFormula>
+    <errorDisplayField>Reported_Issues__c</errorDisplayField>
+    <errorMessage>Please list any issues that arose. If none please enter &quot;NONE&quot;</errorMessage>
+</ValidationRule>

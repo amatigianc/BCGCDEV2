@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NOC_IND_Rahul_Balajee</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>NAME</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Last_Email_Sent__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Sales_Division__c</columns>
+    <columns>First_Response__c</columns>
+    <columns>Days_since_last_email_sent_2__c</columns>
+    <columns>JIRA_Status__c</columns>
+    <columns>JIRA_Key__c</columns>
+    <columns>Case_Age_days__c</columns>
+    <columns>New_Case_Reason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>rbalajee</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Unresolved,Closed - First Response,Closed - Spam,Closed - No Response,Closed - Duplicate</value>
+    </filters>
+    <label>NOC IND - Rahul Balajee</label>
+    <sharedTo>
+        <role>Technical_Support_Manager</role>
+        <role>Technical_Support_Rep</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRR_Upside_cannot_be_grater_than_EMRR</fullName>
+    <active>true</active>
+    <description>The MRR Upside cannot be grater than the value of the EMRR</description>
+    <errorConditionFormula>AND(
+NOT($Permission.Bypass_Validation_Rule),
+  ISPICKVAL(Deal_Type__c,&#39;Renewal&#39;),
+  NOT(ISBLANK(Existing_MRR__c)),
+  Existing_MRR__c &gt;=0,
+  ROUND(MRR_Upside__c,2) &gt; ROUND(Existing_MRR__c,2)
+)</errorConditionFormula>
+    <errorDisplayField>MRR_Upside__c</errorDisplayField>
+    <errorMessage>The MRR Upside cannot be greater than the Existing MRR</errorMessage>
+</ValidationRule>

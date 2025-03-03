@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Naming_Rights__c</fullName>
+    <label>Naming Rights</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard Naming Rights</fullName>
+                <default>false</default>
+                <label>Standard Naming Rights</label>
+            </value>
+            <value>
+                <fullName>Earnings Call Only</fullName>
+                <default>false</default>
+                <label>Earnings Call Only</label>
+            </value>
+            <value>
+                <fullName>No Rights/Custom Language</fullName>
+                <default>false</default>
+                <label>No Rights/Custom Language</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>Yes with Consent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yes with Consent</label>
+            </value>
+            <value>
+                <fullName>Yes with Restriction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yes with Restriction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

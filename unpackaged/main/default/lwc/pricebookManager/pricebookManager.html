@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Pricebook Entries">
+        <template if:true={isLoaded}>
+            <template if:true={hasStandardEntry}>
+                <lightning-button
+                    label="Create Pricebook Entry"
+                    onclick={handleCreatePricebookEntry}
+                    slot="actions"
+                ></lightning-button>
+            </template>
+            <template if:false={hasStandardEntry}>
+                <p class="warning">
+                    This product is not able to be quoted without a
+                    standard pricebook entry
+                </p>
+                <lightning-button
+                    label="Create Standard Entry"
+                    onclick={handleCreateStandardEntry}
+                    slot="actions"
+                ></lightning-button>
+            </template>
+            <template if:true={pricebookEntries}>
+                <div class="slds-var-p-horizontal_small" style="height: 400px">
+                    <lightning-datatable
+                        key-field="Id"
+                        data={pricebookEntries}
+                        columns={pricebookColumns}
+                        hide-checkbox-column="true"
+                        onrowaction={handleRowAction}
+                    >
+                    </lightning-datatable>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>WarningHoursAvailable</name>
+        <label>WarningHoursAvailable</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>tmpWarningEmailAlert</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Account__r.Owner.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>tmpWarningEmailAlertSubject</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>hasBypass</name>
+        <label>hasBypass</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_Validation_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>hoursAvailable</targetReference>
+            </connector>
+            <label>NO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>hoursAvailable</name>
+        <label>hoursAvailable</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>notAvaiable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Full_Coverage_duration_hours__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>$Record.Account__r.Live_Event_Support_hours_available__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>WarningHoursAvailable</targetReference>
+            </connector>
+            <label>notAvaiable</label>
+        </rules>
+    </decisions>
+    <description>It sends an email alert when the LE created has a &#39;Full Coverage duration (hours)&#39; greater than &quot;Live Hours Support available&#39; on the account.</description>
+    <environments>Default</environments>
+    <interviewLabel>LiveEventCoverage - CreateNotEnoughHoursAlert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LiveEventCoverage - CreateNotEnoughHoursAlert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>hasBypass</targetReference>
+        </connector>
+        <object>Live_Event_Coverage__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>tmpWarningEmailAlert</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hi {!$Record.Account__r.Owner.FirstName},
+The Account has purchased a total of {!$Record.Account__r.Total_Live_Event_Support_hours_sold__c} hours and {!$Record.Account__r.Live_Event_Support_hours_available__c} hours are currently available for Live Event Support.
+This Live Event Support request you would like to allocate {!$Record.Full_Coverage_duration_hours__c} which requires purchasing more hours by the customer.
+Thank you,
+Support Operations Team</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpWarningEmailAlertSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.Account__r.Name} requires more hours</text>
+    </textTemplates>
+</Flow>

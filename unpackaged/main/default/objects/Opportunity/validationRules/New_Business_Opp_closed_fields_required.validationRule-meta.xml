@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Business_Opp_closed_fields_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(RecordType.DeveloperName = &#39;New_Business&#39;,  RecordType.DeveloperName = &#39;Add_On&#39;
+),
+OR(
+ ISPICKVAL(StageName,&#39;Closed Won&#39;),
+ ISPICKVAL(StageName,&#39;Closed Lost&#39;)
+),
+ISBLANK(Anticipated_Roadblocks_Challenges__c),
+$UserRole.Name &lt;&gt; &quot;Salesforce Team&quot;,
+NOT ( $Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>Anticipated_Roadblocks_Challenges__c</errorDisplayField>
+    <errorMessage>In order to move to Closed please complete the required Key Sales Handoff fields - Anticipated RoadBlocks/challenges</errorMessage>
+</ValidationRule>

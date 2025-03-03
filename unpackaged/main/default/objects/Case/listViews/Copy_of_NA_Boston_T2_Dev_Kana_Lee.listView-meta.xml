@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_NA_Boston_T2_Dev_Kana_Lee</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Days_since_last_email_sent_2__c</columns>
+    <columns>Case_Age_days__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>JIRA_Status__c</columns>
+    <columns>JIRA_Key__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>Sales_Division__c</columns>
+    <columns>Case_Close_Summary__c</columns>
+    <columns>New_Case_Reason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Closed - Unresolved,Closed - First Response,Closed - Spam,Closed - No Response,Closed - Duplicate</value>
+    </filters>
+    <filters>
+        <field>Case_Owner_full_name__c</field>
+        <operation>contains</operation>
+        <value>Kana lee</value>
+    </filters>
+    <label>NA Boston T2 Dev - Kana Lee</label>
+    <sharedTo>
+        <role>Technical_Support_Manager</role>
+        <role>Technical_Support_Rep</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPS_Rating_Trend_Earliest__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISNULL( NPS_Rating_Latest__c ) , &quot;None&quot;, 
+
+   IF( AND( NOT(ISNULL(NPS_Rating_Latest__c)) , ISNULL(NPS_Rating_Earliest__c) ), &quot;New&quot;, 
+
+        IF( NPS_Rating_Latest__c &gt; NPS_Rating_Earliest__c , &quot;Increasing&quot; , 
+
+            IF( NPS_Rating_Latest__c &lt; NPS_Rating_Earliest__c , &quot;Decreasing&quot;, 
+
+                IF( AND( NPS_Rating_Latest__c = NPS_Rating_Earliest__c, NPS_Rating_Date_Latest__c = NPS_Rating_Date_Earliest__c ), &quot;New&quot;, 
+
+                    IF( AND( NPS_Rating_Latest__c = NPS_Rating_Earliest__c, NOT(NPS_Rating_Date_Latest__c = NPS_Rating_Date_Earliest__c) ), &quot;Same&quot;, 
+
+                        &quot;Unknown&quot; 
+
+)
+)
+)
+)
+)
+)</formula>
+    <label>NPS Rating Trend - Earliest</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

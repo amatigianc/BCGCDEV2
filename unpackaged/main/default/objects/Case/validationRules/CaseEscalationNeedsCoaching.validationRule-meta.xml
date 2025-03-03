@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseEscalationNeedsCoaching</fullName>
+    <active>false</active>
+    <description>If a case is a Case_Escalation requires at least one coaching record</description>
+    <errorConditionFormula>AND( 
+NOT(ISNEW()),
+RecordType.DeveloperName = &quot;Case_Escalation&quot;,
+CoacingNotesRecords__c = 0,
+No_Escalation_Feedback_Required__c = false,
+IsClosed = true,
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorMessage>Before closing this case please create a Coaching Notes record and try again.</errorMessage>
+</ValidationRule>

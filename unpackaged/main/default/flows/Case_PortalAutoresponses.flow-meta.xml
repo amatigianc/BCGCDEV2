@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Case - Portal Default EN</description>
+        <name>Case_Portal_Default_EN</name>
+        <label>Case - Portal Default EN</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <actionName>Case.Case_Portal_Default_EN</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Case_Portal_Default_EN</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Case - Portal Default JP</description>
+        <name>Case_Portal_Default_JP</name>
+        <label>Case - Portal Default JP</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>Case.Case_Portal_Default_JP</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Case_Portal_Default_JP</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>isByPassValidation</name>
+        <label>isByPassValidation</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>YES_isBypassValidation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Language</targetReference>
+            </connector>
+            <label>YES_isBypassValidation</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Language</name>
+        <label>Language</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Case_Portal_Default_EN</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>non_Japan</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case_Language__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Japanese</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_Portal_Default_JP</targetReference>
+            </connector>
+            <label>Japanese</label>
+        </rules>
+    </decisions>
+    <description>It sents the auto-responses for cases opened from the portal.</description>
+    <environments>Default</environments>
+    <interviewLabel>Case - PortalAutoresponses {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - PortalAutoresponses</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>isByPassValidation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Origin</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Portal</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

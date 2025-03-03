@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Status__c</fullName>
+    <description>Case Status from related case record
+Used for reporting &amp; account roll-up summary criteria
+Populated with apex triggers: case create &amp; status change</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Case Status from related case record</inlineHelpText>
+    <label>Case Status</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

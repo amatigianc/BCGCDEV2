@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Billing_Address_Required</fullName>
+    <active>true</active>
+    <description>Requiring the Account Billing Address is necessary for Finance.</description>
+    <errorConditionFormula>AND(
+  OR(
+    ISBLANK(Account.BillingStreet),
+    ISBLANK(Account.BillingCity),
+    ISPICKVAL(Account.BillingCountryCode, &quot;&quot;),
+    AND(
+      ISPICKVAL(Account.BillingCountryCode, &quot;US&quot;),
+      OR(
+        ISPICKVAL(Account.BillingStateCode, &quot;&quot;),
+        ISBLANK(Account.BillingPostalCode)
+      )
+    )
+  ),
+  ISCHANGED(StageName),
+  ISPICKVAL(StageName, &quot;Closed Won&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Please provide a valid Billing Address on the Account record for this Opportunity before moving to Closed Won.</errorMessage>
+</ValidationRule>

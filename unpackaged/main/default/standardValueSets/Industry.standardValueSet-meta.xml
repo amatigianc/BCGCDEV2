@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Agencies &amp; Advertising</fullName>
+        <default>false</default>
+        <label>Agencies &amp; Advertising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Energy &amp; Utilities</fullName>
+        <default>false</default>
+        <label>Energy &amp; Utilities</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Government &amp; Defense</fullName>
+        <default>false</default>
+        <label>Government &amp; Defense</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Healthcare &amp; Pharmaceutical</fullName>
+        <default>false</default>
+        <label>Healthcare &amp; Pharmaceutical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hospitality &amp; Travel</fullName>
+        <default>false</default>
+        <label>Hospitality &amp; Travel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media &amp; Entertainment</fullName>
+        <default>false</default>
+        <label>Media &amp; Entertainment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media - Broadcasters</fullName>
+        <default>false</default>
+        <label>Media - Broadcasters</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media - Fitness</fullName>
+        <default>false</default>
+        <label>Media - Fitness</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media - Publishers</fullName>
+        <default>false</default>
+        <label>Media - Publishers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media - Sports teams &amp; leagues</fullName>
+        <default>false</default>
+        <label>Media - Sports teams &amp; leagues</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-profit &amp; mission-based orgs</fullName>
+        <default>false</default>
+        <label>Non-profit &amp; mission-based orgs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Professional Services &amp; Consulting</fullName>
+        <default>false</default>
+        <label>Professional Services &amp; Consulting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technology</fullName>
+        <default>false</default>
+        <label>Technology</label>
+    </standardValue>
+</StandardValueSet>

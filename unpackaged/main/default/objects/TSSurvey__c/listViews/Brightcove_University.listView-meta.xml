@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brightcove_University</fullName>
+    <columns>NAME</columns>
+    <columns>Date_survey_submitted__c</columns>
+    <columns>BCU_Survey_Email__c</columns>
+    <columns>BCU_Survey_Response__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>university</value>
+    </filters>
+    <label>Brightcove University Surveys</label>
+    <language>en_US</language>
+</ListView>

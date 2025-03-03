@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Opt_In__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Denotes if the lead has explicitly opted in to phone communication from Brightcove</description>
+    <inlineHelpText>Denotes if the lead has explicitly opted in to phone communication from Brightcove</inlineHelpText>
+    <label>Phone - Opt-In</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_closed_status_with_PendingCS_JIRA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+OR(
+CONTAINS(RecordType.DeveloperName, &quot;Technical_Support&quot;),
+CONTAINS(RecordType.DeveloperName, &quot;NOC_Cases&quot;)
+),
+
+$UserRole.Name = &quot;Technical Support Rep&quot;,
+
+ISCHANGED(Status),
+OR(ISPICKVAL(Status, &quot;Closed&quot;),
+ISPICKVAL(Status, &quot;Closed - Unresolved&quot;),
+ISPICKVAL(Status, &quot;Closed - First Response&quot;),
+ISPICKVAL(Status, &quot;Closed - No Response&quot;)
+)
+
+,
+
+CONTAINS( JIRA_Status__c , &quot;CS: Pending&quot;)
+
+)</errorConditionFormula>
+    <errorMessage>You can&#39;t close a case with a CS: Pending Jira. Review the Jira to see if it can be closed, or change the Jira status.</errorMessage>
+</ValidationRule>

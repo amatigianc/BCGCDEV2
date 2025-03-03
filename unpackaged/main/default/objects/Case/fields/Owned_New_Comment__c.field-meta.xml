@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owned_New_Comment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>gets flipped to true when the case is owned by a person (not a queue) and has a new comment.</description>
+    <inlineHelpText>gets flipped to true when the case is owned by a person (not a queue) and has a new comment.</inlineHelpText>
+    <label>Owned New Comment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

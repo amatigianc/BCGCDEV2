@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel</fullName>
+    <active>true</active>
+    <description>Representing Channel Partner Involvement with an Opportunity</description>
+    <label>Channel</label>
+    <picklistValues>
+        <picklist>MKTP_Partner_Involvement_Type__c</picklist>
+        <values>
+            <fullName>Bi-lateral Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Resells</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Resells</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Source__c</picklist>
+        <values>
+            <fullName>Brightcove Sourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Sourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Involvement_Type__c</picklist>
+        <values>
+            <fullName>Co-selling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Influencing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reselling %28writing the paper%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Integration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Type__c</picklist>
+        <values>
+            <fullName>Brightcove Referral to Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Resells</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Referral to Brightcove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Alliance Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Platform Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

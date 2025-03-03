@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReasonSubReasonForWinLossRequired</fullName>
+    <active>true</active>
+    <description>Reason for win/loss and Sub reason for win loss is required.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(StageName), 
+OR(
+ISPICKVAL(StageName , &quot;Closed Won&quot;),
+ISPICKVAL(StageName , &quot;Closed Lost&quot;)
+),
+
+ISPICKVAL(Reason_for_Win_Loss__c,&quot;&quot;),
+$User.Id &lt;&gt; &quot;0058c00000COTSE&quot;, /*Lorena Zenovei Kimble team*/
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Win_Loss__c</errorDisplayField>
+    <errorMessage>Reason for Win Loss is required before closing the opportunity</errorMessage>
+</ValidationRule>

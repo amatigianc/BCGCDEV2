@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Reason__c</fullName>
+    <label>Risk Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bugs Risk</fullName>
+                <default>false</default>
+                <label>Bugs Risk</label>
+            </value>
+            <value>
+                <fullName>Implementation Risk</fullName>
+                <default>false</default>
+                <label>Implementation Risk</label>
+            </value>
+            <value>
+                <fullName>Product Risk - Enhancement Request</fullName>
+                <default>false</default>
+                <label>Product Risk - Enhancement Request</label>
+            </value>
+            <value>
+                <fullName>Customer Readiness Risk</fullName>
+                <default>false</default>
+                <label>Customer Readiness Risk</label>
+            </value>
+            <value>
+                <fullName>Lack of Champion</fullName>
+                <default>false</default>
+                <label>Lack of Champion</label>
+            </value>
+            <value>
+                <fullName>Sponsor Change</fullName>
+                <default>false</default>
+                <label>Sponsor Change</label>
+            </value>
+            <value>
+                <fullName>Single-Threaded</fullName>
+                <default>false</default>
+                <label>Single-Threaded</label>
+            </value>
+            <value>
+                <fullName>Disengaged/Non-responsive</fullName>
+                <default>false</default>
+                <label>Disengaged/Non-responsive</label>
+            </value>
+            <value>
+                <fullName>Commodity Relationship</fullName>
+                <default>false</default>
+                <label>Commodity Relationship</label>
+            </value>
+            <value>
+                <fullName>Usage Drop</fullName>
+                <default>false</default>
+                <label>Usage Drop</label>
+            </value>
+            <value>
+                <fullName>Support Ticket Drop</fullName>
+                <default>false</default>
+                <label>Support Ticket Drop</label>
+            </value>
+            <value>
+                <fullName>Near Overages</fullName>
+                <default>false</default>
+                <label>Near Overages</label>
+            </value>
+            <value>
+                <fullName>Product Risk - Roadmap Misalignment</fullName>
+                <default>false</default>
+                <label>Product Risk - Roadmap Misalignment</label>
+            </value>
+            <value>
+                <fullName>Sentiment Risk</fullName>
+                <default>false</default>
+                <label>Sentiment Risk</label>
+            </value>
+            <value>
+                <fullName>Support Risk</fullName>
+                <default>false</default>
+                <label>Support Risk</label>
+            </value>
+            <value>
+                <fullName>Survey Response</fullName>
+                <default>false</default>
+                <label>Survey Response</label>
+            </value>
+            <value>
+                <fullName>CSM Change</fullName>
+                <default>false</default>
+                <label>CSM Change</label>
+            </value>
+            <value>
+                <fullName>Customer Reorg</fullName>
+                <default>false</default>
+                <label>Customer Reorg</label>
+            </value>
+            <value>
+                <fullName>M&amp;A</fullName>
+                <default>false</default>
+                <label>M&amp;A</label>
+            </value>
+            <value>
+                <fullName>Non-Payment</fullName>
+                <default>false</default>
+                <label>Non-Payment</label>
+            </value>
+            <value>
+                <fullName>Pricing/Economics</fullName>
+                <default>false</default>
+                <label>Pricing/Economics</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

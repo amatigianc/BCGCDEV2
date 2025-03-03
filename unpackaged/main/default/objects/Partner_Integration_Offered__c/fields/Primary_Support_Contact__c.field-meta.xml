@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Support_Contact__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>The primary point of contact for support of the solution if used by a mutual customer, either at Brightcove, or the solution&#39;s vendor, or a 3rd party, such as a developer.</description>
+    <label>Primary Support Contact</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Partner Integrations Supported</relationshipLabel>
+    <relationshipName>Supported_Partner_Integrations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

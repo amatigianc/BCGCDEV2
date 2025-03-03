@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Alert_CS_Leadership_LE_Markes_as_Pro_Bono</name>
+        <label>Alert CS Leadership LE Markes as Pro Bono</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <actionName>Live_Event_Coverage__c.LE_marked_as_Pro_bono</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Pro_Bono_Outbound_Message_to_Zapier</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <stringValue>{!$Record.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>Live_Event_Coverage__c.LE_marked_as_Pro_bono</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Live Event Coverage - Updates on LEs</description>
+        <name>Live_Event_Coverage_Updates_on_LEs</name>
+        <label>Live Event Coverage - Updates on LEs</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <actionName>Live_Event_Coverage__c.Live_Event_Coverage_Updates_on_LEs</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>sendToSlack</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Live_Event_Coverage__c.Live_Event_Coverage_Updates_on_LEs</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Pro_Bono_Outbound_Message_to_Zapier</name>
+        <label>Pro-Bono Outbound Message to Zapier</label>
+        <locationX>50</locationX>
+        <locationY>863</locationY>
+        <actionName>Live_Event_Coverage__c.Live_Event_Pro_Bono_Selected</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Live_Event_Coverage__c.Live_Event_Pro_Bono_Selected</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>sendToSlack</name>
+        <label>sendToSlackViaZapier</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <actionName>Live_Event_Coverage__c.Live_Event_Has_Been_Updated</actionName>
+        <actionType>outboundMessage</actionType>
+        <connector>
+            <targetReference>Decision_2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Live_Event_Coverage__c.Live_Event_Has_Been_Updated</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Decision_2</name>
+        <label>Decision 2</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Decision_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Pro_bono__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Pro_bono__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Alert_CS_Leadership_LE_Markes_as_Pro_Bono</targetReference>
+            </connector>
+            <label>Outcome 1 of Decision 2</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>hasByPassflow</name>
+        <label>hasByPassflow</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Live_Event_Coverage_Updates_on_LEs</targetReference>
+            </connector>
+            <label>NO</label>
+        </rules>
+    </decisions>
+    <description>Live Event Coverage - Updates on LEs</description>
+    <environments>Default</environments>
+    <interviewLabel>Live Event Coverage - Updates on LEs {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Live Event Coverage - Updates on LEs</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>hasByPassflow</targetReference>
+        </connector>
+        <filterFormula>OR( 
+ISCHANGED({!$Record.Event_End_Time__c}) ,
+ISCHANGED({!$Record.Event_Point_Of_Contact__c}) ,
+ISCHANGED({!$Record.Event_Start_Time__c}),
+ISCHANGED({!$Record.Event_End_Date__c}),
+ISCHANGED({!$Record.Event_Start_Date__c}),
+ISCHANGED({!$Record.Test_End_Time__c}),
+ISCHANGED({!$Record.Test_Start_Time__c}),
+ISCHANGED({!$Record.Test_Date__c}),
+AND(ISCHANGED({!$Record.Pro_bono__c}), {!$Record.Pro_bono__c})
+)</filterFormula>
+        <object>Live_Event_Coverage__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

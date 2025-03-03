@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>P1 - Critical</fullName>
+        <default>false</default>
+        <label>P1 - Critical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>P2 - Important</fullName>
+        <default>false</default>
+        <label>P2 - Important</label>
+    </standardValue>
+    <standardValue>
+        <fullName>P3 - Normal</fullName>
+        <default>true</default>
+        <label>P3 - Normal</label>
+    </standardValue>
+</StandardValueSet>

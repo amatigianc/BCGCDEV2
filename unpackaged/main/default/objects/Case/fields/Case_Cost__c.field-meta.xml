@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Cost__c</fullName>
+    <formula>IF( 
+AND( 
+ISBLANK( TEXT(Tier__c) ), 
+OR(ISPICKVAL(Status,&quot;Closed SPAM&quot;), 
+ISPICKVAL(Status,&quot;Closed Duplicate&quot;) ) 
+), /*If the tier is blank, and its a dupe or spam, make the case cost the hourly CSR rate*/ 
+
+(24* WorkIt2__Time_In_Minutes__c), 
+
+IF(ISBLANK(TEXT(Tier__c)), (65* (WorkIt2__Time_In_Minutes__c/60)), /*If the Tier is blank and it isn&#39;t spam or dupe assume it will be Tier 1*/ 
+
+/*IF on the June 23 2021.*/
+IF ( DATEVALUE( CreatedDate ) &gt;= DATE(2021,6,16),  Case_Cost_New__c , 
+
+IF( DATEVALUE( CreatedDate ) &gt;= DATE(2019,7,1),
+CASE(TEXT(Tier__c), /*if Tier is NOT Blank*/
+&quot;CSR&quot;,(20*(WorkIt2__Time_In_Minutes__c/60)), /*CSR hourly case cost*/ 
+&quot;Tier 1&quot;,(45*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 1 hourly case cost*/ 
+&quot;Tier 2 Prod&quot;,(71*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 2 Prod hourly case cost*/ 
+&quot;Tier 2 Dev&quot;,(85*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 2 Dev hourly case cost*/ 
+&quot;Tier 3&quot;,(165*(WorkIt2__Time_In_Minutes__c/60)),0) /* Tier 3 hourly case cost*/
+,
+IF (  YEAR(DATEVALUE( CreatedDate )) &gt;= 2018, /* NEW COSTS */
+
+CASE(TEXT(Tier__c), /*if Tier is NOT Blank*/
+&quot;CSR&quot;,(46*(WorkIt2__Time_In_Minutes__c/60)), /*CSR hourly case cost*/ 
+&quot;Tier 1&quot;,(103*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 1 hourly case cost*/ 
+&quot;Tier 2 Prod&quot;,(90*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 2 Prod hourly case cost*/ 
+&quot;Tier 2 Dev&quot;,(114*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 2 Dev hourly case cost*/ 
+&quot;Tier 3&quot;,(273*(WorkIt2__Time_In_Minutes__c/60)),0) /* Tier 3 hourly case cost*/
+,
+
+CASE(TEXT(Tier__c), /*if Tier is NOT Blank*/
+&quot;CSR&quot;,(24*(WorkIt2__Time_In_Minutes__c/60)), /*CSR hourly case cost*/ 
+&quot;Tier 1&quot;,(65*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 1 hourly case cost*/ 
+&quot;Tier 2 Prod&quot;,(83*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 2 Prod hourly case cost*/ 
+&quot;Tier 2 Dev&quot;,(95*(WorkIt2__Time_In_Minutes__c/60)),/*Tier 2 Dev hourly case cost*/ 
+&quot;Tier 3&quot;,(95*(WorkIt2__Time_In_Minutes__c/60)),0) /* Tier 3 hourly case cost*/ 
+) /*INNER IF*/
+) /*IF on the June 23 2021.*/
+)  /*WORKIT IF*/
+) /*JULY 2019 IF*/
+
+) /*TOP IF*/</formula>
+    <label>Case Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

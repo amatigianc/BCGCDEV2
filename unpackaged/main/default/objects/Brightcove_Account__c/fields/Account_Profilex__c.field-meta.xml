@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Profilex__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( AND(Is_Trial_Account__c, TEXT(Tier__c) = &#39;Premium&#39;), &quot;Trial&quot;, &quot;Customer&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Profile</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

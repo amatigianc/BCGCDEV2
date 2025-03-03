@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T2_Escalation_Other_Required</fullName>
+    <active>true</active>
+    <description>If the escalation reason is &quot;Other&quot; please specify it</description>
+    <errorConditionFormula>AND(
+
+/*RecordTypeId = &#39;0128F000000W684QAC&#39;,*/ /*Technical Support*/
+RecordType.DeveloperName = &#39;Technical_Support&#39;,
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+  
+ISPICKVAL( T2_Escalation_Process_Reason__c, &quot;Other&quot;),
+ 
+(ISBLANK( T2_Escalation_Reason_Other__c)),
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>T2_Escalation_Reason_Other__c</errorDisplayField>
+    <errorMessage>If T2 Escalation Reason=Other, then &#39;T2 Escalation Reason Other&#39; field is required to be filled in</errorMessage>
+</ValidationRule>

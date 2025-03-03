@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Dupes_Jun_28_2023_12_37_PM</fullName>
+    <columns>Name</columns>
+    <columns>RecordCount</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Parent</field>
+        <operation>equals</operation>
+        <value>&quot;Account - Dupes Jun 28, 2023 12:37 PM&quot;</value>
+    </filters>
+    <label>Account - Dupes Jun 28, 2023 12:37 PM</label>
+</ListView>

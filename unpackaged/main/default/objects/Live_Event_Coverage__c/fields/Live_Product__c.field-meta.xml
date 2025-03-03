@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Product__c</fullName>
+    <description>Please specify the live-event product for this event.</description>
+    <inlineHelpText>Please specify the live-event product for this event.</inlineHelpText>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brightcove Live</fullName>
+                <default>false</default>
+                <label>Brightcove Live</label>
+            </value>
+            <value>
+                <fullName>Brightcove Live with SSAI</fullName>
+                <default>false</default>
+                <label>Live SSAI</label>
+            </value>
+            <value>
+                <fullName>Live DVR</fullName>
+                <default>false</default>
+                <label>Live DVR</label>
+            </value>
+            <value>
+                <fullName>Live DRM</fullName>
+                <default>false</default>
+                <label>Live DRM</label>
+            </value>
+            <value>
+                <fullName>Live Redundancy</fullName>
+                <default>false</default>
+                <label>Live Redundancy</label>
+            </value>
+            <value>
+                <fullName>Clipping</fullName>
+                <default>false</default>
+                <label>Live Clipping</label>
+            </value>
+            <value>
+                <fullName>Remote Asset (3rd party Live) - BC Managed</fullName>
+                <default>false</default>
+                <label>Remote Asset (3rd party Live) - BC Managed</label>
+            </value>
+            <value>
+                <fullName>Remote Asset (3rd party Live) - BYO</fullName>
+                <default>false</default>
+                <label>Remote Asset (3rd party Live) - BYO</label>
+            </value>
+            <value>
+                <fullName>Cloud Playout</fullName>
+                <default>false</default>
+                <label>Cloud Playout</label>
+            </value>
+            <value>
+                <fullName>Simulive</fullName>
+                <default>false</default>
+                <label>Simulive</label>
+            </value>
+            <value>
+                <fullName>Virtual Events Template</fullName>
+                <default>false</default>
+                <label>Virtual Events Template</label>
+            </value>
+            <value>
+                <fullName>Gallery</fullName>
+                <default>false</default>
+                <label>Gallery</label>
+            </value>
+            <value>
+                <fullName>Playback Rights/Geo-restriction</fullName>
+                <default>false</default>
+                <label>Playback Rights/Geo-restriction</label>
+            </value>
+            <value>
+                <fullName>Key Rotation</fullName>
+                <default>false</default>
+                <label>Key Rotation</label>
+            </value>
+            <value>
+                <fullName>Non-live (Ingestion/Playback API/etc.)</fullName>
+                <default>false</default>
+                <label>Non-live (Ingestion/Playback API/etc.)</label>
+            </value>
+            <value>
+                <fullName>Pigeonhole</fullName>
+                <default>false</default>
+                <label>Pigeonhole</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

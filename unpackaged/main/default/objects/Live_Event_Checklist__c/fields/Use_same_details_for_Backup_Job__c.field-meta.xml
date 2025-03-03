@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_same_details_for_Backup_Job__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When selected, the information from the Primary Job Details will be copied into the Backup Job Detials</description>
+    <inlineHelpText>When selected, the information from the Primary Job Details will be copied into the Backup Job Detials</inlineHelpText>
+    <label>Use same details for Backup Job</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

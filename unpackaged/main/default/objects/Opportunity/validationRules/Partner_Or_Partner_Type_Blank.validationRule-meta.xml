@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Or_Partner_Type_Blank</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( AND
+(NOT( ISBLANK( Partner__c ) ), ISBLANK(TEXT(Partner_Type__c) )),
+AND(NOT( ISBLANK(TEXT(Partner_Type__c))), 
+ISBLANK( Partner__c ))
+)</errorConditionFormula>
+    <errorMessage>For Partner and Partner Type fields, if one field is completed both fields must have a value.</errorMessage>
+</ValidationRule>

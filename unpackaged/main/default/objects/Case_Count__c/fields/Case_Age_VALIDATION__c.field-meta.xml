@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Age_VALIDATION__c</fullName>
+    <description>Case Age formula field - used for validation (should match Case Age)
+-in some cases the age is off by a day - this is due to rounding</description>
+    <externalId>false</externalId>
+    <formula>now()- Case__r.CreatedDate</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Case Age formula field - used for validation (should match Case Age)
+-in some cases the age is off by a day - this is due to rounding</inlineHelpText>
+    <label>Case Age - VALIDATION</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

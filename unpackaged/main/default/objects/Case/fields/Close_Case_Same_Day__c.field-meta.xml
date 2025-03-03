@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Case_Same_Day__c</fullName>
+    <description>it is true if the case is opened and closed on the same day</description>
+    <formula>/*if the case is opened and solved the same day*/
+IF(   ClosedDate   =  CreatedDate   , true, false)</formula>
+    <label>Close Case Same Day</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

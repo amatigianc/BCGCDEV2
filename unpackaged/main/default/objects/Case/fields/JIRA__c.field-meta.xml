@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JIRA__c</fullName>
+    <description>same as JIRA last updated but Date/time dataype</description>
+    <formula>/*DATEVALUE( DATETIMEVALUE(JIRA_Last_Updated__c)) */
+
+/*2020-02-21 14:23:15.00*/
+/*DATEVALUE( LEFT( JIRA_Last_Updated__c, FIND(&#39; &#39;,JIRA_Last_Updated__c)-1 ) )*/
+
+DATEVALUE(LEFT ( JIRA_Last_Updated__c, 10 ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>JIRA Last updated (Date)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

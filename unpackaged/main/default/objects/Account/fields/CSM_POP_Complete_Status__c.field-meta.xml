@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSM_POP_Complete_Status__c</fullName>
+    <label>CSM POP Complete Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>POP In Progress</fullName>
+                <default>false</default>
+                <label>POP In Progress</label>
+            </value>
+            <value>
+                <fullName>POP Complete</fullName>
+                <default>false</default>
+                <label>POP Complete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

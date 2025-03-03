@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Snapshot_Adjusted_Created_Date__c</fullName>
+    <formula>IF(
+ISBLANK(Snapshot_Promoted_Date__c),
+DATEVALUE(Snapshot_Opportunity_Created_Date__c),
+Snapshot_Promoted_Date__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Snapshot Adjusted Created Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

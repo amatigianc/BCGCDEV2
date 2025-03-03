@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T2_Escalation_Reason__c</fullName>
+    <label>T2 Escalation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Time Spent</fullName>
+                <default>false</default>
+                <label>Time Spent</label>
+            </value>
+            <value>
+                <fullName>Lack of Knowledge/Training</fullName>
+                <default>false</default>
+                <label>Lack of Knowledge/Training</label>
+            </value>
+            <value>
+                <fullName>Lack of Documentation</fullName>
+                <default>false</default>
+                <label>Lack of Documentation</label>
+            </value>
+            <value>
+                <fullName>Straight to T2 - Per Process</fullName>
+                <default>false</default>
+                <label>Straight to T2 - Per Process</label>
+            </value>
+            <value>
+                <fullName>Per Leadership Instruction</fullName>
+                <default>false</default>
+                <label>Per Leadership Instruction</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

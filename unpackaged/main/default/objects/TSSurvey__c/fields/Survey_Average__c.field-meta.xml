@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Average__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name = &quot;Surveys - All&quot;,
+       IF(    (Overall_Satisfaction_with_support__c + 
+                Satisfaction_on_time_to_resolve_case__c + 
+                Satisfaction_on_time_to_respond_to_case__c + 
+                Satisfaction_with_professionalism__c + 
+                Satisfaction_with_specialist_knowledge__c + 
+                Effectiveness_of_resolution_of_case__c) &lt;= 0, 0,
+(Overall_Satisfaction_with_support__c + 
+Satisfaction_on_time_to_resolve_case__c + 
+Satisfaction_on_time_to_respond_to_case__c + 
+Satisfaction_with_professionalism__c + 
+Satisfaction_with_specialist_knowledge__c + 
+Effectiveness_of_resolution_of_case__c)
+/ 
+(IF(Overall_Satisfaction_with_support__c &gt; 0, 1, 0) + 
+IF(Satisfaction_on_time_to_resolve_case__c &gt; 0, 1, 0) + 
+IF(Satisfaction_on_time_to_respond_to_case__c &gt; 0, 1, 0) +
+IF(Satisfaction_with_professionalism__c &gt; 0, 1, 0) + 
+IF(Satisfaction_with_specialist_knowledge__c &gt; 0, 1, 0) +
+IF(Effectiveness_of_resolution_of_case__c &gt; 0, 1, 0))), 
+
+IF((Satisfaction_w_NOC_team_member__c + 
+Satisafaction_w_live_monitoring_overal__c + 
+Would_you_recommend_NOC__c + 
+Did_we_make_it_easy__c + 
+Satisfaction_with_professionalism__c +
+Satisfaction_with_specialist_knowledge__c) &lt;= 0, 0,
+(Satisfaction_w_NOC_team_member__c + 
+Satisafaction_w_live_monitoring_overal__c + 
+Would_you_recommend_NOC__c + 
+Did_we_make_it_easy__c + 
+Satisfaction_with_professionalism__c +
+Satisfaction_with_specialist_knowledge__c)
+/ 
+(IF(Satisfaction_w_NOC_team_member__c&gt; 0, 1, 0) + 
+IF(Satisafaction_w_live_monitoring_overal__c &gt; 0, 1, 0) + 
+IF(Would_you_recommend_NOC__c &gt; 0, 1, 0) +
+IF(Did_we_make_it_easy__c &gt; 0, 1, 0) +
+IF(Satisfaction_with_professionalism__c &gt; 0, 1, 0) +
+IF(Satisfaction_with_specialist_knowledge__c &gt; 0, 1, 0)
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Survey Average</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

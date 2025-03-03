@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Baseline_profile_not_used_wt_Redundancy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Baseline profile not used with Redundancy</description>
+    <inlineHelpText>Baseline profile not used with Redundancy</inlineHelpText>
+    <label>Baseline profile not used wt Redundancy</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

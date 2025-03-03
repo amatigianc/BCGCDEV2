@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_can_we_help_you_with__c</fullName>
+    <description>Used for the Sales Operation community portal</description>
+    <label>What can we help you with</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reporting &amp; Analysis</fullName>
+                <default>false</default>
+                <label>Reporting &amp; Analysis</label>
+            </value>
+            <value>
+                <fullName>Pricing &amp; Quote help</fullName>
+                <default>false</default>
+                <label>Pricing &amp; Quote help</label>
+            </value>
+            <value>
+                <fullName>Sales Tools &amp; Permissions</fullName>
+                <default>false</default>
+                <label>Sales Tools &amp; Permissions</label>
+            </value>
+            <value>
+                <fullName>Training &amp; Onboarding</fullName>
+                <default>false</default>
+                <label>Training &amp; Onboarding</label>
+            </value>
+            <value>
+                <fullName>Changes to record</fullName>
+                <default>false</default>
+                <label>Changes to record</label>
+            </value>
+            <value>
+                <fullName>Deal Registration</fullName>
+                <default>false</default>
+                <label>Deal Registration</label>
+            </value>
+            <value>
+                <fullName>Deal Agreement Inquiries</fullName>
+                <default>false</default>
+                <label>Deal Agreement Inquiries</label>
+            </value>
+            <value>
+                <fullName>InfoSec/Security Questions</fullName>
+                <default>false</default>
+                <label>InfoSec/Security Questions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

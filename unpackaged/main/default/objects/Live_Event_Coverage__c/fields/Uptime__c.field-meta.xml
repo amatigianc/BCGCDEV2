@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uptime__c</fullName>
+    <description>percentage of uptime for the event</description>
+    <formula>((Full_Coverage_duration_hours__c *60) - Downtime_minutes__c )/(Full_Coverage_duration_hours__c*60)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>percentage of uptime for the event</inlineHelpText>
+    <label>Uptime</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

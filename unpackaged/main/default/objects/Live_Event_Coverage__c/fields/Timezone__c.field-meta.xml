@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timezone__c</fullName>
+    <inlineHelpText>What timezone is the event located in? Specify Start/End Time in THE SAME TIMEZONE.</inlineHelpText>
+    <label>Event Timezone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(GMT-12:00) International Date Line West</fullName>
+                <default>false</default>
+                <label>(GMT-12:00) International Date Line West</label>
+            </value>
+            <value>
+                <fullName>(GMT-11:00) Midway Island, Samoa</fullName>
+                <default>false</default>
+                <label>(GMT-11:00) Midway Island, Samoa</label>
+            </value>
+            <value>
+                <fullName>(GMT-10:00) Hawaii</fullName>
+                <default>false</default>
+                <label>(GMT-10:00) Hawaii</label>
+            </value>
+            <value>
+                <fullName>(GMT-09:00) Hawaii (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-09:00) Hawaii (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-09:00) Alaska</fullName>
+                <default>false</default>
+                <label>(GMT-09:00) Alaska</label>
+            </value>
+            <value>
+                <fullName>(GMT-08:00) Alaska (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-08:00) Alaska (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-08:00) Pacific Time (US and Canada); Tijuana</fullName>
+                <default>false</default>
+                <label>(GMT-08:00) Pacific Time (US and Canada); Tijuana</label>
+            </value>
+            <value>
+                <fullName>(GMT-07:00) Pacific Time (US and Canada); Tijuana (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-07:00) Pacific Time (US and Canada); Tijuana (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-07:00) Arizona</fullName>
+                <default>false</default>
+                <label>(GMT-07:00) Arizona</label>
+            </value>
+            <value>
+                <fullName>(GMT-07:00) Chihuahua, Mazatlan</fullName>
+                <default>false</default>
+                <label>(GMT-07:00) Chihuahua, Mazatlan</label>
+            </value>
+            <value>
+                <fullName>(GMT-06:00) Chihuahua, Mazatlan (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-06:00) Chihuahua, Mazatlan (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-07:00) Mountain Time (US and Canada)</fullName>
+                <default>false</default>
+                <label>(GMT-07:00) Mountain Time (US and Canada)</label>
+            </value>
+            <value>
+                <fullName>(GMT-06:00) Mountain Time (US and Canada) (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-06:00) Mountain Time (US and Canada) (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-06:00) Central America</fullName>
+                <default>false</default>
+                <label>(GMT-06:00) Central America</label>
+            </value>
+            <value>
+                <fullName>(GMT-05:00) Central America (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-05:00) Central America (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-06:00) Central Time (US and Canada)</fullName>
+                <default>false</default>
+                <label>(GMT-06:00) Central Time (US and Canada)</label>
+            </value>
+            <value>
+                <fullName>(GMT-05:00) Central Time (US and Canada) (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-05:00) Central Time (US and Canada) (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-06:00) Guadalajara, Mexico City, Monterrey</fullName>
+                <default>false</default>
+                <label>(GMT-06:00) Guadalajara, Mexico City, Monterrey</label>
+            </value>
+            <value>
+                <fullName>(GMT-05:00) Guadalajara, Mexico City, Monterrey (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-05:00) Guadalajara, Mexico City, Monterrey (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-06:00) Saskatchewan</fullName>
+                <default>false</default>
+                <label>(GMT-06:00) Saskatchewan</label>
+            </value>
+            <value>
+                <fullName>(GMT-05:00) Bogota, Lima, Quito</fullName>
+                <default>false</default>
+                <label>(GMT-05:00) Bogota, Lima, Quito</label>
+            </value>
+            <value>
+                <fullName>(GMT-05:00) Eastern Time (US and Canada)</fullName>
+                <default>false</default>
+                <label>(GMT-05:00) Eastern Time (US and Canada)</label>
+            </value>
+            <value>
+                <fullName>(GMT-04:00) Eastern Time (US and Canada) (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-04:00) Eastern Time (US and Canada) (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-05:00) Indiana (East)</fullName>
+                <default>false</default>
+                <label>(GMT-05:00) Indiana (East)</label>
+            </value>
+            <value>
+                <fullName>(GMT-04:00) Indiana (East) (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-04:00) Indiana (East) (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-04:00) Atlantic Time (Canada)</fullName>
+                <default>false</default>
+                <label>(GMT-04:00) Atlantic Time (Canada)</label>
+            </value>
+            <value>
+                <fullName>(GMT-03:00) Atlantic Time (Canada) (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-03:00) Atlantic Time (Canada) (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-04:00) Caracas, La Paz</fullName>
+                <default>false</default>
+                <label>(GMT-04:00) Caracas, La Paz</label>
+            </value>
+            <value>
+                <fullName>(GMT-04:00) Santiago</fullName>
+                <default>false</default>
+                <label>(GMT-04:00) Santiago</label>
+            </value>
+            <value>
+                <fullName>(GMT-03:00) Santiago (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-03:00) Santiago (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-03:30) Newfoundland and Labrador</fullName>
+                <default>false</default>
+                <label>(GMT-03:30) Newfoundland and Labrador</label>
+            </value>
+            <value>
+                <fullName>(GMT-02:30) Newfoundland and Labrador (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-02:30) Newfoundland and Labrador (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-03:00) Brasilia</fullName>
+                <default>false</default>
+                <label>(GMT-03:00) Brasilia</label>
+            </value>
+            <value>
+                <fullName>(GMT-03:00) Buenos Aires, Georgetown</fullName>
+                <default>false</default>
+                <label>(GMT-03:00) Buenos Aires, Georgetown</label>
+            </value>
+            <value>
+                <fullName>(GMT-03:00) Greenland (West)</fullName>
+                <default>false</default>
+                <label>(GMT-03:00) Greenland (West)</label>
+            </value>
+            <value>
+                <fullName>(GMT-02:00) Greenland (West) (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT-02:00) Greenland (West) (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-02:00) Mid-Atlantic</fullName>
+                <default>false</default>
+                <label>(GMT-02:00) Mid-Atlantic</label>
+            </value>
+            <value>
+                <fullName>(GMT-01:00) Azores</fullName>
+                <default>false</default>
+                <label>(GMT-01:00) Azores</label>
+            </value>
+            <value>
+                <fullName>(GMT) Azores (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT) Azores (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT-01:00) Cape Verde Islands</fullName>
+                <default>false</default>
+                <label>(GMT-01:00) Cape Verde Islands</label>
+            </value>
+            <value>
+                <fullName>(GMT-01:00) Greenland (East)</fullName>
+                <default>false</default>
+                <label>(GMT-01:00) Greenland (East)</label>
+            </value>
+            <value>
+                <fullName>(GMT) Greenland (East) (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT) Greenland (East) (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT) Greenwich Mean Time: Dublin, Edinburgh, Lisbon, London</fullName>
+                <default>false</default>
+                <label>(GMT) Greenwich Mean Time: Dublin, Edinburgh, Lisbon, London</label>
+            </value>
+            <value>
+                <fullName>(GMT+1:00) British Summer Time: Dublin, Edinburgh, Lisbon, London</fullName>
+                <default>false</default>
+                <label>(GMT+1:00) British Summer Time: Dublin, Edinburgh, Lisbon, London</label>
+            </value>
+            <value>
+                <fullName>(GMT) Casablanca, Monrovia</fullName>
+                <default>false</default>
+                <label>(GMT) Casablanca, Monrovia</label>
+            </value>
+            <value>
+                <fullName>(GMT+1:00) Casablanca, Monrovia (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+1:00) Casablanca, Monrovia (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</fullName>
+                <default>false</default>
+                <label>(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</fullName>
+                <default>false</default>
+                <label>(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</fullName>
+                <default>false</default>
+                <label>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</label>
+            </value>
+            <value>
+                <fullName>(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</fullName>
+                <default>false</default>
+                <label>(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</label>
+            </value>
+            <value>
+                <fullName>(GMT+01:00) West Central Africa</fullName>
+                <default>false</default>
+                <label>(GMT+01:00) West Central Africa</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Athens, Istanbul, Minsk</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Athens, Istanbul, Minsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Athens (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Athens (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Bucharest</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Bucharest</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Bucharest (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Bucharest (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Cairo</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Cairo</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Harare, Pretoria</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Harare, Pretoria</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Helsinki, Kiev, Riga, Sofia, Tallinn, Vilnius</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Helsinki, Kiev, Riga, Sofia, Tallinn, Vilnius</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Helsinki, Kiev, Riga, Sofia, Tallinn, Vilnius (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Helsinki, Kiev, Riga, Sofia, Tallinn, Vilnius (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+02:00) Jerusalem</fullName>
+                <default>false</default>
+                <label>(GMT+02:00) Jerusalem</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Jerusalem (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Jerusalem (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Baghdad</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Baghdad</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Kuwait, Riyadh</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Kuwait, Riyadh</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Moscow, St. Petersburg, Volgograd</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Moscow, St. Petersburg, Volgograd</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:00) Nairobi</fullName>
+                <default>false</default>
+                <label>(GMT+03:00) Nairobi</label>
+            </value>
+            <value>
+                <fullName>(GMT+03:30) Tehran</fullName>
+                <default>false</default>
+                <label>(GMT+03:30) Tehran</label>
+            </value>
+            <value>
+                <fullName>(GMT+04:30) Tehran (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+04:30) Tehran (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+04:00) Abu Dhabi, Muscat</fullName>
+                <default>false</default>
+                <label>(GMT+04:00) Abu Dhabi, Muscat</label>
+            </value>
+            <value>
+                <fullName>(GMT+04:00) Baku, Tbilisi, Yerevan</fullName>
+                <default>false</default>
+                <label>(GMT+04:00) Baku, Tbilisi, Yerevan</label>
+            </value>
+            <value>
+                <fullName>(GMT+04:30) Kabul</fullName>
+                <default>false</default>
+                <label>(GMT+04:30) Kabul</label>
+            </value>
+            <value>
+                <fullName>(GMT+05:00) Ekaterinburg</fullName>
+                <default>false</default>
+                <label>(GMT+05:00) Ekaterinburg</label>
+            </value>
+            <value>
+                <fullName>(GMT+05:00) Islamabad, Karachi, Tashkent</fullName>
+                <default>false</default>
+                <label>(GMT+05:00) Islamabad, Karachi, Tashkent</label>
+            </value>
+            <value>
+                <fullName>(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</fullName>
+                <default>false</default>
+                <label>(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</label>
+            </value>
+            <value>
+                <fullName>(GMT+05:30) Sri Jayawardenepura</fullName>
+                <default>false</default>
+                <label>(GMT+05:30) Sri Jayawardenepura</label>
+            </value>
+            <value>
+                <fullName>(GMT+05:45) Kathmandu</fullName>
+                <default>false</default>
+                <label>(GMT+05:45) Kathmandu</label>
+            </value>
+            <value>
+                <fullName>(GMT+06:00) Almaty, Novosibirsk</fullName>
+                <default>false</default>
+                <label>(GMT+06:00) Almaty, Novosibirsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+06:00) Astana, Dhaka</fullName>
+                <default>false</default>
+                <label>(GMT+06:00) Astana, Dhaka</label>
+            </value>
+            <value>
+                <fullName>(GMT+06:30) Yangon Rangoon</fullName>
+                <default>false</default>
+                <label>(GMT+06:30) Yangon Rangoon</label>
+            </value>
+            <value>
+                <fullName>(GMT+07:00) Bangkok, Hanoi, Jakarta</fullName>
+                <default>false</default>
+                <label>(GMT+07:00) Bangkok, Hanoi, Jakarta</label>
+            </value>
+            <value>
+                <fullName>(GMT+07:00) Krasnoyarsk</fullName>
+                <default>false</default>
+                <label>(GMT+07:00) Krasnoyarsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+08:00) Beijing, Chongqing, Hong Kong SAR, Urumqi</fullName>
+                <default>false</default>
+                <label>(GMT+08:00) Beijing, Chongqing, Hong Kong SAR, Urumqi</label>
+            </value>
+            <value>
+                <fullName>(GMT+08:00) Kuala Lumpur, Singapore</fullName>
+                <default>false</default>
+                <label>(GMT+08:00) Kuala Lumpur, Singapore</label>
+            </value>
+            <value>
+                <fullName>(GMT+08:00) Irkutsk, Ulaanbaatar</fullName>
+                <default>false</default>
+                <label>(GMT+08:00) Irkutsk, Ulaanbaatar</label>
+            </value>
+            <value>
+                <fullName>(GMT+08:00) Perth</fullName>
+                <default>false</default>
+                <label>(GMT+08:00) Perth</label>
+            </value>
+            <value>
+                <fullName>(GMT+08:00) Taipei</fullName>
+                <default>false</default>
+                <label>(GMT+08:00) Taipei</label>
+            </value>
+            <value>
+                <fullName>(GMT+09:00) Osaka, Sapporo, Tokyo</fullName>
+                <default>false</default>
+                <label>(GMT+09:00) Osaka, Sapporo, Tokyo</label>
+            </value>
+            <value>
+                <fullName>(GMT+09:00) Seoul</fullName>
+                <default>false</default>
+                <label>(GMT+09:00) Seoul</label>
+            </value>
+            <value>
+                <fullName>(GMT+09:00) Yakutsk</fullName>
+                <default>false</default>
+                <label>(GMT+09:00) Yakutsk</label>
+            </value>
+            <value>
+                <fullName>(GMT+09:30) Adelaide</fullName>
+                <default>false</default>
+                <label>(GMT+09:30) Adelaide</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:30) Adelaide (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+10:30) Adelaide (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+09:30) Darwin</fullName>
+                <default>false</default>
+                <label>(GMT+09:30) Darwin</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:00) Brisbane</fullName>
+                <default>false</default>
+                <label>(GMT+10:00) Brisbane</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:00) Canberra, Melbourne, Sydney</fullName>
+                <default>false</default>
+                <label>(GMT+10:00) Canberra, Melbourne, Sydney</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:00) Canberra, Melbourne, Sydney (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+11:00) Canberra, Melbourne, Sydney (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:00) Guam, Port Moresby</fullName>
+                <default>false</default>
+                <label>(GMT+10:00) Guam, Port Moresby</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:00) Hobart</fullName>
+                <default>false</default>
+                <label>(GMT+10:00) Hobart</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:00) Hobart (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+11:00) Hobart (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+10:00) Vladivostok</fullName>
+                <default>false</default>
+                <label>(GMT+10:00) Vladivostok</label>
+            </value>
+            <value>
+                <fullName>(GMT+11:00) Magadan, Solomon Islands, New Caledonia</fullName>
+                <default>false</default>
+                <label>(GMT+11:00) Magadan, Solomon Islands, New Caledonia</label>
+            </value>
+            <value>
+                <fullName>(GMT+12:00) Fiji Islands, Kamchatka, Marshall Islands</fullName>
+                <default>false</default>
+                <label>(GMT+12:00) Fiji Islands, Kamchatka, Marshall Islands</label>
+            </value>
+            <value>
+                <fullName>(GMT+13:00) Fiji Islands, Kamchatka, Marshall Islands (SUMMER TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+13:00) Fiji Islands, Kamchatka, Marshall Islands (SUMMER TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+12:00) Auckland, Wellington</fullName>
+                <default>false</default>
+                <label>(GMT+12:00) Auckland, Wellington</label>
+            </value>
+            <value>
+                <fullName>(GMT+13:00) Auckland, Wellington (DAYLIGHT TIME)</fullName>
+                <default>false</default>
+                <label>(GMT+13:00) Auckland, Wellington (DAYLIGHT TIME)</label>
+            </value>
+            <value>
+                <fullName>(GMT+13:00) Nuku&#39;alofa</fullName>
+                <default>false</default>
+                <label>(GMT+13:00) Nuku&#39;alofa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

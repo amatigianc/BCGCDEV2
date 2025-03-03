@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Department of Education, NSW - automated email (Contact)</description>
+        <name>Department_of_Education_NSW_automated_email_Contact</name>
+        <label>Department of Education, NSW - automated email (Contact)</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Contact.Department_of_Education_NSW_automated_email_Contact</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Contact.Department_of_Education_NSW_automated_email_Contact</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>Department of Education, NSW - automated email (Contact)</description>
+    <environments>Default</environments>
+    <interviewLabel>Contact - Department of Education NWS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact - Department of Education NSW</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Department_of_Education_NSW_automated_email_Contact</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>DE_Offer_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inquiry</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DE_Offer_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Trial</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0038c000039wOMzAAM</stringValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

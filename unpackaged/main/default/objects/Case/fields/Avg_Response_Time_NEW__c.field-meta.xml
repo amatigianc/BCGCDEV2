@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avg_Response_Time_NEW__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*Return a value only when an email has been sent*/
+IF( 
+ CONTAINS(TEXT(Status), &quot;Pending - Customer&quot;) , (( Last_Email_Sent__c - Last_Email_Received__c )*24*60), 0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Avg Response Time (Mins)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

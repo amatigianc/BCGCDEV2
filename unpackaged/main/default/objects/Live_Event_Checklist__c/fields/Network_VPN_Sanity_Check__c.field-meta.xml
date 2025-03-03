@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Network_VPN_Sanity_Check__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Will the end-users be under VPN/Firewall?. This is a common issue for corporate events.</inlineHelpText>
+    <label>Network/VPN Sanity Check</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LE__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Live Event Coverage</label>
+    <referenceTo>Live_Event_Coverage__c</referenceTo>
+    <relationshipLabel>Live Event Test Checklists</relationshipLabel>
+    <relationshipName>Live_Event_Test_Checklists</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

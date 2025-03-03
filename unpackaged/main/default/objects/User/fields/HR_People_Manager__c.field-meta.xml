@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HR_People_Manager__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Up-to-date values from the HR platform, via the Identity management platform.</description>
+    <inlineHelpText>Up-to-date values from the HR platform, via the Identity management platform.</inlineHelpText>
+    <label>HR - People Manager</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

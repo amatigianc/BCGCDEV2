@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_Timezone__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Owner_Timezone_Offset__c,
+-12, &#39;IDLW&#39;,
+-11, &#39;NT&#39;,
+-10, &#39;HST&#39;,
+-9, &#39;AKST&#39;,
+-8, &#39;PST&#39;,
+-7, &#39;MST&#39;,
+-6, &#39;CST&#39;,
+-5, &#39;EST&#39;,
+-4, &#39;AST&#39;,
+-3, &#39;ART&#39;,
+-2, &#39;AT&#39;,
+-1, &#39;WAT&#39;,
+0, &#39;GMT&#39;,
+1, &#39;CET&#39;,
+2, &#39;EET&#39;,
+3, &#39;MSK&#39;,
+4, &#39;AMT&#39;,
+5, &#39;PKT&#39;,
+6, &#39;OMSK&#39;,
+7, &#39;KRAT&#39;,
+8, &#39;CST&#39;,
+9, &#39;JST&#39;,
+10, &#39;AEST&#39;,
+11, &#39;SAKT&#39;,
+&#39;NZST&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Owner&#39;s Timezone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

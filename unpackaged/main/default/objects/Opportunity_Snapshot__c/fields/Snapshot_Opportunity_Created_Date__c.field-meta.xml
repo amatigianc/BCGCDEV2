@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Snapshot_Opportunity_Created_Date__c</fullName>
+    <description>Date/time the opportunity was created. This is fixed on the opportunity, but recorded here so this info is not lost if the opportunity is deleted.</description>
+    <label>Snapshot Opportunity Created Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

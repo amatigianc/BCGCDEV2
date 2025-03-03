@@ -1,0 +1,2361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_Copy_2_of_notification_Email</name>
+        <label>Copy 1 of Copy 2 of notification Email</label>
+        <locationX>3152</locationX>
+        <locationY>1919</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>createEmailMessage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>tmpListOfEmails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>bc_support@brightcove.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>tmpEmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>tmpNeedMoreInfo_JP_HTML</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.Contact.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateID_NeedMoreInfo1_JA</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_1_of_notification_Email</name>
+        <label>Copy 1 of notification Email</label>
+        <locationX>2096</locationX>
+        <locationY>1919</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>createEmailMessage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>tmpListOfEmails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>bc_support@brightcove.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.Contact.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateID_InfoProvided1_ENG</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_Copy_2_of_notification_Email</name>
+        <label>Copy 2 of Copy 2 of notification Email</label>
+        <locationX>2888</locationX>
+        <locationY>1919</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>createEmailMessage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>tmpListOfEmails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>bc_support@brightcove.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>tmpEmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>tmpInfoProvided_JP_HTML</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.Contact.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateID_InfoProvided1_JA</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_notification_Email</name>
+        <label>Copy 2 of notification Email</label>
+        <locationX>2360</locationX>
+        <locationY>1919</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>createEmailMessage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>tmpListOfEmails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>bc_support@brightcove.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>tmpEmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>tmpNeedMoreInfo_EN_HTML</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.Contact.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateID_NeedMoreInfo1_ENG</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_3_of_Copy_2_of_notification_Email</name>
+        <label>Copy 3 of Copy 2 of notification Email</label>
+        <locationX>3680</locationX>
+        <locationY>1919</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>createEmailMessage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>tmpListOfEmails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>bc_support@brightcove.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>tmpEmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>tmpInfoProvided_KO_HTML</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.Contact.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateID_InfoProvided1_KO</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_4_of_Copy_2_of_notification_Email</name>
+        <label>Copy 4 of Copy 2 of notification Email</label>
+        <locationX>3944</locationX>
+        <locationY>1919</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>createEmailMessage</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>tmpListOfEmails</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>bc_support@brightcove.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>tmpEmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>tmpNeedMoreInfo_KO_HTML</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.Contact.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>EmailTemplateID_NeedMoreInfo1_KO</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>catchDateTimeStamp</name>
+        <label>catchDateTimeStamp</label>
+        <locationX>1370</locationX>
+        <locationY>492</locationY>
+        <assignmentItems>
+            <assignToReference>tmpStatusDateTimeStamp</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>casePriority</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_initCaseComment</name>
+        <label>Copy 1 of Copy 1 of Copy 1 of Copy 1 of initCaseComment</label>
+        <locationX>3944</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CommentBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfoCommentKO_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.IsPublished</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CreatedById</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getUserAPI.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Copy_1_of_Copy_2_of_Copy_1_of_initializeTmpEmailMessage</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Copy_1_of_Copy_1_of_initCaseComment</name>
+        <label>Copy 1 of Copy 1 of Copy 1 of initCaseComment</label>
+        <locationX>3152</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CommentBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfoCommentJP_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.IsPublished</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CreatedById</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getUserAPI.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Copy_2_of_Copy_1_of_initializeTmpEmailMessage</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Copy_1_of_Copy_2_of_Copy_1_of_initializeTmpEmailMessage</name>
+        <label>Copy 1 of Copy 1 of Copy 2 of Copy 1 of initializeTmpEmailMessage</label>
+        <locationX>3944</locationX>
+        <locationY>1811</locationY>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.RelatedToId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.CcAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.E2CP__AdditionalCC__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.ToAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.EmailTemplateId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.EmailTemplateId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.FromAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.FromAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.HtmlBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfo_KO_HTML</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.TextBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfo_KO_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_4_of_Copy_2_of_notification_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Copy_1_of_initCaseComment</name>
+        <label>Copy 1 of Copy 1 of initCaseComment</label>
+        <locationX>2888</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CommentBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvCommentJP_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.IsPublished</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CreatedById</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getUserAPI.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Copy_1_of_initializeTmpEmailMessage</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Copy_1_of_initializeTmpEmailMessage</name>
+        <label>Copy 1 of Copy 1 of initializeTmpEmailMessage</label>
+        <locationX>2360</locationX>
+        <locationY>1811</locationY>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.RelatedToId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.CcAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.E2CP__AdditionalCC__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.ToAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.EmailTemplateId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.EmailTemplateId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.FromAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.FromAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.HtmlBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfo_EN_HTML</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.TextBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfo_EN_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_notification_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Copy_2_of_Copy_1_of_initializeTmpEmailMessage</name>
+        <label>Copy 1 of Copy 2 of Copy 1 of initializeTmpEmailMessage</label>
+        <locationX>3152</locationX>
+        <locationY>1811</locationY>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.RelatedToId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.CcAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.E2CP__AdditionalCC__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.ToAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.EmailTemplateId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.EmailTemplateId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.FromAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.FromAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.HtmlBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfo_JP_HTML</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.TextBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfo_JP_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Copy_2_of_notification_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_initCaseComment</name>
+        <label>Copy 1 of initCaseComment</label>
+        <locationX>2096</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CommentBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvCommentEmailTXT</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.IsPublished</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CreatedById</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getUserAPI.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_initializeTmpEmailMessage</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_initializeTmpEmailMessage</name>
+        <label>Copy 1 of initializeTmpEmailMessage</label>
+        <locationX>2096</locationX>
+        <locationY>1811</locationY>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.RelatedToId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.CcAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.E2CP__AdditionalCC__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.ToAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.EmailTemplateId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.EmailTemplateId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.FromAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.FromAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.HtmlBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvided_EN_HTML</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.TextBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvided_EN_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_notification_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Copy_1_of_Copy_1_of_initCaseComment</name>
+        <label>Copy 2 of Copy 1 of Copy 1 of initCaseComment</label>
+        <locationX>3680</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CommentBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvCommentKO_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.IsPublished</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CreatedById</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getUserAPI.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Copy_2_of_Copy_1_of_initializeTmpEmailMessage</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Copy_1_of_initializeTmpEmailMessage</name>
+        <label>Copy 2 of Copy 1 of initializeTmpEmailMessage</label>
+        <locationX>2888</locationX>
+        <locationY>1811</locationY>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.RelatedToId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.CcAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.E2CP__AdditionalCC__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.ToAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.EmailTemplateId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.EmailTemplateId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.FromAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.FromAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.HtmlBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvided_JP_HTML</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.TextBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvided_JP_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_2_of_Copy_2_of_notification_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Copy_2_of_Copy_1_of_initializeTmpEmailMessage</name>
+        <label>Copy 2 of Copy 2 of Copy 1 of initializeTmpEmailMessage</label>
+        <locationX>3680</locationX>
+        <locationY>1811</locationY>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.RelatedToId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.CcAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.E2CP__AdditionalCC__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.ToAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactEmail</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.EmailTemplateId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.EmailTemplateId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.FromAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getLastEmailSent.FromAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.HtmlBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvided_KO_HTML</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpEmailMessage.TextBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpInfoProvided_KO_TXT</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_3_of_Copy_2_of_notification_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>initCaseCommentNeedMoreInfo_EN</name>
+        <label>initCaseCommentNeedMoreInfo_EN</label>
+        <locationX>2360</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.ParentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CommentBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tmpNeedMoreInfoCommentEmailTXT</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.IsPublished</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpNewCommentRecord.CreatedById</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getUserAPI.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Copy_1_of_Copy_1_of_initializeTmpEmailMessage</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>EmailTemplateID_InfoProvided1_ENG</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00X8c000001u9xmEAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>EmailTemplateID_InfoProvided1_JA</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00X8c000001u9xiEAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>EmailTemplateID_InfoProvided1_KO</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00X8c000001u9xjEAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>EmailTemplateID_NeedMoreInfo1_ENG</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00X8c000001u9y0EAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>EmailTemplateID_NeedMoreInfo1_JA</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00X8c000001u9xwEAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <name>EmailTemplateID_NeedMoreInfo1_KO</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>00X8c000001u9xxEAA</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>caseLanguage</name>
+        <label>caseLanguage</label>
+        <locationX>3548</locationX>
+        <locationY>1487</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_CaseStatus</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Englis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case_Language__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>English</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CaseStatus</targetReference>
+            </connector>
+            <label>English</label>
+        </rules>
+        <rules>
+            <name>Japanese</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case_Language__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Japanese</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_CaseStatus</targetReference>
+            </connector>
+            <label>Japanese</label>
+        </rules>
+        <rules>
+            <name>Korean</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case_Language__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Korean</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_2_of_CaseStatus</targetReference>
+            </connector>
+            <label>Korean</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>casePriority</name>
+        <label>casePriority</label>
+        <locationX>1370</locationX>
+        <locationY>600</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>P1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>P1 - Critical</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>whatCaseStatus</targetReference>
+            </connector>
+            <label>P1</label>
+        </rules>
+        <rules>
+            <name>P2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>P2 - Important</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_whatCaseStatus</targetReference>
+            </connector>
+            <label>P2</label>
+        </rules>
+        <rules>
+            <name>P3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>P3 - Normal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_1_of_whatCaseStatus</targetReference>
+            </connector>
+            <label>P3</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CaseStatus</name>
+        <label>CaseStatus</label>
+        <locationX>2360</locationX>
+        <locationY>1595</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isInfoProvided</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_initCaseComment</targetReference>
+            </connector>
+            <label>isInfoProvided</label>
+        </rules>
+        <rules>
+            <name>isNeedMoreInfo</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>initCaseCommentNeedMoreInfo_EN</targetReference>
+            </connector>
+            <label>isNeedMoreInfo</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>checkCaseStatus</name>
+        <label>checkCaseStatus</label>
+        <locationX>3086</locationX>
+        <locationY>384</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Pending_Customer_Info_Provided</name>
+            <conditionLogic>((1 OR 2) AND (3 OR 4)) OR (5 OR  6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>P2 - Important</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>P3 - Normal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info provided - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>flipToNeedToClose</targetReference>
+            </connector>
+            <label>Pending Customer - Info Provided</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_CaseStatus</name>
+        <label>Copy 1 of CaseStatus</label>
+        <locationX>4736</locationX>
+        <locationY>1595</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_isInfoProvided</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Copy_1_of_initCaseComment</targetReference>
+            </connector>
+            <label>Copy 1 of isInfoProvided</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_isNeedMoreInfo</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>initCaseCommentNeedMoreInfo_EN</targetReference>
+            </connector>
+            <label>Copy 1 of isNeedMoreInfo</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_checkCaseStatus</name>
+        <label>Copy 1 of checkCaseStatus</label>
+        <locationX>3878</locationX>
+        <locationY>384</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Pending_Customer_Info_Provided</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>P1 - Critical</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>flipToNeedToClose</targetReference>
+            </connector>
+            <label>Copy 1 of Pending Customer - Info Provided</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_Copy_1_of_whatCaseStatus</name>
+        <label>Copy 1 of Copy 1 of whatCaseStatus</label>
+        <locationX>1898</locationX>
+        <locationY>708</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Copy_1_of_isNeedMoreInfoProvided</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateP3Notice1Notice2</targetReference>
+            </connector>
+            <label>Copy 1 of Copy 1 of isNeedMoreInfoProvided</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_Copy_1_of_isNeedMoreInfo8</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info provided - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_1_of_updateNotice1_8</targetReference>
+            </connector>
+            <label>Copy 1 of Copy 1 of isNeedMoreInfo8</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_Copy_2_of_CaseStatus</name>
+        <label>Copy 1 of Copy 2 of CaseStatus</label>
+        <locationX>3944</locationX>
+        <locationY>1595</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Copy_2_of_isInfoProvided</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Copy_1_of_Copy_1_of_initCaseComment</targetReference>
+            </connector>
+            <label>Copy 1 of Copy 2 of isInfoProvided</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_Copy_2_of_isNeedMoreInfo</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_1_of_Copy_1_of_Copy_1_of_initCaseComment</targetReference>
+            </connector>
+            <label>Copy 1 of Copy 2 of isNeedMoreInfo</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_UserHasBypassValidation</name>
+        <label>Copy 1 of UserHasBypassValidation</label>
+        <locationX>3284</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>checkCaseStatus</targetReference>
+            </connector>
+            <label>Copy 1 of NO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_whatCaseStatus</name>
+        <label>Copy 1 of whatCaseStatus</label>
+        <locationX>1106</locationX>
+        <locationY>708</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_isNeedMoreInfoProvided</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateP2Notice1Notice2</targetReference>
+            </connector>
+            <label>Copy 1 of isNeedMoreInfoProvided</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_isNeedMoreInfo8</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info provided - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_updateNotice1_8</targetReference>
+            </connector>
+            <label>Copy 1 of isNeedMoreInfo8</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_CaseStatus</name>
+        <label>Copy 2 of CaseStatus</label>
+        <locationX>3152</locationX>
+        <locationY>1595</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_isInfoProvided</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_1_of_initCaseComment</targetReference>
+            </connector>
+            <label>Copy 2 of isInfoProvided</label>
+        </rules>
+        <rules>
+            <name>Copy_2_of_isNeedMoreInfo</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Copy_1_of_Copy_1_of_initCaseComment</targetReference>
+            </connector>
+            <label>Copy 2 of isNeedMoreInfo</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_UserHasBypassValidation</name>
+        <label>Copy 2 of UserHasBypassValidation</label>
+        <locationX>4076</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_checkCaseStatus</targetReference>
+            </connector>
+            <label>Copy 2 of NO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_3_of_UserHasBypassValidation</name>
+        <label>Copy 3 of UserHasBypassValidation</label>
+        <locationX>4626</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>getLastEmailSent</targetReference>
+            </connector>
+            <label>Copy 3 of NO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_4_of_UserHasBypassValidation</name>
+        <label>Copy 4 of UserHasBypassValidation</label>
+        <locationX>5066</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_4_of_NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>getLastEmailSent</targetReference>
+            </connector>
+            <label>Copy 4 of NO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>UserHasBypassValidation</name>
+        <label>UserHasBypassValidation</label>
+        <locationX>2030</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>getUserAPI</targetReference>
+            </connector>
+            <label>NO</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>whatCaseStatus</name>
+        <label>whatCaseStatus</label>
+        <locationX>314</locationX>
+        <locationY>708</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isNeedMoreInfoProvided</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info Provided</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateNotice1</targetReference>
+            </connector>
+            <label>isNeedMoreInfoProvided</label>
+        </rules>
+        <rules>
+            <name>isNeedMoreInfo8</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Info provided - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending - Customer - Need More Info - 8</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_updateNotice1</targetReference>
+            </connector>
+            <label>isNeedMoreInfo8</label>
+        </rules>
+    </decisions>
+    <description>Corrected ID for NeedMoreInfo1</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>tmpListOfEmails</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.ContactEmail}&amp;&quot;,&quot;&amp;{!$Record.E2CP__AdditionalCC__c}&amp;&quot;,&quot;&amp;{!$Record.E2CP__AdditionalTo__c}&amp;&quot;,&quot;&amp;&quot;{!$Record.E2CP__AdditionalBCC__c}&quot;</expression>
+    </formulas>
+    <formulas>
+        <description>calculates new Notice 1</description>
+        <name>tmpP1_Notice1</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpStatusDateTimeStamp + 24/24*/
+CASE(
+MOD( 
+DATEVALUE({!tmpStatusDateTimeStamp}+24/24) - DATE(1900, 1, 7), 7),
+0, {!tmpStatusDateTimeStamp}+24/24 + 24/24, 
+5, {!tmpStatusDateTimeStamp}+24/24 + 24/24+48/24,  
+6, {!tmpStatusDateTimeStamp}+24/24 + 24/24+24/24,  
+{!tmpStatusDateTimeStamp} + 24/24
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpP1Notice1_8</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpStatusDateTimeStamp+4*/
+ CASE(
+MOD( 
+DATEVALUE({!tmpStatusDateTimeStamp}+4) - DATE(1900, 1, 7), 7),
+0, {!tmpStatusDateTimeStamp}+4 + 24/24, 
+5, {!tmpStatusDateTimeStamp}+4 + 24/24+48/24,  
+6, {!tmpStatusDateTimeStamp}+4 + 24/24+24/24,  
+{!tmpStatusDateTimeStamp}+4
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpP1Notice2_8</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpP1Notice1_8+4*/
+CASE(
+MOD( DATEVALUE({!tmpP1Notice1_8}+4) - DATE(1900, 1, 7), 7),
+0, {!tmpP1Notice1_8}+4+ 24/24, 
+5, {!tmpP1Notice1_8}+4 + 24/24+48/24,  
+6, {!tmpP1Notice1_8}+4 + 24/24+24/24,  
+{!tmpP1Notice1_8}+4
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpP2_Notice1</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpStatusDateTimeStamp+ 24/24 */
+
+CASE(
+MOD( DATEVALUE({!tmpStatusDateTimeStamp}+ 24/24) - DATE(1900, 1, 7), 7),
+0, {!tmpStatusDateTimeStamp}+ 24/24 + 24/24, 
+5, {!tmpStatusDateTimeStamp}+ 24/24 + 24/24+48/24,  
+6, {!tmpStatusDateTimeStamp}+ 24/24 + 24/24+24/24,  
+{!tmpStatusDateTimeStamp}+ 24/24
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpP2_Notice2</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpP2_Notice1+24/24 */
+
+CASE(
+MOD( DATEVALUE({!tmpP2_Notice1}+24/24) - DATE(1900, 1, 7), 7),
+0, {!tmpP2_Notice1}+24/24 + 24/24, 
+5, {!tmpP2_Notice1}+24/24 + 24/24+48/24,  
+6, {!tmpP2_Notice1}+24/24 + 24/24+24/24,  
+{!tmpP2_Notice1}+24/24
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpP2Notice_8</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpStatusDateTimeStamp+4 */
+
+CASE(
+MOD( DATEVALUE({!tmpStatusDateTimeStamp}+4) - DATE(1900, 1, 7), 7),
+0, {!tmpStatusDateTimeStamp}+4 + 24/24, 
+5, {!tmpStatusDateTimeStamp}+4 + 24/24+48/24,  
+6, {!tmpStatusDateTimeStamp}+4 + 24/24+24/24,  
+{!tmpStatusDateTimeStamp}+4
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpP3_Notice1</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpStatusDateTimeStamp+48/24 */
+
+CASE(
+MOD( DATEVALUE({!tmpStatusDateTimeStamp}+48/24) - DATE(1900, 1, 7), 7),
+0, {!tmpStatusDateTimeStamp}+48/24 + 24/24, 
+5, {!tmpStatusDateTimeStamp}+48/24 + 24/24+48/24,  
+6, {!tmpStatusDateTimeStamp}+48/24 + 24/24+24/24,  
+{!tmpStatusDateTimeStamp}+48/24
+)</expression>
+    </formulas>
+    <formulas>
+        <name>tmpP3_Notice2</name>
+        <dataType>DateTime</dataType>
+        <expression>/*tmpP3_Notice1+48/24*/
+CASE(
+MOD( DATEVALUE({!tmpP3_Notice1}+48/24) - DATE(1900, 1, 7), 7),
+0, {!tmpP3_Notice1}+48/24 + 24/24, 
+5, {!tmpP3_Notice1}+48/24 + 24/24+48/24,  
+6, {!tmpP3_Notice1}+48/24 + 24/24+24/24,  
+{!tmpP3_Notice1}+48/24
+)</expression>
+    </formulas>
+    <interviewLabel>Case - Notice1Notice2Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - Notice1Notice2Update2x4x8</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>addCaseComment</name>
+        <label>addCaseComment</label>
+        <locationX>3548</locationX>
+        <locationY>2303</locationY>
+        <inputReference>tmpNewCommentRecord</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>createEmailMessage</name>
+        <label>createEmailMessage</label>
+        <locationX>3548</locationX>
+        <locationY>2195</locationY>
+        <connector>
+            <targetReference>addCaseComment</targetReference>
+        </connector>
+        <inputReference>tmpEmailMessage</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>getLastEmailSent</name>
+        <label>getLastEmailSent</label>
+        <locationX>3548</locationX>
+        <locationY>1379</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>caseLanguage</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RelatedToId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EmailMessage</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>getUserAPI</name>
+        <label>getUserAPI</label>
+        <locationX>1370</locationX>
+        <locationY>384</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>catchDateTimeStamp</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Email</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>salesforce@brightcove.com</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Copy_1_of_Copy_1_of_updateNotice1_8</name>
+        <label>Copy 1 of Copy 1 of updateNotice1_8</label>
+        <locationX>1898</locationX>
+        <locationY>816</locationY>
+        <inputAssignments>
+            <field>Notice_1_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP1Notice1_8</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Notice_2_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP1Notice2_8</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_1_of_updateNotice1</name>
+        <label>updateNotice1_8</label>
+        <locationX>314</locationX>
+        <locationY>816</locationY>
+        <inputAssignments>
+            <field>Notice_1_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP1Notice1_8</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Notice_2_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP1Notice2_8</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Copy_1_of_updateNotice1_8</name>
+        <label>Copy 1 of updateNotice1_8</label>
+        <locationX>1106</locationX>
+        <locationY>816</locationY>
+        <inputAssignments>
+            <field>Notice_1_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP1Notice1_8</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Notice_2_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP1Notice2_8</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>flipToNeedToClose</name>
+        <label>flipToNeedToClose</label>
+        <locationX>2954</locationX>
+        <locationY>492</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Need To Close</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updateNotice1</name>
+        <label>updateNotice1</label>
+        <locationX>50</locationX>
+        <locationY>816</locationY>
+        <inputAssignments>
+            <field>Notice_1_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP1_Notice1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updateP2Notice1Notice2</name>
+        <label>updateP2Notice1Notice2</label>
+        <locationX>842</locationX>
+        <locationY>816</locationY>
+        <inputAssignments>
+            <field>Notice_1_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP2_Notice1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Notice_2_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP2_Notice2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updateP3Notice1Notice2</name>
+        <label>updateP3Notice1Notice2</label>
+        <locationX>1634</locationX>
+        <locationY>816</locationY>
+        <inputAssignments>
+            <field>Notice_1_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP3_Notice1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Notice_2_Date_Time__c</field>
+            <value>
+                <elementReference>tmpP3_Notice2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>3422</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>UserHasBypassValidation</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending - Customer - Info Provided</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending - Customer - Need More Info</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending - Customer - Info provided - 8</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pending - Customer - Need More Info - 8</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>switchToNeedMoreInfo</name>
+            <connector>
+                <targetReference>Copy_1_of_UserHasBypassValidation</targetReference>
+            </connector>
+            <label>switchToNeedToClose</label>
+            <offsetNumber>8</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Notice_2_Date_Time__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>p1SwitchToNeedToClose</name>
+            <connector>
+                <targetReference>Copy_2_of_UserHasBypassValidation</targetReference>
+            </connector>
+            <label>p1SwitchToNeedToClose</label>
+            <offsetNumber>8</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Notice_1_Date_Time__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>sendNotice1</name>
+            <connector>
+                <targetReference>Copy_3_of_UserHasBypassValidation</targetReference>
+            </connector>
+            <label>sendNotice1</label>
+            <offsetNumber>0</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Notice_1_Date_Time__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>sendNotice2</name>
+            <connector>
+                <targetReference>Copy_4_of_UserHasBypassValidation</targetReference>
+            </connector>
+            <label>sendNotice2</label>
+            <offsetNumber>0</offsetNumber>
+            <offsetUnit>Hours</offsetUnit>
+            <recordField>Notice_2_Date_Time__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>tmpEmailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Case {!$Record.CaseNumber}, created on {!$Record.CreatedDate}&lt;/p&gt;&lt;p&gt;{!$Record.Subject}&lt;/p&gt;&lt;p&gt;-------------------------------------------------&lt;/p&gt;&lt;p&gt;Hi  {!$Record.Contact.First_Name_Local__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This is just a quick note to ensure we clearly answered your request with our last email. If not, please let us know so that we may further assist you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you,&lt;/p&gt;&lt;p&gt;{!$Record.Owner:User.FirstName}&lt;/p&gt;&lt;p&gt;The Brightcove Customer Support Team&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can see all of your cases in our Support Portal, and the current system status is always available on our Status Page.&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpEmailBodyRich</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;sdfasfd&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpEmailSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Brightcove Case {!$Record.CaseNumber}{!$Record.E2CP__Case_Thread_Id__c}{!$Record.Subject}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvCommentEmailTXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Case {!$Record.CaseNumber}, created on {!$Record.CreatedDate}
+{!$Record.Subject}
+Hi {!$Record.Contact.FirstName},
+This is just a quick note to ensure we clearly answered your request with our last email. If not, please let us know so that we may further assist you.
+Thank you
+ {!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team
+You can see all of your cases in our Support Portal, and current system status is always available on our Status Page.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvCommentJP_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>サポートケース番号：{!$Record.CaseNumber}、作成日：{!$Record.CreatedDate}
+{!$Record.Subject}
+
+ご担当者様
+平素より大変お世話になっております。
+ブライトコーブサポートです。
+本件、その後状況はいかがでしょうか。
+お送りした回答にご不明な点がございましたら、引き続き対応させていただきますので、
+ご連絡いただければと存じます。
+以上、よろしくお願い申し上げます。
+* 本メールは自動メールとなりますが、本メールにご返信いただくことで引き続き対応をさせていただきます。
+ブライトコーブサポートチーム
+サポート専用ポータルより全てのサポートケースをご覧頂くことができます。現在のシステム稼働状況につきましてはシステムステータスページよりご確認いただくことができます。</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvCommentKO_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.CreatedDate}에 생성된 케이스 {!$Record.CreatedDate}
+{!$Record.Subject}
+
+안녕하세요 {!$Record.Contact.FirstName}님,
+
+지난번 요청하셨던 사항에 대해서 보내드렸던 메일이 충분한 답변이 되었는지 문의 드리기 위해 메일 보냅니다. 만약 충분한 답변이 되지 않았다면 말씀해 주시기 바랍니다, 계속 지원할 수 있도록 하겠습니다.
+빠른 시간내에 회신 주시면 감사하겠습니다. 즐거운 하루 되길 바랍니다!
+
+ {!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvided_EN_HTML</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Case {!$Record.CaseNumber}, created on &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!$Record.CreatedDate}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!$Record.Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Hi {!$Record.Contact.FirstName},&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This is just a quick note to ensure we clearly answered your request with our last email. If not, please let us know so that we may further assist you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;{!$Record.Owner:User.FirstName}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The Brightcove Customer Support Team&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can see all of your cases in our &lt;a href=&quot;https://supportportal.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Support Portal&lt;/a&gt;, and current system status is always available on our &lt;a href=&quot;https://status.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Status Page&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Our last response on {!$Record.Last_Email_Sent__c}:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__Most_Recent_Public_Comment__c}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvided_EN_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Case {!$Record.CaseNumber}, created on {!$Record.CreatedDate}
+{!$Record.Subject}
+
+Hi {!$Record.Contact.FirstName},
+
+This is just a quick note to ensure we clearly answered your request with our last email. If not, please let us know so that we may further assist you.
+
+Thank you,
+ {!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team
+You can see all of your cases in our Support Portal (https://supportportal.brightcove.com), and current system status is always available on our Status Page (https://status.brightcove.com).
+-------------------------------------------------
+Our last response on {!$Record.Last_Email_Sent__c}:
+{!$Record.E2CP__Most_Recent_Public_Comment__c}
+
+
+
+Brightcove Inc., 290 Congress Street, 4th Floor, Boston, MA 02210, USA</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvided_JP_HTML</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;サポートケース番号：{!$Record.CaseNumber}、作成日：{!$Record.CreatedDate}&lt;/p&gt;&lt;p&gt;{!$Record.Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;ご担当者様&lt;/p&gt;&lt;p&gt;平素より大変お世話になっております。&lt;/p&gt;&lt;p&gt;ブライトコーブサポートです。&lt;/p&gt;&lt;p&gt;本件、その後状況はいかがでしょうか。&lt;/p&gt;&lt;p&gt;お送りした回答にご不明な点がございましたら、引き続き対応させていただきますので、&lt;/p&gt;&lt;p&gt;ご連絡いただければと存じます。&lt;/p&gt;&lt;p&gt;以上、よろしくお願い申し上げます。&lt;/p&gt;&lt;p&gt;* 本メールは自動メールとなりますが、本メールにご返信いただくことで引き続き対応をさせていただきます。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;ブライトコーブサポートチーム&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://brightcove--c.na171.content.force.com/email/%E2%80%9Chttps://supportportal.brightcove.com%E2%80%9C&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(8, 8, 140);&quot;&gt;サポート専用ポータル&lt;/a&gt;より全てのサポートケースをご覧頂くことができます。現在のシステム稼働状況につきましては&lt;a href=&quot;https://brightcove--c.na171.content.force.com/email/%E2%80%9Chttps://status.brightcove.com/%E2%80%9C&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(8, 8, 140);&quot;&gt;システムステータスページ&lt;/a&gt;よりご確認いただくことができます。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;最終回答日 {!$Record.Last_Email_Sent__c}:&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__Most_Recent_Public_Comment__c}&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__HistoryText__c}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvided_JP_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Brightcove Support
+
+サポートケース番号：{!$Record.CaseNumber}、作成日：{!$Record.CreatedDate}
+{!$Record.Subject}
+
+ご担当者様
+
+平素より大変お世話になっております。
+ブライトコーブサポートです。
+
+本件、その後状況はいかがでしょうか。
+お送りした回答にご不明な点がございましたら、引き続き対応させていただきますので、
+ご連絡いただければと存じます。
+
+以上、よろしくお願い申し上げます。
+
+* 本メールは自動メールとなりますが、本メールにご返信いただくことで引き続き対応をさせていただきます。
+
+ブライトコーブサポートチーム
+
+サポート専用ポータルより全てのサポートケースをご覧頂くことができます。現在のシステム稼働状況につきましてはシステムステータスページよりご確認いただくことができます。
+
+最終回答日 {!$Record.Last_Email_Sent__c}:
+
+{!$Record.E2CP__Most_Recent_Public_Comment__c}
+{!$Record.E2CP__HistoryText__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvided_KO_HTML</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!$Record.CreatedDate}&lt;/span&gt; 에 생성된 케이스 {!$Record.CaseNumber}&lt;/p&gt;&lt;p&gt;{!$Record.Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;안녕하세요 {!$Record.Contact.FirstName}님,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;지난번 요청하셨던 사항에 대해서 보내드렸던 메일이 충분한 답변이 되었는지 문의 드리기 위해 메일 보냅니다. 만약 충분한 답변이 되지 않았다면 말씀해 주시기 바랍니다, 계속 지원할 수 있도록 하겠습니다.&lt;/p&gt;&lt;p&gt;빠른 시간내에 회신 주시면 감사하겠습니다. 즐거운 하루 되길 바랍니다!&lt;/p&gt;&lt;p&gt;&amp;nbsp;{!$Record.Owner:User.FirstName}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The Brightcove Customer Support Team&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://supportportal.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial;&quot;&gt;Support Portal&lt;/a&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial; color: rgb(51, 51, 51);&quot;&gt;&amp;nbsp;에서 모두 확인하실 수 있으며, 현재 시스템 상태는&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;https://status.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial;&quot;&gt;Status Page&lt;/a&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial; color: rgb(51, 51, 51);&quot;&gt;&amp;nbsp;링크를 통해 확인하실 수 있습니다.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;지난번에 드렸던 회신 {!$Record.Last_Email_Sent__c}:&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__Most_Recent_Public_Comment__c}&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__HistoryText__c}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpInfoProvided_KO_TXT</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!$Record.CreatedDate} &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;에 생성된 케이스 {!&lt;/span&gt;$Record&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;.CaseNumber}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;{!&lt;/span&gt;$Record&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;.Subject}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;안녕하세요 {!$Record.Contact.FirstName}님&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;지난번 요청하셨던 사항에 대해서 보내드렸던 메일이 충분한 답변이 되었는지 문의 드리기 위해 메일 보냅니다. 만약 충분한 답변이 되지 않았다면 말씀해 주시기 바랍니다, 계속 지원할 수 있도록 하겠습니다.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;빠른 시간내에 회신 주시면 감사하겠습니다. 즐거운 하루 되길 바랍니다!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;{!$Record.Owner:User.FirstName}&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;The Brightcove Customer Support Team&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;리포트 해주신 케이스들은 Support Portal (&lt;/span&gt;&lt;a href=&quot;https://supportportal.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;https://supportportal.brightcove.com&lt;/a&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;) 에서 모두 확인하실 수 있으며, 현재 시스템 상태는 Status Page (&lt;/span&gt;&lt;a href=&quot;https://status.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;https://status.brightcove.com&lt;/a&gt;&lt;span style=&quot;font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;) 링크를 통해 확인하실 수 있습니다.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;-------------------------------------------------&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;지난번에 드렸던 회신 {!&lt;/span&gt;$Record&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;.Last_Email_Sent__c}:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;{!&lt;/span&gt;$Record&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;.E2CP__Most_Recent_Public_Comment__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;{!&lt;/span&gt;$Record&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);&quot;&gt;.E2CP__HistoryText__c}&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfo_EN_HTML</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Case {!$Record.CaseNumber}, created on &lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!$Record.CreatedDate}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!$Record.Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Hi&amp;nbsp;{!$Record.Contact.FirstName},&lt;/p&gt;&lt;p&gt;This is just a quick note to gently remind you that we are waiting to receive information from you in order to complete our investigation as I outlined in my previous email. Please send over this information at your earliest convenience so that I can continue to assist you.&lt;/p&gt;&lt;p&gt;If this matter is no longer an issue for you, please let us know. We look forward to hearing back from you. Have a great day!&lt;/p&gt;&lt;p&gt;Thank you&lt;/p&gt;&lt;p&gt;  {!$Record.Owner:User.FirstName}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The Brightcove Customer Support Team&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;You can see all of your cases in our&amp;nbsp;&lt;a href=&quot;https://supportportal.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;Support Portal&lt;/a&gt;, and the current system status is always available on our&amp;nbsp;&lt;a href=&quot;https://status.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;Status Page&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Our last response on {!$Record.Last_Email_Sent__c}:&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__Most_Recent_Public_Comment__c}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfo_EN_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Case {!$Record.CaseNumber}, created on {!$Record.CreatedDate}
+{!$Record.Subject}
+Hi {!$Record.Contact.FirstName},
+This is just a quick note to gently remind you that we are waiting to receive information from you in order to complete our investigation as I outlined in my previous email. Please send over this information at your earliest convenience so that I can continue to assist you.
+If this matter is no longer an issue for you, please let us know. We look forward to hearing back from you. Have a great day!
+Thank you
+  {!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team
+You can see all of your cases in our Support Portal, and current system status is always available on our Status Page.
+
+Our last response on {!$Record.Last_Email_Sent__c}:
+{!$Record.E2CP__Most_Recent_Public_Comment__c}
+{!$Record.E2CP__HistoryText__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfo_JP_HTML</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;サポートケース番号：{!$Record.CaseNumber}、作成日：&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!$Record.CreatedDate}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!$Record.Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;ご担当者様&lt;/p&gt;&lt;p&gt;平素より大変お世話になっております。&lt;/p&gt;&lt;p&gt;ブライトコーブサポートです。&lt;/p&gt;&lt;p&gt;本件、その後状況はいかがでしょうか。&lt;/p&gt;&lt;p&gt;恐れ入りますが、引き続きの調査のため、前回ご連絡差し上げた調査に必要な情報を&lt;/p&gt;&lt;p&gt;ご提供いただければと存じます。&lt;/p&gt;&lt;p&gt;なお、問題が既に解決している場合におきましてもご一報いただきたくお願い致します。&lt;/p&gt;&lt;p&gt;以上、よろしくお願い申し上げます。&lt;/p&gt;&lt;p&gt;* 本メールは自動メールとなりますが、本メールにご返信いただくことで引き続き対応をさせていただきます。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;ブライトコーブサポートチーム&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://brightcove--c.na171.content.force.com/email/%E2%80%9Chttps://supportportal.brightcove.com%E2%80%9C&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(8, 8, 140);&quot;&gt;サポート専用ポータル&lt;/a&gt;より全てのサポートケースをご覧頂くことができます。現在のシステム稼働状況につきましては&lt;a href=&quot;https://brightcove--c.na171.content.force.com/email/%E2%80%9Chttps://status.brightcove.com/%E2%80%9C&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(8, 8, 140);&quot;&gt;システムステータスページ&lt;/a&gt;よりご確認いただくことができます。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;最終回答日 {!$Record.Last_Email_Sent__c}:&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__Most_Recent_Public_Comment__c}&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__HistoryText__c}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfo_JP_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Brightcove Support
+
+サポートケース番号：{!$Record.CaseNumber}、作成日：{!$Record.CreatedDate}
+{!$Record.Subject}
+
+ご担当者様
+
+平素より大変お世話になっております。
+ブライトコーブサポートです。
+
+本件、その後状況はいかがでしょうか。
+恐れ入りますが、引き続きの調査のため、前回ご連絡差し上げた調査に必要な情報を
+ご提供いただければと存じます。
+
+なお、問題が既に解決している場合におきましてもご一報いただきたくお願い致します。
+
+以上、よろしくお願い申し上げます。
+
+* 本メールは自動メールとなりますが、本メールにご返信いただくことで引き続き対応をさせていただきます。
+
+ブライトコーブサポートチーム
+
+サポート専用ポータルより全てのサポートケースをご覧頂くことができます。現在のシステム稼働状況につきましてはシステムステータスページよりご確認いただくことができます。
+
+最終回答日 {!$Record.Last_Email_Sent__c}$Record:
+
+{!$Record.E2CP__Most_Recent_Public_Comment__c}
+{!$Record.E2CP__HistoryText__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfo_KO_HTML</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!$Record.CreatedDate}&lt;/span&gt; 에 생성된 케이스 {!$Record.CaseNumber}&lt;/p&gt;&lt;p&gt;{!$Record.Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;안녕하세요 {!$Record.Contact.FirstName}님&amp;nbsp;,&lt;/p&gt;&lt;p&gt;지난번 메일에 요청 드렸던 정보에 대해서 답변을 기다리고 있다는 것을 알려드리기 위해 메일 드립니다. 문제에 대한 조사를 진행하기 위해서 필수적인 사항이며 응답 가능하신 되도록이면 빠른 시간내에 정보를 주시면 계속 지원해 드릴 수 있도록 진행하겠습니다.&lt;/p&gt;&lt;p&gt;만약, 더 이상 문제가 되지 않거나 지원이 필요없으면 말씀해 주시기 바랍니다. 빠른 시간내에 회신 주시면 감사하겠습니다. 즐거운 하루 되길 바랍니다!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;{!$Record.Owner:User.FirstName}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The Brightcove Customer Support Team&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://supportportal.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial;&quot;&gt;Support Portal&lt;/a&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial; color: rgb(51, 51, 51);&quot;&gt;&amp;nbsp;에서 모두 확인하실 수 있으며, 현재 시스템 상태는&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;https://status.brightcove.com/&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial;&quot;&gt;Status Page&lt;/a&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 15px; font-family: Arial; color: rgb(51, 51, 51);&quot;&gt;&amp;nbsp;링크를 통해 확인하실 수 있습니다.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;지난번에 드렸던 회신 {!$Record.Last_Email_Sent__c}:&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__Most_Recent_Public_Comment__c}&lt;/p&gt;&lt;p&gt;{!$Record.E2CP__HistoryText__c}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfo_KO_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.CreatedDate} 에 생성된 케이스 {!$Record.CaseNumber}
+{!$Record.Subject}
+
+안녕하세요 {!$Record.Contact.FirstName}님,
+
+지난번 메일에 요청 드렸던 정보에 대해서 답변을 기다리고 있다는 것을 알려드리기 위해 메일 드립니다. 문제에 대한 조사를 진행하기 위해서 필수적인 사항이며, 응답 가능하신, 되도록이면 빠른, 시간내에 정보를 주시면 계속 지원해 드릴 수 있도록 진행하겠습니다.
+
+만약, 더 이상 문제가 되지 않거나 지원이 필요없으면 말씀해 주시기 바랍니다. 빠른 시간내에 회신 주시면 감사하겠습니다. 즐거운 하루 되길 바랍니다!
+
+ {!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team
+
+리포트 해주신 케이스들은 Support Portal (https://supportportal.brightcove.com) 에서 모두 확인하실 수 있으며, 현재 시스템 상태는 Status Page (https://status.brightcove.com) 링크를 통해 확인하실 수 있습니다.
+
+-------------------------------------------------
+
+지난번에 드렸던 회신 {!$Record.Last_Email_Sent__c}:
+
+{!$Record.E2CP__Most_Recent_Public_Comment__c}
+{!$Record.E2CP__HistoryText__c}
+
+
+Brightcove Inc., 290 Congress Street, 4th Floor, Boston, MA 02210, USA</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfoCommentEmailTXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Case {!$Record.CaseNumber}, created on {!$Record.CreatedDate}
+{!$Record.Subject}
+Hi {!$Record.Contact.FirstName},
+This is just a quick note to gently remind you that we are waiting to receive information from you in order to complete our investigation as I outlined in my previous email. Please send over this information at your earliest convenience so that I can continue to assist you.
+If this matter is no longer an issue for you, please let us know. We look forward to hearing back from you. Have a great day!
+Thank you
+  {!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team
+You can see all of your cases in our Support Portal, and current system status is always available on our Status Page.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfoCommentJP_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>サポートケース番号：{!$Record.CaseNumber}、作成日：{!$Record.CreatedDate}
+
+{!$Record.Subject}
+
+ご担当者様
+平素より大変お世話になっております。
+ブライトコーブサポートです。
+本件、その後状況はいかがでしょうか。
+恐れ入りますが、引き続きの調査のため、前回ご連絡差し上げた調査に必要な情報を
+ご提供いただければと存じます。
+なお、問題が既に解決している場合におきましてもご一報いただきたくお願い致します。
+以上、よろしくお願い申し上げます。
+* 本メールは自動メールとなりますが、本メールにご返信いただくことで引き続き対応をさせていただきます。
+ブライトコーブサポートチーム
+サポート専用ポータルより全てのサポートケースをご覧頂くことができます。現在のシステム稼働状況につきましてはシステムステータスページよりご確認いただくことができます。</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpNeedMoreInfoCommentKO_TXT</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.CreatedDate} 에 생성된 케이스 {!$Record.CaseNumber}
+{!$Record.Subject}
+
+안녕하세요 {!$Record.Contact.FirstName}님,
+지난번 메일에 요청 드렸던 정보에 대해서 답변을 기다리고 있다는 것을 알려드리기 위해 메일 드립니다. 문제에 대한 조사를 진행하기 위해서 필수적인 사항이며, 응답 가능하신, 되도록이면 빠른, 시간내에 정보를 주시면 계속 지원해 드릴 수 있도록 진행하겠습니다.
+만약, 더 이상 문제가 되지 않거나 지원이 필요없으면 말씀해 주시기 바랍니다. 빠른 시간내에 회신 주시면 감사하겠습니다. 즐거운 하루 되길 바랍니다!
+
+ {!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tmpTextCommentTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Case {!$Record.CaseNumber}, created on {!$Record.CreatedDate}
+{!$Record.Subject}
+-------------------------------------------------
+Hi {!$Record.Contact.First_Name_Local__c},
+This is just a quick note to ensure we clearly answered your request with our last email. If not, please let us know so that we may further assist you.
+
+Thank you,
+{!$Record.Owner:User.FirstName}
+The Brightcove Customer Support Team
+You can see all of your cases in our Support Portal, and the current system status is always available on our Status Page.
+---------------------------------------------------------------------
+
+{!$Record.E2CP__Most_Recent_Public_Comment_HTML__c}</text>
+    </textTemplates>
+    <variables>
+        <name>tmpEmailMessage</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EmailMessage</objectType>
+    </variables>
+    <variables>
+        <name>tmpEmailTextArea</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>tmpNewCommentRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>CaseComment</objectType>
+    </variables>
+    <variables>
+        <description>it catches when the Status triggered the flow</description>
+        <name>tmpStatusDateTimeStamp</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

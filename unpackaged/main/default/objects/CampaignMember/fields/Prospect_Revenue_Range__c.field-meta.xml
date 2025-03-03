@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_Revenue_Range__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( ISBLANK( LeadId ),IF( NOT(ISBLANK( Contact.Account.ZoomInfo_Revenue__c )), Contact.Account.ZoomInfo_Revenue__c,IF(NOT(ISBLANK( Contact.Revenue_Range_6sense__c )),Contact.Revenue_Range_6sense__c, Contact.ZoomInfo_Revenue__c )),Lead.ZoomInfo_Revenue__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prospect Revenue Range</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_of_the_user_that_owns_the_opportuni__c</fullName>
+    <description>Record type of the opportunity as of the day of this snapshot.</description>
+    <externalId>false</externalId>
+    <label>Role of the user that owns the opportuni</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

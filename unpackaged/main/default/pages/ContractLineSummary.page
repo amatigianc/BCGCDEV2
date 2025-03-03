@@ -1,0 +1,91 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/xml" controller="ContractLineSummaryController">
+    <block>
+        <apex:repeat var="segmentLabel" value="{!segmentLabels}">
+            <block>
+                <apex:outputText rendered="{!quote.SBQQ__Type__c != 'Amendment'}" value="{!segmentLabel}" />
+            </block>
+            <table table-layout="fixed" width="100%" border-color="#000000" border-width="1px" border-style="solid" font-size="9pt">
+                <apex:repeat var="column" value="{!lineColumns}">
+                    <table-column column-width="{!column.SBQQ__Width__c}%" />
+                </apex:repeat>
+                <table-body>
+                    <table-row>
+                        <apex:repeat var="column" value="{!lineColumns}">
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block text-align="center" font-weight="bold">
+                                    {!column.Name}
+                                </block>
+                            </table-cell>
+                        </apex:repeat>
+                    </table-row>
+                    <apex:repeat var="lineItem" value="{!lineSummariesBySegment[segmentLabel]}">
+                        <table-row>
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block text-align="left">
+                                    {!lineItem.productCode}
+                                </block>
+                            </table-cell>
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block text-align="left">
+                                    {!HTMLENCODE(lineItem.productName)}
+                                </block>
+                            </table-cell>
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block text-align="left">
+                                    {!lineItem.quantity}
+                                </block>
+                            </table-cell>
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block text-align="left">
+                                    {!HTMLENCODE(lineItem.description)}
+                                </block>
+                            </table-cell>
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block text-align="right">
+                                    <apex:outputText value="{0} {1, number, ###,###,##0.00}" rendered="{!lineItem.hasPrice && quote.CurrencyIsoCode != 'JPY' && quote.CurrencyIsoCode != 'KRW'}">
+                                        <apex:param value="{!lineItem.currencyIsoCode}" />
+                                        <apex:param value="{!lineItem.termPriceValue}" />
+                                    </apex:outputText>
+                                    <apex:outputText value="{0} {1, number, ###,###,##0}" rendered="{!lineItem.hasPrice && (quote.CurrencyIsoCode == 'JPY' || quote.CurrencyIsoCode == 'KRW')}">
+                                        <apex:param value="{!lineItem.currencyIsoCode}" />
+                                        <apex:param value="{!lineItem.termPriceValue}" />
+                                    </apex:outputText>
+                                    <apex:outputText rendered="{!lineItem.hasPrice == false}" value="{!lineItem.termPrice}" />
+                                </block>
+                            </table-cell>
+                        </table-row>
+                    </apex:repeat>
+                </table-body>
+            </table>
+            <table table-layout="fixed" width="100%" border-color="#000000" border-width="1px" border-style="solid" font-size="9pt" margin-bottom="24pt">
+                <table-column column-width="100%" />
+                <table-body>
+                    <table-row>
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block text-align="right">
+                                <apex:outputText value="{0} SUBSCRIPTION FEES: {1} {2, number, ###,###,##0.00}" rendered="{!quote.SBQQ__Type__c != 'Amendment' && quote.CurrencyIsoCode != 'JPY' && quote.CurrencyIsoCode != 'KRW'}">
+                                    <apex:param value="{!UPPER(segmentLabel)}" />
+                                    <apex:param value="{!quoteCurrency}" />
+                                    <apex:param value="{!segmentTotals[segmentLabel]}" />
+                                </apex:outputText>
+                                <apex:outputText value="{0} SUBSCRIPTION FEES: {1} {2, number, ###,###,##0}" rendered="{!quote.SBQQ__Type__c != 'Amendment' && (quote.CurrencyIsoCode == 'JPY' || quote.CurrencyIsoCode == 'KRW')}">
+                                    <apex:param value="{!UPPER(segmentLabel)}" />
+                                    <apex:param value="{!quoteCurrency}" />
+                                    <apex:param value="{!segmentTotals[segmentLabel]}" />
+                                </apex:outputText>
+                                <apex:outputText value="SUBSCRIPTION FEES: {0} {1, number, ###,###,##0.00}" rendered="{!quote.SBQQ__Type__c == 'Amendment' && quote.CurrencyIsoCode != 'JPY' && quote.CurrencyIsoCode != 'KRW'}">
+                                    <apex:param value="{!quoteCurrency}" />
+                                    <apex:param value="{!segmentTotals[segmentLabel]}" />
+                                </apex:outputText>
+                                <apex:outputText value="SUBSCRIPTION FEES: {0} {1, number, ###,###,##0}" rendered="{!quote.SBQQ__Type__c == 'Amendment' && (quote.CurrencyIsoCode == 'JPY' || quote.CurrencyIsoCode == 'KRW')}">
+                                    <apex:param value="{!quoteCurrency}" />
+                                    <apex:param value="{!segmentTotals[segmentLabel]}" />
+                                </apex:outputText>
+                            </block>
+                        </table-cell>
+                    </table-row>
+                </table-body>
+            </table>
+        </apex:repeat>
+    </block>
+</apex:page>

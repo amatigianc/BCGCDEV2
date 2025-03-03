@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Type__c</fullName>
+    <label>Solution Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>App Experiences</fullName>
+                <default>false</default>
+                <label>App Experiences</label>
+            </value>
+            <value>
+                <fullName>Content Syndication</fullName>
+                <default>false</default>
+                <label>Content Syndication</label>
+            </value>
+            <value>
+                <fullName>Events &amp; Communication</fullName>
+                <default>false</default>
+                <label>Events &amp; Communication</label>
+            </value>
+            <value>
+                <fullName>Framework Wrappers</fullName>
+                <default>false</default>
+                <label>Framework Wrappers</label>
+            </value>
+            <value>
+                <fullName>Hosting &amp; Support</fullName>
+                <default>false</default>
+                <label>Hosting &amp; Support</label>
+            </value>
+            <value>
+                <fullName>Ingest &amp; Migration</fullName>
+                <default>false</default>
+                <label>Ingest &amp; Migration</label>
+            </value>
+            <value>
+                <fullName>OTT</fullName>
+                <default>false</default>
+                <label>OTT</label>
+            </value>
+            <value>
+                <fullName>Player Interactivity</fullName>
+                <default>false</default>
+                <label>Player Interactivity</label>
+            </value>
+            <value>
+                <fullName>QA as a Service</fullName>
+                <default>false</default>
+                <label>QA as a Service</label>
+            </value>
+            <value>
+                <fullName>System Integration</fullName>
+                <default>false</default>
+                <label>System Integration</label>
+            </value>
+            <value>
+                <fullName>Technical Retainer</fullName>
+                <default>false</default>
+                <label>Technical Retainer</label>
+            </value>
+            <value>
+                <fullName>Technology Strategy</fullName>
+                <default>false</default>
+                <label>Technology Strategy</label>
+            </value>
+            <value>
+                <fullName>UX Design as a Service</fullName>
+                <default>false</default>
+                <label>UX Design as a Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

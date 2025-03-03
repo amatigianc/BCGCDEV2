@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Increment_Amount__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>When creating a record of type &#39;QCP - Incremental Pricing&#39;, this value represents each increment over maximum quantity we want to add based on the input quantity. (i.e. rep enters 1,235,000 and we have an included quantity of 1,000,000 and and increment amount of 100,000. We would calculate based on 1,300,000 effective quantity as the extra 235,000 divides by 100,000, 3 times rounded up)</inlineHelpText>
+    <label>Increment Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

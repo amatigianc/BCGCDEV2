@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Portal__c</fullName>
+    <description>Picklist of products showed to user in the Support Portal. It maps to its Product__c equivalent</description>
+    <inlineHelpText>Select which version this case is in regards to</inlineHelpText>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Video Cloud</fullName>
+                <default>true</default>
+                <label>Video Cloud</label>
+            </value>
+            <value>
+                <fullName>Zencoder</fullName>
+                <default>false</default>
+                <label>Zencoder</label>
+            </value>
+            <value>
+                <fullName>Gallery</fullName>
+                <default>false</default>
+                <label>Gallery</label>
+            </value>
+            <value>
+                <fullName>Ooyala</fullName>
+                <default>false</default>
+                <label>Ooyala</label>
+            </value>
+            <value>
+                <fullName>TV App Agency</fullName>
+                <default>false</default>
+                <label>TV App Agency</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>Engage</fullName>
+                <default>false</default>
+                <label>Engage</label>
+            </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>Wicket Labs</fullName>
+                <default>false</default>
+                <label>Wicket Labs</label>
+            </value>
+            <value>
+                <fullName>Brightcove Interactivity (HapYak)</fullName>
+                <default>false</default>
+                <label>Brightcove Interactivity (HapYak)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

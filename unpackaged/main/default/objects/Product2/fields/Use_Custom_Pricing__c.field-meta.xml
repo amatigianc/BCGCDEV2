@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Custom_Pricing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If checked this product will calculate its price based on the Custom Pricing Type and it&#39;s associated logic</inlineHelpText>
+    <label>Use Custom Pricing</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

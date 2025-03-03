@@ -1,0 +1,8 @@
+<apex:page controller="CaseDetailsController" >
+    <apex:pageBlock title="Case Details">
+        <apex:pageBlockSection columns="1">
+            <apex:outputField value="{!caseRecord.CaseNumber}"/>
+            <apex:outputField value="{!caseRecord.Subject}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

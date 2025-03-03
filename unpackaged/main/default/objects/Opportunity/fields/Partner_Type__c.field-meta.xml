@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Type__c</fullName>
+    <label>Partner Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Master License Partner</fullName>
+                <default>false</default>
+                <label>Master License Partner</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Solution Partner</fullName>
+                <default>false</default>
+                <label>Solution Partner</label>
+            </value>
+            <value>
+                <fullName>Technology Partner</fullName>
+                <default>false</default>
+                <label>Technology Partner</label>
+            </value>
+            <value>
+                <fullName>Technology Partner - BC Reselles</fullName>
+                <default>false</default>
+                <label>Technology Partner - BC Reselles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Event_Coverage_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Used by Customer Support to assign Live Event Coverage to a representative.</inlineHelpText>
+    <label>Live Event Coverage Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Live_Event_Coverage</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

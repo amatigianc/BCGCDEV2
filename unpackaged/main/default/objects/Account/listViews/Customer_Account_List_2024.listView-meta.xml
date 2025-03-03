@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Account_List_2024</fullName>
+    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Total_ACV__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Account_Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Prospect,Former</value>
+    </filters>
+    <filters>
+        <field>X18_digit_Account_ID__c</field>
+        <operation>equals</operation>
+        <value>0018c00002gab5eAAA,0018c00002gagByAAI,0018c00002gagROAAY</value>
+    </filters>
+    <label>Customer Account List 2024 (DRIFT)</label>
+</ListView>

@@ -1,0 +1,59 @@
+<template>
+    <template if:true={isModalOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true"
+            aria-describedby="modal-content-id-2" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Complete Registration</h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-2">
+                    <div class="modalBody">
+                        <div if:true={submitSelected}>
+                            <lightning-spinner alternative-text="Loading..." size="large"></lightning-spinner>
+                        </div>
+                        <lightning-input type="text" style="padding:0.5rem" label="Nickname" max-length="40"
+                            placeholder="Nickname" variant="label-hidden" value={nickname} required
+                            onchange={handleNicknameChange}></lightning-input>
+                        <lightning-input type="text" style="padding:0.5rem" label="My Company" placeholder="My Company"
+                            variant="label-hidden" required value={company}
+                            onchange={handleMyCompanyChange}></lightning-input>
+                        <lightning-combobox label="My Role" style="padding:0.5rem;" placeholder="My Role"
+                            variant="label-hidden" options={roleOptions} required value={role}
+                            onchange={handleMyRoleChange}></lightning-combobox>
+                        <lightning-combobox data-id="country" label="Country" style="padding:0.5rem"
+                            placeholder="Country" variant="label-hidden" options={countryOptions} required
+                            onchange={handleCountryChange}></lightning-combobox>
+                        <template if:true={showStateField}>
+                            <lightning-combobox label="State / Province" style="padding:0.5rem"
+                                placeholder="State / Province" variant="label-hidden" options={stateOptions} required
+                                onchange={handleStateChange}></lightning-combobox>
+                        </template>
+                        <lightning-combobox label="Relationship to Brightcove" style="padding:0.5rem"
+                            placeholder="Relationship to Brightcove" variant="label-hidden"
+                            options={relationshipOptions} required
+                            onchange={handleRelationshipChange}></lightning-combobox>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-float_left">
+                                <lightning-input type="checkbox" id="terms"
+                                    label="I agree to the Bright Spot Terms of User and Privacy Policy" name="terms"
+                                    variant="label-hidden" onchange={handleAgreeToTandCChange}></lightning-input>
+                            </div>
+                            <div class="slds-col slds-float_left">
+                                I agree to The Bright Spot <a href={termsUrl} target="_blank">Terms of Use</a> and <a
+                                    href={privacyUrl} target="_blank">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <button data-id="submitBtnExisting" class="slds-button slds-button_brand" disabled
+                        onclick={handleSubmitDetails} title="Submit">Submit</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

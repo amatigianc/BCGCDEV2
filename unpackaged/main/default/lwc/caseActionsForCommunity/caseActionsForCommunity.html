@@ -1,0 +1,18 @@
+<template>
+    <div class="nonBorderedDivs slds-clearfix">
+        <lightning-button variant="brand" label={label.requestClosureLabel} onclick={handleClosureClick}
+            class="slds-float--right"></lightning-button>
+    </div>
+    <!--div class="borderedDivs slds-clearfix">
+        <lightning-input label="Update additional CC" value={additionalCC} onchange={handleCCChange} class="slds-m-bottom_x-small">
+        </lightning-input>
+        <lightning-textarea label={label.updateAdittionalCC} value={additionalCC} onchange={handleCCChange} class="slds-m-bottom_x-small"></lightning-textarea>
+        <lightning-button variant="brand" label={label.updateCCrecipients} onclick={handleUpdateCCClick} class="slds-m-top_x-small slds-float--right"></lightning-button>
+    </div-->
+    <div class="borderedDivs slds-clearfix">
+        <lightning-combobox name="progress" label={label.priority} value={selectedOption} options={options}
+            onchange={handlePriorityChange} class="slds-m-bottom_x-small"></lightning-combobox>
+        <lightning-button variant="brand" label={label.updatePriorityLabel} onclick={handleUpdatePriorityClick}
+            class="slds-m-top_x-small slds-float--right"></lightning-button>
+    </div>
+</template>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_Stage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(
+NOT( ContactId = &quot;&quot; ),
+TEXT( Contact.Stage__c ),
+TEXT( Lead.Stage__c )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prospect Stage</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

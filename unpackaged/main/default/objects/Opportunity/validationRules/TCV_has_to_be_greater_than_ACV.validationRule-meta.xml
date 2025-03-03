@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCV_has_to_be_greater_than_ACV</fullName>
+    <active>false</active>
+    <description>Mo</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName &lt;&gt; &#39;New_Business&#39;, RecordType.DeveloperName &lt;&gt; &#39;Add_On&#39;,
+RecordType.DeveloperName &lt;&gt; &#39;Renewal&#39;,
+ACV__c &gt; TCV__c,
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorMessage>ACV cannot exceed Existing TCV</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Case_Email_To_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked sends a closed case email to the case contact. (Sales Ops Cases)</description>
+    <inlineHelpText>If checked sends a closed case email to the case contact. (Sales Ops Cases)</inlineHelpText>
+    <label>Closed Case Email To Contact?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

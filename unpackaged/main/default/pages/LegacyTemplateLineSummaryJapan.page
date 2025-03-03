@@ -1,0 +1,345 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/xml" controller="LegacyTemplateLineSummaryController" >  
+    <apex:outputPanel layout="none" rendered="{!totalByYearIsNotEmpty}">
+    <block font-family="arial">
+        <apex:repeat var="dimensions" value="{!years}">
+            <block font-family="arial" font-size="9pt" text-align="left" color="#000000">
+                {!if(dimensions = 1, "INITIAL TERM", if(dimensions = 2, "RENEWAL TERM", if(dimensions = 3, "RENEWAL TERM 2", if(dimensions = 4, "RENEWAL TERM 3", "")))) }     
+            </block>
+            
+            <table table-layout="fixed" width="100%" border-color="#000000" border-width="1px" border-style="solid" font-size="9pt">
+                <table-column column-width="10%" />
+                <table-column column-width="20%" />
+                 <table-column column-width="10%" />
+                 <table-column column-width="43%" />
+                <!--<table-column /> -->
+                <apex:outputPanel layout="none" rendered="{!showDiscount}">
+                    <table-column column-width="9%" />
+                </apex:outputPanel>    
+                <table-column column-width="17%" />
+                
+                <table-body>
+            <!-- HEADER -->
+                <table-row>
+                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                        <block font-family="arial" text-align="center" font-weight="bold" font-size= "9pt">
+                            製品番号
+                        </block>
+                    </table-cell>
+                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                        <block font-family="arial" text-align="center" font-weight="bold" font-size= "9pt">
+                            製品名
+                        </block>
+                    </table-cell>
+                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                        <block font-family="arial" text-align="center" font-weight="bold" font-size= "9pt">
+                            数量
+                        </block>         
+                    </table-cell> 
+                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                        <block font-family="arial" text-align="center" font-weight="bold" font-size= "9pt">
+                            製品詳細
+                        </block>         
+                    </table-cell> 
+                    <apex:outputPanel layout="none" rendered="{!showDiscount}">
+                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                            <block font-family="arial" text-align="center" font-weight="bold" font-size= "9pt">
+                                DISC (%)
+                            </block>         
+                        </table-cell>     
+                    </apex:outputPanel>  
+                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                        <block font-family="arial" text-align="center" font-weight="bold" font-size= "9pt">
+                            金額（税抜)
+                        </block>         
+                    </table-cell>  
+                   </table-row>
+                    <!-- BODY -->
+                    <apex:outputPanel layout="none" rendered="{!bundleTotalByDimensionIsNotEmpty = true}">
+                            <apex:repeat var="key" value="{!mapKeys}">
+                                <apex:repeat var="ql" value="{!productByByBundleByDimension[dimensions][key]}">
+                                    <table-row>
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="left" font-size="9pt">
+                                                {!ql.Oracle_Code__c}
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="left" font-size="9pt">
+                                                {!HTMLENCODE(ql.Paperwork_Product_Name__c)}
+                                            </block>
+                                        </table-cell>
+                                        <apex:outputPanel layout="none" rendered="{!useTermQuantity == false}">
+                                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                                <block font-family="arial" text-align="center" font-size="9pt">
+                                                    <apex:outputText value="{0, number, ###,###,###,##0}">
+                                                        <apex:param value="{!if((ql.Id = key || ql.SBQQ__Bundle__c) && bundleQtyTotalByDimensionByProductNameIsNotEmpty[ql.SBQQ__ProductName__c], bundleQtyTotalByDimensionByProductName[dimensions][ql.SBQQ__ProductName__c], ql.SBQQ__Quantity__c)}"
+                                                        />
+                                                    </apex:outputText>
+                                                </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="none" rendered="{!useTermQuantity == true}">
+                                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                                <block font-family="arial" text-align="center" font-size="9pt">
+                                                    <apex:outputText value="{0, number, ###,###,###,##0}">
+                                                        <apex:param value="{!if((ql.Id = key || ql.SBQQ__Bundle__c) && bundleQtyTotalByDimensionByProductNameIsNotEmpty[ql.SBQQ__ProductName__c], bundleQtyTotalByDimensionByProductName[dimensions][ql.SBQQ__ProductName__c], if(ql.SBQQ__Quantity__c <> originalQtyById[ql.Id], ql.SBQQ__Quantity__c, ql.Term_Quantity__c))}"
+                                                        />
+                                                    </apex:outputText>
+                                                </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="left" font-size="9pt">
+                                                {!HTMLENCODE(ql.Description_Updated__c)}
+                                            </block>
+                                        </table-cell>
+                                        <apex:outputPanel layout="none" rendered="{!showDiscount && discountAverageByDimension[key][dimensions] > 0 && ql.Net_Total_Display__c <> 'Included'}">
+                                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                                <block font-family="arial" text-align="center" font-size="9pt">
+                                                    <apex:outputText value="{0, number, ###,###.##}">
+                                                        <apex:param value="{!discountAverageByDimension[key][dimensions]}" />
+                                                    </apex:outputText>%
+                                                </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="none" rendered="{!showDiscount && (discountAverageByDimension[key][dimensions] == 0 || ql.Net_Total_Display__c == 'Included')}">
+                                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                                <block font-family="arial" text-align="right" font-size="9pt"> </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="none" rendered="{!ql.Net_Total_Display__c == 'Included'}">
+                                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                                <block font-family="arial" text-align="right" font-size="9pt">
+                                                    {!ql.Net_Total_Display__c }
+                                                </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                        <apex:outputPanel layout="none" rendered="{!ql.Net_Total_Display__c <> 'Included'}">
+                                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                                <block font-family="arial" text-align="right" font-size="9pt">{!currencyCode}
+                                                    <apex:outputText value="{0, number, ###,##0.00}">
+                                                        <apex:param value="{!if(ql.Id = key, bundleTotalByDimension[key][dimensions], ql.SBQQ__NetTotal__c)}" />
+                                                    </apex:outputText>
+                                                </block>
+                                            </table-cell>
+                                        </apex:outputPanel>
+                                    </table-row>
+                                </apex:repeat>
+                            </apex:repeat>
+                        </apex:outputPanel>
+
+                        <apex:outputPanel layout="none" rendered="{!dimensions = 1}">
+                            <apex:repeat var="pNotBundle" value="{!productNotBundle }">
+                                <table-row>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(pNotBundle.Oracle_Code__c)}
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(pNotBundle.Paperwork_Product_Name__c)}
+                                        </block>
+                                    </table-cell>
+                                    <apex:outputPanel layout="none" rendered="{!useTermQuantity == false}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###,###,##0}">
+                                                    <apex:param value="{!pNotBundle.SBQQ__Quantity__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!useTermQuantity == true}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###,###,###}">
+                                                    <apex:param value="{!pNotBundle.Term_Quantity__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(pNotBundle.Description_Updated__c)}
+                                        </block>
+                                    </table-cell>
+                                    <apex:outputPanel layout="none" rendered="{!showDiscount && pNotBundle.SBQQ__TotalDiscountRate__c > 0}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###.##}">
+                                                    <apex:param value="{!pNotBundle.SBQQ__TotalDiscountRate__c}" />
+                                                </apex:outputText>%
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!showDiscount && pNotBundle.SBQQ__TotalDiscountRate__c == 0}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="right" font-size="9pt"> </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="right" font-size="9pt">{!if(pNotBundle.SBQQ__NetTotal__c <> null, currencyCode, null)}
+                                                <apex:outputText value="{0, number, ###,##0.00}">
+                                                    <apex:param value="{!pNotBundle.SBQQ__NetTotal__c}" />
+                                                </apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                            </apex:repeat>
+                        </apex:outputPanel>
+
+                        <apex:outputPanel layout="none" rendered="{!mdqProductNotBundleIsNotEmptyByDimension[dimensions] = true}">
+                            <apex:repeat var="mdqPNotBundle" value="{!mdqProductNotBundle[dimensions] }">
+                                <table-row>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(mdqPNotBundle.Oracle_Code__c)}
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(mdqPNotBundle.Paperwork_Product_Name__c)}
+                                        </block>
+                                    </table-cell>
+                                    <apex:outputPanel layout="none" rendered="{!useTermQuantity == false}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###,###,##0}">
+                                                    <apex:param value="{!mdqPNotBundle.SBQQ__Quantity__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!useTermQuantity == true}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###,###,###}">
+                                                    <apex:param value="{!mdqPNotBundle.Term_Quantity__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(mdqPNotBundle.Description_Updated__c)}
+                                        </block>
+                                    </table-cell>
+                                    <apex:outputPanel layout="none" rendered="{!showDiscount && mdqPNotBundle.SBQQ__TotalDiscountRate__c > 0}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###.##}">
+                                                    <apex:param value="{!mdqPNotBundle.SBQQ__TotalDiscountRate__c}" />
+                                                </apex:outputText>%
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!showDiscount && mdqPNotBundle.SBQQ__TotalDiscountRate__c == 0}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="right" font-size="9pt"> </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="right" font-size="9pt">{!if(mdqPNotBundle.SBQQ__NetTotal__c <> null, currencyCode, null)}
+                                                <apex:outputText value="{0, number, ###,##0.00}">
+                                                    <apex:param value="{!mdqPNotBundle.SBQQ__NetTotal__c}" />
+                                                </apex:outputText>
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                            </apex:repeat>
+                        </apex:outputPanel>
+
+                        <apex:outputPanel layout="none" rendered="{!oneTimeIsNotEmptyByDimension[dimensions]}">
+                            <apex:repeat var="oneTimeLines" value="{!oneTimeByDimension[dimensions]}">
+                                <table-row>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(oneTimeLines.Oracle_Code__c)}
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(oneTimeLines.Paperwork_Product_Name__c)}
+                                        </block>
+                                    </table-cell>
+                                    <apex:outputPanel layout="none" rendered="{!useTermQuantity != true}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###,###,##0}">
+                                                    <apex:param value="{!oneTimeLines.SBQQ__Quantity__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!useTermQuantity == true}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="center" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###,###,###}">
+                                                    <apex:param value="{!oneTimeLines.Term_Quantity__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                        <block font-family="arial" text-align="left" font-size="9pt">
+                                            {!HTMLENCODE(oneTimeLines.Description_Updated__c)}
+                                        </block>
+                                    </table-cell>
+                                    <apex:outputPanel layout="none" rendered="{!showDiscount}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="right" font-size="9pt">
+                                                <apex:outputText value="{0, number, ###,###.00}">
+                                                    <apex:param value="{!oneTimeLines.SBQQ__Discount__c}" />
+                                                </apex:outputText>
+                                                {!if(oneTimeLines.SBQQ__Discount__c <> null, "%", null)}
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!oneTimeLines.Net_Total_Display__c == 'Included'}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="right" font-size="9pt">
+                                                {!oneTimeLines.Net_Total_Display__c }
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel layout="none" rendered="{!oneTimeLines.Net_Total_Display__c <> 'Included'}">
+                                        <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                            <block font-family="arial" text-align="right" font-size="9pt">{!if(oneTimeLines.SBQQ__NetTotal__c <> null, currencyCode, null)}
+                                                    <apex:outputText value="{0, number, ###,##0.00}">
+                                                        <apex:param value="{!oneTimeLines.SBQQ__NetTotal__c}" />
+                                                    </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </apex:outputPanel>
+                                </table-row>
+                            </apex:repeat>
+                        </apex:outputPanel>
+
+                    </table-body>
+                </table>
+                <table table-layout="fixed" width="100%" border-color="#000000" border-width="1px" border-style="solid" margin-bottom="20">
+                    <table-column column-width="83%" />
+                    <table-column column-width="17%" />
+                    <table-body>
+                        <table-row>
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block font-family="arial" text-align="right" font-weight="bold" font-size="9pt">
+                                    {!if(dimensions = 1, "INITIAL TERM TOTAL:", if(dimensions = 2, "RENEWAL TERM ", if(dimensions = 3, "RENEWAL TERM 2 TOTAL:",if(dimensions = 4, "RENEWAL TERM 3 TOTAL:",
+                                    if(dimensions = 5, "RENEWAL TERM 4 TOTAL:", ""))))) }
+                                </block>
+                            </table-cell>
+                            <table-cell border-width="1px" border-style="solid" padding="2pt">
+                                <block font-family="arial" text-align="right" font-size="9pt">{!currencyCode}
+                                    <apex:outputText value="{0, number, ###,###.00}">
+                                        <apex:param value="{!totalByYear[dimensions]}" />
+                                    </apex:outputText>
+                                </block>
+                            </table-cell>
+                        </table-row>
+                    </table-body>
+                </table>
+            </apex:repeat>
+        </block>
+    </apex:outputPanel>
+</apex:page>

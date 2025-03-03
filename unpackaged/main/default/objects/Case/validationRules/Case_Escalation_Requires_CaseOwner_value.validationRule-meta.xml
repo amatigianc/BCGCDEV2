@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Escalation_Requires_CaseOwner_value</fullName>
+    <active>false</active>
+    <description>The case escalation must have a valie case owner or Queue</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &quot;Case_Escalation&quot;,
+ISNULL(OwnerId) = true
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>The case owner requires a value: please specify the case owner or the name of a queue.</errorMessage>
+</ValidationRule>

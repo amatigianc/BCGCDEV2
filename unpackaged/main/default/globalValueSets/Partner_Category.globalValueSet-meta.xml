@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advertising</fullName>
+        <default>false</default>
+        <label>Advertising</label>
+    </customValue>
+    <customValue>
+        <fullName>AI and Video Enrichment</fullName>
+        <default>false</default>
+        <label>AI and Video Enrichment</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics</fullName>
+        <default>false</default>
+        <label>Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Development</fullName>
+        <default>false</default>
+        <label>Application Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Publishing Platform</fullName>
+        <default>false</default>
+        <label>Application Publishing Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Audience Measurement</fullName>
+        <default>false</default>
+        <label>Audience Measurement</label>
+    </customValue>
+    <customValue>
+        <fullName>Broadcasting Solution</fullName>
+        <default>false</default>
+        <label>Broadcasting Solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Consent Management</fullName>
+        <default>false</default>
+        <label>Consent Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting company</fullName>
+        <default>false</default>
+        <label>Consulting company</label>
+    </customValue>
+    <customValue>
+        <fullName>Content and Social Syndication</fullName>
+        <default>false</default>
+        <label>Content and Social Syndication</label>
+    </customValue>
+    <customValue>
+        <fullName>Content Delivery Network</fullName>
+        <default>false</default>
+        <label>Content Delivery Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Content Management System</fullName>
+        <default>false</default>
+        <label>Content Management System</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Agency</fullName>
+        <default>false</default>
+        <label>Digital Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Asset Management</fullName>
+        <default>false</default>
+        <label>Digital Asset Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Distribution Platform</fullName>
+        <default>false</default>
+        <label>Distribution Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>DRM and Content Protection</fullName>
+        <default>false</default>
+        <label>DRM and Content Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>eCommerce Platform</fullName>
+        <default>false</default>
+        <label>eCommerce Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>eLearning and Training Platform</fullName>
+        <default>false</default>
+        <label>eLearning and Training Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise Content Delivery Network</fullName>
+        <default>false</default>
+        <label>Enterprise Content Delivery Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Management Platform</fullName>
+        <default>false</default>
+        <label>Event Management Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>FAST</fullName>
+        <default>false</default>
+        <label>FAST</label>
+    </customValue>
+    <customValue>
+        <fullName>Global SI</fullName>
+        <default>false</default>
+        <label>Global SI</label>
+    </customValue>
+    <customValue>
+        <fullName>Interactive Video</fullName>
+        <default>false</default>
+        <label>Interactive Video</label>
+    </customValue>
+    <customValue>
+        <fullName>IT Services Company</fullName>
+        <default>false</default>
+        <label>IT Services Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Live Streaming Hardware/Software</fullName>
+        <default>false</default>
+        <label>Live Streaming Hardware/Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Automation Platform</fullName>
+        <default>false</default>
+        <label>Marketing Automation Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Media and Marketing Agency</fullName>
+        <default>false</default>
+        <label>Media and Marketing Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>OTT Platforms and Extensions</fullName>
+        <default>false</default>
+        <label>OTT Platforms and Extensions</label>
+    </customValue>
+    <customValue>
+        <fullName>Paywall or Payment Gateway</fullName>
+        <default>false</default>
+        <label>Paywall or Payment Gateway</label>
+    </customValue>
+    <customValue>
+        <fullName>Recommendation Engine</fullName>
+        <default>false</default>
+        <label>Recommendation Engine</label>
+    </customValue>
+    <customValue>
+        <fullName>Rich Media Advertising</fullName>
+        <default>false</default>
+        <label>Rich Media Advertising</label>
+    </customValue>
+    <customValue>
+        <fullName>Subscriber Management</fullName>
+        <default>false</default>
+        <label>Subscriber Management</label>
+    </customValue>
+    <customValue>
+        <fullName>System Integrator</fullName>
+        <default>false</default>
+        <label>System Integrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Text Services</fullName>
+        <default>false</default>
+        <label>Text Services</label>
+    </customValue>
+    <customValue>
+        <fullName>User Generated Content</fullName>
+        <default>false</default>
+        <label>User Generated Content</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Clipping</fullName>
+        <default>false</default>
+        <label>Video Clipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Creation and Editing</fullName>
+        <default>false</default>
+        <label>Video Creation and Editing</label>
+    </customValue>
+    <customValue>
+        <fullName>Web Developer and Design Agency</fullName>
+        <default>false</default>
+        <label>Web Developer and Design Agency</label>
+    </customValue>
+    <description>Indicates the type of solution the partner company offers as defined by the partner manager</description>
+    <masterLabel>Partner Category</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

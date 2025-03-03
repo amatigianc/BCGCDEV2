@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>P1_Gold_Alert</name>
+        <label>P1 Gold Alert</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <actionName>Case.P1_Gold_Alert</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Case.P1_Gold_Alert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Platinum Alert (default)</description>
+        <name>Platinum_Alert_default</name>
+        <label>Platinum Alert (default)</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <actionName>Case.Platinum_Alert_default</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Case.Platinum_Alert_default</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>accountSupportPackage</name>
+        <label>accountSupportPackage</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isPlatinum</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Platinum_Alerts_Active__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Platinum_Alert_default</targetReference>
+            </connector>
+            <label>isPlatinum(+)</label>
+        </rules>
+        <rules>
+            <name>isP1Gold</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Support_Package_txt__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Gold</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>P1 - Critical</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>P1_Gold_Alert</targetReference>
+            </connector>
+            <label>isP1Gold</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>caseRecordType</name>
+        <label>caseRecordType</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isTechnicalSupport</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Technical_Support</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>accountSupportPackage</targetReference>
+            </connector>
+            <label>isTechnicalSupport</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>UserHasBypassValidation</name>
+        <label>UserHasBypassValidation</label>
+        <locationX>842</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>caseRecordType</targetReference>
+            </connector>
+            <label>NO</label>
+        </rules>
+    </decisions>
+    <description>- V9 Removed NOC Cases from the Record Type Filter. People didn&#39;t like the alerts for these.</description>
+    <environments>Default</environments>
+    <interviewLabel>Case - PlatinumAndPlusAlert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - P1GoldPlatinumAndPlusAlert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>UserHasBypassValidation</targetReference>
+        </connector>
+        <filterFormula>OR(
+          AND(
+                    ISCHANGED({!$Record.Status}),
+                    OR(
+                            ISPICKVAL({!$Record.Status},&quot;Customer has replied&quot;),
+                            ISPICKVAL({!$Record.Status},&quot;Closed - Customer has replied&quot;)
+                         )),
+                  ISNEW(),
+                  AND(
+                    ISCHANGED({!$Record.AccountId}),
+                    {!$Record.Account.Platinum_Alerts_Active__c}
+           )
+)</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

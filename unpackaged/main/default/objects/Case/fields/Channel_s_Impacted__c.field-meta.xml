@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_s_Impacted__c</fullName>
+    <description>Add names of channels that were impacted by the issue reported on this case</description>
+    <inlineHelpText>A comma-separated list of channels that were impacted by the issue reported on this case</inlineHelpText>
+    <label>Channel(s) Impacted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

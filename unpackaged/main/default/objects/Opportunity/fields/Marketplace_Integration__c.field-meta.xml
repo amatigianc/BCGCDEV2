@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketplace_Integration__c</fullName>
+    <description>SELECT ALL of the integrations (Built by the Partner or Brightcove) that are part of the deal.</description>
+    <label>Marketplace Integration</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Marketplace Integration</fullName>
+                <default>false</default>
+                <label>No Marketplace Integration</label>
+            </value>
+            <value>
+                <fullName>3Play Media Captions / Translations</fullName>
+                <default>false</default>
+                <label>3Play Media Captions / Translations</label>
+            </value>
+            <value>
+                <fullName>Accedo</fullName>
+                <default>false</default>
+                <label>Accedo</label>
+            </value>
+            <value>
+                <fullName>Adobe Analytics Plugin for Brightcove</fullName>
+                <default>false</default>
+                <label>Adobe Analytics Plugin for Brightcove</label>
+            </value>
+            <value>
+                <fullName>Adobe Experience Manager</fullName>
+                <default>false</default>
+                <label>Adobe Experience Manager</label>
+            </value>
+            <value>
+                <fullName>Adobe Magento Commerce Extension</fullName>
+                <default>false</default>
+                <label>Adobe Magento Commerce Extension</label>
+            </value>
+            <value>
+                <fullName>Adobe Marketo Engage for Campaign</fullName>
+                <default>false</default>
+                <label>Adobe Marketo Engage for Campaign</label>
+            </value>
+            <value>
+                <fullName>Annoto</fullName>
+                <default>false</default>
+                <label>Annoto</label>
+            </value>
+            <value>
+                <fullName>Apple Fairplay</fullName>
+                <default>false</default>
+                <label>Apple Fairplay</label>
+            </value>
+            <value>
+                <fullName>Aprimo DAM</fullName>
+                <default>false</default>
+                <label>Aprimo DAM</label>
+            </value>
+            <value>
+                <fullName>Beacon Payment Processing with Stripe</fullName>
+                <default>false</default>
+                <label>Beacon Payment Processing with Stripe</label>
+            </value>
+            <value>
+                <fullName>Blackbird</fullName>
+                <default>false</default>
+                <label>Blackbird</label>
+            </value>
+            <value>
+                <fullName>BlueRush / IndiVideo</fullName>
+                <default>false</default>
+                <label>BlueRush / IndiVideo</label>
+            </value>
+            <value>
+                <fullName>Brightcove Hootsuite Connector</fullName>
+                <default>false</default>
+                <label>Brightcove Hootsuite Connector</label>
+            </value>
+            <value>
+                <fullName>CaptionHub</fullName>
+                <default>false</default>
+                <label>CaptionHub</label>
+            </value>
+            <value>
+                <fullName>CaptionSync</fullName>
+                <default>false</default>
+                <label>CaptionSync</label>
+            </value>
+            <value>
+                <fullName>CatapultX</fullName>
+                <default>false</default>
+                <label>CatapultX</label>
+            </value>
+            <value>
+                <fullName>Cisco WebEx</fullName>
+                <default>false</default>
+                <label>Cisco WebEx</label>
+            </value>
+            <value>
+                <fullName>Cleeng</fullName>
+                <default>false</default>
+                <label>Cleeng</label>
+            </value>
+            <value>
+                <fullName>CLIPr</fullName>
+                <default>false</default>
+                <label>CLIPr</label>
+            </value>
+            <value>
+                <fullName>Curriki</fullName>
+                <default>false</default>
+                <label>Curriki</label>
+            </value>
+            <value>
+                <fullName>Cvent</fullName>
+                <default>false</default>
+                <label>Cvent</label>
+            </value>
+            <value>
+                <fullName>Drupal Video Connect</fullName>
+                <default>false</default>
+                <label>Drupal Video Connect</label>
+            </value>
+            <value>
+                <fullName>EMAM, Inc</fullName>
+                <default>false</default>
+                <label>EMAM, Inc</label>
+            </value>
+            <value>
+                <fullName>Evergent</fullName>
+                <default>false</default>
+                <label>Evergent</label>
+            </value>
+            <value>
+                <fullName>Freewheel Player Plugin</fullName>
+                <default>false</default>
+                <label>Freewheel Player Plugin</label>
+            </value>
+            <value>
+                <fullName>Glide Publishing Platform</fullName>
+                <default>false</default>
+                <label>Glide Publishing Platform</label>
+            </value>
+            <value>
+                <fullName>Google Ad Server</fullName>
+                <default>false</default>
+                <label>Google Ad Server</label>
+            </value>
+            <value>
+                <fullName>Google Analytics Plugin for Brightcove</fullName>
+                <default>false</default>
+                <label>Google Analytics Plugin for Brightcove</label>
+            </value>
+            <value>
+                <fullName>Google Tag Manager</fullName>
+                <default>false</default>
+                <label>Google Tag Manager</label>
+            </value>
+            <value>
+                <fullName>Google Widevine</fullName>
+                <default>false</default>
+                <label>Google Widevine</label>
+            </value>
+            <value>
+                <fullName>Grabyo</fullName>
+                <default>false</default>
+                <label>Grabyo</label>
+            </value>
+            <value>
+                <fullName>Hootsuite Connector</fullName>
+                <default>false</default>
+                <label>Hootsuite Connector</label>
+            </value>
+            <value>
+                <fullName>Hubspot Integration</fullName>
+                <default>false</default>
+                <label>Hubspot Integration</label>
+            </value>
+            <value>
+                <fullName>InPlayer</fullName>
+                <default>false</default>
+                <label>InPlayer</label>
+            </value>
+            <value>
+                <fullName>Interprefy</fullName>
+                <default>false</default>
+                <label>Interprefy</label>
+            </value>
+            <value>
+                <fullName>inthegame</fullName>
+                <default>false</default>
+                <label>inthegame</label>
+            </value>
+            <value>
+                <fullName>IRIS Video Recommendations</fullName>
+                <default>false</default>
+                <label>IRIS Video Recommendations</label>
+            </value>
+            <value>
+                <fullName>JUMP</fullName>
+                <default>false</default>
+                <label>JUMP</label>
+            </value>
+            <value>
+                <fullName>Kollective Integration</fullName>
+                <default>false</default>
+                <label>Kollective Integration</label>
+            </value>
+            <value>
+                <fullName>L2</fullName>
+                <default>false</default>
+                <label>L2</label>
+            </value>
+            <value>
+                <fullName>Lenos</fullName>
+                <default>false</default>
+                <label>Lenos</label>
+            </value>
+            <value>
+                <fullName>Linius</fullName>
+                <default>false</default>
+                <label>Linius</label>
+            </value>
+            <value>
+                <fullName>Maestro</fullName>
+                <default>false</default>
+                <label>Maestro</label>
+            </value>
+            <value>
+                <fullName>Magnifi</fullName>
+                <default>false</default>
+                <label>Magnifi</label>
+            </value>
+            <value>
+                <fullName>MediaNEXT</fullName>
+                <default>false</default>
+                <label>MediaNEXT</label>
+            </value>
+            <value>
+                <fullName>Microsoft PlayReady</fullName>
+                <default>false</default>
+                <label>Microsoft PlayReady</label>
+            </value>
+            <value>
+                <fullName>Microsoft SharePoint</fullName>
+                <default>false</default>
+                <label>Microsoft SharePoint</label>
+            </value>
+            <value>
+                <fullName>Microsoft Teams Video Connect</fullName>
+                <default>false</default>
+                <label>Microsoft Teams Video Connect</label>
+            </value>
+            <value>
+                <fullName>MPP</fullName>
+                <default>false</default>
+                <label>MPP</label>
+            </value>
+            <value>
+                <fullName>Nagra Forensic Watermarking</fullName>
+                <default>false</default>
+                <label>Nagra Forensic Watermarking</label>
+            </value>
+            <value>
+                <fullName>New Spark Media</fullName>
+                <default>false</default>
+                <label>New Spark Media</label>
+            </value>
+            <value>
+                <fullName>Oracle Eloqua Integration</fullName>
+                <default>false</default>
+                <label>Oracle Eloqua Integration</label>
+            </value>
+            <value>
+                <fullName>RainFocus</fullName>
+                <default>false</default>
+                <label>RainFocus</label>
+            </value>
+            <value>
+                <fullName>Ramp eCDN</fullName>
+                <default>false</default>
+                <label>Ramp eCDN</label>
+            </value>
+            <value>
+                <fullName>Rev</fullName>
+                <default>false</default>
+                <label>Rev</label>
+            </value>
+            <value>
+                <fullName>Riverside.fm</fullName>
+                <default>false</default>
+                <label>Riverside.fm</label>
+            </value>
+            <value>
+                <fullName>RWS Tridion</fullName>
+                <default>false</default>
+                <label>RWS Tridion</label>
+            </value>
+            <value>
+                <fullName>Salesforce Commerce Cloud B2C</fullName>
+                <default>false</default>
+                <label>Salesforce Commerce Cloud B2C</label>
+            </value>
+            <value>
+                <fullName>Salesforce CRM</fullName>
+                <default>false</default>
+                <label>Salesforce CRM</label>
+            </value>
+            <value>
+                <fullName>Salesforce Pardot - Campaign</fullName>
+                <default>false</default>
+                <label>Salesforce Pardot - Campaign</label>
+            </value>
+            <value>
+                <fullName>Sendbird</fullName>
+                <default>false</default>
+                <label>Sendbird</label>
+            </value>
+            <value>
+                <fullName>Sitecore Video Connector</fullName>
+                <default>false</default>
+                <label>Sitecore Video Connector</label>
+            </value>
+            <value>
+                <fullName>Snackable</fullName>
+                <default>false</default>
+                <label>Snackable</label>
+            </value>
+            <value>
+                <fullName>Socialive</fullName>
+                <default>false</default>
+                <label>Socialive</label>
+            </value>
+            <value>
+                <fullName>Streamhub</fullName>
+                <default>false</default>
+                <label>Streamhub</label>
+            </value>
+            <value>
+                <fullName>Surfmeter Client Analytics</fullName>
+                <default>false</default>
+                <label>Surfmeter Client Analytics</label>
+            </value>
+            <value>
+                <fullName>System73</fullName>
+                <default>false</default>
+                <label>System73</label>
+            </value>
+            <value>
+                <fullName>Tealium Plugin</fullName>
+                <default>false</default>
+                <label>Tealium Plugin</label>
+            </value>
+            <value>
+                <fullName>The Filter</fullName>
+                <default>false</default>
+                <label>The Filter</label>
+            </value>
+            <value>
+                <fullName>ThinkAnalytics</fullName>
+                <default>false</default>
+                <label>ThinkAnalytics</label>
+            </value>
+            <value>
+                <fullName>Universal Search App Discovery on Roku</fullName>
+                <default>false</default>
+                <label>Universal Search App Discovery on Roku</label>
+            </value>
+            <value>
+                <fullName>Verasity</fullName>
+                <default>false</default>
+                <label>Verasity</label>
+            </value>
+            <value>
+                <fullName>Verbit</fullName>
+                <default>false</default>
+                <label>Verbit</label>
+            </value>
+            <value>
+                <fullName>VideoElephant Content Library</fullName>
+                <default>false</default>
+                <label>VideoElephant Content Library</label>
+            </value>
+            <value>
+                <fullName>VideoKen / VIdeoLake</fullName>
+                <default>false</default>
+                <label>VideoKen / VIdeoLake</label>
+            </value>
+            <value>
+                <fullName>Videon</fullName>
+                <default>false</default>
+                <label>Videon</label>
+            </value>
+            <value>
+                <fullName>Vudoo</fullName>
+                <default>false</default>
+                <label>Vudoo</label>
+            </value>
+            <value>
+                <fullName>Vuulr Marketplace</fullName>
+                <default>false</default>
+                <label>Vuulr Marketplace</label>
+            </value>
+            <value>
+                <fullName>Watching That</fullName>
+                <default>false</default>
+                <label>Watching That</label>
+            </value>
+            <value>
+                <fullName>Wildmoka Auto Rezone</fullName>
+                <default>false</default>
+                <label>Wildmoka Auto Rezone</label>
+            </value>
+            <value>
+                <fullName>Wipster</fullName>
+                <default>false</default>
+                <label>Wipster</label>
+            </value>
+            <value>
+                <fullName>Wootag</fullName>
+                <default>false</default>
+                <label>Wootag</label>
+            </value>
+            <value>
+                <fullName>Wordpress</fullName>
+                <default>false</default>
+                <label>Wordpress</label>
+            </value>
+            <value>
+                <fullName>Zoom</fullName>
+                <default>false</default>
+                <label>Zoom</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

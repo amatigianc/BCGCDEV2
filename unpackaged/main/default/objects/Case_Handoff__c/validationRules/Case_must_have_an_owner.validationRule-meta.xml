@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_must_have_an_owner</fullName>
+    <active>false</active>
+    <description>handoff cannot be created if the case does not have an owner</description>
+    <errorConditionFormula>ISBLANK(TEXT(Case__r.Owner:User.CS_Role__c) )</errorConditionFormula>
+    <errorMessage>The case must have an owner before handing it over</errorMessage>
+</ValidationRule>

@@ -1,0 +1,72 @@
+.diagonal-split-background {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #aaaaaa;
+}
+
+.box1 {
+    background-color: white;
+    padding: 20px 30px;
+    width: 40%;
+}
+
+.btnDiv {
+    padding: 0.7rem 0.5rem;
+    text-align: center;
+}
+
+.btnSubmit {
+    color: white;
+    background-color: #000000;
+    font-size: large;
+    border-radius: 25px;
+    padding: 0.2rem 0.8rem;
+    width: 100%;
+}
+
+.btnSubmit:disabled {
+    color: white;
+    background-color: #999999;
+    font-size: large;
+    border-radius: 25px;
+    padding: 0.2rem 0.8rem;
+    width: 100%;
+}
+
+.introText {
+    width: 60%;
+    margin: 20px;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.introText p {
+    padding-bottom: 1.75rem;
+}
+
+.disclaimerMessage {
+    font-size: 10px;
+}
+
+.intro-text_list {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+@media only screen and (max-width: 47.99375rem) {
+
+    .diagonal-split-background {
+        flex-direction: column;
+    }
+
+    .introText {
+        width: 100%;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Time__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is to keep track of when the request came in</description>
+    <label>Requested during</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sydney Business Hour</fullName>
+                <default>false</default>
+                <label>Sydney Business Hour</label>
+            </value>
+            <value>
+                <fullName>Tokyo Business Hour</fullName>
+                <default>false</default>
+                <label>Tokyo Business Hour</label>
+            </value>
+            <value>
+                <fullName>London Business Hour</fullName>
+                <default>false</default>
+                <label>London Business Hour</label>
+            </value>
+            <value>
+                <fullName>Boston/GDL Business Hour</fullName>
+                <default>false</default>
+                <label>Boston/GDL Business Hour</label>
+            </value>
+            <value>
+                <fullName>Weekend</fullName>
+                <default>false</default>
+                <label>Weekend</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

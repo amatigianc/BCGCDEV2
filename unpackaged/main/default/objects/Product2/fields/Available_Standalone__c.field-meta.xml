@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Available_Standalone__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If this box is checked this product can be sold outside of platform bundles</inlineHelpText>
+    <label>Available Standalone</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<apex:page controller="RecordController" action="{!validateAndRedirect}">
+    <div id="contentToToggle" style="display:{!if(showMessage," block ","none ")};">
+        <center>
+            <p>
+                <font size="6">{!redirectMessage}</font>
+            </p>
+        </center>
+    </div>
+</apex:page>

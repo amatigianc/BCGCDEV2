@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Time_Start_GMT__c</fullName>
+    <externalId>false</externalId>
+    <formula>/* code for date/timeLEFT(RIGHT( Text_Date_Time_Start__c ,9),8)*/
+/*TEXT( DATETIMEVALUE(TEXT(Event_Start__c - VALUE(SUBSTITUTE(RIGHT(LEFT( TEXT(Timezone__c) , 10),5),&quot;:&quot;,&quot;.&quot;))/24)))/* -- /*subtracts the timezone hours from the GMT date&amp;time */
+
+LEFT(TEXT(Event_Start__c),19) &amp; &quot; GMT&quot;</formula>
+    <label>Date/Time Start GMT</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

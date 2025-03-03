@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JIRA_Age__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Has_JIRA__c = TRUE, 
+IF(OR(JIRA_Status__c = &quot;Closed&quot;,JIRA_Status__c = &quot;Resolved&quot;,JIRA_Status__c = &quot;Done&quot;),
+
+DATETIMEVALUE(JIRA__c)-DATETIMEVALUE(JIRA_Created_Date_DATE__c)
+
+,
+NOW()-DATETIMEVALUE(JIRA_Created_Date_DATE__c))
+
+
+,-1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>JIRA Age (Days)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

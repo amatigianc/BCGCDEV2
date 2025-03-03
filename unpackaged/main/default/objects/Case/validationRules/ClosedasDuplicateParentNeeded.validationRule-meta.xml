@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedasDuplicateParentNeeded</fullName>
+    <active>true</active>
+    <description>It requires the Parent field when the case is Closed as Duplicate</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Status , &#39;Closed - Duplicate&#39;),
+ISBLANK(ParentId),
+
+RecordType.DeveloperName = &#39;Technical_Support&#39;, /*Technical Support*/
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>Please provide the parent case before closing as duplicate</errorMessage>
+</ValidationRule>

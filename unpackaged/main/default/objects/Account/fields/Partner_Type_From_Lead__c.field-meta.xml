@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Type_From_Lead__c</fullName>
+    <label>Partner Type From Lead</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non-Partner lead</fullName>
+                <default>false</default>
+                <label>Non-Partner lead</label>
+            </value>
+            <value>
+                <fullName>Partner - Referral</fullName>
+                <default>false</default>
+                <label>Partner - Referral</label>
+            </value>
+            <value>
+                <fullName>Partner - Resell</fullName>
+                <default>false</default>
+                <label>Partner - Resell</label>
+            </value>
+            <value>
+                <fullName>Solution Partner</fullName>
+                <default>false</default>
+                <label>Solution Partner</label>
+            </value>
+            <value>
+                <fullName>Technology Partner</fullName>
+                <default>false</default>
+                <label>Technology Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POP_OEM_understood_and_provide_tools__c</fullName>
+    <description>KM:  POP survey pushed from ClickTools</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do you feel that your Onboarding Engagement Manager understood your company&#39;s video strategy and provided you the tools and training to help you achieve this?</inlineHelpText>
+    <label>POP OEM understood and provide tools</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

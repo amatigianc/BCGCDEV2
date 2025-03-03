@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Start_Time__c</fullName>
+    <inlineHelpText>Use 24 notation (military time) when entering the information (ex.1:00 AM = 1:00 and 1:00 PM = 13:00)</inlineHelpText>
+    <label>Coverage Start Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

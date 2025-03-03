@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_Currencies__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If this box is checked any time this reecord is created or updated it will synchronize changes across all supported currencies. This will create/update records in all other supported currencies automatically</inlineHelpText>
+    <label>Sync Currencies</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

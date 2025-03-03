@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PP_Willing_to_join_Support_Ref_Pgrm__c</fullName>
+    <label>PP Willing to join Support Ref Pgrm</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I am willing to join Brightcove&#39;s Support Reference Program</fullName>
+                <default>false</default>
+                <label>I am willing to join Brightcove&#39;s Support Reference Program</label>
+            </value>
+            <value>
+                <fullName>I do not wish to join Brightcove&#39;s Support Reference Program</fullName>
+                <default>false</default>
+                <label>I do not wish to join Brightcove&#39;s Support Reference Program</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Secondary_Use_Case_Last_update__c</fullName>
+    <description>It refers to the Primary Use Case or Secondary Use Case fields. When one of the is updated on the account level, it updates the date and time value of this field.</description>
+    <label>Primary-Secondary Use Case Last update</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_Internal_employee__c</fullName>
+    <description>Checks email address of the Contact who submitted the case and sets this field as &#39;True&#39; if the email contains brightcove.com OR if it&#39;s blank.
+This field is used to filter out cases on the Community case lists AND it needs to be accessible by all community profiles in order to let the filter work in the community views/lists.
+Views where it&#39;s used:
+- Community: Account Closed Cases
+- Community: Account Open Cases</description>
+    <formula>OR (
+CONTAINS (Contact.Email, &quot;@brightcove.com&quot;),
+CONTAINS( SuppliedEmail ,&quot;@brightcove.com&quot;),
+ISBLANK (Contact.Email)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BC Internal employee</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

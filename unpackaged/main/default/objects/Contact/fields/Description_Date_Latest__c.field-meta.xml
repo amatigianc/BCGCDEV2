@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_Date_Latest__c</fullName>
+    <description>The date of last comment by contact through a registration form</description>
+    <inlineHelpText>The date of last comment by contact through a registration form</inlineHelpText>
+    <label>Description Date - Latest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

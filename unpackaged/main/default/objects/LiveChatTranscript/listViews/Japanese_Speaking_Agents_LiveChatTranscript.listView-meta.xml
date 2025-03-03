@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Japanese_Speaking_Agents_LiveChatTranscript</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Japanese Speaking Agents</label>
+    <queue>Japanese_Speaking_Agents</queue>
+    <sharedTo>
+        <allInternalUsers />
+    </sharedTo>
+</ListView>

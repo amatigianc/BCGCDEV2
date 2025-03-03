@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Downtime_should_be_added</fullName>
+    <active>false</active>
+    <description>Downtime should be added at closure</description>
+    <errorConditionFormula>AND(RecordTypeId  = &quot;0126f0000014VPS&quot;,
+NOT(ISBLANK(Reported_Issues__c)), 
+ISBLANK(Downtime_minutes__c),
+OR(TEXT( Status__c ) = &quot;Closed - Completed [Off-Hours]&quot;,
+TEXT( Status__c ) = &quot;Closed - Completed [Business Hours]&quot;,
+TEXT( Status__c ) = &quot;Closed - Completed [Mixed]&quot;))</errorConditionFormula>
+    <errorMessage>You must enter the amount of time the stream was down due to the reported issues. If none, enter 0.</errorMessage>
+</ValidationRule>

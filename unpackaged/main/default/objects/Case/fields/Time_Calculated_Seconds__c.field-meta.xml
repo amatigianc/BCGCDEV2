@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Calculated_Seconds__c</fullName>
+    <description>Contains the value of WorkIt2__Calculated_Seconds__c
+
+Used to figure out how much time support works on a case</description>
+    <externalId>false</externalId>
+    <formula>WorkIt2__Case_Time_Total__r.WorkIt2__Calculated_Seconds__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Contains the value of WorkIt2__Calculated_Seconds__c
+
+Used to figure out how much time support works on a case</inlineHelpText>
+    <label>Time Calculated Seconds</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Profile_Event_must_enter_the_form</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.Name  = &quot;Live_Event_Support&quot;, ISPICKVAL(High_Profile__c, &quot;Yes&quot;),    ISBLANK(High_Profile_Event_Notification_Form__c))</errorConditionFormula>
+    <errorMessage>Please enter the URL to the High Profile Event notification form. If not able yet you can leave as TBD. Note you will be required to enter the form as soon as it is available.</errorMessage>
+</ValidationRule>

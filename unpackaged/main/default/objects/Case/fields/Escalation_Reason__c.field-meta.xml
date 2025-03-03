@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation_Reason__c</fullName>
+    <label>Escalation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Escalating_As__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per leadership instruction</fullName>
+                <default>false</default>
+                <label>Per leadership instruction</label>
+            </value>
+            <value>
+                <fullName>Per process</fullName>
+                <default>false</default>
+                <label>Per process</label>
+            </value>
+            <value>
+                <fullName>Time spent</fullName>
+                <default>false</default>
+                <label>Time spent</label>
+            </value>
+            <value>
+                <fullName>Lack of knowledge</fullName>
+                <default>false</default>
+                <label>Lack of knowledge</label>
+            </value>
+            <value>
+                <fullName>Lack of documentation</fullName>
+                <default>false</default>
+                <label>Lack of documentation</label>
+            </value>
+            <value>
+                <fullName>Per Process T1</fullName>
+                <default>false</default>
+                <label>Per Process T1</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>TSR</controllingFieldValue>
+            <controllingFieldValue>T1</controllingFieldValue>
+            <valueName>Per leadership instruction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TSR</controllingFieldValue>
+            <valueName>Per process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T1</controllingFieldValue>
+            <valueName>Time spent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T1</controllingFieldValue>
+            <valueName>Lack of knowledge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T1</controllingFieldValue>
+            <valueName>Lack of documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>T1</controllingFieldValue>
+            <valueName>Per Process T1</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

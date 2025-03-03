@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POP_documentation_helpful__c</fullName>
+    <description>KM:  POP survey pushed from ClickTools</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do you feel you the documentation provided by your Onboarding Engagement Manager was helpful?</inlineHelpText>
+    <label>POP documentation helpful</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

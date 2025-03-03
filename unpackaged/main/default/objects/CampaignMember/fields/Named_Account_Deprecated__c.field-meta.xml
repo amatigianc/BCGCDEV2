@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Named_Account_Deprecated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Deprecated to be removed</description>
+    <label>Named Account[deprecated]</label>
+    <type>Checkbox</type>
+</CustomField>

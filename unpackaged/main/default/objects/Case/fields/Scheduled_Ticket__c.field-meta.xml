@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheduled_Ticket__c</fullName>
+    <description>Creates an automatic ticket related to this original case at the scheduled time.</description>
+    <inlineHelpText>Creates an automatic ticket related to this original case at the scheduled time.</inlineHelpText>
+    <label>Scheduled Ticket</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

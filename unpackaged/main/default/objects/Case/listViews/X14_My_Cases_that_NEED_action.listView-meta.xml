@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X14_My_Cases_that_NEED_action</fullName>
+    <booleanFilter>(1 AND 7) OR (((5 AND 6) OR (3 AND 2) OR (8 AND 9) OR 10) AND 4 AND 7)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Case_Title__c</columns>
+    <columns>Case_Owner_full_name__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Days_since_last_email_sent_2__c</columns>
+    <columns>Support_Package__c</columns>
+    <columns>Case_Age_days__c</columns>
+    <columns>JIRA_Key__c</columns>
+    <columns>JIRA_Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>New,Pending - Internal,Customer has replied,Pending - Fix Review,Need To Close,Closed - Customer has replied</value>
+    </filters>
+    <filters>
+        <field>Days_since_last_email_sent_2__c</field>
+        <operation>greaterThan</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.PRIORITY</field>
+        <operation>equals</operation>
+        <value>P1 - Critical</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notContain</operation>
+        <value>Pending - System Issue,Closed</value>
+    </filters>
+    <filters>
+        <field>CASES.PRIORITY</field>
+        <operation>equals</operation>
+        <value>P2 - Important</value>
+    </filters>
+    <filters>
+        <field>Days_since_last_email_sent_2__c</field>
+        <operation>greaterThan</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.NOC_Cases,Case.TS_Documentation,Case.Technical_Support</value>
+    </filters>
+    <filters>
+        <field>Days_since_last_email_sent_2__c</field>
+        <operation>greaterThan</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Pending - Fix,Pending - Product Enhancement,Pending - ENG Task</value>
+    </filters>
+    <filters>
+        <field>JIRA_Status__c</field>
+        <operation>equals</operation>
+        <value>CS: Pending</value>
+    </filters>
+    <label>14 - My Cases that NEED action</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Technical_Support_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Technical_Support_Rep</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

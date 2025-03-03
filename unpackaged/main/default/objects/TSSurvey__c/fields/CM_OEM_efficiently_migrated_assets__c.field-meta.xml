@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_OEM_efficiently_migrated_assets__c</fullName>
+    <description>KM:  Content Migration survey pushed from ClickTools</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do you feel that your Onboarding Engagement Manager was able to efficiently migrate your video assets from their original source to Brightcove&#39;s Video Cloud?</inlineHelpText>
+    <label>CM OEM efficiently migrated assets</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

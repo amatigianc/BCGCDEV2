@@ -1,0 +1,113 @@
+<apex:page id="communitiesSelfRegPage" showHeader="true" controller="CommunitiesSelfRegController" title="{!$Label.site.user_registration}">
+     <html>   
+        <head>
+            <!--<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'/>-->
+            <style>
+                .form {
+                    max-width: 376px;
+                    padding: 12px;
+                    width: 100%;
+                }
+                
+                .input {
+                    border: 2px solid #08088C;
+                    border-radius: 2px;
+                    color: rgb(8, 8, 140);
+                    box-sizing: border-box;
+                    display: inline-block;
+                    font-family: Arial;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                    padding: 12px;
+                    width: 100%;
+                }
+                
+                .input:focus {
+                    outline: rgb(0, 234, 228) auto 2px;
+                    outline-color: rgb(0, 234, 228);
+                }
+                
+                .submit {
+                    background-color: rgb(0, 234, 228) !important;
+                    background-image: none !important;
+                    border: 1px solid transparent !important;
+                    border-radius: 2px !important;
+                    color: rgb(8, 8, 140) !important;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 16px !important;
+                    font-family: Arial !important;
+                    font-weight: 700 !important;
+                    line-height: 1.42857143 !important;
+                    margin-bottom: 15px !important;
+                    margin-top: 5px !important;
+                    outline: none;
+                    padding: 10px 12px !important;
+                    text-align: center;
+                    -webkit-user-select: none !important;
+                    -moz-user-select: none !important;
+                    -ms-user-select: none !important;
+                    user-select: none;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    width: 100%;
+                }
+                
+                .submit:hover {
+                    background: rgb(8, 8, 140) !important;
+                    color: rgb(0, 234, 228) !important;
+                }
+                
+                .link {
+                    color: rgb(0, 234, 228);
+                    font-family: Arial;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+                
+                .link:hover {
+                    color: rgb(8, 8, 140);
+                    text-decoration: underline;
+                }
+                
+                ::placeholder{
+                    color: rgb(0, 234, 228);
+                }
+                
+            </style>
+        </head>  
+        <body>
+     <apex:define name="body">  
+      <center>
+       <br/><br/><br/><br/>
+      <apex:image id="BrightcoveLogo" url="https://files.brightcove.com/BROlogos/BrightcoveBlue.png" width="250" height="45" alt="Brightcove Logo"/>
+<apex:form id="theForm" forceSSL="true" styleClass="form">
+                    <apex:pageMessages id="error"/>
+                    <apex:panelGrid columns="2" style="margin-top:0.5em;">
+                      <apex:outputLabel value="First Name" for="firstName"/>
+                      <apex:inputText required="true" id="firstName" value="{!firstName}" label="First Name" styleClass="input" />
+                      <apex:outputLabel value="Last Name" for="lastName"/>
+                      <apex:inputText required="true" id="lastName" value="{!lastName}" label="Last Name" styleClass="input" />
+                      <apex:outputLabel value="{!$Label.site.community_nickname}" for="communityNickname"/>
+                      <apex:inputText required="true" id="communityNickname" value="{!communityNickname}" label="{!$Label.site.community_nickname}" styleClass="input"/>
+                      <apex:outputLabel value="{!$Label.site.email}" for="email"/>
+                      <apex:inputText required="true" id="email" value="{!email}" label="{!$Label.site.email}" styleClass="input" />
+                      <apex:outputLabel value="{!$Label.site.password}" for="password"/>
+                      <apex:inputSecret id="password" value="{!password}" styleClass="input"/>
+                      <apex:outputLabel value="{!$Label.site.confirm_password}" for="confirmPassword"/>
+                      <apex:inputSecret id="confirmPassword" value="{!confirmPassword}" styleClass="input"/>
+                      <apex:outputText value=""/>
+                      <apex:commandButton action="{!registerUser}" value="{!$Label.site.submit}" id="submit" styleClass="submit"/>
+                      <apex:outputLink value="/s/login" id="loginLink" styleClass="link">Already have an account</apex:outputLink>
+                    </apex:panelGrid> 
+                  <br/>
+</apex:form>
+     </center>
+      <br/>
+    </apex:define>
+</body>
+    </html>
+</apex:page>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Mass_Update__c</fullName>
+    <description>This field is used by the Mass Update tool to trigger a workflow and send email updates to cases</description>
+    <inlineHelpText>If you don&#39;t know what this field does DO NOT USE IT</inlineHelpText>
+    <label>Send Mass Update?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes - Send an update to all selected cases using the Mass Update Template</fullName>
+                <default>false</default>
+                <label>Yes - Send an update to all selected cases using the Mass Update Template</label>
+            </value>
+            <value>
+                <fullName>No - Do not send any updates to any of the cases</fullName>
+                <default>false</default>
+                <label>No - Do not send any updates to any of the cases</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

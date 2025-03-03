@@ -1,0 +1,40 @@
+<template>
+    <lightning-button label={label.refresh} title="Reload component" onclick={handleClick}
+        class="slds-m-vertical_x-small"></lightning-button>
+    <template for:each={attchs.data} for:item="attch">
+        <lightning-card key={attch.aAttachment.Id} class="slds-m-vertical_xx-small">
+            <h3 slot="title">
+                <lightning-icon icon-name="action:description" size="small"
+                    class="slds-m-right_medium"></lightning-icon>
+                <lightning-formatted-date-time year="numeric" month="numeric" day="numeric" hour="2-digit"
+                    minute="2-digit" value={attch.aAttachment.LastModifiedDate}></lightning-formatted-date-time>
+            </h3>
+            <p class="slds-m-left_x-large">{label.uploadedBy}: {attch.aAttachment.CreatedBy.Name}</p>
+            <p class="slds-m-left_x-large">{label.attachmentName}: {attch.aAttachment.Name}</p>
+            <div slot="footer">
+                <lightning-formatted-url value={attch.CommunityURL} label={label.viewAttachment}
+                    target="_blank"></lightning-formatted-url>&nbsp;|&nbsp;
+                <lightning-button name="delete" label={label.deleteAttachmentLabel} onclick={deleteAttachmentjs}
+                    data-recordid={attch.aAttachment.Id}> </lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+    <template for:each={files} for:item="file">
+        <lightning-card key={file.Id} class="slds-m-vertical_xx-small">
+            <h3 slot="title">
+                <lightning-icon icon-name="action:description" size="small"
+                    class="slds-m-right_medium"></lightning-icon>
+                <lightning-formatted-date-time year="numeric" month="numeric" day="numeric" hour="2-digit"
+                    minute="2-digit" value={file.LastModifiedDate}></lightning-formatted-date-time>
+            </h3>
+            <p class="slds-m-left_x-large">{label.uploadedBy}: {file.CreatedBy.Name}</p>
+            <p class="slds-m-left_x-large">{label.attachmentName}: {file.Name}</p>
+            <div slot="footer">
+                <lightning-formatted-url value={file.DistributionPublicUrl} label={label.viewAttachment}
+                    target="_blank"></lightning-formatted-url>&nbsp;|&nbsp;
+                <lightning-button name="delete" label={label.deleteAttachmentLabel} onclick={deleteFilejs}
+                    data-recordid={file.Id}> </lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+</template>

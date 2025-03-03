@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inform_the_customer_of_the_T2_Escalation</fullName>
+    <active>true</active>
+    <description>Informed the Customer field is required when assigning to T2 Production/Dev Queue. This will remind the agent to inform the customer about the escalation.</description>
+    <errorConditionFormula>AND(
+
+RecordType.DeveloperName = &#39;Technical_Support&#39;,
+
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+ OR(
+ ISPICKVAL(Assign_to_T2__c , &quot;T2 Production&quot;),
+ ISPICKVAL(Assign_to_T2__c, &quot;T2 Developer&quot;)
+ ),
+ Informed_Customer__c = false,
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>Informed_Customer__c</errorDisplayField>
+    <errorMessage>You need to inform the customer and select the &quot;Informed customer&quot; checkbox before escalating the case to a T2 Queue</errorMessage>
+</ValidationRule>

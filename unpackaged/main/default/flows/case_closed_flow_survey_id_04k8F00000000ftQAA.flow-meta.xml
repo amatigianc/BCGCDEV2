@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>GF_Survey_CaseClosedJan242023_d6d80fab</name>
+        <label>GF_Survey_CaseClosedJan242023_d6d80fab</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.GF_Survey_CaseClosedJan242023_d6d80fab</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>Case.GF_Survey_CaseClosedJan242023_d6d80fab</nameSegment>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <description>case closed flow triggering GF_Survey_CaseClosedJan242023_d6d80fab</description>
+    <label>case_closed_flow_survey_id_04k8F00000000ftQAA</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GF_Survey_CaseClosedJan242023_d6d80fab</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>{!$Record.IsClosed}</filterFormula>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

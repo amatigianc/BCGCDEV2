@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherCaseSubReasonrequired</fullName>
+    <active>true</active>
+    <description>&quot;Other&quot; Case Sub Reason is required when &#39;Case Sub reason&#39; = Other</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &#39;Technical_Support&#39;,
+NOT($Permission.Bypass_Validation_Rule),
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+
+ISBLANK( Other_Case_Sub_Reason__c ),
+
+OR(
+ISPICKVAL( Case_Sub_reason__c , &#39;Other&#39;),
+ISPICKVAL(Case_Sub_reason__c, &quot;Other&quot;),
+ISPICKVAL(Case_Sub_reason__c, &quot;3rd Party Integration&quot;),
+ISPICKVAL(Case_Sub_reason__c, &quot;Webpage/Other&quot;),
+ISPICKVAL(Case_Sub_reason__c, &quot;Video Data&quot;),
+ISPICKVAL(Case_Sub_reason__c, &quot;Other Devices&quot;),
+ISPICKVAL(Case_Sub_reason__c, &quot;Runtime restrictions (JWT) - Other&quot;),
+ISPICKVAL(Case_Sub_reason__c, &quot;Media Module - Video Management&quot;),
+ISPICKVAL(Case_Sub_reason__c, &quot;Plugins - Other&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Other_Case_Sub_Reason__c</errorDisplayField>
+    <errorMessage>Please provide a value for the field</errorMessage>
+</ValidationRule>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Coverage_Results__c</fullName>
+    <inlineHelpText>Use the Notes and Reported Issues section to elaborate on any issues.
+Minor issues are the ones that were too brief to troubleshoot and affected a minor % of the audience
+Major issues are the ones with wider impact, even if brief (like stream buffering for everyone)
+Major issues related to workflow different from live include Player version, Video activation, Custom fields&amp; integrations, website, etc.
+Major issues related to Brightcove include account misconfiguration, platform bugs and system, issues</inlineHelpText>
+    <label>Event Coverage Results</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No issues</fullName>
+                <default>false</default>
+                <label>No issues</label>
+            </value>
+            <value>
+                <fullName>Minor issues detected/reported</fullName>
+                <default>false</default>
+                <label>Minor issues detected/reported</label>
+            </value>
+            <value>
+                <fullName>Major issues related to the customer&#39;s encoder</fullName>
+                <default>false</default>
+                <label>Major issues related to the customer&#39;s encoder</label>
+            </value>
+            <value>
+                <fullName>Major issues related to customer&#39;s network</fullName>
+                <default>false</default>
+                <label>Major issues related to customer&#39;s network</label>
+            </value>
+            <value>
+                <fullName>Major issues related to customer&#39;s workflow different from Live</fullName>
+                <default>false</default>
+                <label>Major issues related to customer&#39;s workflow different from Live</label>
+            </value>
+            <value>
+                <fullName>Major issues related to Brightcove</fullName>
+                <default>false</default>
+                <label>Major issues related to Brightcove</label>
+            </value>
+            <value>
+                <fullName>N/A (Coverage Canceled)</fullName>
+                <default>false</default>
+                <label>N/A (Coverage Canceled)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

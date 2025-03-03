@@ -1,0 +1,2222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professional_Services</fullName>
+    <active>true</active>
+    <businessProcess>Standard Sales Process</businessProcess>
+    <description>Used when selling BGS. No ability to generate a quote.</description>
+    <label>Professional Services</label>
+    <picklistValues>
+        <picklist>Account_Stage_at_Creation__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Add_On_Type__c</picklist>
+        <values>
+            <fullName>Cross-Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entitlements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange Rate Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Uplift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upsell</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BGS_Deal_Forecast__c</picklist>
+        <values>
+            <fullName>1%2E Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E ROM %26 Proposal Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E SOW Creation %26 Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E SOW Signed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BGS_Deal_Status__c</picklist>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOW Creation %26 Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Discovery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Termination_Rights__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Termination_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Commit_In_Out__c</picklist>
+        <values>
+            <fullName>In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitors__c</picklist>
+        <values>
+            <fullName>Akamai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amazon Web Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bitmovin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brandlive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDNetworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comcast Technology Solutions %28thePlatform or CTS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DaCast %28Vzaar%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dailymotion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deltatre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encoding%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endeavor %28NeuLion%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grabyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hopin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J-stream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JW Player</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaltura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limelight Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediastream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Stream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moving Image 24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muvi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panopto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piksel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qumu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rainfocus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SeaChange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SkillUpJapan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>StreamAMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twenty Three Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verizon Digital Media Services %28VDMS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Videolicious</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vidyard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vimeo %28Livestream%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vimond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viostream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wirewax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wistia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YoSpace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouTube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouTube for Publishers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zype</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>Pilot %2F PoC %2F Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramp Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Term Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Deal_Status__c</picklist>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOW Creation %26 Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Discovery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Deal_Type__c</picklist>
+        <values>
+            <fullName>Add-On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event_Coverage_Hours_Type__c</picklist>
+        <values>
+            <fullName>Bulk %2850%2B%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upside</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Forecast_In_Out__c</picklist>
+        <values>
+            <fullName>In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Forecast__c</picklist>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Upside</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Global_Region__c</picklist>
+        <values>
+            <fullName>ANZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South America</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Growth_Type__c</picklist>
+        <values>
+            <fullName>Add-On %26 Uplift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Add-on Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uplift Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_the_Contract_Auto_Renewing__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content Syndication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Web Traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event %283rd Party%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event %28BCOV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incoming Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound BDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Sales Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPC%2FSEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event%2FWebinar %283rd Party%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event%2FWebinar %28BCOV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source_Latest__c</picklist>
+        <values>
+            <fullName>Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content Syndication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Web Traffic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event %283rd Party%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event %28BCOV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HapYak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incoming Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound BDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Sales Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPC%2FSEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event%2FWebinar %283rd Party%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event%2FWebinar %28BCOV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WicketLabs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Live_Event_Hours_per_Year__c</picklist>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marketplace_Integration__c</picklist>
+        <values>
+            <fullName>3Play Media Captions %2F Translations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accedo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adobe Analytics Plugin for Brightcove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adobe Experience Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adobe Magento Commerce Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adobe Marketo Engage for Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annoto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apple Fairplay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aprimo DAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon Payment Processing with Stripe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blackbird</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BlueRush %2F IndiVideo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Hootsuite Connector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CaptionHub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CaptionSync</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CatapultX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco WebEx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleeng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curriki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drupal Video Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMAM%2C Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evergent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freewheel Player Plugin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glide Publishing Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Ad Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Analytics Plugin for Brightcove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Tag Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Widevine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grabyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hootsuite Connector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hubspot Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRIS Video Recommendations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InPlayer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interprefy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JUMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kollective Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maestro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnifi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MediaNEXT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft PlayReady</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft SharePoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Teams Video Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nagra Forensic Watermarking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Spark Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Marketplace Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle Eloqua Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RWS Tridion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RainFocus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramp eCDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverside%2Efm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Commerce Cloud B2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Pardot - Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sendbird</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sitecore Video Connector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snackable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socialive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Streamhub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surfmeter Client Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System73</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tealium Plugin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Filter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ThinkAnalytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Universal Search App Discovery on Roku</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verasity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verbit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VideoElephant Content Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VideoKen %2F VIdeoLake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Videon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vudoo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vuulr Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watching That</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wildmoka Auto Rezone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wipster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wootag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wordpress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>inthegame</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Named_Account_Tier__c</picklist>
+        <values>
+            <fullName>Tier 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Source__c</picklist>
+        <values>
+            <fullName>Brightcove Sourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Sourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partner_Type__c</picklist>
+        <values>
+            <fullName>Master License Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner - BC Reselles</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Potential_Solutions__c</picklist>
+        <values>
+            <fullName>Master Deletion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retranscode</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pursuit_Lead__c</picklist>
+        <values>
+            <fullName>Ben Lupton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eric Knutson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erica Wight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>James Livingstone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mark Lendrum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudheer Parameswaran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toshi Kuniya</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qualified_Out_Reason__c</picklist>
+        <values>
+            <fullName>Aged Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Already a customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Could not engage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never a fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No champion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No need</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not a fit now</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not right time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stopped communicating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qualifier_Role__c</picklist>
+        <values>
+            <fullName>BDR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Rep</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Win_Loss__c</picklist>
+        <values>
+            <fullName>Business Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price to Value %28Closed Lost%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price to Value %28Closed Won%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relationship %28Closed Lost%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relationship %28Closed Won%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology or Capability %28Closed Lost%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology or Capability %28Closed Won%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Requalification__c</picklist>
+        <values>
+            <fullName>Can Requalify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keep Disqualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Requested_CDN__c</picklist>
+        <values>
+            <fullName>BYO CDN %28Akamai%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BYO CDN %28Cloudfront%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BYO CDN %28Fastly%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BYO CDN %28Limelight%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Risk_Reason__c</picklist>
+        <values>
+            <fullName>Bugs Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSM Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commodity Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Readiness Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Reorg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disengaged%2FNon-responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementation Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Champion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near Overages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing%2FEconomics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Risk - Enhancement Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Risk - Roadmap Misalignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sentiment Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single-Threaded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Ticket Drop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usage Drop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Risk_Status__c</picklist>
+        <values>
+            <fullName>High - Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High - Logo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium - Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium - Logo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Solution_Type__c</picklist>
+        <values>
+            <fullName>App Experiences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content Syndication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events %26 Communication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Framework Wrappers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hosting %26 Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingest %26 Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Player Interactivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA as a Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Retainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Strategy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UX Design as a Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_of_Data__c</picklist>
+        <values>
+            <fullName>CSV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRSS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubReason_for_winloss__c</picklist>
+        <values>
+            <fullName>BGS%2FServices ability to create a highly custom solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BGS%2FServices cost too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Better solution%2C not worth the price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Better solution%2C worth the price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove used on other teams in organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Challenging customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of company control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company-wide budget freezes or RIFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer non-payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive or board level relationships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expected deal size is too small</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient ROI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated into our tech stack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of solution completeness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing tablestakes feature%2Funable to serve use case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-responsive contact %2F Decision maker left</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only one who could solve the problem %2F uniquely able to solve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor buyer experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prior experience with Brightcove %28didn%27t consider alternatives%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reliability%2FScalability%2FCustomer Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Similar solution%2C not the best price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Similar solution%2C won on price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution completeness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Too difficult to onboard or switch from existing solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trusted sales advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to come to legal or contractual terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncompetitive feature set</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video budget is not a priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong buyer relationship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subscription_Types__c</picklist>
+        <values>
+            <fullName>AWS Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience Insight only %28Formerly Wickedlabs%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon Essential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove One time event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise video Suite 2%2E0 Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise video Suite 2%2E0 Starter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Express</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interactivity only %28formerly Hapyak%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Enterprise package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Pro-Start package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Professional Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Master License Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTT Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perform Player</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statement of Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Cloud Advantage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Cloud Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Cloud Essential</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Cloud Ultimate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Marketing Suite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Marketing Suite Professional Edition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Marketing Suite Starter and Starter Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Marketing suite Enterprise Edition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zencoder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Package__c</picklist>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Targeted_Platforms__c</picklist>
+        <values>
+            <fullName>Mobile Apps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Technology_Partner__c</picklist>
+        <values>
+            <fullName>3Play Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accedo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adobe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annoto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apple Fairplay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aprimo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automatic Sync Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aveq gmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blackbird</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BlueRush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CaptionHub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CatapultX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco %28WebEX%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleeng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curriki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drupal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evergent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook %28Meta%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freewheel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glide Publishing Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grabyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hootsuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hubspot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRIS%2Etv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InPlayer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interprefy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inthegame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JumpTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kollective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPP Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maestro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnifi %28Formerly toch%2Eai%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nagra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Spark Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle %28Eloqua%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RWS Pic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rainfocus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverside%2Efm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sendbird</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sitecore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snackable%2Eai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socialive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Streamhub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stripe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System73</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tealium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Filter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ThinkAnalytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Translations%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verasity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verbit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VideoElephant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VideoKen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Videon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vudoo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vuulr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watching That</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wildmoka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wipster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wootag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wordpress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouTube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Termination_Type__c</picklist>
+        <values>
+            <fullName>Account Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>sbaa__ApprovalStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

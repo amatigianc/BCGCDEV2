@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Performing_Arts__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mark to = TRUE if the field
+&quot;6Sense Segment - Brightcove&quot; contains the value &quot;A&amp;E segment for email
+nurture (eng speaking)&quot;</description>
+    <label>Performing Arts</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

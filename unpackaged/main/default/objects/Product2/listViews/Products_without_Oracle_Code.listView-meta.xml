@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_without_Oracle_Code</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Oracle_Code__c</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Oracle_Code__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Legacy_Product__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Products without Oracle Code</label>
+</ListView>

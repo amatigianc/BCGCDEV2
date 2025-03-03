@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>isCaseRecordType</name>
+        <label>isCaseRecordType</label>
+        <locationX>380</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>updateTitle</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isTechnicalSupport</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Technical_Support</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>isUrgent</targetReference>
+            </connector>
+            <label>isTechnicalSupport</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>isUrgent</name>
+        <label>isUrgent</label>
+        <locationX>182</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_updateTitle</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>isItUrgent</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>isSubjectUrgent</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>tmpIsDescriptionUrgent</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Priority</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>P1 - Critical</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateSubject</targetReference>
+            </connector>
+            <label>isItUrgent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>UserHasBypassValidation</name>
+        <label>UserHasBypassValidation</label>
+        <locationX>611</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_FLOW_Rule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>isCaseRecordType</targetReference>
+            </connector>
+            <label>NO</label>
+        </rules>
+    </decisions>
+    <description>If description or subject contains &quot;Urgent&quot; &quot;Critical&quot; or &quot;P1&quot; it will update the priority to P1, and pre-pend &quot;P1 - FLOW&quot; to the subject</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>isSubjectUrgent</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(CONTAINS({!$Record.Subject}, &quot;Urgent&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;Critical&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;emergency&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;site down&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;video down&#39;&quot;), true, 
+IF(CONTAINS({!$Record.Subject}, &quot;playback down&quot;),true,
+IF(CONTAINS({!$Record.Subject}, &quot;playback is down&quot;),true, 
+IF(CONTAINS({!$Record.Subject}, &quot;escalation&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;escalate&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;live stream is down&quot;),true, 
+IF(CONTAINS({!$Record.Subject}, &quot;live stream down&quot;),true, 
+IF(CONTAINS({!$Record.Subject}, &quot;P1&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;ASAP&quot;),true,
+IF(CONTAINS({!$Record.Subject}, &quot;as soon as possible&quot;),true,
+IF(CONTAINS({!$Record.Subject}, &quot;immediately&quot;), true,
+IF(CONTAINS({!$Record.Subject}, &quot;not acceptable&quot;),true,
+false))))))))))))))))</expression>
+    </formulas>
+    <formulas>
+        <name>tmpIsDescriptionUrgent</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(CONTAINS({!$Record.Description},&quot;Urgent&quot;),true,
+IF(CONTAINS({!$Record.Description},&quot;critical&quot;),true,
+IF(CONTAINS({!$Record.Description},&quot;live stream is down&quot;),true,
+IF(CONTAINS({!$Record.Description},&quot;asap&quot;),true,
+IF(CONTAINS({!$Record.Description},&quot;as soon as possible&quot;),true,
+IF(CONTAINS({!$Record.Description},&quot;emergency&quot;),true,
+IF(CONTAINS({!$Record.Description},&quot;playback is down&quot;),true,
+IF(CONTAINS({!$Record.Description},&quot;P1&quot;),true, 
+false))))))))</expression>
+    </formulas>
+    <interviewLabel>Case - P1 Flow priority update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - P1 Flow update Priority Title</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_1_of_updateTitle</name>
+        <label>Copy 1 of updateTitle</label>
+        <locationX>314</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>Title__c</field>
+            <value>
+                <elementReference>$Record.Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updateSubject</name>
+        <label>updateSubject</label>
+        <locationX>50</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>P1 - Critical</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Title__c</field>
+            <value>
+                <elementReference>tmp_subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>updateTitle</name>
+        <label>updateTitle</label>
+        <locationX>578</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>Title__c</field>
+            <value>
+                <elementReference>$Record.Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>485</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>UserHasBypassValidation</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>500</triggerOrder>
+    <variables>
+        <name>tmp_subject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>P1 - FLOW {!$Record.Subject}</stringValue>
+        </value>
+    </variables>
+</Flow>

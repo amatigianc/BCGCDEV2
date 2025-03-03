@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mutual_Action_Plan__c</fullName>
+    <inlineHelpText>What is our Mutual Action Plan to turn the Opportunity into Revenue?
+Provide the URL to the google drive folder containing Joint Success Plan document.</inlineHelpText>
+    <label>Joint Success Plan</label>
+    <length>32768</length>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

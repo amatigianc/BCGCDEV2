@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_s_Manager__c</fullName>
+    <description>Workflow rule applies the Coverage Manager&#39;s email to this field for automatic alerting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How&#39;d you even find this field?</inlineHelpText>
+    <label>Owner&#39;s Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

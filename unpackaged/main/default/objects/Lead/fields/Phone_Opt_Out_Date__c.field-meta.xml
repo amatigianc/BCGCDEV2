@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Opt_Out_Date__c</fullName>
+    <description>Captures the latest date on which the lead opted out from receiving phone communication from Brightcove.</description>
+    <inlineHelpText>Captures the latest date on which the lead opted out from receiving phone communication from Brightcove.</inlineHelpText>
+    <label>Phone - Opt-Out Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

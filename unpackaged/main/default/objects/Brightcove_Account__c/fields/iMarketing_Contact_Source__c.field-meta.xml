@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>iMarketing_Contact_Source__c</fullName>
+    <label>iMarketing Contact Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SEM</fullName>
+                <default>false</default>
+                <label>SEM</label>
+            </value>
+            <value>
+                <fullName>Display Campaign</fullName>
+                <default>false</default>
+                <label>Display Campaign</label>
+            </value>
+            <value>
+                <fullName>Untracked</fullName>
+                <default>false</default>
+                <label>Untracked</label>
+            </value>
+            <value>
+                <fullName>Partner Program</fullName>
+                <default>false</default>
+                <label>Partner Program</label>
+            </value>
+            <value>
+                <fullName>Partner Program (non-ROIA)</fullName>
+                <default>false</default>
+                <label>Partner Program (non-ROIA)</label>
+            </value>
+            <value>
+                <fullName>Right Click Link</fullName>
+                <default>false</default>
+                <label>Right Click Link</label>
+            </value>
+            <value>
+                <fullName>Australia SEM</fullName>
+                <default>false</default>
+                <label>Australia SEM</label>
+            </value>
+            <value>
+                <fullName>Ektron</fullName>
+                <default>false</default>
+                <label>Ektron</label>
+            </value>
+            <value>
+                <fullName>Vistaprint</fullName>
+                <default>false</default>
+                <label>Vistaprint</label>
+            </value>
+            <value>
+                <fullName>SEM EMEA</fullName>
+                <default>false</default>
+                <label>SEM EMEA</label>
+            </value>
+            <value>
+                <fullName>Online Media EMEA</fullName>
+                <default>false</default>
+                <label>Online Media EMEA</label>
+            </value>
+            <value>
+                <fullName>Singapore SEM</fullName>
+                <default>false</default>
+                <label>Singapore SEM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

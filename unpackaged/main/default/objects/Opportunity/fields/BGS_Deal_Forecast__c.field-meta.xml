@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGS_Deal_Forecast__c</fullName>
+    <label>BGS Engagement Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1. Discovery</fullName>
+                <default>false</default>
+                <label>1. Discovery</label>
+            </value>
+            <value>
+                <fullName>2. ROM &amp; Proposal Creation</fullName>
+                <default>false</default>
+                <label>2. ROM &amp; Proposal Creation</label>
+            </value>
+            <value>
+                <fullName>3. SOW Creation &amp; Signature</fullName>
+                <default>false</default>
+                <label>3. SOW Creation &amp; Signature</label>
+            </value>
+            <value>
+                <fullName>4. SOW Signed</fullName>
+                <default>false</default>
+                <label>4. SOW Signed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

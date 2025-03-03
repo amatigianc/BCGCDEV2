@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Input_Drift_3__c</fullName>
+    <label>Input Drift &lt;3</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Passed</fullName>
+                <default>false</default>
+                <label>Passed on all Streams</label>
+            </value>
+            <value>
+                <fullName>Not Passed on Some Streams</fullName>
+                <default>false</default>
+                <label>Not Passed on Some Streams</label>
+            </value>
+            <value>
+                <fullName>Not Passed</fullName>
+                <default>false</default>
+                <label>Not Passed on all Streams</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>正常</fullName>
+                <default>false</default>
+                <label>正常</label>
+            </value>
+            <value>
+                <fullName>異常有</fullName>
+                <default>false</default>
+                <label>異常有</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cognism_Diamond_Record__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Cognism - A Diamond is a contact whose mobile number has been phone-verified.</description>
+    <inlineHelpText>Cognism - A Diamond is a contact whose mobile number has been phone-verified.</inlineHelpText>
+    <label>Cognism Diamond Record</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

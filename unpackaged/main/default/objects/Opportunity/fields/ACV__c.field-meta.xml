@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACV__c</fullName>
+    <formula>IF(Has_Primary_Quote__c, IF(SBQQ__PrimaryQuote__r.ACV__c &lt;= 0, IF(NOT(ISBLANK(Manual_ACV__c)) &amp;&amp; Manual_ACV__c &gt; 0, Manual_ACV__c, Total_ACV_Admin__c), SBQQ__PrimaryQuote__r.ACV__c), If(and(OR(ISPICKVAL(StageName, &quot;closed won&quot;),ISPICKVAL(StageName, &quot;closed lost&quot;)),CloseDate &lt; DATE(2023,04,15)) ,Total_ACV_Admin__c,
+IF(NOT(ISBLANK(Manual_ACV__c)) &amp;&amp; Manual_ACV__c &gt; 1, Manual_ACV__c, Total_ACV_Admin__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ACV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

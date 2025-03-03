@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Player_uses_the_eCDN__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Review that the Player is enabled with the Kollective, Peer5, or Ramp Plugin</description>
+    <inlineHelpText>Review that the Player is enabled with the Kollective, Peer5, or Ramp Plugin</inlineHelpText>
+    <label>Player uses the eCDN</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_concurrent_streams__c</fullName>
+    <description>How many concurrent live jobs is the customer expecting us to monitor during the event?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many concurrent live jobs is the customer expecting us to monitor during the event?</inlineHelpText>
+    <label>Number of concurrent streams</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

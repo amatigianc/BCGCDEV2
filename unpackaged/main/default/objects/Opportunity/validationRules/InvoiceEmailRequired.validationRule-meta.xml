@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvoiceEmailRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(ISPICKVAL( StageName , &#39;3 - Solution Design &amp; Evaluation&#39;),ISPICKVAL( StageName , &#39;4 - Negotiation&#39;),
+ISPICKVAL( StageName , &#39;Closed Won&#39;)) , 
+ISBLANK( Invoice_Email_s__c ),
+ $User.Id &lt;&gt; &quot;0058c00000COTSE&quot;, /*Lorena Zenovei Kimble team*/
+$UserRole.Name &lt;&gt; &quot;Salesforce Team&quot;,
+NOT($Permission.Bypass_Validation_Rule)
+
+)</errorConditionFormula>
+    <errorDisplayField>Invoice_Email_s__c</errorDisplayField>
+    <errorMessage>Invoice Email(s) required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Renewal_Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Associates add-on opp with the original renewal opportunity. Not applicable to other types of opps.</inlineHelpText>
+    <label>Related Renewal Opportunity</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Renewal Growth Opps</relationshipLabel>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

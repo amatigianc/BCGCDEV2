@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Type_cannot_be_empty</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ OR(RecordType.DeveloperName = &#39;New_Business&#39;, RecordType.DeveloperName = &#39;Add_On&#39;
+),
+ISBLANK( TEXT( Contract_Type__c ) ),
+$User.Id &lt;&gt; &quot;0058c00000COTSE&quot;, /*Lorena Zenovei Kimble team*/
+$UserRole.Name &lt;&gt; &quot;Salesforce Team&quot;,
+NOT ( $Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>Contract_Type__c</errorDisplayField>
+    <errorMessage>Contract Type must be selected</errorMessage>
+</ValidationRule>

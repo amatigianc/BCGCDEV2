@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Industry__c</fullName>
+    <label>Secondary Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aerospace &amp; Defense</fullName>
+                <default>false</default>
+                <label>Aerospace &amp; Defense</label>
+            </value>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Airlines</fullName>
+                <default>false</default>
+                <label>Airlines</label>
+            </value>
+            <value>
+                <fullName>Associations</fullName>
+                <default>false</default>
+                <label>Associations</label>
+            </value>
+            <value>
+                <fullName>Automobiles &amp; Parts</fullName>
+                <default>false</default>
+                <label>Automobiles &amp; Parts</label>
+            </value>
+            <value>
+                <fullName>Banking</fullName>
+                <default>false</default>
+                <label>Banking</label>
+            </value>
+            <value>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+                <label>Biotechnology</label>
+            </value>
+            <value>
+                <fullName>Boutique Design &amp; Development Shops</fullName>
+                <default>false</default>
+                <label>Boutique Design &amp; Development Shops</label>
+            </value>
+            <value>
+                <fullName>Broadcasters &amp; Cable Networks</fullName>
+                <default>false</default>
+                <label>Broadcasters &amp; Cable Networks</label>
+            </value>
+            <value>
+                <fullName>Construction &amp; Materials</fullName>
+                <default>false</default>
+                <label>Construction &amp; Materials</label>
+            </value>
+            <value>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+                <label>Consulting</label>
+            </value>
+            <value>
+                <fullName>Consumer Travel</fullName>
+                <default>false</default>
+                <label>Consumer Travel</label>
+            </value>
+            <value>
+                <fullName>Content Aggregators</fullName>
+                <default>false</default>
+                <label>Content Aggregators</label>
+            </value>
+            <value>
+                <fullName>Crowdfunding</fullName>
+                <default>false</default>
+                <label>Crowdfunding</label>
+            </value>
+            <value>
+                <fullName>Cultural Organizations</fullName>
+                <default>false</default>
+                <label>Cultural Organizations</label>
+            </value>
+            <value>
+                <fullName>Design &amp; Marketing Agencies</fullName>
+                <default>false</default>
+                <label>Design &amp; Marketing Agencies</label>
+            </value>
+            <value>
+                <fullName>E-Learning</fullName>
+                <default>false</default>
+                <label>E-Learning</label>
+            </value>
+            <value>
+                <fullName>Electricity</fullName>
+                <default>false</default>
+                <label>Electricity</label>
+            </value>
+            <value>
+                <fullName>Faith-based</fullName>
+                <default>false</default>
+                <label>Faith-based</label>
+            </value>
+            <value>
+                <fullName>Federal Government</fullName>
+                <default>false</default>
+                <label>Federal Government</label>
+            </value>
+            <value>
+                <fullName>Film Studios</fullName>
+                <default>false</default>
+                <label>Film Studios</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+                <label>Food &amp; Beverage</label>
+            </value>
+            <value>
+                <fullName>Food &amp; Drug Retailers</fullName>
+                <default>false</default>
+                <label>Food &amp; Drug Retailers</label>
+            </value>
+            <value>
+                <fullName>Gaming &amp; eSports</fullName>
+                <default>false</default>
+                <label>Gaming &amp; eSports</label>
+            </value>
+            <value>
+                <fullName>Gas, Water &amp; Multiutilities</fullName>
+                <default>false</default>
+                <label>Gas, Water &amp; Multiutilities</label>
+            </value>
+            <value>
+                <fullName>General Retailers</fullName>
+                <default>false</default>
+                <label>General Retailers</label>
+            </value>
+            <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <fullName>Hospitals &amp; Medical Services</fullName>
+                <default>false</default>
+                <label>Hospitals &amp; Medical Services</label>
+            </value>
+            <value>
+                <fullName>Hotels</fullName>
+                <default>false</default>
+                <label>Hotels</label>
+            </value>
+            <value>
+                <fullName>HR &amp; Staffing</fullName>
+                <default>false</default>
+                <label>HR &amp; Staffing</label>
+            </value>
+            <value>
+                <fullName>Industrial Transportation</fullName>
+                <default>false</default>
+                <label>Industrial Transportation</label>
+            </value>
+            <value>
+                <fullName>Information Technology (IT)</fullName>
+                <default>false</default>
+                <label>Information Technology (IT)</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Large System Integrators</fullName>
+                <default>false</default>
+                <label>Large System Integrators</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>MCNs (Multi Channel Networks)</fullName>
+                <default>false</default>
+                <label>MCNs (Multi Channel Networks)</label>
+            </value>
+            <value>
+                <fullName>Museums</fullName>
+                <default>false</default>
+                <label>Museums</label>
+            </value>
+            <value>
+                <fullName>Music</fullName>
+                <default>false</default>
+                <label>Music</label>
+            </value>
+            <value>
+                <fullName>New Media</fullName>
+                <default>false</default>
+                <label>New Media</label>
+            </value>
+            <value>
+                <fullName>Non-Profit</fullName>
+                <default>false</default>
+                <label>Non-Profit</label>
+            </value>
+            <value>
+                <fullName>Non-Profit Media</fullName>
+                <default>false</default>
+                <label>Non-Profit Media</label>
+            </value>
+            <value>
+                <fullName>Online News</fullName>
+                <default>false</default>
+                <label>Online News</label>
+            </value>
+            <value>
+                <fullName>Pay TV Distributors</fullName>
+                <default>false</default>
+                <label>Pay TV Distributors</label>
+            </value>
+            <value>
+                <fullName>Performing Arts</fullName>
+                <default>false</default>
+                <label>Performing Arts</label>
+            </value>
+            <value>
+                <fullName>Personal &amp; Household Goods</fullName>
+                <default>false</default>
+                <label>Personal &amp; Household Goods</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical</fullName>
+                <default>false</default>
+                <label>Pharmaceutical</label>
+            </value>
+            <value>
+                <fullName>Print Publishing</fullName>
+                <default>false</default>
+                <label>Print Publishing</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <label>Real Estate</label>
+            </value>
+            <value>
+                <fullName>Recreational Services</fullName>
+                <default>false</default>
+                <label>Recreational Services</label>
+            </value>
+            <value>
+                <fullName>Restaurants &amp; Bars</fullName>
+                <default>false</default>
+                <label>Restaurants &amp; Bars</label>
+            </value>
+            <value>
+                <fullName>Schools &amp; Universities</fullName>
+                <default>false</default>
+                <label>Schools &amp; Universities</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Sports Leagues</fullName>
+                <default>false</default>
+                <label>Sports Leagues</label>
+            </value>
+            <value>
+                <fullName>State &amp; Local Government</fullName>
+                <default>false</default>
+                <label>State &amp; Local Government</label>
+            </value>
+            <value>
+                <fullName>Support Services</fullName>
+                <default>false</default>
+                <label>Support Services</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Travel &amp; Tourism</fullName>
+                <default>false</default>
+                <label>Travel &amp; Tourism</label>
+            </value>
+            <value>
+                <fullName>Video Ad Network</fullName>
+                <default>false</default>
+                <label>Video Ad Network</label>
+            </value>
+            <value>
+                <fullName>Video Production</fullName>
+                <default>false</default>
+                <label>Video Production</label>
+            </value>
+            <value>
+                <fullName>Web Development Shop</fullName>
+                <default>false</default>
+                <label>Web Development Shop</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Technology</controllingFieldValue>
+            <valueName>Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology</controllingFieldValue>
+            <valueName>Information Technology (IT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology</controllingFieldValue>
+            <valueName>Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>E-Learning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Schools &amp; Universities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Banking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crowdfunding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Real Estate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Food &amp; Drug Retailers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>General Retailers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Broadcasters &amp; Cable Networks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Content Aggregators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Film Studios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Gaming &amp; eSports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>MCNs (Multi Channel Networks)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Music</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>New Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Online News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Pay TV Distributors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Print Publishing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Radio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Sports Leagues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media &amp; Entertainment</controllingFieldValue>
+            <valueName>Video Ad Network</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

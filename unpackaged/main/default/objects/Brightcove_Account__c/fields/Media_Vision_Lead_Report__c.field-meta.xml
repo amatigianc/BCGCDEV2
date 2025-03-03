@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Media_Vision_Lead_Report__c</fullName>
+    <label>Media Vision Lead Report</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SEM</fullName>
+                <default>false</default>
+                <label>SEM</label>
+            </value>
+            <value>
+                <fullName>Display</fullName>
+                <default>false</default>
+                <label>Display</label>
+            </value>
+            <value>
+                <fullName>Organic</fullName>
+                <default>false</default>
+                <label>Organic</label>
+            </value>
+            <value>
+                <fullName>Partner Program</fullName>
+                <default>false</default>
+                <label>Partner Program</label>
+            </value>
+            <value>
+                <fullName>Misc. Marketing</fullName>
+                <default>false</default>
+                <label>Misc. Marketing</label>
+            </value>
+            <value>
+                <fullName>Media Buys</fullName>
+                <default>false</default>
+                <label>Media Buys</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

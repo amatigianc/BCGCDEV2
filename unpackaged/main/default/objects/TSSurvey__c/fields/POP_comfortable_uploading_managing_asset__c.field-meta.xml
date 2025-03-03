@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POP_comfortable_uploading_managing_asset__c</fullName>
+    <description>KM:  POP survey pushed from ClickTools</description>
+    <externalId>false</externalId>
+    <inlineHelpText>After the Brightcove (POP) Publisher Onboarding Program, how would you rate the level of knowledge and understanding you now have for each of the topics below?
+Uploading and Managing your Video Assets</inlineHelpText>
+    <label>POP comfortable uploading managing asset</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

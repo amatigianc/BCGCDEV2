@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Offer_Type__c</fullName>
+    <label>Campaign Offer Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ABM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ABM</label>
+            </value>
+            <value>
+                <fullName>Analyst Report</fullName>
+                <default>false</default>
+                <label>Analyst Report</label>
+            </value>
+            <value>
+                <fullName>Blog</fullName>
+                <default>false</default>
+                <label>Blog</label>
+            </value>
+            <value>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+                <label>Case Study</label>
+            </value>
+            <value>
+                <fullName>Communication Opt-In</fullName>
+                <default>false</default>
+                <label>Communication Opt-In</label>
+            </value>
+            <value>
+                <fullName>Content</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Content</label>
+            </value>
+            <value>
+                <fullName>Content Bundle</fullName>
+                <default>false</default>
+                <label>Content Bundle</label>
+            </value>
+            <value>
+                <fullName>Data Sheet</fullName>
+                <default>false</default>
+                <label>Data Sheet</label>
+            </value>
+            <value>
+                <fullName>Demo</fullName>
+                <default>false</default>
+                <label>Demo</label>
+            </value>
+            <value>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Direct Mail</label>
+            </value>
+            <value>
+                <fullName>Direct Response (Conversation)</fullName>
+                <default>false</default>
+                <label>Direct Response (Conversation)</label>
+            </value>
+            <value>
+                <fullName>eBook</fullName>
+                <default>false</default>
+                <label>eBook</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Event Inquiry</fullName>
+                <default>false</default>
+                <label>Event Inquiry</label>
+            </value>
+            <value>
+                <fullName>Event - Webcast</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Event - Webcast</label>
+            </value>
+            <value>
+                <fullName>Follow / Like / Friend</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Follow / Like / Friend</label>
+            </value>
+            <value>
+                <fullName>Gift</fullName>
+                <default>false</default>
+                <label>Gift</label>
+            </value>
+            <value>
+                <fullName>Guide</fullName>
+                <default>false</default>
+                <label>Guide</label>
+            </value>
+            <value>
+                <fullName>Infographic</fullName>
+                <default>false</default>
+                <label>Infographic</label>
+            </value>
+            <value>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+                <label>Inquiry</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Online Office Hours</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Online Office Hours</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PLAY TV</fullName>
+                <default>false</default>
+                <label>PLAY TV</label>
+            </value>
+            <value>
+                <fullName>Product Beta Application</fullName>
+                <default>false</default>
+                <label>Product Beta Application</label>
+            </value>
+            <value>
+                <fullName>Product Trial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product Trial</label>
+            </value>
+            <value>
+                <fullName>Promotional Offer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Promotional Offer</label>
+            </value>
+            <value>
+                <fullName>Purchase Promotion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Purchase Promotion</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Sales Follow-up (Other)</fullName>
+                <default>false</default>
+                <label>Sales Follow-up (Other)</label>
+            </value>
+            <value>
+                <fullName>Slideshow</fullName>
+                <default>false</default>
+                <label>Slideshow</label>
+            </value>
+            <value>
+                <fullName>Support Request</fullName>
+                <default>false</default>
+                <label>Support Request</label>
+            </value>
+            <value>
+                <fullName>Survey</fullName>
+                <default>false</default>
+                <label>Survey</label>
+            </value>
+            <value>
+                <fullName>Sweepstakes</fullName>
+                <default>false</default>
+                <label>Sweepstakes</label>
+            </value>
+            <value>
+                <fullName>Trial</fullName>
+                <default>false</default>
+                <label>Trial</label>
+            </value>
+            <value>
+                <fullName>Undefined</fullName>
+                <default>false</default>
+                <label>Undefined</label>
+            </value>
+            <value>
+                <fullName>Video</fullName>
+                <default>false</default>
+                <label>Video</label>
+            </value>
+            <value>
+                <fullName>Virtual Event</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Virtual Event</label>
+            </value>
+            <value>
+                <fullName>Webcast - Live</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Webcast - Live</label>
+            </value>
+            <value>
+                <fullName>Webcast – Recorded</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Webcast – Recorded</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>Whitepaper</fullName>
+                <default>false</default>
+                <label>Whitepaper</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

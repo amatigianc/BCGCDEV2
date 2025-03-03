@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EventStartForWorkflow__c</fullName>
+    <formula>DATETIMEVALUE(DATE(VALUE(TEXT( Event_Start_Year__c )),VALUE(TEXT( Event_Start_Month__c )),VALUE(TEXT( Event_Start_Day__c )))) + ( (VALUE(TEXT(Event_Start_Hour__c ))/24) + (VALUE(TEXT(Event_Start_Minute__c ))/1440))</formula>
+    <label>EventStartForWorkflow</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

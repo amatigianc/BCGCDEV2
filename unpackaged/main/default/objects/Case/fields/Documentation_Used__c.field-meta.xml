@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Documentation_Used__c</fullName>
+    <label>Documentation Used</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal TS Doc</fullName>
+                <default>false</default>
+                <label>Internal TS Doc</label>
+            </value>
+            <value>
+                <fullName>Public Documentation</fullName>
+                <default>false</default>
+                <label>Public Documentation</label>
+            </value>
+            <value>
+                <fullName>Confluence</fullName>
+                <default>false</default>
+                <label>Atlassian wiki (Confluence/Jira)</label>
+            </value>
+            <value>
+                <fullName>Brightcove University</fullName>
+                <default>false</default>
+                <label>Brightcove University</label>
+            </value>
+            <value>
+                <fullName>No documentation needed</fullName>
+                <default>false</default>
+                <label>No documentation needed</label>
+            </value>
+            <value>
+                <fullName>Observability Dashboard</fullName>
+                <default>false</default>
+                <label>Observability Dashboard</label>
+            </value>
+            <value>
+                <fullName>Documentation missing</fullName>
+                <default>false</default>
+                <label>Documentation missing</label>
+            </value>
+            <value>
+                <fullName>HearYe</fullName>
+                <default>false</default>
+                <label>HearYe</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

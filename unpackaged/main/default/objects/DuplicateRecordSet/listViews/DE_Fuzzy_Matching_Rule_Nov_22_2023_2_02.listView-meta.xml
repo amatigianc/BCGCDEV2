@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Fuzzy_Matching_Rule_Nov_22_2023_2_02</fullName>
+    <columns>Name</columns>
+    <columns>RecordCount</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Parent</field>
+        <operation>equals</operation>
+        <value>&quot;DE Fuzzy Matching Rule Nov 22, 2023 2:02 PM&quot;</value>
+    </filters>
+    <label>DE Fuzzy Matching Rule Nov 22, 2023 2:02</label>
+</ListView>

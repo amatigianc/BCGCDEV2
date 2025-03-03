@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Comment_in_regards_to_support__c</fullName>
+    <inlineHelpText>Please provide us with any additional comments/suggestions you might have regarding Brightcove Technical Support.</inlineHelpText>
+    <label>Additional Comment in regards to support</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

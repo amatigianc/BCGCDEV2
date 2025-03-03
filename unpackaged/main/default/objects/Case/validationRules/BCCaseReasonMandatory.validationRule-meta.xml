@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCCaseReasonMandatory</fullName>
+    <active>true</active>
+    <description>The BC Case Reason field is mandatory after the FR and before doing anything else.</description>
+    <errorConditionFormula>AND(
+
+NOT(ISNEW()),
+
+RecordType.DeveloperName = &#39;Technical_Support&#39;, /*Technical Support*/
+
+OR(
+ISBLANK(TEXT( New_Case_Reason__c )),
+ISBLANK(TEXT( Product__c ))
+),
+
+IF((NOW()-First_Response__c)*24*60 &gt; 1, true, false),
+
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+
+NOT($Permission.Bypass_Validation_Rule))</errorConditionFormula>
+    <errorDisplayField>New_Case_Reason__c</errorDisplayField>
+    <errorMessage>BC Case Reason required before saving the record</errorMessage>
+</ValidationRule>

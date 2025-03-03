@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFDC_Memo__c</fullName>
+    <description>SFDC Admin Notes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SFDC Admin Notes</inlineHelpText>
+    <label>SFDC Memo</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

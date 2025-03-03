@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Cannot_Regress</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+NOT($Permission.Bypass_Validation_Rule),  
+
+
+CASE(StageName,
+&quot;Closed Won&quot;, 1,
+&quot;Closed Lost&quot;, 1,
+&quot;Salesforce Correction&quot;, 1,
+ 0) &lt; 
+CASE(TEXT(PRIORVALUE(StageName)),
+&quot;Closed Won&quot;, 1,
+&quot;Closed Lost&quot;, 1,
+&quot;Salesforce Correction&quot;, 1,
+0)
+)</errorConditionFormula>
+    <errorMessage>The Opportunity Stage cannot regress to a previous Stage.</errorMessage>
+</ValidationRule>

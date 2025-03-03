@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Contact_Complete_date__c</fullName>
+    <description>Automatically added when the checkbox is marked true</description>
+    <inlineHelpText>Automatically added when the checkbox is marked true</inlineHelpText>
+    <label>First Contact Complete Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Department of Education, NSW - automated email (LEAD)</description>
+        <name>Department_of_Education_NSW_automated_email_LEAD</name>
+        <label>Department of Education, NSW - automated email (LEAD)</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Contact.Department_of_Education_NSW_automated_email_Lead</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Contact.Department_of_Education_NSW_automated_email_Lead</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <description>Lead that notifies the AM of Department of Education, NSW (Shootsta)</description>
+    <environments>Default</environments>
+    <interviewLabel>Lead - Inquiry from nsw.edu.au {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead - Inquiry from nsw.edu.au</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Department_of_Education_NSW_automated_email_LEAD</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>De_Offer_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Inquiry</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>nsw.edu.au</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

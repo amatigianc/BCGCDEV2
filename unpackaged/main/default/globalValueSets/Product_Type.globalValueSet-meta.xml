@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Entitlement</fullName>
+        <default>false</default>
+        <label>Entitlement</label>
+    </customValue>
+    <customValue>
+        <fullName>Platform</fullName>
+        <default>false</default>
+        <label>Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboarding</fullName>
+        <default>false</default>
+        <label>Onboarding</label>
+    </customValue>
+    <customValue>
+        <fullName>Support</fullName>
+        <default>false</default>
+        <label>Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Brightcove Product</fullName>
+        <default>false</default>
+        <label>Brightcove Product</label>
+    </customValue>
+    <customValue>
+        <fullName>3rd Party Product</fullName>
+        <default>false</default>
+        <label>3rd Party Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Overage Rate</fullName>
+        <default>false</default>
+        <label>Overage Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>Legacy</fullName>
+        <default>false</default>
+        <label>Legacy</label>
+    </customValue>
+    <masterLabel>Product Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

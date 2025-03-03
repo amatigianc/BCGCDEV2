@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_cannot_be_updated_after_closed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Won&quot;),
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Lost&quot;)
+)
+,
+ISCHANGED(StageName),
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorMessage>Stage cannot be updated after the opportunity is closed</errorMessage>
+</ValidationRule>

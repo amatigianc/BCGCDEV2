@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diable_Currency_Sync_Non_USD</fullName>
+    <active>true</active>
+    <description>Stops users from creating Custom Pricing records with Currency Sync functionality on non USD entries.</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(CurrencyIsoCode,&#39;USD&#39;)),Sync_Currencies__c)</errorConditionFormula>
+    <errorDisplayField>Sync_Currencies__c</errorDisplayField>
+    <errorMessage>You can not sync currencies for a record that is not set to USD.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CoacingNotesRecords__c</fullName>
+    <description>It counts the number of coaching notes record under one account</description>
+    <label>CoacingNotesRecords</label>
+    <summaryForeignKey>Coaching_Notes__c.Case__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

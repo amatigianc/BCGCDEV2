@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Escalation__c</fullName>
+    <label>Reason for Escalation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Customer expectations not met</fullName>
+                <default>false</default>
+                <label>Customer expectations not met</label>
+            </value>
+            <value>
+                <fullName>Customer needs a call</fullName>
+                <default>false</default>
+                <label>Customer needs a call</label>
+            </value>
+            <value>
+                <fullName>Priority increase</fullName>
+                <default>false</default>
+                <label>Customer priority increase</label>
+            </value>
+            <value>
+                <fullName>FEED Escalation</fullName>
+                <default>false</default>
+                <label>FEED Escalation</label>
+            </value>
+            <value>
+                <fullName>Inaccurate technical ability</fullName>
+                <default>false</default>
+                <label>Insufficient technical experience</label>
+            </value>
+            <value>
+                <fullName>Internal priority increase</fullName>
+                <default>false</default>
+                <label>Internal priority increase</label>
+            </value>
+            <value>
+                <fullName>Not a valid business reason</fullName>
+                <default>false</default>
+                <label>Not a valid business reason</label>
+            </value>
+            <value>
+                <fullName>Owner unavailable</fullName>
+                <default>false</default>
+                <label>Owner unavailable</label>
+            </value>
+            <value>
+                <fullName>Slow response from 3rd party</fullName>
+                <default>false</default>
+                <label>Slow response from 3rd party</label>
+            </value>
+            <value>
+                <fullName>Slow response from engineering</fullName>
+                <default>false</default>
+                <label>Slow response from engineering</label>
+            </value>
+            <value>
+                <fullName>Slow response from Sales/Billing/Internal team</fullName>
+                <default>false</default>
+                <label>Slow response from Sales/Billing/Internal team</label>
+            </value>
+            <value>
+                <fullName>Slow responses from support</fullName>
+                <default>false</default>
+                <label>Slow responses from support</label>
+            </value>
+            <value>
+                <fullName>System Incident</fullName>
+                <default>false</default>
+                <label>System Incident</label>
+            </value>
+            <value>
+                <fullName>Urgent customer event</fullName>
+                <default>false</default>
+                <label>Urgent customer event</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

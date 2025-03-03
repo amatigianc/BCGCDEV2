@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://na20.salesforce.com/&quot;&amp; Id &amp;&quot;?noredirect=1&amp;isUserEntityOverride=1&quot;, FirstName &amp; &quot; &quot; &amp; LastName)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Full Name</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

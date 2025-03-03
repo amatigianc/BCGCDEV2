@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Customer</fullName>
+        <default>false</default>
+        <label>Pending - Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Internal</fullName>
+        <default>false</default>
+        <label>Pending - Internal</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer has replied</fullName>
+        <default>false</default>
+        <label>Customer has replied</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Customer - Info Provided</fullName>
+        <default>false</default>
+        <label>Pending - Customer - Info Provided</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Customer - Need More Info</fullName>
+        <default>false</default>
+        <label>Pending - Customer - Need More Info</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Customer - Need More Info - 8</fullName>
+        <default>false</default>
+        <label>Pending - Customer - Need More Info - 8</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Customer - Info provided - 8</fullName>
+        <default>false</default>
+        <label>Pending - Customer - Info provided - 8</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - CSM/Sales</fullName>
+        <default>false</default>
+        <label>Pending - CSM/Sales</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - System Issue</fullName>
+        <default>false</default>
+        <label>Pending - System Issue</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Fix Review</fullName>
+        <default>false</default>
+        <label>Pending - Fix Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Fix</fullName>
+        <default>false</default>
+        <label>Pending - Fix</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - Product Enhancement</fullName>
+        <default>false</default>
+        <label>Pending - Product Enhancement</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - 3rd Party</fullName>
+        <default>false</default>
+        <label>Pending - 3rd Party</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - ENG Task</fullName>
+        <default>false</default>
+        <label>Pending - ENG Task</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending - CS Leadership</fullName>
+        <default>false</default>
+        <label>Pending - CS Leadership</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Need To Close</fullName>
+        <default>false</default>
+        <label>Need To Close</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Customer has replied</fullName>
+        <default>false</default>
+        <label>Closed - Customer has replied</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merged</fullName>
+        <default>false</default>
+        <label>Merged</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Unresolved</fullName>
+        <default>false</default>
+        <label>Closed - Unresolved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - First Response</fullName>
+        <default>false</default>
+        <label>Closed - First Response</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Spam</fullName>
+        <default>false</default>
+        <label>Closed - Spam</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - No Response</fullName>
+        <default>false</default>
+        <label>Closed - No Response</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Duplicate</fullName>
+        <default>false</default>
+        <label>Closed - Duplicate</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - BSTS Jira Submitted</fullName>
+        <default>false</default>
+        <label>Closed - BSTS Jira Submitted</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Issue solved by Employee</fullName>
+        <default>false</default>
+        <label>Closed - Issue solved by Employee</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

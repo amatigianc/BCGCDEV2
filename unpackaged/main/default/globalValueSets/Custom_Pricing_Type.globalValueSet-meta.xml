@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>QCP - Increment Pricing</fullName>
+        <default>false</default>
+        <label>QCP - Increment Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>QCP - Overage Rate</fullName>
+        <default>false</default>
+        <label>QCP - Overage Rate</label>
+    </customValue>
+    <customValue>
+        <fullName>QCP - Support Pricing</fullName>
+        <default>false</default>
+        <label>QCP - Support Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>QCP - Tier Pricing</fullName>
+        <default>false</default>
+        <label>QCP - Tier Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>QCP - Base + Per Unit (Legacy)</fullName>
+        <default>false</default>
+        <label>QCP - Base + Per Unit (Legacy)</label>
+    </customValue>
+    <customValue>
+        <fullName>QCP - Price (Legacy)</fullName>
+        <default>false</default>
+        <label>QCP - Price (Legacy)</label>
+    </customValue>
+    <masterLabel>Custom Pricing Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

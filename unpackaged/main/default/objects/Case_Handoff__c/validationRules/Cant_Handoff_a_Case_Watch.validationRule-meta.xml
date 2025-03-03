@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Handoff_a_Case_Watch</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF( Case__r.Monitor_My_Case__c = TRUE, TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>Case__c</errorDisplayField>
+    <errorMessage>You can&#39;t handoff a case that is being monitored</errorMessage>
+</ValidationRule>

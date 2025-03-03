@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date_cannot_be_null_or_past_date</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND (
+ISCHANGED(CloseDate),
+CloseDate &lt; TODAY(),
+NOT($Permission.Bypass_Validation_Rule)
+)
+
+
+/* Changes before GC update. 
+AND(
+ISCHANGED(CloseDate),
+
+OR(CloseDate &lt; TODAY()
+,
+NOT($Permission.Bypass_Validation_Rule)
+)) */</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>Close Date cannot be past date</errorMessage>
+</ValidationRule>

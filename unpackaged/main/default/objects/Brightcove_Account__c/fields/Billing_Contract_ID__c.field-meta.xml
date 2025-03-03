@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Contract_ID__c</fullName>
+    <description>This is the customer ID from Finance - Unique for each Account - The field is called Billing Customer ID on the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the customer ID from Finance - Unique for each Account - The field is called Billing Customer ID on the account.</inlineHelpText>
+    <label>Billing Contract ID</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

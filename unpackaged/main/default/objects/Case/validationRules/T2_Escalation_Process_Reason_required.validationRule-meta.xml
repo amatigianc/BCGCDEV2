@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T2_Escalation_Process_Reason_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL( Escalation_Reason__c  , &quot;Per Process T1&quot;), 
+ISPICKVAL(Escalation_Reason__c , &quot;Per process &quot;)
+),
+ISPICKVAL(T2_Escalation_Process_Reason__c,&quot;&quot;),
+
+RecordType.DeveloperName = &#39;Technical_Support&#39;,
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+NOT($Permission.Bypass_Validation_Rule)
+)</errorConditionFormula>
+    <errorDisplayField>T2_Escalation_Process_Reason__c</errorDisplayField>
+    <errorMessage>T2 Escalation Process Reason is required</errorMessage>
+</ValidationRule>

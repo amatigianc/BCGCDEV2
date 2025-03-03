@@ -1,0 +1,24 @@
+<template>
+    <template if:true={comments}>
+        <h1>Case Comments</h1>
+        <template for:each={comments} for:item="comment">
+            <div key={comment.id} class="comment">
+                <p><strong>Comment:</strong> {comment.body}</p>
+                <p><strong>Created Date:</strong> {comment.createdDate}</p>
+                <template if:true={comment.attachments}>
+                    <p><strong>Attachments:</strong></p>
+                    <ul>
+                        <template for:each={comment.attachments} for:item="attachment">
+                            <li key={attachment.title}>
+                                <a href={attachment.downloadUrl} target="_blank">{attachment.title}</a>
+                            </li>
+                        </template>
+                    </ul>
+                </template>
+            </div>
+        </template>
+    </template>
+    <template if:true={error}>
+        <p>Error: {errorMessage}</p>
+    </template>
+</template>

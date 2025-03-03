@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DRIFT_Named_Accounts_List_DONOTEDIT</fullName>
+    <columns>X18_digit_Account_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Email_Domain_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Named_Account__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ACCOUNT.URL</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>DRIFT - Named Accounts List - DONOTEDIT</label>
+</ListView>

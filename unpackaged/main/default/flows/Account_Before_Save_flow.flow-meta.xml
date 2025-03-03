@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Assign_Sales_Division</name>
+        <label>Assign Sales Division</label>
+        <locationX>1737</locationX>
+        <locationY>334</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Sales_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Custom_Metadata_Type.Sales_Division__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>- Update Billing Country based on Custom Metadata Type</description>
+    <environments>Default</environments>
+    <interviewLabel>Account - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - Before Save flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Custom_Metadata_Type</name>
+        <label>Get Custom Metadata Type</label>
+        <locationX>1458</locationX>
+        <locationY>383</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Sales_Division</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CountryCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.BillingCountryCode</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Sales_Division__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>1358</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Custom_Metadata_Type</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>BillingCountryCode</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CreatedDate</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

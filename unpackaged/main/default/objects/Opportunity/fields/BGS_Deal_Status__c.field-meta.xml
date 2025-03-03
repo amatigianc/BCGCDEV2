@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BGS_Deal_Status__c</fullName>
+    <label>BGS Deal Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solution Discovery</fullName>
+                <default>false</default>
+                <label>Solution Discovery</label>
+            </value>
+            <value>
+                <fullName>Next Quarter</fullName>
+                <default>false</default>
+                <label>Next Quarter</label>
+            </value>
+            <value>
+                <fullName>Proposal Creation</fullName>
+                <default>false</default>
+                <label>Proposal Creation</label>
+            </value>
+            <value>
+                <fullName>SOW Creation &amp; Signature</fullName>
+                <default>false</default>
+                <label>SOW Creation &amp; Signature</label>
+            </value>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <label>Closed Lost</label>
+            </value>
+            <value>
+                <fullName>1 - Discovery &amp; Analysis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1 - Discovery &amp; Analysis</label>
+            </value>
+            <value>
+                <fullName>2 - Solution Design / Validation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2 - Solution Design / Validation</label>
+            </value>
+            <value>
+                <fullName>3 - Building Business Case</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3 - Building Business Case</label>
+            </value>
+            <value>
+                <fullName>4 - Proposing and Closing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>4 - Proposing and Closing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

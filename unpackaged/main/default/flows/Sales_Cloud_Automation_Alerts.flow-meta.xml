@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Tier_1_CSM_APAC</name>
+        <label>Tier 1 CSM APAC</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <actionName>Opportunity.Tier_1_New_Business_Stage_3_CSM_Assignment_Alert_APAC</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_1_CSM_Leadership</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_1_New_Business_Stage_3_CSM_Assignment_Alert_APAC</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_1_CSM_Assignment</name>
+        <label>Tier 1 CSM Assignment</label>
+        <locationX>578</locationX>
+        <locationY>539</locationY>
+        <actionName>Opportunity.Tier_1_New_Business_Stage_3_CSM_Assignment_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_1_CSM_Leadership</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_1_New_Business_Stage_3_CSM_Assignment_Alert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_1_CSM_EMEA</name>
+        <label>Tier 1 CSM EMEA</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>Opportunity.Tier_1_New_Business_Stage_3_CSM_Assignment_Alert_EMEA</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_1_CSM_Leadership</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_1_New_Business_Stage_3_CSM_Assignment_Alert_EMEA</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_1_CSM_Leadership</name>
+        <label>Tier 1 CSM Leadership</label>
+        <locationX>314</locationX>
+        <locationY>731</locationY>
+        <actionName>Opportunity.Tier_1_New_Business_Stage_3_CSM_Leadership_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_1_New_Business_Stage_3_CSM_Leadership_Alert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_1_CW</name>
+        <label>Tier 1 - New Business - Closed Won: CSM &amp; AE Kickoff Alert</label>
+        <locationX>446</locationX>
+        <locationY>2123</locationY>
+        <actionName>Opportunity.Tier_1_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_1_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_2_CSM_APAC</name>
+        <label>Tier 2 CSM APAC</label>
+        <locationX>314</locationX>
+        <locationY>1139</locationY>
+        <actionName>Opportunity.Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert_APAC</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert_APAC</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_2_CSM_EMEA</name>
+        <label>Tier 2 CSM EMEA</label>
+        <locationX>50</locationX>
+        <locationY>1139</locationY>
+        <actionName>Opportunity.Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert_EMEA</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert_EMEA</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_2_CWAlert</name>
+        <label>Tier 2 CW</label>
+        <locationX>578</locationX>
+        <locationY>1139</locationY>
+        <actionName>Opportunity.Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_3_CSM_APAC</name>
+        <label>Tier 3 CSM APAC</label>
+        <locationX>314</locationX>
+        <locationY>1631</locationY>
+        <actionName>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert_APAC</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_3_CSM_Leadership</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert_APAC</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_3_CSM_Assignment</name>
+        <label>Tier 3 - CSM Assignment</label>
+        <locationX>578</locationX>
+        <locationY>1631</locationY>
+        <actionName>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_3_CSM_Leadership</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_3_CSM_EMEA</name>
+        <label>Tier 3 CSM EMEA</label>
+        <locationX>50</locationX>
+        <locationY>1631</locationY>
+        <actionName>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert_EMEA</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_3_CSM_Leadership</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert_EMEA</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Tier_3_CSM_Leadership</name>
+        <label>Tier 3 - CSM Leadership</label>
+        <locationX>314</locationX>
+        <locationY>1823</locationY>
+        <actionName>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Leadership_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Tier_1_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Tier_3_New_Business_Closed_Won_CSM_Leadership_Alert</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Copy_1_of_SalesDivision_1</name>
+        <label>Copy 1 of SalesDivision_1</label>
+        <locationX>314</locationX>
+        <locationY>1523</locationY>
+        <defaultConnector>
+            <targetReference>Tier_3_CSM_Assignment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_EMEA_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Sales_Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EMEA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier_3_CSM_EMEA</targetReference>
+            </connector>
+            <label>Copy 1 of EMEA_1</label>
+        </rules>
+        <rules>
+            <name>Copy_1_of_APAC_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Sales_Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>APAC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier_3_CSM_APAC</targetReference>
+            </connector>
+            <label>Copy 1 of APAC_1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_2_of_SalesDivision_1</name>
+        <label>Copy 2 of SalesDivision_1</label>
+        <locationX>314</locationX>
+        <locationY>1031</locationY>
+        <defaultConnector>
+            <targetReference>Tier_2_CWAlert</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_2_of_EMEA_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Sales_Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EMEA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier_2_CSM_EMEA</targetReference>
+            </connector>
+            <label>Copy 2 of EMEA_1</label>
+        </rules>
+        <rules>
+            <name>Copy_2_of_APAC_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Sales_Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>APAC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier_2_CSM_APAC</targetReference>
+            </connector>
+            <label>Copy 2 of APAC_1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>SalesDivision_1</name>
+        <label>SalesDivision_1</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Tier_1_CSM_Assignment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>EMEA_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Sales_Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EMEA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier_1_CSM_EMEA</targetReference>
+            </connector>
+            <label>EMEA_1</label>
+        </rules>
+        <rules>
+            <name>APAC_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Sales_Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>APAC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier_1_CSM_APAC</targetReference>
+            </connector>
+            <label>APAC_1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Opportunity stage = &quot;Closed Won&quot;, Deal Type = &quot;New Business&quot; , Account.Customer_Tier_c=&quot;Tier 1&quot;</description>
+        <name>Tier_1_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</name>
+        <label>Tier 1 - New Business - Closed Won: CSM &amp; AE Kickoff Alert</label>
+        <locationX>578</locationX>
+        <locationY>2015</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Meets_Criteria</name>
+            <conditionLogic>1 AND (2 OR 4) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New Business</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Customer_Tier__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 1</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Add-on</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tier_1_CW</targetReference>
+            </connector>
+            <label>Meets Criteria</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Opportunity stage = &quot;Stage 4&quot;, Deal Type = &quot;New Business&quot;, Account.customer_Tier = &quot;Tier 1&quot;</description>
+        <name>Tier_1_New_Business_Stage_4_CSM_AE_Intro_Alert</name>
+        <label>Tier 1 - New Business - Stage 4: CSM &amp; AE Intro Alert</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Tier_1_Stage_4_Criteria</name>
+            <conditionLogic>1 AND (2 OR 4) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>4 - Negotiation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New Business</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Customer_Tier__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 1</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Add-on</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SalesDivision_1</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Tier 1 Stage 4 Criteria</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Opportunity stage = &quot;Closed Won&quot;, Deal Type = &quot;New Business&quot;, Account.customer_Tier = &quot;Tier 2&quot;</description>
+        <name>Tier_2_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</name>
+        <label>Tier 2 - New Business - Closed Won: CSM &amp; AE Kickoff Alert</label>
+        <locationX>578</locationX>
+        <locationY>923</locationY>
+        <defaultConnector>
+            <targetReference>Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Tier_2_CW</name>
+            <conditionLogic>1 AND (2 OR 4) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New Business</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Customer_Tier__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 2</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Add-on</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_SalesDivision_1</targetReference>
+            </connector>
+            <label>Tier 2 CW</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Opportunity stage = &quot;Closed Won&quot;, Deal Type = &quot;New Business&quot;, Account.customer_Tier = &quot;Tier 3&quot;</description>
+        <name>Tier_3_New_Business_Closed_Won_CSM_Assignment_Alert</name>
+        <label>Tier 3 - New Business - Closed Won: CSM Assignment Alert</label>
+        <locationX>578</locationX>
+        <locationY>1415</locationY>
+        <defaultConnector>
+            <targetReference>Tier_1_New_Business_Closed_Won_CSM_AE_Kickoff_Alert</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Tier_3_CW</name>
+            <conditionLogic>1 AND (2 OR 4) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New Business</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Customer_Tier__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tier 3</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Deal_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Add-on</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_SalesDivision_1</targetReference>
+            </connector>
+            <label>Tier 3 CW</label>
+        </rules>
+    </decisions>
+    <description>Part of the sales handoff optmization process. It sends the email alerts.</description>
+    <environments>Default</environments>
+    <interviewLabel>Sales Cloud Automation Alerts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Sales Handoff Optimization Email Alerts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Tier_1_New_Business_Stage_4_CSM_AE_Intro_Alert</targetReference>
+        </connector>
+        <filterLogic>1 AND 2</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0128c000001bYhPAAU</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

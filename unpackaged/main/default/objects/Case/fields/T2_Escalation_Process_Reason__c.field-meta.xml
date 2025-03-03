@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T2_Escalation_Process_Reason__c</fullName>
+    <label>T2 Escalation Process Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Escalation_Reason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Akamai Analytics Setup</fullName>
+                <default>false</default>
+                <label>Akamai Analytics Setup</label>
+            </value>
+            <value>
+                <fullName>Akamai Analytics Troubleshooting</fullName>
+                <default>false</default>
+                <label>Akamai Analytics Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Akamai CDN</fullName>
+                <default>false</default>
+                <label>Akamai CDN</label>
+            </value>
+            <value>
+                <fullName>Android SDK</fullName>
+                <default>false</default>
+                <label>Android SDK</label>
+            </value>
+            <value>
+                <fullName>BC Open Source</fullName>
+                <default>false</default>
+                <label>BC Open Source</label>
+            </value>
+            <value>
+                <fullName>BYO/Named CDN Setup</fullName>
+                <default>false</default>
+                <label>BYO/Named CDN Setup</label>
+            </value>
+            <value>
+                <fullName>CMS Connector</fullName>
+                <default>false</default>
+                <label>CMS Connector</label>
+            </value>
+            <value>
+                <fullName>Data Collection API</fullName>
+                <default>false</default>
+                <label>Data Collection API</label>
+            </value>
+            <value>
+                <fullName>Enable Digital Master</fullName>
+                <default>false</default>
+                <label>Enable Digital Master</label>
+            </value>
+            <value>
+                <fullName>DRM Setup</fullName>
+                <default>false</default>
+                <label>DRM Setup</label>
+            </value>
+            <value>
+                <fullName>IOS SDK</fullName>
+                <default>false</default>
+                <label>IOS SDK</label>
+            </value>
+            <value>
+                <fullName>Ooyala API</fullName>
+                <default>false</default>
+                <label>Ooyala API</label>
+            </value>
+            <value>
+                <fullName>Ooyala Live</fullName>
+                <default>false</default>
+                <label>Ooyala Live</label>
+            </value>
+            <value>
+                <fullName>P1 - Brightcove Live</fullName>
+                <default>false</default>
+                <label>P1 - Brightcove Live</label>
+            </value>
+            <value>
+                <fullName>SSO Setup</fullName>
+                <default>false</default>
+                <label>SSO Setup</label>
+            </value>
+            <value>
+                <fullName>SSO Troubleshooting</fullName>
+                <default>false</default>
+                <label>SSO Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>[Zen] Invalid Syntax</fullName>
+                <default>false</default>
+                <label>[Zen] Invalid Syntax</label>
+            </value>
+            <value>
+                <fullName>[Zen] Integration Library</fullName>
+                <default>false</default>
+                <label>[Zen] Integration Library</label>
+            </value>
+            <value>
+                <fullName>[Zen] DRM</fullName>
+                <default>false</default>
+                <label>[Zen] DRM</label>
+            </value>
+            <value>
+                <fullName>[Zen] API and Custom Dev</fullName>
+                <default>false</default>
+                <label>[Zen] API and Custom Dev</label>
+            </value>
+            <value>
+                <fullName>Playback Restrictions</fullName>
+                <default>false</default>
+                <label>Playback Restrictions</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Akamai Analytics Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Akamai Analytics Troubleshooting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Android SDK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>BC Open Source</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>BYO/Named CDN Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Data Collection API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Enable Digital Master</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>DRM Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>IOS SDK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Ooyala API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Ooyala Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>P1 - Brightcove Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>SSO Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>SSO Troubleshooting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>[Zen] Invalid Syntax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>[Zen] Integration Library</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>[Zen] DRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>[Zen] API and Custom Dev</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per process</controllingFieldValue>
+            <valueName>Playback Restrictions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>Akamai CDN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per Process T1</controllingFieldValue>
+            <valueName>CMS Connector</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Output_region_compatible_with_georest__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If the Video Cloud account is configured for geo-restriction, then the channel Output Region should be created in a region compatible with the Video Cloud geo-restriction policy.</inlineHelpText>
+    <label>Output region compatible with georest.</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

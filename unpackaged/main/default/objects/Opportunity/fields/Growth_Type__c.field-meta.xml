@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Growth_Type__c</fullName>
+    <description>Used for calculating the price uplift</description>
+    <inlineHelpText>Enter in the type of renewal growth this opp represents:
+
+1) Add-On Only (Selected when new products or entitlements are being actively sold)
+2) Uplift Only (Selected when a percentage increase is being applied to previous contract)
+3) Add-On &amp; Uplift</inlineHelpText>
+    <label>Growth Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Uplift Only</fullName>
+                <default>false</default>
+                <label>Uplift Only</label>
+            </value>
+            <value>
+                <fullName>Add-on Only</fullName>
+                <default>false</default>
+                <label>Add-on Only</label>
+            </value>
+            <value>
+                <fullName>Add-On &amp; Uplift</fullName>
+                <default>false</default>
+                <label>Add-On &amp; Uplift</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

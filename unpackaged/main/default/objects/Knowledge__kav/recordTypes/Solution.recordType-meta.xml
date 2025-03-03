@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution</fullName>
+    <active>true</active>
+    <description>Short question and answer type of articles, as well as quick how to&#39;s or tips and tricks.</description>
+    <label>Solution</label>
+</RecordType>

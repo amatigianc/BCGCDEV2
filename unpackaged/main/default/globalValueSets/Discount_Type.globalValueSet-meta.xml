@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accedo One Products</fullName>
+        <default>false</default>
+        <label>Accedo One Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Bandwidth Product</fullName>
+        <default>false</default>
+        <label>Bandwidth Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Brightcove Global Services (BGS)</fullName>
+        <default>false</default>
+        <label>Brightcove Global Services (BGS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Brightcove Product</fullName>
+        <default>false</default>
+        <label>Brightcove Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Support Product</fullName>
+        <default>false</default>
+        <label>Customer Support Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom Priced Product</fullName>
+        <default>false</default>
+        <label>Custom Priced Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Third Party Product</fullName>
+        <default>false</default>
+        <label>Third Party Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Pigeonhole</fullName>
+        <default>false</default>
+        <label>Pigeonhole</label>
+    </customValue>
+    <customValue>
+        <fullName>Socialive</fullName>
+        <default>false</default>
+        <label>Socialive</label>
+    </customValue>
+    <customValue>
+        <fullName>Storage Discount</fullName>
+        <default>false</default>
+        <label>Storage Discount</label>
+    </customValue>
+    <masterLabel>Discount Type</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eCDN_Plugin_in_use__c</fullName>
+    <label>eCDN Plugin in use</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Kollective</fullName>
+                <default>false</default>
+                <label>Kollective</label>
+            </value>
+            <value>
+                <fullName>Peer5</fullName>
+                <default>false</default>
+                <label>Peer5</label>
+            </value>
+            <value>
+                <fullName>Ramp Multicast+.</fullName>
+                <default>false</default>
+                <label>Ramp Multicast+.</label>
+            </value>
+            <value>
+                <fullName>Ramp Omni cache</fullName>
+                <default>false</default>
+                <label>Ramp Omni cache</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

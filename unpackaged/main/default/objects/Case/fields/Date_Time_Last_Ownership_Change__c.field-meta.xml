@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Time_Last_Ownership_Change__c</fullName>
+    <description>Used to store the date/time of the last time an ownership change was made on a ticket. Used to track how many tickets are re-assigned to people in a timeframe.</description>
+    <inlineHelpText>Used to store the date/time of the last time an ownership change was made on a ticket.</inlineHelpText>
+    <label>Date/Time Last Ownership Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

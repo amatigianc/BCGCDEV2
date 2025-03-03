@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Assessment_Fields_Required</fullName>
+    <active>true</active>
+    <description>All Risk Fields must be completed if a Risk Status is selected.</description>
+    <errorConditionFormula>AND(
+NOT($Permission.Bypass_Validation_Rule),
+NOT(
+ISPICKVAL(Risk_Status__c,&quot;&quot;))
+&amp;&amp;
+(ISPICKVAL(Risk_Reason__c,&quot;&quot;) || ISBLANK(Risk_Comments_Notes__c)))</errorConditionFormula>
+    <errorMessage>Risk Reason and Risk Comments/Notes are required if a Risk Status is selected.</errorMessage>
+</ValidationRule>

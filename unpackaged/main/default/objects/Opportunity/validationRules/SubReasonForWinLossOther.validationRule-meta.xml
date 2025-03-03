@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubReasonForWinLossOther</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL(SubReason_for_winloss__c , &quot;Other&quot;),
+ISBLANK(Notes_reason_win_loss__c ),
+NOT($Permission.Bypass_Validation_Rule)
+
+)</errorConditionFormula>
+    <errorDisplayField>Notes_reason_win_loss__c</errorDisplayField>
+    <errorMessage>Notes Reason for win loss is required</errorMessage>
+</ValidationRule>

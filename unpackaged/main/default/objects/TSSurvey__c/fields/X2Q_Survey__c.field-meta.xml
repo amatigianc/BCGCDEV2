@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2Q_Survey__c</fullName>
+    <formula>IF (NOT(AND(ISBLANK(Satisfaction_with_professionalism__c), ISBLANK(Satisfaction_with_specialist_knowledge__c))),TRUE,null)</formula>
+    <label>2Q Survey</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

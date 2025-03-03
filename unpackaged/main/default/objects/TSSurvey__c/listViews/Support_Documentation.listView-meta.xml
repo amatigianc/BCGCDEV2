@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Documentation</fullName>
+    <columns>NAME</columns>
+    <columns>Support_Docs_Date_Submitted__c</columns>
+    <columns>Support_Docs_Article_URL__c</columns>
+    <columns>Support_Docs_Article_Title__c</columns>
+    <columns>Support_Docs_How_Useful_Was_This_Topic__c</columns>
+    <columns>Support_Docs_Technical_Enough__c</columns>
+    <columns>Support_Docs_Was_This_Easy_to_Find__c</columns>
+    <columns>Support_Docs_Comments_and_Feedback__c</columns>
+    <columns>Support_Docs_Email_Address__c</columns>
+    <columns>Support_Docs_BC_ACCOUNT__c</columns>
+    <columns>Support_Docs_BC_EMAIL__c</columns>
+    <columns>Support_Docs_Product__c</columns>
+    <columns>Support_Docs_Role__c</columns>
+    <columns>Support_Docs_Tags__c</columns>
+    <columns>Support_Docs_Node_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TSSurvey__c.Support_Documentation_Surveys</value>
+    </filters>
+    <label>Support Documentation Surveys</label>
+    <language>en_US</language>
+</ListView>

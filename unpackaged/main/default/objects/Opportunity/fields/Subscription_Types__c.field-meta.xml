@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Types__c</fullName>
+    <label>Subscription Types</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Audience Insight only (Formerly Wickedlabs)</fullName>
+                <default>false</default>
+                <label>Audience Insight only (Formerly Wickedlabs)</label>
+            </value>
+            <value>
+                <fullName>AWS Marketplace</fullName>
+                <default>false</default>
+                <label>AWS Marketplace</label>
+            </value>
+            <value>
+                <fullName>Beacon Advantage</fullName>
+                <default>false</default>
+                <label>Beacon Advantage</label>
+            </value>
+            <value>
+                <fullName>Beacon Essential</fullName>
+                <default>false</default>
+                <label>Beacon Essential</label>
+            </value>
+            <value>
+                <fullName>Brightcove Elite</fullName>
+                <default>false</default>
+                <label>Brightcove Elite</label>
+            </value>
+            <value>
+                <fullName>Brightcove One time event</fullName>
+                <default>false</default>
+                <label>Brightcove One time event</label>
+            </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>Engage</fullName>
+                <default>false</default>
+                <label>Engage</label>
+            </value>
+            <value>
+                <fullName>Enterprise video Suite 2.0 Enterprise</fullName>
+                <default>false</default>
+                <label>Enterprise video Suite 2.0 Enterprise</label>
+            </value>
+            <value>
+                <fullName>Enterprise video Suite 2.0 Starter</fullName>
+                <default>false</default>
+                <label>Enterprise video Suite 2.0 Starter</label>
+            </value>
+            <value>
+                <fullName>Express</fullName>
+                <default>false</default>
+                <label>Express</label>
+            </value>
+            <value>
+                <fullName>Interactivity only (formerly Hapyak)</fullName>
+                <default>false</default>
+                <label>Interactivity only (formerly Hapyak)</label>
+            </value>
+            <value>
+                <fullName>Legacy Enterprise package</fullName>
+                <default>false</default>
+                <label>Legacy Enterprise package</label>
+            </value>
+            <value>
+                <fullName>Legacy Professional Package</fullName>
+                <default>false</default>
+                <label>Legacy Professional Package</label>
+            </value>
+            <value>
+                <fullName>Legacy Pro-Start package</fullName>
+                <default>false</default>
+                <label>Legacy Pro-Start package</label>
+            </value>
+            <value>
+                <fullName>Marketing Studio</fullName>
+                <default>false</default>
+                <label>Marketing Studio</label>
+            </value>
+            <value>
+                <fullName>Master License Agreement</fullName>
+                <default>false</default>
+                <label>Master License Agreement</label>
+            </value>
+            <value>
+                <fullName>OTT Flow</fullName>
+                <default>false</default>
+                <label>OTT Flow</label>
+            </value>
+            <value>
+                <fullName>Perform Player</fullName>
+                <default>false</default>
+                <label>Perform Player</label>
+            </value>
+            <value>
+                <fullName>SOW</fullName>
+                <default>false</default>
+                <label>SOW</label>
+            </value>
+            <value>
+                <fullName>Statement of Work</fullName>
+                <default>false</default>
+                <label>Statement of Work</label>
+            </value>
+            <value>
+                <fullName>VE Business</fullName>
+                <default>false</default>
+                <label>VE Business</label>
+            </value>
+            <value>
+                <fullName>Video Cloud Advantage</fullName>
+                <default>false</default>
+                <label>Video Cloud Advantage</label>
+            </value>
+            <value>
+                <fullName>Video Cloud Elite</fullName>
+                <default>false</default>
+                <label>Video Cloud Elite</label>
+            </value>
+            <value>
+                <fullName>Video Cloud Essential</fullName>
+                <default>false</default>
+                <label>Video Cloud Essential</label>
+            </value>
+            <value>
+                <fullName>Video Cloud Ultimate</fullName>
+                <default>false</default>
+                <label>Video Cloud Ultimate</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite</label>
+            </value>
+            <value>
+                <fullName>Video Marketing suite Enterprise Edition</fullName>
+                <default>false</default>
+                <label>Video Marketing suite Enterprise Edition</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite Professional Edition</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite Professional Edition</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite Starter and Starter Plus</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite Starter and Starter Plus</label>
+            </value>
+            <value>
+                <fullName>Zencoder</fullName>
+                <default>false</default>
+                <label>Zencoder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

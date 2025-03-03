@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brightcove_Components__c</fullName>
+    <label>Brightcove Components</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Brightcove Beacon</fullName>
+                <default>false</default>
+                <label>Brightcove Beacon</label>
+            </value>
+            <value>
+                <fullName>Brightcove Campaign</fullName>
+                <default>false</default>
+                <label>Brightcove Campaign</label>
+            </value>
+            <value>
+                <fullName>Brightcove Gallery</fullName>
+                <default>false</default>
+                <label>Brightcove Gallery</label>
+            </value>
+            <value>
+                <fullName>Brightcove Live</fullName>
+                <default>false</default>
+                <label>Brightcove Live</label>
+            </value>
+            <value>
+                <fullName>Brightcove Social</fullName>
+                <default>false</default>
+                <label>Brightcove Social</label>
+            </value>
+            <value>
+                <fullName>Brightcove Video Cloud</fullName>
+                <default>false</default>
+                <label>Brightcove Video Cloud</label>
+            </value>
+            <value>
+                <fullName>Brightcove Web Player</fullName>
+                <default>false</default>
+                <label>Brightcove Web Player</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_Latest__c</fullName>
+    <label>Lead Source - Latest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Audio</fullName>
+                <default>false</default>
+                <label>Audio</label>
+            </value>
+            <value>
+                <fullName>Content Syndication</fullName>
+                <default>false</default>
+                <label>Content Syndication</label>
+            </value>
+            <value>
+                <fullName>CSM</fullName>
+                <default>false</default>
+                <label>CSM</label>
+            </value>
+            <value>
+                <fullName>CTV</fullName>
+                <default>false</default>
+                <label>CTV</label>
+            </value>
+            <value>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+                <label>Direct Mail</label>
+            </value>
+            <value>
+                <fullName>Direct Web Traffic</fullName>
+                <default>false</default>
+                <label>Direct Web Traffic</label>
+            </value>
+            <value>
+                <fullName>Display Ad</fullName>
+                <default>false</default>
+                <label>Display Ad</label>
+            </value>
+            <value>
+                <fullName>Drift</fullName>
+                <default>false</default>
+                <label>Drift</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Event (3rd Party)</fullName>
+                <default>false</default>
+                <label>Event (3rd Party)</label>
+            </value>
+            <value>
+                <fullName>Event (BCOV)</fullName>
+                <default>false</default>
+                <label>Event (BCOV)</label>
+            </value>
+            <value>
+                <fullName>HapYak</fullName>
+                <default>false</default>
+                <label>HapYak</label>
+            </value>
+            <value>
+                <fullName>ICP</fullName>
+                <default>false</default>
+                <label>ICP</label>
+            </value>
+            <value>
+                <fullName>Incoming Call</fullName>
+                <default>false</default>
+                <label>Incoming Call</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Online Meeting</fullName>
+                <default>false</default>
+                <label>Online Meeting</label>
+            </value>
+            <value>
+                <fullName>Organic Search</fullName>
+                <default>false</default>
+                <label>Organic Search</label>
+            </value>
+            <value>
+                <fullName>Organic Social</fullName>
+                <default>false</default>
+                <label>Organic Social</label>
+            </value>
+            <value>
+                <fullName>Outbound BDR</fullName>
+                <default>false</default>
+                <label>Outbound BDR</label>
+            </value>
+            <value>
+                <fullName>Outbound Sales Rep</fullName>
+                <default>false</default>
+                <label>Outbound Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Paid Social</fullName>
+                <default>false</default>
+                <label>Paid Social</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>PPC/SEM</fullName>
+                <default>false</default>
+                <label>PPC/SEM</label>
+            </value>
+            <value>
+                <fullName>QA</fullName>
+                <default>false</default>
+                <label>QA</label>
+            </value>
+            <value>
+                <fullName>Sales Request</fullName>
+                <default>false</default>
+                <label>Sales Request</label>
+            </value>
+            <value>
+                <fullName>Virtual Event/Webinar (3rd Party)</fullName>
+                <default>false</default>
+                <label>Virtual Event/Webinar (3rd Party)</label>
+            </value>
+            <value>
+                <fullName>Virtual Event/Webinar (BCOV)</fullName>
+                <default>false</default>
+                <label>Virtual Event/Webinar (BCOV)</label>
+            </value>
+            <value>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <fullName>WicketLabs</fullName>
+                <default>false</default>
+                <label>WicketLabs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

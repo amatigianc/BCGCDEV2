@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Widespread_Issue</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.ESCALATION_STATE</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Support_Package__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Language__c</columns>
+    <columns>Case_Owner_full_name__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>JIRA_Key__c</columns>
+    <columns>First_Response__c</columns>
+    <columns>Sales_Division__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>JIRA_Key__c</field>
+        <operation>equals</operation>
+        <value>PROD-29144</value>
+    </filters>
+    <label>Widespread Issues</label>
+    <sharedTo>
+        <role>Technical_Support_Manager</role>
+        <role>Technical_Support_Rep</role>
+    </sharedTo>
+</ListView>

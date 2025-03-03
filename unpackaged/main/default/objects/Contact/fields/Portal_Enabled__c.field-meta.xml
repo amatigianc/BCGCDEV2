@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked on, the contact is enabled for either the customer or the partner portal</description>
+    <inlineHelpText>If checked on, the contact is enabled for either the customer or the partner portal</inlineHelpText>
+    <label>Portal Enabled</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

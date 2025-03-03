@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Stage_Reason__c</fullName>
+    <label>Current Stage Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>---------- A. Procedural ----------</fullName>
+                <default>false</default>
+                <label>---------- A. Procedural ----------</label>
+            </value>
+            <value>
+                <fullName>Released due to SLA</fullName>
+                <default>false</default>
+                <label>Released due to SLA</label>
+            </value>
+            <value>
+                <fullName>Not properly qualified</fullName>
+                <default>false</default>
+                <label>Not properly qualified</label>
+            </value>
+            <value>
+                <fullName>Not my territory</fullName>
+                <default>false</default>
+                <label>Not my territory</label>
+            </value>
+            <value>
+                <fullName>Working other targets</fullName>
+                <default>false</default>
+                <label>Working other targets</label>
+            </value>
+            <value>
+                <fullName>Already working (duplicate)</fullName>
+                <default>false</default>
+                <label>Already working (duplicate)</label>
+            </value>
+            <value>
+                <fullName>Already customer</fullName>
+                <default>false</default>
+                <label>Already customer</label>
+            </value>
+            <value>
+                <fullName>Clearing my workspace</fullName>
+                <default>false</default>
+                <label>Clearing my workspace</label>
+            </value>
+            <value>
+                <fullName>---------- B. Bad data ----------</fullName>
+                <default>false</default>
+                <label>---------- B. Bad data ----------</label>
+            </value>
+            <value>
+                <fullName>Left organization</fullName>
+                <default>false</default>
+                <label>Left organization</label>
+            </value>
+            <value>
+                <fullName>Not in relevant role</fullName>
+                <default>false</default>
+                <label>Not in relevant role</label>
+            </value>
+            <value>
+                <fullName>Bad contact information</fullName>
+                <default>false</default>
+                <label>Bad contact information</label>
+            </value>
+            <value>
+                <fullName>Trash (Spam)</fullName>
+                <default>false</default>
+                <label>Trash (Spam)</label>
+            </value>
+            <value>
+                <fullName>---------- C. Failure to communicate ----------</fullName>
+                <default>false</default>
+                <label>---------- C. Failure to communicate ----------</label>
+            </value>
+            <value>
+                <fullName>Could not engage</fullName>
+                <default>false</default>
+                <label>Could not engage</label>
+            </value>
+            <value>
+                <fullName>Stopped communicating</fullName>
+                <default>false</default>
+                <label>Stopped communicating</label>
+            </value>
+            <value>
+                <fullName>---------- D. Not looking for solution ----------</fullName>
+                <default>false</default>
+                <label>---------- D. Not looking for solution ----------</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Job seeker</fullName>
+                <default>false</default>
+                <label>Job seeker</label>
+            </value>
+            <value>
+                <fullName>Not a business</fullName>
+                <default>false</default>
+                <label>Not a business</label>
+            </value>
+            <value>
+                <fullName>Unconfirmed possible need</fullName>
+                <default>false</default>
+                <label>Unconfirmed possible need</label>
+            </value>
+            <value>
+                <fullName>No problem to solve</fullName>
+                <default>false</default>
+                <label>No problem to solve</label>
+            </value>
+            <value>
+                <fullName>No interest in video</fullName>
+                <default>false</default>
+                <label>No interest in video</label>
+            </value>
+            <value>
+                <fullName>---------- E. Need exists but cannot sell ----------</fullName>
+                <default>false</default>
+                <label>---------- E. Need exists but cannot sell ----------</label>
+            </value>
+            <value>
+                <fullName>Chose another solution</fullName>
+                <default>false</default>
+                <label>Chose another solution</label>
+            </value>
+            <value>
+                <fullName>Keeping existing solution</fullName>
+                <default>false</default>
+                <label>Keeping existing solution</label>
+            </value>
+            <value>
+                <fullName>Must work through 3rd party</fullName>
+                <default>false</default>
+                <label>Must work through 3rd party</label>
+            </value>
+            <value>
+                <fullName>No authority for solution</fullName>
+                <default>false</default>
+                <label>No authority for solution</label>
+            </value>
+            <value>
+                <fullName>No timeline for solution</fullName>
+                <default>false</default>
+                <label>No timeline for solution</label>
+            </value>
+            <value>
+                <fullName>Functional limitation</fullName>
+                <default>false</default>
+                <label>Functional limitation</label>
+            </value>
+            <value>
+                <fullName>Unworkable economics</fullName>
+                <default>false</default>
+                <label>Unworkable economics</label>
+            </value>
+            <value>
+                <fullName>Business issue</fullName>
+                <default>false</default>
+                <label>Business issue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

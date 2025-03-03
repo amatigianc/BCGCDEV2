@@ -1,0 +1,9 @@
+trigger CommunityMemberTrigger on Community_Member__c(
+  before insert,
+  after insert,
+  before update,
+  after update
+) {
+  DomainHandlerUtility handler = new DomainHandlerUtility();
+  handler.process();
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Does_Permission_Set_Exist</name>
+        <label>Does Permission Set Exist</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Find_Permission_Set_Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Permission_Set</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Assigns Brightspot permission set to new Brightcove Community User</description>
+    <environments>Default</environments>
+    <interviewLabel>User - Assign BrightSpot Permission Set {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User - Assign BrightSpot Permission Set</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Assign_Permission_Set</name>
+        <label>Assign Permission Set</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>AssigneeId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PermissionSetId</field>
+            <value>
+                <elementReference>Find_Permission_Set_Id.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>PermissionSetAssignment</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Find_Permission_Set_Id</name>
+        <label>Find Permission Set Id</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Does_Permission_Set_Exist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>The_Bright_Spot_Community</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PermissionSet</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Find_Permission_Set_Id</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND({!$Record.IsActive} = true,
+OR({!$Record.Profile.Name} = &quot;Portal Admin - Gold&quot;,{!$Record.Profile.Name} = &quot;Portal Admin - Gold Plus - Japan&quot;,{!$Record.Profile.Name} = &quot;Portal Admin - Platinum&quot;,{!$Record.Profile.Name} = &quot;Portal Admin - Silver&quot;,{!$Record.Profile.Name} = &quot;Portal User - Gold&quot;,{!$Record.Profile.Name} = &quot;Portal User - Gold Plus - Japan&quot;,{!$Record.Profile.Name} = &quot;Portal User - Gold Plus - Self Reg - Japan&quot;,{!$Record.Profile.Name} = &quot;Portal User - Gold - Self Reg&quot;, {!$Record.Profile.Name} = &quot;Portal User - Platinum&quot;, {!$Record.Profile.Name} = &quot;Portal User - Platinum - Self Reg&quot;, {!$Record.Profile.Name} = &quot;Portal User - Silver&quot;, {!$Record.Profile.Name} = &quot;Portal User - Silver - Self Reg&quot;))</filterFormula>
+        <object>User</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

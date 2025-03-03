@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APIs_Used__c</fullName>
+    <label>APIs Used</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Analytics API</fullName>
+                <default>false</default>
+                <label>Analytics API</label>
+            </value>
+            <value>
+                <fullName>CMS API</fullName>
+                <default>false</default>
+                <label>CMS API</label>
+            </value>
+            <value>
+                <fullName>Data Collection API</fullName>
+                <default>false</default>
+                <label>Data Collection API</label>
+            </value>
+            <value>
+                <fullName>Dynamic Ingest API</fullName>
+                <default>false</default>
+                <label>Dynamic Ingest API</label>
+            </value>
+            <value>
+                <fullName>In-Page Experience API</fullName>
+                <default>false</default>
+                <label>In-Page Experience API</label>
+            </value>
+            <value>
+                <fullName>Live API</fullName>
+                <default>false</default>
+                <label>Live API</label>
+            </value>
+            <value>
+                <fullName>Playback API</fullName>
+                <default>false</default>
+                <label>Playback API</label>
+            </value>
+            <value>
+                <fullName>Player Management API</fullName>
+                <default>false</default>
+                <label>Player Management API</label>
+            </value>
+            <value>
+                <fullName>Policy API</fullName>
+                <default>false</default>
+                <label>Policy API</label>
+            </value>
+            <value>
+                <fullName>SSAI API</fullName>
+                <default>false</default>
+                <label>SSAI API</label>
+            </value>
+            <value>
+                <fullName>Web Player SDK</fullName>
+                <default>false</default>
+                <label>Web Player SDK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

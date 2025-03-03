@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_SSAI_destination_ad_enabled_RTP_live__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>For SSAI-enabled channels, the destination must be set to an ad-enabled RTP live event.</inlineHelpText>
+    <label>If SSAI, destination ad-enabled RTP live</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

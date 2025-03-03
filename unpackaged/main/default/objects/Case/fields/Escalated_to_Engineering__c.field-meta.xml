@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalated_to_Engineering__c</fullName>
+    <label>Escalated to Engineering</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3rd Party Integration</fullName>
+                <default>false</default>
+                <label>3rd Party Integration</label>
+            </value>
+            <value>
+                <fullName>Alive</fullName>
+                <default>false</default>
+                <label>Alive</label>
+            </value>
+            <value>
+                <fullName>Beacon</fullName>
+                <default>false</default>
+                <label>Beacon</label>
+            </value>
+            <value>
+                <fullName>BGS</fullName>
+                <default>false</default>
+                <label>BGS</label>
+            </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>Catalog</fullName>
+                <default>false</default>
+                <label>Catalog</label>
+            </value>
+            <value>
+                <fullName>CDN OPS</fullName>
+                <default>false</default>
+                <label>CDN OPS</label>
+            </value>
+            <value>
+                <fullName>Core</fullName>
+                <default>false</default>
+                <label>Core</label>
+            </value>
+            <value>
+                <fullName>Data &amp; Analytics</fullName>
+                <default>false</default>
+                <label>Data &amp; Analytics</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Gallery</fullName>
+                <default>false</default>
+                <label>Gallery</label>
+            </value>
+            <value>
+                <fullName>Ingestion</fullName>
+                <default>false</default>
+                <label>Ingestion</label>
+            </value>
+            <value>
+                <fullName>Interactivity</fullName>
+                <default>false</default>
+                <label>Interactivity</label>
+            </value>
+            <value>
+                <fullName>Players</fullName>
+                <default>false</default>
+                <label>Players</label>
+            </value>
+            <value>
+                <fullName>Social</fullName>
+                <default>false</default>
+                <label>Social</label>
+            </value>
+            <value>
+                <fullName>Studio</fullName>
+                <default>false</default>
+                <label>Studio</label>
+            </value>
+            <value>
+                <fullName>Zencoder</fullName>
+                <default>false</default>
+                <label>Zencoder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

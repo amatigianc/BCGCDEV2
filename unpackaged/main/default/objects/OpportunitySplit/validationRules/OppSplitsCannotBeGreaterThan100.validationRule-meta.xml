@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OppSplitsCannotBeGreaterThan100</fullName>
+    <active>true</active>
+    <description>The Opportunity Splits cannot be greater thank 100%</description>
+    <errorConditionFormula>AND(
+   NOT( $Permission.ByPass_OppSplitsCannotBeGreaterThan100),
+SplitPercentage &gt; 1.0
+)</errorConditionFormula>
+    <errorMessage>The Opportunity Splits cannot be greater than 100%</errorMessage>
+</ValidationRule>

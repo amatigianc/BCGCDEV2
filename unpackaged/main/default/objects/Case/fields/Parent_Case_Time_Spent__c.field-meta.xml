@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Case_Time_Spent__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(WorkIt2__Allow_Update__c,TEXT(WorkIt2__Hours__c) &amp; &quot;h &quot; &amp; TEXT(WorkIt2__Minutes__c) &amp; &quot;m &quot; &amp; TEXT(WorkIt2__Seconds__c) &amp; &quot;s &quot;, null)</formula>
+    <label>Parent Case Time Spent</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

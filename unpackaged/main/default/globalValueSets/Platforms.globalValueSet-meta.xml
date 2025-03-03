@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accedo One</fullName>
+        <default>false</default>
+        <label>Accedo One</label>
+    </customValue>
+    <customValue>
+        <fullName>Audience Insights</fullName>
+        <default>false</default>
+        <label>Audience Insights</label>
+    </customValue>
+    <customValue>
+        <fullName>Beacon</fullName>
+        <default>false</default>
+        <label>Beacon</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Studio (Excluding Starter)</fullName>
+        <default>false</default>
+        <label>Marketing Studio (Excluding Starter)</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Studio (Including Starter)</fullName>
+        <default>false</default>
+        <label>Marketing Studio (Including Starter)</label>
+    </customValue>
+    <customValue>
+        <fullName>Media Studio</fullName>
+        <default>false</default>
+        <label>Media Studio</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Cloud</fullName>
+        <default>false</default>
+        <label>Video Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Zencoder</fullName>
+        <default>false</default>
+        <label>Zencoder</label>
+    </customValue>
+    <masterLabel>Platforms</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

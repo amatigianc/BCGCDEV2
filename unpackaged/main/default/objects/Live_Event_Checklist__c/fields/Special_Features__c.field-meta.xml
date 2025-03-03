@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Features__c</fullName>
+    <label>Special Features</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BC Live (Live module)</fullName>
+                <default>false</default>
+                <label>BC Live (Live module)</label>
+            </value>
+            <value>
+                <fullName>BC Live (API)</fullName>
+                <default>false</default>
+                <label>BC Live (API)</label>
+            </value>
+            <value>
+                <fullName>Virtual Event</fullName>
+                <default>false</default>
+                <label>Virtual Event</label>
+            </value>
+            <value>
+                <fullName>Cloud playout</fullName>
+                <default>false</default>
+                <label>Cloud playout</label>
+            </value>
+            <value>
+                <fullName>Simulive plug-in</fullName>
+                <default>false</default>
+                <label>Simulive plug-in</label>
+            </value>
+            <value>
+                <fullName>DRM</fullName>
+                <default>false</default>
+                <label>DRM</label>
+            </value>
+            <value>
+                <fullName>Cloud DVR</fullName>
+                <default>false</default>
+                <label>Cloud DVR</label>
+            </value>
+            <value>
+                <fullName>Live Redundancy</fullName>
+                <default>false</default>
+                <label>Live Redundancy</label>
+            </value>
+            <value>
+                <fullName>SSAI</fullName>
+                <default>false</default>
+                <label>SSAI</label>
+            </value>
+            <value>
+                <fullName>Gallery</fullName>
+                <default>false</default>
+                <label>Gallery</label>
+            </value>
+            <value>
+                <fullName>SEP</fullName>
+                <default>false</default>
+                <label>SEP</label>
+            </value>
+            <value>
+                <fullName>PigeonHole Integration</fullName>
+                <default>false</default>
+                <label>PigeonHole Integration</label>
+            </value>
+            <value>
+                <fullName>Zoom Integration</fullName>
+                <default>false</default>
+                <label>Zoom Integration</label>
+            </value>
+            <value>
+                <fullName>Other Integration</fullName>
+                <default>false</default>
+                <label>Other Integration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

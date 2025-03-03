@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entitlement_Type__c</fullName>
+    <label>Entitlement Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Entitlement_Type</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>24/7 Live Streaming Channel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Active Subscribers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Active Viewers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Auto-Captioning Minutes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Bandwidth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>CloudPlayout Channel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Discovery Streams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Discovery Subscribers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>DRM Licenses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>DRM License Serving - Tier 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Event-Based Interactivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>FAST Bandwidth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>FAST SSAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Frameformer Minutes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>IRIS.TV Streams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Live Event Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Live Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Managed Content</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Managed Users</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Minutes Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Monthly Active User</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Origin Serving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Participants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Player Only Streams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Plays (Marketing Studio)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Plays (Media Studio)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>QOE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>SSAI - Streams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Subscribers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Transcoding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entitlement</controllingFieldValue>
+            <controllingFieldValue>Overage Rate</controllingFieldValue>
+            <valueName>Viewers</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

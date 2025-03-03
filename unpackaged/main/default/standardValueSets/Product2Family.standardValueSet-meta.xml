@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Accedo One</fullName>
+        <default>false</default>
+        <label>Accedo One</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Add-ons</fullName>
+        <default>false</default>
+        <label>Add-ons</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ad Monetization</fullName>
+        <default>false</default>
+        <label>Ad Monetization</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Applicaster</fullName>
+        <default>false</default>
+        <label>Applicaster</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Audience Insights</fullName>
+        <default>false</default>
+        <label>Audience Insights</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Brightcove Audience Insights</fullName>
+        <default>false</default>
+        <label>Brightcove Audience Insights</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Brightcove Beacon</fullName>
+        <default>false</default>
+        <label>Brightcove Beacon</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Communication Studio</fullName>
+        <default>false</default>
+        <label>Communication Studio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entitlements</fullName>
+        <default>false</default>
+        <label>Entitlements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Frequency</fullName>
+        <default>false</default>
+        <label>Frequency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Live Streaming</fullName>
+        <default>false</default>
+        <label>Live Streaming</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Studio</fullName>
+        <default>false</default>
+        <label>Marketing Studio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Studio - Reseller</fullName>
+        <default>false</default>
+        <label>Marketing Studio - Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media Studio</fullName>
+        <default>false</default>
+        <label>Media Studio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboarding</fullName>
+        <default>false</default>
+        <label>Onboarding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OTT Flow</fullName>
+        <default>false</default>
+        <label>OTT Flow</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OTT Flow X</fullName>
+        <default>false</default>
+        <label>OTT Flow X</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pigeonhole</fullName>
+        <default>false</default>
+        <label>Pigeonhole</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pilot</fullName>
+        <default>false</default>
+        <label>Pilot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rate Cards</fullName>
+        <default>false</default>
+        <label>Rate Cards</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Socialive</fullName>
+        <default>false</default>
+        <label>Socialive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic</fullName>
+        <default>false</default>
+        <label>Strategic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Support</fullName>
+        <default>false</default>
+        <label>Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Zencoder</fullName>
+        <default>false</default>
+        <label>Zencoder</label>
+    </standardValue>
+</StandardValueSet>

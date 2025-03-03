@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HC_CSM_informed_and_knowledgeable__c</fullName>
+    <description>KM:  Health Check survey pushed from ClickTools</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How would you rate the following:
+Customer Success Manager was well informed and knowledgeable.</inlineHelpText>
+    <label>HC CSM informed and knowledgeable</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

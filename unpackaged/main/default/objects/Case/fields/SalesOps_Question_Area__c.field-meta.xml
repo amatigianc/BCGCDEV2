@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesOps_Question_Area__c</fullName>
+    <label>SalesOps Question Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billing Questions</fullName>
+                <default>false</default>
+                <label>Billing Questions</label>
+            </value>
+            <value>
+                <fullName>Compensation</fullName>
+                <default>false</default>
+                <label>Compensation</label>
+            </value>
+            <value>
+                <fullName>CPQ</fullName>
+                <default>false</default>
+                <label>CPQ</label>
+            </value>
+            <value>
+                <fullName>Duplicate Case</fullName>
+                <default>false</default>
+                <label>Duplicate Case</label>
+            </value>
+            <value>
+                <fullName>Onboarding_and_training</fullName>
+                <default>false</default>
+                <label>Onboarding &amp; Training</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Products_and_Pricing</fullName>
+                <default>false</default>
+                <label>Products &amp; Pricing</label>
+            </value>
+            <value>
+                <fullName>Sales Tools</fullName>
+                <default>false</default>
+                <label>Sales Tools</label>
+            </value>
+            <value>
+                <fullName>SFDC_Accounts</fullName>
+                <default>false</default>
+                <label>SFDC - Accounts</label>
+            </value>
+            <value>
+                <fullName>SFDC - Administration</fullName>
+                <default>false</default>
+                <label>SFDC - Administration</label>
+            </value>
+            <value>
+                <fullName>SFDC - Leads &amp; Activities</fullName>
+                <default>false</default>
+                <label>SFDC - Leads Contacts &amp; Activities</label>
+            </value>
+            <value>
+                <fullName>SFDC - Miscellaneous</fullName>
+                <default>false</default>
+                <label>SFDC - Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>SFDC_Opportunities</fullName>
+                <default>false</default>
+                <label>SFDC - Opportunities</label>
+            </value>
+            <value>
+                <fullName>SFDC - Reporting</fullName>
+                <default>false</default>
+                <label>SFDC - Reporting</label>
+            </value>
+            <value>
+                <fullName>SFDC - BCAccount</fullName>
+                <default>false</default>
+                <label>SFDC - BCAccount</label>
+            </value>
+            <value>
+                <fullName>Routing requests</fullName>
+                <default>false</default>
+                <label>Routing requests</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

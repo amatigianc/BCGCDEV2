@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Previous__c</fullName>
+    <label>Stage (Previous)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Name</fullName>
+                <default>false</default>
+                <label>Name</label>
+            </value>
+            <value>
+                <fullName>Target</fullName>
+                <default>false</default>
+                <label>Target</label>
+            </value>
+            <value>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <label>Prospecting</label>
+            </value>
+            <value>
+                <fullName>Response</fullName>
+                <default>false</default>
+                <label>Response</label>
+            </value>
+            <value>
+                <fullName>Actionable Response</fullName>
+                <default>false</default>
+                <label>Actionable Response</label>
+            </value>
+            <value>
+                <fullName>Qualifying</fullName>
+                <default>false</default>
+                <label>Qualifying</label>
+            </value>
+            <value>
+                <fullName>Connected</fullName>
+                <default>false</default>
+                <label>Connected</label>
+            </value>
+            <value>
+                <fullName>Relevant</fullName>
+                <default>false</default>
+                <label>Relevant</label>
+            </value>
+            <value>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+                <label>Buyer</label>
+            </value>
+            <value>
+                <fullName>MQL</fullName>
+                <default>false</default>
+                <label>MQL</label>
+            </value>
+            <value>
+                <fullName>SAL</fullName>
+                <default>false</default>
+                <label>SAL</label>
+            </value>
+            <value>
+                <fullName>SQL</fullName>
+                <default>false</default>
+                <label>SQL</label>
+            </value>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Release from qualifying</fullName>
+                <default>false</default>
+                <label>Release from qualifying</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

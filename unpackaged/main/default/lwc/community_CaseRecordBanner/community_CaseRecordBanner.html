@@ -1,0 +1,85 @@
+<template>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_2-of-3 slds-border_right">
+      AAAAAAAAAA
+      <lightning-card variant="Narrow">
+        <template if:true={caseRecord.fields}>
+          <p class="slds-text-heading_small slds-m-bottom_small">
+            <strong
+              >#<lightning-formatted-text
+                value={caseNumber}
+              ></lightning-formatted-text
+            ></strong>
+          </p>
+          <p class="slds-text-heading_small slds-m-top_small">
+            <!--<strong>Case Subject: </strong>-->
+            <lightning-formatted-text
+              value={caseSubject}
+            ></lightning-formatted-text>
+          </p>
+          <p class="slds-text-heading_small slds-m-top_small">
+            <!--<strong>Support Package: </strong>-->
+            <lightning-formatted-text
+              value={caseSupportPackage}
+            ></lightning-formatted-text>
+          </p>
+        </template>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      BBBBBBBBBBBBB
+      <template if:false={isClosed}>
+        <lightning-button
+          variant="destructive-text"
+          label="Close Case"
+          icon-name="utility:close"
+          icon-position="left"
+          title="Close Case"
+          onclick={handleClick}
+          class="slds-m-left_x-small"
+        ></lightning-button>
+      </template>
+    </div>
+  </div>
+
+  <lightning-card variant="Narrow">
+    <div class="slds-m-around_medium">
+      <template if:true={caseRecord.fields}>
+        <p class="slds-text-heading_small slds-m-bottom_small">
+          <strong
+            >#<lightning-formatted-text
+              value={caseNumber}
+            ></lightning-formatted-text
+          ></strong>
+        </p>
+        <p class="slds-text-heading_small slds-m-top_small">
+          <!--<strong>Case Subject: </strong>-->
+          <lightning-formatted-text
+            value={caseSubject}
+          ></lightning-formatted-text>
+        </p>
+        <p class="slds-text-heading_small slds-m-top_small">
+          <!--<strong>Support Package: </strong>-->
+          <lightning-formatted-text
+            value={caseSupportPackage}
+          ></lightning-formatted-text>
+        </p>
+      </template>
+      <template if:false={caseRecord.fields}>
+        <strong><p>Loading case details...</p></strong>
+      </template>
+    </div>
+
+    <template if:false={isClosed}>
+      <lightning-button
+        variant="destructive-text"
+        label="Close Case"
+        icon-name="utility:close"
+        icon-position="left"
+        title="Close Case"
+        onclick={handleClick}
+        class="slds-m-left_x-small"
+      ></lightning-button>
+    </template>
+  </lightning-card>
+</template>

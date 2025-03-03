@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Events_all_channels__c</fullName>
+    <label>Live Events (all channels)</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All live streams ran successfully</fullName>
+                <default>false</default>
+                <label>All live streams ran successfully</label>
+            </value>
+            <value>
+                <fullName>Live streams experienced degradation</fullName>
+                <default>false</default>
+                <label>Live streams experienced degradation</label>
+            </value>
+            <value>
+                <fullName>Live streams experienced downtime</fullName>
+                <default>false</default>
+                <label>Live streams experienced downtime</label>
+            </value>
+            <value>
+                <fullName>全てのストリームが正常に流れていたことを確認しました</fullName>
+                <default>false</default>
+                <label>全てのストリームが正常に流れていたことを確認しました</label>
+            </value>
+            <value>
+                <fullName>幾つかのストリームにおいて品質劣化が確認されました</fullName>
+                <default>false</default>
+                <label>幾つかのストリームにおいて品質劣化が確認されました</label>
+            </value>
+            <value>
+                <fullName>全てのストリームにおいて品質劣化が確認されました</fullName>
+                <default>false</default>
+                <label>全てのストリームにおいて品質劣化が確認されました</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

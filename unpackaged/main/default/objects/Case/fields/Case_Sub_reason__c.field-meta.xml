@@ -1,0 +1,4206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Sub_reason__c</fullName>
+    <label>Case Sub Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>New_Case_Reason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3rd Party - AEM</fullName>
+                <default>false</default>
+                <label>3rd Party - AEM</label>
+            </value>
+            <value>
+                <fullName>3rd Party Analytics</fullName>
+                <default>false</default>
+                <label>3rd Party Analytics</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Appsfactory</fullName>
+                <default>false</default>
+                <label>3rd Party - Appsfactory</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Drupal</fullName>
+                <default>false</default>
+                <label>3rd Party - Drupal</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Hootsuite</fullName>
+                <default>false</default>
+                <label>3rd Party - Hootsuite</label>
+            </value>
+            <value>
+                <fullName>3rd Party Integration - Other</fullName>
+                <default>false</default>
+                <label>3rd Party Integration - Other</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Kollective</fullName>
+                <default>false</default>
+                <label>3rd Party - Kollective</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Microsoft Teams</fullName>
+                <default>false</default>
+                <label>3rd Party - Microsoft Teams</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Ramp</fullName>
+                <default>false</default>
+                <label>3rd Party - Ramp</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Salesforce</fullName>
+                <default>false</default>
+                <label>3rd Party - Salesforce</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Sharepoint</fullName>
+                <default>false</default>
+                <label>3rd Party - Sharepoint</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Sitecore</fullName>
+                <default>false</default>
+                <label>3rd Party - Sitecore</label>
+            </value>
+            <value>
+                <fullName>3rd party - Wochit</fullName>
+                <default>false</default>
+                <label>3rd party - Wochit</label>
+            </value>
+            <value>
+                <fullName>3rd Party - Wordpress</fullName>
+                <default>false</default>
+                <label>3rd Party - Wordpress</label>
+            </value>
+            <value>
+                <fullName>Access Control</fullName>
+                <default>false</default>
+                <label>Access Control</label>
+            </value>
+            <value>
+                <fullName>Accessibility</fullName>
+                <default>false</default>
+                <label>Accessibility</label>
+            </value>
+            <value>
+                <fullName>Account/Asset Configuration</fullName>
+                <default>false</default>
+                <label>Account/Asset Configuration</label>
+            </value>
+            <value>
+                <fullName>Account - Activate</fullName>
+                <default>false</default>
+                <label>Account - Activate</label>
+            </value>
+            <value>
+                <fullName>Account - Activate (BC Internal)</fullName>
+                <default>false</default>
+                <label>Account - Activate (BC Internal)</label>
+            </value>
+            <value>
+                <fullName>Account - Add</fullName>
+                <default>false</default>
+                <label>Account - Add</label>
+            </value>
+            <value>
+                <fullName>Account Creation</fullName>
+                <default>false</default>
+                <label>Account Creation</label>
+            </value>
+            <value>
+                <fullName>Account - Downgrade</fullName>
+                <default>false</default>
+                <label>Account - Downgrade</label>
+            </value>
+            <value>
+                <fullName>Account Lock - Cancellation</fullName>
+                <default>false</default>
+                <label>Account Lock - Cancellation</label>
+            </value>
+            <value>
+                <fullName>Account Lock - Finance</fullName>
+                <default>false</default>
+                <label>Account Lock - Finance</label>
+            </value>
+            <value>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+                <label>Account Management</label>
+            </value>
+            <value>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+                <label>Account Settings</label>
+            </value>
+            <value>
+                <fullName>Account Trial Extension</fullName>
+                <default>false</default>
+                <label>Account Trial Extension</label>
+            </value>
+            <value>
+                <fullName>Account - Unlock</fullName>
+                <default>false</default>
+                <label>Account - Unlock</label>
+            </value>
+            <value>
+                <fullName>Account - Upgrade</fullName>
+                <default>false</default>
+                <label>Account - Upgrade</label>
+            </value>
+            <value>
+                <fullName>Ad Monetization</fullName>
+                <default>false</default>
+                <label>Ad Monetization</label>
+            </value>
+            <value>
+                <fullName>Adobe Magento Commerce Integration</fullName>
+                <default>false</default>
+                <label>Adobe Magento Commerce Integration</label>
+            </value>
+            <value>
+                <fullName>Ad Settings (Cloud Playout)</fullName>
+                <default>false</default>
+                <label>Ad Settings (Cloud Playout)</label>
+            </value>
+            <value>
+                <fullName>Ad Settings (CSAI)</fullName>
+                <default>false</default>
+                <label>Ad Settings (CSAI)</label>
+            </value>
+            <value>
+                <fullName>Ad Settings (SSAI)</fullName>
+                <default>false</default>
+                <label>Ad Settings (SSAI)</label>
+            </value>
+            <value>
+                <fullName>Ad Settings (Studio)</fullName>
+                <default>false</default>
+                <label>Ad Settings (Studio)</label>
+            </value>
+            <value>
+                <fullName>Ad Trafficking</fullName>
+                <default>false</default>
+                <label>Ad Trafficking</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+                <label>Agenda</label>
+            </value>
+            <value>
+                <fullName>Akamai Analytics</fullName>
+                <default>false</default>
+                <label>Akamai Analytics</label>
+            </value>
+            <value>
+                <fullName>Akamai Analytics Setup</fullName>
+                <default>false</default>
+                <label>Akamai Analytics Setup</label>
+            </value>
+            <value>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <fullName>Analytics - Cloud Playout</fullName>
+                <default>false</default>
+                <label>Analytics - Cloud Playout</label>
+            </value>
+            <value>
+                <fullName>Analytics - Data Issue</fullName>
+                <default>false</default>
+                <label>Analytics - Data Issue</label>
+            </value>
+            <value>
+                <fullName>Analytics - Feature Parity Inquiries</fullName>
+                <default>false</default>
+                <label>Analytics - Feature Parity Inquiries</label>
+            </value>
+            <value>
+                <fullName>Analytics Inquiry</fullName>
+                <default>false</default>
+                <label>Analytics Inquiry</label>
+            </value>
+            <value>
+                <fullName>Analytics - Live</fullName>
+                <default>false</default>
+                <label>Analytics - Live</label>
+            </value>
+            <value>
+                <fullName>Analytics - Performance Issues</fullName>
+                <default>false</default>
+                <label>Analytics - Performance Issues</label>
+            </value>
+            <value>
+                <fullName>Android</fullName>
+                <default>false</default>
+                <label>Android</label>
+            </value>
+            <value>
+                <fullName>Android SDK 5.x</fullName>
+                <default>false</default>
+                <label>Android SDK 5.x</label>
+            </value>
+            <value>
+                <fullName>Android SDK 6.x</fullName>
+                <default>false</default>
+                <label>Android SDK 6.x</label>
+            </value>
+            <value>
+                <fullName>Android SDK 7.x</fullName>
+                <default>false</default>
+                <label>Android SDK 7.x</label>
+            </value>
+            <value>
+                <fullName>Android SDK 8.x</fullName>
+                <default>false</default>
+                <label>Android SDK 8.x</label>
+            </value>
+            <value>
+                <fullName>Android SDK 9.x</fullName>
+                <default>false</default>
+                <label>Android SDK 9.x</label>
+            </value>
+            <value>
+                <fullName>Annotations</fullName>
+                <default>false</default>
+                <label>Annotations</label>
+            </value>
+            <value>
+                <fullName>API Outage</fullName>
+                <default>false</default>
+                <label>API Outage</label>
+            </value>
+            <value>
+                <fullName>API Performance</fullName>
+                <default>false</default>
+                <label>API Performance</label>
+            </value>
+            <value>
+                <fullName>AppleTV</fullName>
+                <default>false</default>
+                <label>AppleTV</label>
+            </value>
+            <value>
+                <fullName>Application Errors</fullName>
+                <default>false</default>
+                <label>Application Errors</label>
+            </value>
+            <value>
+                <fullName>Aspect Ratio Incorrect</fullName>
+                <default>false</default>
+                <label>Aspect Ratio Incorrect</label>
+            </value>
+            <value>
+                <fullName>Aspera</fullName>
+                <default>false</default>
+                <label>Aspera</label>
+            </value>
+            <value>
+                <fullName>Aspera Setup</fullName>
+                <default>false</default>
+                <label>Aspera Setup</label>
+            </value>
+            <value>
+                <fullName>Aspera Transfer</fullName>
+                <default>false</default>
+                <label>Aspera Transfer</label>
+            </value>
+            <value>
+                <fullName>Asset-level restrictions</fullName>
+                <default>false</default>
+                <label>Asset-level restrictions</label>
+            </value>
+            <value>
+                <fullName>Audio</fullName>
+                <default>false</default>
+                <label>Audio</label>
+            </value>
+            <value>
+                <fullName>Audio/Video Sync Issue</fullName>
+                <default>false</default>
+                <label>Audio/Video Sync Issue</label>
+            </value>
+            <value>
+                <fullName>Audio-Only</fullName>
+                <default>false</default>
+                <label>Audio-Only</label>
+            </value>
+            <value>
+                <fullName>Audio Processing</fullName>
+                <default>false</default>
+                <label>Audio Processing</label>
+            </value>
+            <value>
+                <fullName>Audio settings</fullName>
+                <default>false</default>
+                <label>Audio settings</label>
+            </value>
+            <value>
+                <fullName>Auto Captioning</fullName>
+                <default>false</default>
+                <label>Auto Captioning</label>
+            </value>
+            <value>
+                <fullName>Backend Issues (Dynamic Delivery)</fullName>
+                <default>false</default>
+                <label>Backend Issues (Dynamic Delivery)</label>
+            </value>
+            <value>
+                <fullName>Bad Quality / Artifacts</fullName>
+                <default>false</default>
+                <label>Bad Quality / Artifacts</label>
+            </value>
+            <value>
+                <fullName>BC Account</fullName>
+                <default>false</default>
+                <label>BC Account</label>
+            </value>
+            <value>
+                <fullName>BC Employee Last Day</fullName>
+                <default>false</default>
+                <label>BC Employee Last Day</label>
+            </value>
+            <value>
+                <fullName>BC Live DVR</fullName>
+                <default>false</default>
+                <label>BC Live DVR</label>
+            </value>
+            <value>
+                <fullName>Beacon API</fullName>
+                <default>false</default>
+                <label>Beacon API</label>
+            </value>
+            <value>
+                <fullName>Beacon Studio</fullName>
+                <default>false</default>
+                <label>Beacon Studio</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Billing/Credit Card</fullName>
+                <default>false</default>
+                <label>Billing/Credit Card</label>
+            </value>
+            <value>
+                <fullName>Billing Module</fullName>
+                <default>false</default>
+                <label>Billing Module</label>
+            </value>
+            <value>
+                <fullName>BLive Migration</fullName>
+                <default>false</default>
+                <label>BLive Migration</label>
+            </value>
+            <value>
+                <fullName>Both Android/iOS</fullName>
+                <default>false</default>
+                <label>Both Android/iOS</label>
+            </value>
+            <value>
+                <fullName>Brightcove Live API</fullName>
+                <default>false</default>
+                <label>Brightcove ALive API</label>
+            </value>
+            <value>
+                <fullName>Brightcove BLive API</fullName>
+                <default>false</default>
+                <label>Brightcove BLive API</label>
+            </value>
+            <value>
+                <fullName>Brightcove Documentation</fullName>
+                <default>false</default>
+                <label>Brightcove Documentation</label>
+            </value>
+            <value>
+                <fullName>Brightcove to Brightcove</fullName>
+                <default>false</default>
+                <label>Brightcove to Brightcove</label>
+            </value>
+            <value>
+                <fullName>BYO CDN Audit</fullName>
+                <default>false</default>
+                <label>BYO CDN Audit</label>
+            </value>
+            <value>
+                <fullName>Byte Range Delivery</fullName>
+                <default>false</default>
+                <label>Byte Range Delivery</label>
+            </value>
+            <value>
+                <fullName>Campaign Dashboard</fullName>
+                <default>false</default>
+                <label>Campaign Dashboard</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Captions</fullName>
+                <default>false</default>
+                <label>Captions</label>
+            </value>
+            <value>
+                <fullName>CDN/Origin</fullName>
+                <default>false</default>
+                <label>CDN/Origin</label>
+            </value>
+            <value>
+                <fullName>CDN Akamai GTM</fullName>
+                <default>false</default>
+                <label>CDN Akamai GTM</label>
+            </value>
+            <value>
+                <fullName>CDN China Delivery</fullName>
+                <default>false</default>
+                <label>CDN China Delivery</label>
+            </value>
+            <value>
+                <fullName>CDN Issues (BYO)</fullName>
+                <default>false</default>
+                <label>CDN Issues (BYO)</label>
+            </value>
+            <value>
+                <fullName>CDN Issues (House/Named)</fullName>
+                <default>false</default>
+                <label>CDN Issues (House/Named)</label>
+            </value>
+            <value>
+                <fullName>CDN Migration</fullName>
+                <default>false</default>
+                <label>CDN Migration</label>
+            </value>
+            <value>
+                <fullName>CDN Setup (Dynamic Delivery)</fullName>
+                <default>false</default>
+                <label>CDN Setup (Dynamic Delivery)</label>
+            </value>
+            <value>
+                <fullName>CDN Switch</fullName>
+                <default>false</default>
+                <label>CDN Switch</label>
+            </value>
+            <value>
+                <fullName>Channel issues</fullName>
+                <default>false</default>
+                <label>Channel issues</label>
+            </value>
+            <value>
+                <fullName>Channel Monitoring</fullName>
+                <default>false</default>
+                <label>Channel Monitoring</label>
+            </value>
+            <value>
+                <fullName>Channel Output</fullName>
+                <default>false</default>
+                <label>Channel Output</label>
+            </value>
+            <value>
+                <fullName>Chaptering</fullName>
+                <default>false</default>
+                <label>Chaptering</label>
+            </value>
+            <value>
+                <fullName>Clipping</fullName>
+                <default>false</default>
+                <label>Clipping</label>
+            </value>
+            <value>
+                <fullName>Clips</fullName>
+                <default>false</default>
+                <label>Clips</label>
+            </value>
+            <value>
+                <fullName>Closed Captioning</fullName>
+                <default>false</default>
+                <label>Closed Captioning</label>
+            </value>
+            <value>
+                <fullName>CMS</fullName>
+                <default>false</default>
+                <label>CMS</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>Community</fullName>
+                <default>false</default>
+                <label>Community</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Completed - Third Party</fullName>
+                <default>false</default>
+                <label>Completed - Third Party</label>
+            </value>
+            <value>
+                <fullName>Config / Parameters / Settings</fullName>
+                <default>false</default>
+                <label>Config / Parameters / Settings</label>
+            </value>
+            <value>
+                <fullName>Corporate (Brightcove.com)</fullName>
+                <default>false</default>
+                <label>Corporate (Brightcove.com)</label>
+            </value>
+            <value>
+                <fullName>Create New</fullName>
+                <default>false</default>
+                <label>Create New</label>
+            </value>
+            <value>
+                <fullName>Credentials</fullName>
+                <default>false</default>
+                <label>Credentials</label>
+            </value>
+            <value>
+                <fullName>Cross Device Resume (XDR)</fullName>
+                <default>false</default>
+                <label>Cross Device Resume (XDR)</label>
+            </value>
+            <value>
+                <fullName>Cue Points</fullName>
+                <default>false</default>
+                <label>Cue Points</label>
+            </value>
+            <value>
+                <fullName>Custom CSS</fullName>
+                <default>false</default>
+                <label>Custom CSS</label>
+            </value>
+            <value>
+                <fullName>Custom Dev. Inquiry</fullName>
+                <default>false</default>
+                <label>Custom Dev. Inquiry</label>
+            </value>
+            <value>
+                <fullName>Custom Domain</fullName>
+                <default>false</default>
+                <label>Custom Domain</label>
+            </value>
+            <value>
+                <fullName>Custom Event Packages Enablement</fullName>
+                <default>false</default>
+                <label>Custom Event Packages Enablement</label>
+            </value>
+            <value>
+                <fullName>Custom Fields</fullName>
+                <default>false</default>
+                <label>Custom Fields</label>
+            </value>
+            <value>
+                <fullName>Custom fields settings</fullName>
+                <default>false</default>
+                <label>Custom fields settings</label>
+            </value>
+            <value>
+                <fullName>Custom HTML</fullName>
+                <default>false</default>
+                <label>Custom HTML</label>
+            </value>
+            <value>
+                <fullName>Custom Integration</fullName>
+                <default>false</default>
+                <label>Custom Integration</label>
+            </value>
+            <value>
+                <fullName>Custom Report</fullName>
+                <default>false</default>
+                <label>Custom Report</label>
+            </value>
+            <value>
+                <fullName>Custom Reporting</fullName>
+                <default>false</default>
+                <label>Custom Reporting</label>
+            </value>
+            <value>
+                <fullName>Data Inquiry</fullName>
+                <default>false</default>
+                <label>Data Inquiry</label>
+            </value>
+            <value>
+                <fullName>DD Account Settings</fullName>
+                <default>false</default>
+                <label>DD Account Settings</label>
+            </value>
+            <value>
+                <fullName>DD Account settings - Multiple Audio Tracks</fullName>
+                <default>false</default>
+                <label>DD Account settings - Multiple Audio Tracks</label>
+            </value>
+            <value>
+                <fullName>DD Account Setup</fullName>
+                <default>false</default>
+                <label>DD Account Setup</label>
+            </value>
+            <value>
+                <fullName>DD DRM Setup/Settings</fullName>
+                <default>false</default>
+                <label>DD DRM Setup/Settings</label>
+            </value>
+            <value>
+                <fullName>Deep Linking</fullName>
+                <default>false</default>
+                <label>Deep Linking</label>
+            </value>
+            <value>
+                <fullName>Delivery Method</fullName>
+                <default>false</default>
+                <label>Delivery Method</label>
+            </value>
+            <value>
+                <fullName>Device Management</fullName>
+                <default>false</default>
+                <label>Device Management</label>
+            </value>
+            <value>
+                <fullName>Discrepancies</fullName>
+                <default>false</default>
+                <label>Discrepancies</label>
+            </value>
+            <value>
+                <fullName>DMCA Notification</fullName>
+                <default>false</default>
+                <label>DMCA Notification</label>
+            </value>
+            <value>
+                <fullName>DMCA - Notification to offender</fullName>
+                <default>false</default>
+                <label>DMCA - Notification to offender</label>
+            </value>
+            <value>
+                <fullName>Domain Restriction</fullName>
+                <default>false</default>
+                <label>Domain Restriction</label>
+            </value>
+            <value>
+                <fullName>Download Timeout</fullName>
+                <default>false</default>
+                <label>Download Timeout</label>
+            </value>
+            <value>
+                <fullName>Drawing</fullName>
+                <default>false</default>
+                <label>Drawing</label>
+            </value>
+            <value>
+                <fullName>DRM</fullName>
+                <default>false</default>
+                <label>DRM</label>
+            </value>
+            <value>
+                <fullName>DRM Issues (Dynamic Delivery)</fullName>
+                <default>false</default>
+                <label>DRM Issues (Dynamic Delivery)</label>
+            </value>
+            <value>
+                <fullName>Dropbox</fullName>
+                <default>false</default>
+                <label>Dropbox</label>
+            </value>
+            <value>
+                <fullName>DVR Adjustments</fullName>
+                <default>false</default>
+                <label>DVR Adjustments</label>
+            </value>
+            <value>
+                <fullName>Eloqua Integration</fullName>
+                <default>false</default>
+                <label>Eloqua Integration</label>
+            </value>
+            <value>
+                <fullName>Email Alert</fullName>
+                <default>false</default>
+                <label>Email Alert</label>
+            </value>
+            <value>
+                <fullName>Embed Code</fullName>
+                <default>false</default>
+                <label>Embed Code</label>
+            </value>
+            <value>
+                <fullName>Encoder Settings</fullName>
+                <default>false</default>
+                <label>Encoder Settings</label>
+            </value>
+            <value>
+                <fullName>Encoding</fullName>
+                <default>false</default>
+                <label>Encoding</label>
+            </value>
+            <value>
+                <fullName>Encoding/Packaging</fullName>
+                <default>false</default>
+                <label>Encoding/Packaging</label>
+            </value>
+            <value>
+                <fullName>Enhancement Request</fullName>
+                <default>false</default>
+                <label>Enhancement Request</label>
+            </value>
+            <value>
+                <fullName>EOL - Static Delivery</fullName>
+                <default>false</default>
+                <label>EOL - Static Delivery</label>
+            </value>
+            <value>
+                <fullName>Error processing (Backend)</fullName>
+                <default>false</default>
+                <label>Error processing (Backend)</label>
+            </value>
+            <value>
+                <fullName>Error processing (Backend) - Legacy</fullName>
+                <default>false</default>
+                <label>Error processing (Backend) - Legacy</label>
+            </value>
+            <value>
+                <fullName>Essential Enablement</fullName>
+                <default>false</default>
+                <label>Essential Enablement</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Event Based Data</fullName>
+                <default>false</default>
+                <label>Event Based Data</label>
+            </value>
+            <value>
+                <fullName>Experiences</fullName>
+                <default>false</default>
+                <label>Experiences</label>
+            </value>
+            <value>
+                <fullName>False-positive alert</fullName>
+                <default>false</default>
+                <label>False-positive alert</label>
+            </value>
+            <value>
+                <fullName>Feature Not Supported</fullName>
+                <default>false</default>
+                <label>Feature Not Supported</label>
+            </value>
+            <value>
+                <fullName>Field Request</fullName>
+                <default>false</default>
+                <label>Field Request</label>
+            </value>
+            <value>
+                <fullName>File Permissions Issue</fullName>
+                <default>false</default>
+                <label>File Permissions Issue</label>
+            </value>
+            <value>
+                <fullName>Formats &amp; Codecs</fullName>
+                <default>false</default>
+                <label>Formats &amp; Codecs</label>
+            </value>
+            <value>
+                <fullName>Front End Web or App</fullName>
+                <default>false</default>
+                <label>Front End Web or App</label>
+            </value>
+            <value>
+                <fullName>FTP Error</fullName>
+                <default>false</default>
+                <label>FTP Error</label>
+            </value>
+            <value>
+                <fullName>Gallery Module</fullName>
+                <default>false</default>
+                <label>Gallery Module</label>
+            </value>
+            <value>
+                <fullName>General Education</fullName>
+                <default>false</default>
+                <label>General Education</label>
+            </value>
+            <value>
+                <fullName>General Inquiry</fullName>
+                <default>false</default>
+                <label>General Inquiry</label>
+            </value>
+            <value>
+                <fullName>General Requirements</fullName>
+                <default>false</default>
+                <label>General Requirements</label>
+            </value>
+            <value>
+                <fullName>Generic Stream Concurrency</fullName>
+                <default>false</default>
+                <label>Generic Stream Concurrency</label>
+            </value>
+            <value>
+                <fullName>Geo Filtering Setup</fullName>
+                <default>false</default>
+                <label>Geo Filtering Setup</label>
+            </value>
+            <value>
+                <fullName>Geo Restriction</fullName>
+                <default>false</default>
+                <label>Geo Restriction</label>
+            </value>
+            <value>
+                <fullName>Google Drive</fullName>
+                <default>false</default>
+                <label>Google Drive</label>
+            </value>
+            <value>
+                <fullName>Google PAL SDK SSAI</fullName>
+                <default>false</default>
+                <label>Google PAL SDK SSAI</label>
+            </value>
+            <value>
+                <fullName>Grant Portal Access</fullName>
+                <default>false</default>
+                <label>Grant Portal Access</label>
+            </value>
+            <value>
+                <fullName>HLS encryption</fullName>
+                <default>false</default>
+                <label>HLS encryption</label>
+            </value>
+            <value>
+                <fullName>HLS Encryption Issues</fullName>
+                <default>false</default>
+                <label>HLS Encryption Issues</label>
+            </value>
+            <value>
+                <fullName>HLS Encryption Setup</fullName>
+                <default>false</default>
+                <label>HLS Encryption Setup</label>
+            </value>
+            <value>
+                <fullName>Hosting/Server settings</fullName>
+                <default>false</default>
+                <label>Hosting/Server settings</label>
+            </value>
+            <value>
+                <fullName>Hot Spots</fullName>
+                <default>false</default>
+                <label>Hot Spots</label>
+            </value>
+            <value>
+                <fullName>HTTP and Security</fullName>
+                <default>false</default>
+                <label>HTTP and Security</label>
+            </value>
+            <value>
+                <fullName>HubSpot Integration</fullName>
+                <default>false</default>
+                <label>HubSpot Integration</label>
+            </value>
+            <value>
+                <fullName>iFrames</fullName>
+                <default>false</default>
+                <label>iFrames</label>
+            </value>
+            <value>
+                <fullName>IIR/SIR Translation</fullName>
+                <default>false</default>
+                <label>IIR/SIR Translation</label>
+            </value>
+            <value>
+                <fullName>Images</fullName>
+                <default>false</default>
+                <label>Images</label>
+            </value>
+            <value>
+                <fullName>Images (Thumbnails &amp; Poster)</fullName>
+                <default>false</default>
+                <label>Images (Thumbnails &amp; Poster)</label>
+            </value>
+            <value>
+                <fullName>Incorrect Resolution</fullName>
+                <default>false</default>
+                <label>Incorrect Resolution</label>
+            </value>
+            <value>
+                <fullName>Ingestion</fullName>
+                <default>false</default>
+                <label>Ingestion</label>
+            </value>
+            <value>
+                <fullName>Ingestion (Source S3)</fullName>
+                <default>false</default>
+                <label>Ingestion (Source S3)</label>
+            </value>
+            <value>
+                <fullName>Ingestion Profiles</fullName>
+                <default>false</default>
+                <label>Ingestion Profiles</label>
+            </value>
+            <value>
+                <fullName>Ingestion Queue</fullName>
+                <default>false</default>
+                <label>Ingestion Queue</label>
+            </value>
+            <value>
+                <fullName>Ingestion - SSAI</fullName>
+                <default>false</default>
+                <label>Ingestion - SSAI</label>
+            </value>
+            <value>
+                <fullName>In-Page Experiences</fullName>
+                <default>false</default>
+                <label>In-Page Experiences</label>
+            </value>
+            <value>
+                <fullName>Input File Error</fullName>
+                <default>false</default>
+                <label>Input File Error</label>
+            </value>
+            <value>
+                <fullName>Input Stream Failure</fullName>
+                <default>false</default>
+                <label>Input Stream Failure</label>
+            </value>
+            <value>
+                <fullName>Integration Libraries</fullName>
+                <default>false</default>
+                <label>Integration Libraries</label>
+            </value>
+            <value>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+                <label>Integrations</label>
+            </value>
+            <value>
+                <fullName>Interactivity API</fullName>
+                <default>false</default>
+                <label>Interactivity API</label>
+            </value>
+            <value>
+                <fullName>Interactivity Module</fullName>
+                <default>false</default>
+                <label>Interactivity Module</label>
+            </value>
+            <value>
+                <fullName>Invalid syntax</fullName>
+                <default>false</default>
+                <label>Invalid syntax</label>
+            </value>
+            <value>
+                <fullName>iOS</fullName>
+                <default>false</default>
+                <label>iOS</label>
+            </value>
+            <value>
+                <fullName>iOS SDK 5.x</fullName>
+                <default>false</default>
+                <label>iOS SDK 5.x</label>
+            </value>
+            <value>
+                <fullName>iOS SDK 6.x</fullName>
+                <default>false</default>
+                <label>iOS SDK 6.x</label>
+            </value>
+            <value>
+                <fullName>IP Restriction</fullName>
+                <default>false</default>
+                <label>IP Restriction</label>
+            </value>
+            <value>
+                <fullName>iRooms</fullName>
+                <default>false</default>
+                <label>iRooms</label>
+            </value>
+            <value>
+                <fullName>Issue</fullName>
+                <default>false</default>
+                <label>Issue</label>
+            </value>
+            <value>
+                <fullName>Issues - Backend</fullName>
+                <default>false</default>
+                <label>Issues - Backend</label>
+            </value>
+            <value>
+                <fullName>Issues - CDN</fullName>
+                <default>false</default>
+                <label>Issues - CDN</label>
+            </value>
+            <value>
+                <fullName>Issues - Input latency</fullName>
+                <default>false</default>
+                <label>Issues - Input latency</label>
+            </value>
+            <value>
+                <fullName>Issues - Input quality</fullName>
+                <default>false</default>
+                <label>Issues - Input quality</label>
+            </value>
+            <value>
+                <fullName>Issues - Loading</fullName>
+                <default>false</default>
+                <label>Issues - Loading</label>
+            </value>
+            <value>
+                <fullName>Issues - Login</fullName>
+                <default>false</default>
+                <label>Issues - Login</label>
+            </value>
+            <value>
+                <fullName>Issues - SSAI</fullName>
+                <default>false</default>
+                <label>Issues - SSAI</label>
+            </value>
+            <value>
+                <fullName>Job/Event Creation</fullName>
+                <default>false</default>
+                <label>Job/Event Creation</label>
+            </value>
+            <value>
+                <fullName>Job Concurrency</fullName>
+                <default>false</default>
+                <label>Job Concurrency</label>
+            </value>
+            <value>
+                <fullName>Job Settings</fullName>
+                <default>false</default>
+                <label>Job Settings</label>
+            </value>
+            <value>
+                <fullName>Label management</fullName>
+                <default>false</default>
+                <label>Label management</label>
+            </value>
+            <value>
+                <fullName>Lead Form</fullName>
+                <default>false</default>
+                <label>Lead Form</label>
+            </value>
+            <value>
+                <fullName>Left Hand Nav</fullName>
+                <default>false</default>
+                <label>Left Hand Nav</label>
+            </value>
+            <value>
+                <fullName>License Keys Protection</fullName>
+                <default>false</default>
+                <label>License Keys Protection</label>
+            </value>
+            <value>
+                <fullName>Live Cloud Transcoding</fullName>
+                <default>false</default>
+                <label>Live Cloud Transcoding</label>
+            </value>
+            <value>
+                <fullName>Live DRM</fullName>
+                <default>false</default>
+                <label>Live DRM</label>
+            </value>
+            <value>
+                <fullName>Live Input</fullName>
+                <default>false</default>
+                <label>Live Input</label>
+            </value>
+            <value>
+                <fullName>Live Monitoring UI</fullName>
+                <default>false</default>
+                <label>Live Monitoring UI</label>
+            </value>
+            <value>
+                <fullName>Live Redundancy</fullName>
+                <default>false</default>
+                <label>Live Redundancy</label>
+            </value>
+            <value>
+                <fullName>Live Scheduling</fullName>
+                <default>false</default>
+                <label>Live Scheduling</label>
+            </value>
+            <value>
+                <fullName>Live Streaming</fullName>
+                <default>false</default>
+                <label>Live Streaming</label>
+            </value>
+            <value>
+                <fullName>Local / Last mile Network Issues</fullName>
+                <default>false</default>
+                <label>Local / Last mile Network Issues</label>
+            </value>
+            <value>
+                <fullName>Localization Update</fullName>
+                <default>false</default>
+                <label>Localization Update</label>
+            </value>
+            <value>
+                <fullName>Login Issue</fullName>
+                <default>false</default>
+                <label>Login Issue</label>
+            </value>
+            <value>
+                <fullName>Low Latency</fullName>
+                <default>false</default>
+                <label>Low Latency</label>
+            </value>
+            <value>
+                <fullName>Macroblocking</fullName>
+                <default>false</default>
+                <label>Macroblocking</label>
+            </value>
+            <value>
+                <fullName>Marketing Studio</fullName>
+                <default>false</default>
+                <label>Marketing Studio</label>
+            </value>
+            <value>
+                <fullName>Marketo Integration</fullName>
+                <default>false</default>
+                <label>Marketo Integration</label>
+            </value>
+            <value>
+                <fullName>Marketplace Activation</fullName>
+                <default>false</default>
+                <label>Marketplace Activation</label>
+            </value>
+            <value>
+                <fullName>Mark Job As Free</fullName>
+                <default>false</default>
+                <label>Mark Job As Free</label>
+            </value>
+            <value>
+                <fullName>Media - Closed Captions</fullName>
+                <default>false</default>
+                <label>Media - Closed Captions</label>
+            </value>
+            <value>
+                <fullName>Media - Image Capture</fullName>
+                <default>false</default>
+                <label>Media - Image Capture</label>
+            </value>
+            <value>
+                <fullName>Media Module - (Other)</fullName>
+                <default>false</default>
+                <label>Media Module - (Other)</label>
+            </value>
+            <value>
+                <fullName>Media - Search</fullName>
+                <default>false</default>
+                <label>Media - Search</label>
+            </value>
+            <value>
+                <fullName>Media Sharing</fullName>
+                <default>false</default>
+                <label>Media Sharing</label>
+            </value>
+            <value>
+                <fullName>Media Sharing Setup</fullName>
+                <default>false</default>
+                <label>Media Sharing Setup</label>
+            </value>
+            <value>
+                <fullName>Media - Source replacement / retranscode</fullName>
+                <default>false</default>
+                <label>Media - Source replacement / retranscode</label>
+            </value>
+            <value>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <fullName>Module - Live Account Setup</fullName>
+                <default>false</default>
+                <label>Module - ALive Account Setup</label>
+            </value>
+            <value>
+                <fullName>Module - Live - API key</fullName>
+                <default>false</default>
+                <label>Module - ALive - API key</label>
+            </value>
+            <value>
+                <fullName>Module - Live - Audio-only</fullName>
+                <default>false</default>
+                <label>Module - ALive - Audio-only</label>
+            </value>
+            <value>
+                <fullName>Module - Live - Low Latency</fullName>
+                <default>false</default>
+                <label>Module - ALive - Low Latency</label>
+            </value>
+            <value>
+                <fullName>Module - Live - Scheduling on/off</fullName>
+                <default>false</default>
+                <label>Module - ALive - Scheduling on/off</label>
+            </value>
+            <value>
+                <fullName>Module - Live Trial extension</fullName>
+                <default>false</default>
+                <label>Module - ALive Trial extension</label>
+            </value>
+            <value>
+                <fullName>Module - Live Trial Off</fullName>
+                <default>false</default>
+                <label>Module - ALive Trial Off</label>
+            </value>
+            <value>
+                <fullName>Module - Live Trial On</fullName>
+                <default>false</default>
+                <label>Module - ALive Trial On</label>
+            </value>
+            <value>
+                <fullName>Module - Audience</fullName>
+                <default>false</default>
+                <label>Module - Audience</label>
+            </value>
+            <value>
+                <fullName>Module - BLive Account Setup</fullName>
+                <default>false</default>
+                <label>Module - BLive Account Setup</label>
+            </value>
+            <value>
+                <fullName>Module - Cloud Playout</fullName>
+                <default>false</default>
+                <label>Module - Cloud Playout</label>
+            </value>
+            <value>
+                <fullName>Module - Social On</fullName>
+                <default>false</default>
+                <label>Module - Social On</label>
+            </value>
+            <value>
+                <fullName>Module - Zencoder - Forensic Watermarking</fullName>
+                <default>false</default>
+                <label>Module - Zencoder - Forensic Watermarking</label>
+            </value>
+            <value>
+                <fullName>MRSS Feed</fullName>
+                <default>false</default>
+                <label>MRSS Feed</label>
+            </value>
+            <value>
+                <fullName>MRSS Ingestion</fullName>
+                <default>false</default>
+                <label>MRSS Ingestion</label>
+            </value>
+            <value>
+                <fullName>MRSS Syndication</fullName>
+                <default>false</default>
+                <label>MRSS Syndication</label>
+            </value>
+            <value>
+                <fullName>Network Issue</fullName>
+                <default>false</default>
+                <label>Network Issue</label>
+            </value>
+            <value>
+                <fullName>No action</fullName>
+                <default>false</default>
+                <label>No action</label>
+            </value>
+            <value>
+                <fullName>NOC Report</fullName>
+                <default>false</default>
+                <label>NOC Report</label>
+            </value>
+            <value>
+                <fullName>NOC Request</fullName>
+                <default>false</default>
+                <label>NOC Request</label>
+            </value>
+            <value>
+                <fullName>Non-DMCA Content Takedown</fullName>
+                <default>false</default>
+                <label>Non-DMCA Content Takedown</label>
+            </value>
+            <value>
+                <fullName>Not displaying</fullName>
+                <default>false</default>
+                <label>Not displaying</label>
+            </value>
+            <value>
+                <fullName>Notification Error</fullName>
+                <default>false</default>
+                <label>Notification Error</label>
+            </value>
+            <value>
+                <fullName>Ooyala to Brightcove</fullName>
+                <default>false</default>
+                <label>Ooyala to Brightcove</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other Devices</fullName>
+                <default>false</default>
+                <label>Other Devices</label>
+            </value>
+            <value>
+                <fullName>Other Error Code</fullName>
+                <default>false</default>
+                <label>Other Error Code</label>
+            </value>
+            <value>
+                <fullName>Output Options</fullName>
+                <default>false</default>
+                <label>Output Options</label>
+            </value>
+            <value>
+                <fullName>Output Settings</fullName>
+                <default>false</default>
+                <label>Output Settings</label>
+            </value>
+            <value>
+                <fullName>Outstream Player - Playback</fullName>
+                <default>false</default>
+                <label>Outstream Player - Playback</label>
+            </value>
+            <value>
+                <fullName>Outstream Player - Settings</fullName>
+                <default>false</default>
+                <label>Outstream Player - Settings</label>
+            </value>
+            <value>
+                <fullName>Overlays</fullName>
+                <default>false</default>
+                <label>Overlays</label>
+            </value>
+            <value>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+                <label>Password Reset</label>
+            </value>
+            <value>
+                <fullName>Payment Store (Apple, Google, Roku, etc)</fullName>
+                <default>false</default>
+                <label>Payment Store (Apple, Google, Roku, etc)</label>
+            </value>
+            <value>
+                <fullName>Platform - Analytics API</fullName>
+                <default>false</default>
+                <label>Platform - Analytics API</label>
+            </value>
+            <value>
+                <fullName>Platform - Audience API</fullName>
+                <default>false</default>
+                <label>Platform - Audience API</label>
+            </value>
+            <value>
+                <fullName>Platform - CMS API</fullName>
+                <default>false</default>
+                <label>Platform - CMS API</label>
+            </value>
+            <value>
+                <fullName>Platform - CMS API - Master Retrieval API</fullName>
+                <default>false</default>
+                <label>Platform - CMS API - Master Retrieval API</label>
+            </value>
+            <value>
+                <fullName>Platform - Data Collection API</fullName>
+                <default>false</default>
+                <label>Platform - Data Collection API</label>
+            </value>
+            <value>
+                <fullName>Platform - Delivery Rules</fullName>
+                <default>false</default>
+                <label>Platform - Delivery Rules</label>
+            </value>
+            <value>
+                <fullName>Platform - Delivery System API</fullName>
+                <default>false</default>
+                <label>Platform - Delivery System API</label>
+            </value>
+            <value>
+                <fullName>Platform - Dynamic Ingest API</fullName>
+                <default>false</default>
+                <label>Platform - Dynamic Ingest API</label>
+            </value>
+            <value>
+                <fullName>Platform - EPG API</fullName>
+                <default>false</default>
+                <label>Platform - EPG API</label>
+            </value>
+            <value>
+                <fullName>Platform - Image API</fullName>
+                <default>false</default>
+                <label>Platform - Image API</label>
+            </value>
+            <value>
+                <fullName>Platform - Ingest Profiles API</fullName>
+                <default>false</default>
+                <label>Platform - Ingest Profiles API</label>
+            </value>
+            <value>
+                <fullName>Platform - In-Page Experiences API</fullName>
+                <default>false</default>
+                <label>Platform - In-Page Experiences API</label>
+            </value>
+            <value>
+                <fullName>Platform - OAuth API</fullName>
+                <default>false</default>
+                <label>Platform - OAuth API</label>
+            </value>
+            <value>
+                <fullName>Platform - Playback API</fullName>
+                <default>false</default>
+                <label>Platform - Playback API</label>
+            </value>
+            <value>
+                <fullName>Platform - Playback Restrictions - Authentication - Audit API</fullName>
+                <default>false</default>
+                <label>Platform - Playback Restrictions - Authentication - Audit API</label>
+            </value>
+            <value>
+                <fullName>Platform - Playback Restrictions - Authentication - Blacklist API</fullName>
+                <default>false</default>
+                <label>Platform - Playback Restrictions - Authentication - Blacklist API</label>
+            </value>
+            <value>
+                <fullName>Platform - Playback Restrictions - Authentication - Key API</fullName>
+                <default>false</default>
+                <label>Platform - Playback Restrictions - Authentication - Key API</label>
+            </value>
+            <value>
+                <fullName>Platform - Playback Restrictions - Devices API</fullName>
+                <default>false</default>
+                <label>Platform - Playback Restrictions - Devices API</label>
+            </value>
+            <value>
+                <fullName>Platform - Playback Restrictions - Playback Rights API</fullName>
+                <default>false</default>
+                <label>Platform - Playback Restrictions - Playback Rights API</label>
+            </value>
+            <value>
+                <fullName>Platform - Player Management API</fullName>
+                <default>false</default>
+                <label>Platform - Player Management API</label>
+            </value>
+            <value>
+                <fullName>Platform - Policy API</fullName>
+                <default>false</default>
+                <label>Platform - Policy API</label>
+            </value>
+            <value>
+                <fullName>Platform - Social Syndication API</fullName>
+                <default>false</default>
+                <label>Platform - Social Syndication API</label>
+            </value>
+            <value>
+                <fullName>Platform - SSAI API</fullName>
+                <default>false</default>
+                <label>Platform - SSAI API</label>
+            </value>
+            <value>
+                <fullName>Playback Authorization Service</fullName>
+                <default>false</default>
+                <label>Playback Authorization Service</label>
+            </value>
+            <value>
+                <fullName>Playback - Broken Ad</fullName>
+                <default>false</default>
+                <label>Playback - Broken Ad</label>
+            </value>
+            <value>
+                <fullName>Playback - Freewheel Plugin</fullName>
+                <default>false</default>
+                <label>Playback - Freewheel Plugin</label>
+            </value>
+            <value>
+                <fullName>Playback - Freewheel SDK</fullName>
+                <default>false</default>
+                <label>Playback - Freewheel SDK</label>
+            </value>
+            <value>
+                <fullName>Playback - IMA3 Plugin</fullName>
+                <default>false</default>
+                <label>Playback - IMA3 Plugin</label>
+            </value>
+            <value>
+                <fullName>Playback - IMA3 SDK</fullName>
+                <default>false</default>
+                <label>Playback - IMA3 SDK</label>
+            </value>
+            <value>
+                <fullName>Playback Inquires</fullName>
+                <default>false</default>
+                <label>Playback Inquires</label>
+            </value>
+            <value>
+                <fullName>Playback Issues</fullName>
+                <default>false</default>
+                <label>Playback Issues</label>
+            </value>
+            <value>
+                <fullName>Playback - Malformed Ad Tag</fullName>
+                <default>false</default>
+                <label>Playback - Malformed Ad Tag</label>
+            </value>
+            <value>
+                <fullName>Playback - Malformed or Empty Ad Response</fullName>
+                <default>false</default>
+                <label>Playback - Malformed or Empty Ad Response</label>
+            </value>
+            <value>
+                <fullName>Playback - Mobile</fullName>
+                <default>false</default>
+                <label>Playback - Mobile</label>
+            </value>
+            <value>
+                <fullName>Playback Quality Issues</fullName>
+                <default>false</default>
+                <label>Playback Quality Issues</label>
+            </value>
+            <value>
+                <fullName>Playback Restriction issue</fullName>
+                <default>false</default>
+                <label>Playback Restriction issue</label>
+            </value>
+            <value>
+                <fullName>Playback Restriction On/Off</fullName>
+                <default>false</default>
+                <label>Playback Restriction On/Off</label>
+            </value>
+            <value>
+                <fullName>Playback - SSAI - Cloud Playout</fullName>
+                <default>false</default>
+                <label>Playback - SSAI - Cloud Playout</label>
+            </value>
+            <value>
+                <fullName>Playback - SSAI - Live</fullName>
+                <default>false</default>
+                <label>Playback - SSAI - Live</label>
+            </value>
+            <value>
+                <fullName>Playback - SSAI - VoD</fullName>
+                <default>false</default>
+                <label>Playback - SSAI - VoD</label>
+            </value>
+            <value>
+                <fullName>Playback - Third Party Plugin</fullName>
+                <default>false</default>
+                <label>Playback - Third Party Plugin</label>
+            </value>
+            <value>
+                <fullName>Playback - VPAID</fullName>
+                <default>false</default>
+                <label>Playback - VPAID</label>
+            </value>
+            <value>
+                <fullName>Player APIs</fullName>
+                <default>false</default>
+                <label>Player APIs</label>
+            </value>
+            <value>
+                <fullName>Player Load Time</fullName>
+                <default>false</default>
+                <label>Player Load Time</label>
+            </value>
+            <value>
+                <fullName>Player Questions</fullName>
+                <default>false</default>
+                <label>Player Questions</label>
+            </value>
+            <value>
+                <fullName>Players Module</fullName>
+                <default>false</default>
+                <label>Players Module</label>
+            </value>
+            <value>
+                <fullName>Player Version 7 Update</fullName>
+                <default>false</default>
+                <label>Player Version 7 Update</label>
+            </value>
+            <value>
+                <fullName>Playlist Management</fullName>
+                <default>false</default>
+                <label>Playlist Management</label>
+            </value>
+            <value>
+                <fullName>Play Tracking investigation</fullName>
+                <default>false</default>
+                <label>Play Tracking investigation</label>
+            </value>
+            <value>
+                <fullName>Plugins - Brightcove</fullName>
+                <default>false</default>
+                <label>Plugins - Brightcove</label>
+            </value>
+            <value>
+                <fullName>Plugins - Other</fullName>
+                <default>false</default>
+                <label>Plugins - Other</label>
+            </value>
+            <value>
+                <fullName>Portal</fullName>
+                <default>false</default>
+                <label>Portal</label>
+            </value>
+            <value>
+                <fullName>Pricing &amp; Plans</fullName>
+                <default>false</default>
+                <label>Pricing &amp; Plans</label>
+            </value>
+            <value>
+                <fullName>Problem making payment</fullName>
+                <default>false</default>
+                <label>Problem making payment</label>
+            </value>
+            <value>
+                <fullName>Process Request</fullName>
+                <default>false</default>
+                <label>Process Request</label>
+            </value>
+            <value>
+                <fullName>Product Release Notes and Documentation Task</fullName>
+                <default>false</default>
+                <label>Product Release Notes and Documentation Task</label>
+            </value>
+            <value>
+                <fullName>Projects</fullName>
+                <default>false</default>
+                <label>Projects</label>
+            </value>
+            <value>
+                <fullName>Publisher Notifications</fullName>
+                <default>false</default>
+                <label>Publisher Notifications</label>
+            </value>
+            <value>
+                <fullName>Purge Deleted Videos</fullName>
+                <default>false</default>
+                <label>Purge Deleted Videos</label>
+            </value>
+            <value>
+                <fullName>QoE Enablement</fullName>
+                <default>false</default>
+                <label>QoE Enablement</label>
+            </value>
+            <value>
+                <fullName>QoE Investigation</fullName>
+                <default>false</default>
+                <label>QoE Investigation</label>
+            </value>
+            <value>
+                <fullName>Quiz/Survey</fullName>
+                <default>false</default>
+                <label>Quiz/Survey</label>
+            </value>
+            <value>
+                <fullName>Referral BGS</fullName>
+                <default>false</default>
+                <label>Referral BGS</label>
+            </value>
+            <value>
+                <fullName>Referral to BGS</fullName>
+                <default>false</default>
+                <label>Referral to BGS</label>
+            </value>
+            <value>
+                <fullName>Referral to Business Security</fullName>
+                <default>false</default>
+                <label>Referral to Business Security</label>
+            </value>
+            <value>
+                <fullName>Referral to CSM (AM)</fullName>
+                <default>false</default>
+                <label>Referral to CSM (AM)</label>
+            </value>
+            <value>
+                <fullName>Referral to Finance</fullName>
+                <default>false</default>
+                <label>Referral to Finance</label>
+            </value>
+            <value>
+                <fullName>Referral to IT</fullName>
+                <default>false</default>
+                <label>Referral to IT</label>
+            </value>
+            <value>
+                <fullName>Referral to Legal</fullName>
+                <default>false</default>
+                <label>Referral to Legal</label>
+            </value>
+            <value>
+                <fullName>Referral to PM</fullName>
+                <default>false</default>
+                <label>Referral to PM</label>
+            </value>
+            <value>
+                <fullName>Referral to Sales</fullName>
+                <default>false</default>
+                <label>Referral to Sales</label>
+            </value>
+            <value>
+                <fullName>Referral to the NOC Team</fullName>
+                <default>false</default>
+                <label>Referral to the NOC Team</label>
+            </value>
+            <value>
+                <fullName>Referral to TS leadership</fullName>
+                <default>false</default>
+                <label>Referral to TS leadership</label>
+            </value>
+            <value>
+                <fullName>Registration issues</fullName>
+                <default>false</default>
+                <label>Registration issues</label>
+            </value>
+            <value>
+                <fullName>Rejected Request</fullName>
+                <default>false</default>
+                <label>Rejected Request</label>
+            </value>
+            <value>
+                <fullName>Remote Assets</fullName>
+                <default>false</default>
+                <label>Remote Assets</label>
+            </value>
+            <value>
+                <fullName>Remove Trial Account Restriction</fullName>
+                <default>false</default>
+                <label>Remove Trial Account Restriction</label>
+            </value>
+            <value>
+                <fullName>Renditions</fullName>
+                <default>false</default>
+                <label>Renditions</label>
+            </value>
+            <value>
+                <fullName>Renditions (quality/issues)</fullName>
+                <default>false</default>
+                <label>Renditions (quality/issues)</label>
+            </value>
+            <value>
+                <fullName>Rendition Selection</fullName>
+                <default>false</default>
+                <label>Rendition Selection</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>Reporting Discrepancies</fullName>
+                <default>false</default>
+                <label>Reporting Discrepancies</label>
+            </value>
+            <value>
+                <fullName>Request for Billing Statement</fullName>
+                <default>false</default>
+                <label>Request for Billing Statement</label>
+            </value>
+            <value>
+                <fullName>Resizing</fullName>
+                <default>false</default>
+                <label>Resizing</label>
+            </value>
+            <value>
+                <fullName>Resolution</fullName>
+                <default>false</default>
+                <label>Resolution</label>
+            </value>
+            <value>
+                <fullName>Retranscode or Transmux</fullName>
+                <default>false</default>
+                <label>Retranscode or Transmux</label>
+            </value>
+            <value>
+                <fullName>Review Existing</fullName>
+                <default>false</default>
+                <label>Review Existing</label>
+            </value>
+            <value>
+                <fullName>Revoke Portal Access</fullName>
+                <default>false</default>
+                <label>Revoke Portal Access</label>
+            </value>
+            <value>
+                <fullName>Roku</fullName>
+                <default>false</default>
+                <label>Roku</label>
+            </value>
+            <value>
+                <fullName>Roku SDK</fullName>
+                <default>false</default>
+                <label>Roku SDK</label>
+            </value>
+            <value>
+                <fullName>RTMP Outputs</fullName>
+                <default>false</default>
+                <label>RTMP Outputs</label>
+            </value>
+            <value>
+                <fullName>Runtime restrictions (JWT) - Concurrent stream limit</fullName>
+                <default>false</default>
+                <label>Runtime restrictions (JWT) - Concurrent stream limit</label>
+            </value>
+            <value>
+                <fullName>Runtime restrictions (JWT) - Device limit</fullName>
+                <default>false</default>
+                <label>Runtime restrictions (JWT) - Device limit</label>
+            </value>
+            <value>
+                <fullName>Runtime restrictions (JWT) - Other</fullName>
+                <default>false</default>
+                <label>Runtime restrictions (JWT) - Other</label>
+            </value>
+            <value>
+                <fullName>S3 Error</fullName>
+                <default>false</default>
+                <label>S3 Error</label>
+            </value>
+            <value>
+                <fullName>S3 Settings</fullName>
+                <default>false</default>
+                <label>S3 Settings</label>
+            </value>
+            <value>
+                <fullName>Salesforce Commerce Cloud B2C Integration</fullName>
+                <default>false</default>
+                <label>Salesforce Commerce Cloud B2C Integration</label>
+            </value>
+            <value>
+                <fullName>Salesforce Integration</fullName>
+                <default>false</default>
+                <label>Salesforce Integration</label>
+            </value>
+            <value>
+                <fullName>Scheduling</fullName>
+                <default>false</default>
+                <label>Scheduling</label>
+            </value>
+            <value>
+                <fullName>Screen and Camera recorder</fullName>
+                <default>false</default>
+                <label>Screen and Camera recorder</label>
+            </value>
+            <value>
+                <fullName>SDK Plugins</fullName>
+                <default>false</default>
+                <label>SDK Plugins</label>
+            </value>
+            <value>
+                <fullName>Self Migrating Customer - Cutover to VC</fullName>
+                <default>false</default>
+                <label>Self Migrating Customer - Cutover to VC</label>
+            </value>
+            <value>
+                <fullName>SEO</fullName>
+                <default>false</default>
+                <label>SEO</label>
+            </value>
+            <value>
+                <fullName>SEO - Sitemap</fullName>
+                <default>false</default>
+                <label>SEO - Sitemap</label>
+            </value>
+            <value>
+                <fullName>Settings</fullName>
+                <default>false</default>
+                <label>Settings</label>
+            </value>
+            <value>
+                <fullName>Setup</fullName>
+                <default>false</default>
+                <label>Setup</label>
+            </value>
+            <value>
+                <fullName>Set-Up Questions</fullName>
+                <default>false</default>
+                <label>Set-Up Questions</label>
+            </value>
+            <value>
+                <fullName>SF Account</fullName>
+                <default>false</default>
+                <label>SF Account</label>
+            </value>
+            <value>
+                <fullName>Shopify</fullName>
+                <default>false</default>
+                <label>Shopify</label>
+            </value>
+            <value>
+                <fullName>Short Manifest TTL</fullName>
+                <default>false</default>
+                <label>Short Manifest TTL</label>
+            </value>
+            <value>
+                <fullName>Sign-in</fullName>
+                <default>false</default>
+                <label>Sign-in</label>
+            </value>
+            <value>
+                <fullName>Simulive Content</fullName>
+                <default>false</default>
+                <label>Simulive Content</label>
+            </value>
+            <value>
+                <fullName>Simulive Player</fullName>
+                <default>false</default>
+                <label>Simulive Player</label>
+            </value>
+            <value>
+                <fullName>Sites</fullName>
+                <default>false</default>
+                <label>Sites</label>
+            </value>
+            <value>
+                <fullName>SmartTV</fullName>
+                <default>false</default>
+                <label>SmartTV</label>
+            </value>
+            <value>
+                <fullName>Social - Analytics</fullName>
+                <default>false</default>
+                <label>Social - Analytics</label>
+            </value>
+            <value>
+                <fullName>Social API</fullName>
+                <default>false</default>
+                <label>Social API</label>
+            </value>
+            <value>
+                <fullName>Social - Clipping</fullName>
+                <default>false</default>
+                <label>Social - Clipping</label>
+            </value>
+            <value>
+                <fullName>Social - Facebook</fullName>
+                <default>false</default>
+                <label>Social - Facebook</label>
+            </value>
+            <value>
+                <fullName>Social - Instagram</fullName>
+                <default>false</default>
+                <label>Social - Instagram</label>
+            </value>
+            <value>
+                <fullName>Social - Live to Facebook</fullName>
+                <default>false</default>
+                <label>Social - Live to Facebook</label>
+            </value>
+            <value>
+                <fullName>Social - Live to YouTube</fullName>
+                <default>false</default>
+                <label>Social - Live to YouTube</label>
+            </value>
+            <value>
+                <fullName>Social - Pinterest</fullName>
+                <default>false</default>
+                <label>Social - Pinterest</label>
+            </value>
+            <value>
+                <fullName>Social Sharing</fullName>
+                <default>false</default>
+                <label>Social Sharing</label>
+            </value>
+            <value>
+                <fullName>Social - Twitter</fullName>
+                <default>false</default>
+                <label>Social - Twitter</label>
+            </value>
+            <value>
+                <fullName>Social - YouTube</fullName>
+                <default>false</default>
+                <label>Social - YouTube</label>
+            </value>
+            <value>
+                <fullName>Source File Error/Settings</fullName>
+                <default>false</default>
+                <label>Source File Error/Settings</label>
+            </value>
+            <value>
+                <fullName>Source Issues</fullName>
+                <default>false</default>
+                <label>Source Issues</label>
+            </value>
+            <value>
+                <fullName>Spreadsheet</fullName>
+                <default>false</default>
+                <label>Spreadsheet</label>
+            </value>
+            <value>
+                <fullName>SSAI Tracing Logs</fullName>
+                <default>false</default>
+                <label>SSAI Tracing Logs</label>
+            </value>
+            <value>
+                <fullName>SSL</fullName>
+                <default>false</default>
+                <label>SSL</label>
+            </value>
+            <value>
+                <fullName>SSO</fullName>
+                <default>false</default>
+                <label>SSO</label>
+            </value>
+            <value>
+                <fullName>Streaming Issues</fullName>
+                <default>false</default>
+                <label>Streaming Issues</label>
+            </value>
+            <value>
+                <fullName>Stuck Job</fullName>
+                <default>false</default>
+                <label>Stuck Job</label>
+            </value>
+            <value>
+                <fullName>Styling</fullName>
+                <default>false</default>
+                <label>Styling</label>
+            </value>
+            <value>
+                <fullName>Supported Encoders</fullName>
+                <default>false</default>
+                <label>Supported Encoders</label>
+            </value>
+            <value>
+                <fullName>Support Operations</fullName>
+                <default>false</default>
+                <label>Support Operations</label>
+            </value>
+            <value>
+                <fullName>Support public docs</fullName>
+                <default>false</default>
+                <label>Support public docs</label>
+            </value>
+            <value>
+                <fullName>System Status Page</fullName>
+                <default>false</default>
+                <label>System Status Page</label>
+            </value>
+            <value>
+                <fullName>Tags</fullName>
+                <default>false</default>
+                <label>Tags</label>
+            </value>
+            <value>
+                <fullName>Template Package Configuration</fullName>
+                <default>false</default>
+                <label>Template Package Configuration</label>
+            </value>
+            <value>
+                <fullName>Templates</fullName>
+                <default>false</default>
+                <label>Templates</label>
+            </value>
+            <value>
+                <fullName>Themes</fullName>
+                <default>false</default>
+                <label>Themes</label>
+            </value>
+            <value>
+                <fullName>Time Tracker</fullName>
+                <default>false</default>
+                <label>Time Tracker</label>
+            </value>
+            <value>
+                <fullName>Transcode Failure</fullName>
+                <default>false</default>
+                <label>Transcode Failure</label>
+            </value>
+            <value>
+                <fullName>Transcoding Error</fullName>
+                <default>false</default>
+                <label>Transcoding Error</label>
+            </value>
+            <value>
+                <fullName>Transcript</fullName>
+                <default>false</default>
+                <label>Transcript</label>
+            </value>
+            <value>
+                <fullName>Trending Now</fullName>
+                <default>false</default>
+                <label>Trending Now</label>
+            </value>
+            <value>
+                <fullName>Trial Account Inquiries</fullName>
+                <default>false</default>
+                <label>Trial Account Inquiries</label>
+            </value>
+            <value>
+                <fullName>TS Case</fullName>
+                <default>false</default>
+                <label>TS Case</label>
+            </value>
+            <value>
+                <fullName>TS Survey</fullName>
+                <default>false</default>
+                <label>TS Survey</label>
+            </value>
+            <value>
+                <fullName>UI Issue</fullName>
+                <default>false</default>
+                <label>UI Issue</label>
+            </value>
+            <value>
+                <fullName>UI Issues</fullName>
+                <default>false</default>
+                <label>UI Issues</label>
+            </value>
+            <value>
+                <fullName>Unable to log in</fullName>
+                <default>false</default>
+                <label>Unable to log in</label>
+            </value>
+            <value>
+                <fullName>Unsupported Audio</fullName>
+                <default>false</default>
+                <label>Unsupported Audio</label>
+            </value>
+            <value>
+                <fullName>Unsupported Format</fullName>
+                <default>false</default>
+                <label>Unsupported Format</label>
+            </value>
+            <value>
+                <fullName>Update Billing Info</fullName>
+                <default>false</default>
+                <label>Update Billing Info</label>
+            </value>
+            <value>
+                <fullName>Update Existing</fullName>
+                <default>false</default>
+                <label>Update Existing</label>
+            </value>
+            <value>
+                <fullName>Upload Error</fullName>
+                <default>false</default>
+                <label>Upload Error</label>
+            </value>
+            <value>
+                <fullName>Upload Module</fullName>
+                <default>false</default>
+                <label>Upload Module</label>
+            </value>
+            <value>
+                <fullName>User Error</fullName>
+                <default>false</default>
+                <label>User Error</label>
+            </value>
+            <value>
+                <fullName>User Management</fullName>
+                <default>false</default>
+                <label>User Management</label>
+            </value>
+            <value>
+                <fullName>User Payments (Evergent, Stripe, etc)</fullName>
+                <default>false</default>
+                <label>User Payments (Evergent, Stripe, etc)</label>
+            </value>
+            <value>
+                <fullName>User Request</fullName>
+                <default>false</default>
+                <label>User Request</label>
+            </value>
+            <value>
+                <fullName>User - Roles and Permissions</fullName>
+                <default>false</default>
+                <label>User - Roles and Permissions</label>
+            </value>
+            <value>
+                <fullName>User Sentiment</fullName>
+                <default>false</default>
+                <label>User Sentiment</label>
+            </value>
+            <value>
+                <fullName>User Subscriptions</fullName>
+                <default>false</default>
+                <label>User Subscriptions</label>
+            </value>
+            <value>
+                <fullName>VC Geo-restriction issues</fullName>
+                <default>false</default>
+                <label>VC Geo-restriction issues</label>
+            </value>
+            <value>
+                <fullName>Video Details Analytics</fullName>
+                <default>false</default>
+                <label>Video Details Analytics</label>
+            </value>
+            <value>
+                <fullName>Video Editor (Wochit)</fullName>
+                <default>false</default>
+                <label>Video Editor (Wochit)</label>
+            </value>
+            <value>
+                <fullName>Video Editor OneTrust Cookie Consent</fullName>
+                <default>false</default>
+                <label>Video Editor OneTrust Cookie Consent</label>
+            </value>
+            <value>
+                <fullName>Video Metadata (Other)</fullName>
+                <default>false</default>
+                <label>Video Metadata (Other)</label>
+            </value>
+            <value>
+                <fullName>Video Processing</fullName>
+                <default>false</default>
+                <label>Video Processing</label>
+            </value>
+            <value>
+                <fullName>Video Quality</fullName>
+                <default>false</default>
+                <label>Video Quality</label>
+            </value>
+            <value>
+                <fullName>Viewer Profiles</fullName>
+                <default>false</default>
+                <label>Viewer Profiles</label>
+            </value>
+            <value>
+                <fullName>Virtual Event Config</fullName>
+                <default>false</default>
+                <label>Virtual Event Config</label>
+            </value>
+            <value>
+                <fullName>Virtual Event Experience</fullName>
+                <default>false</default>
+                <label>Virtual Event Experience</label>
+            </value>
+            <value>
+                <fullName>Virtual Event Template Enablement</fullName>
+                <default>false</default>
+                <label>Virtual Event Template Enablement</label>
+            </value>
+            <value>
+                <fullName>Watermarks</fullName>
+                <default>false</default>
+                <label>Watermarks</label>
+            </value>
+            <value>
+                <fullName>WebView</fullName>
+                <default>false</default>
+                <label>WebView</label>
+            </value>
+            <value>
+                <fullName>Wibbitz</fullName>
+                <default>false</default>
+                <label>Wibbitz</label>
+            </value>
+            <value>
+                <fullName>Wicket (nativeresults)</fullName>
+                <default>false</default>
+                <label>Wicket (nativeresults)</label>
+            </value>
+            <value>
+                <fullName>Widgets</fullName>
+                <default>false</default>
+                <label>Widgets</label>
+            </value>
+            <value>
+                <fullName>Zap Issue</fullName>
+                <default>false</default>
+                <label>Zap Issue</label>
+            </value>
+            <value>
+                <fullName>Zap Request</fullName>
+                <default>false</default>
+                <label>Zap Request</label>
+            </value>
+            <value>
+                <fullName>Zoom Integration</fullName>
+                <default>false</default>
+                <label>Zoom Integration</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <valueName>Salesforce Commerce Cloud B2C Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail Integrations</controllingFieldValue>
+            <valueName>Shopify</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Issues - Loading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <valueName>Issues - Login</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Left Hand Nav</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Marketing Studio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Media - Closed Captions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <valueName>Media - Image Capture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <valueName>Media Module - (Other)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Media - Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Media - Source replacement / retranscode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Players Module</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Playlist Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Screen and Camera recorder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <valueName>SSO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <valueName>Upload Module</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Studio</controllingFieldValue>
+            <valueName>Video Editor (Wochit)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Operations</controllingFieldValue>
+            <valueName>Support Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Enhancement Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <valueName>Grant Portal Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <valueName>Login Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <valueName>Password Reset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>CS Portal</controllingFieldValue>
+            <valueName>Revoke Portal Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>UI Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support Portal</controllingFieldValue>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <valueName>User Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Accessibility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Account Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Account Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Advertising</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Android</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>AppleTV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <valueName>Application Errors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Closed Captioning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>FAST - Frequency</controllingFieldValue>
+            <valueName>CMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>DRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV App Agency</controllingFieldValue>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <controllingFieldValue>Zapier</controllingFieldValue>
+            <controllingFieldValue>Custom Task</controllingFieldValue>
+            <controllingFieldValue>OTT Flow</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Rendition Selection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Resizing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Resolution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Roku</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>SmartTV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Social Sharing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Styling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Video.js</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Video Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Audio-Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <valueName>BLive Migration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Clipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>DVR Adjustments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <valueName>Encoder Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>General Requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Input Stream Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Issues - Backend</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Issues - CDN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Issues - Input latency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Issues - Input quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Issues - SSAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Job/Event Creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Live DRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Live Monitoring UI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Live Redundancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Live Scheduling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Low Latency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Macroblocking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Output Options</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>RTMP Outputs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Supported Encoders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove BLive</controllingFieldValue>
+            <controllingFieldValue>Brightcove Live</controllingFieldValue>
+            <valueName>Zoom Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Access Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <valueName>Agenda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <valueName>Custom Event Packages Enablement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Gallery Module</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <valueName>iRooms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Simulive Content</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Simulive Player</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <valueName>Virtual Event Config</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <valueName>Virtual Event Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virtual Events</controllingFieldValue>
+            <valueName>Virtual Event Template Enablement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <valueName>Config / Parameters / Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <valueName>Domain Restriction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <valueName>Player Version 7 Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Plugins - Brightcove</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web Player</controllingFieldValue>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Plugins - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <valueName>Community</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <valueName>Corporate (Brightcove.com)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <valueName>Support public docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Websites</controllingFieldValue>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>System Status Page</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <valueName>Event Based Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>Ad Insights</controllingFieldValue>
+            <controllingFieldValue>QoE Insights</controllingFieldValue>
+            <valueName>Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Sales Cloud Integration</controllingFieldValue>
+            <controllingFieldValue>Audience Sync &amp; Segment Sync</controllingFieldValue>
+            <valueName>Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Brightcove Live API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <valueName>Feature Not Supported</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <valueName>General Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <valueName>Integration Libraries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <valueName>Invalid syntax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev - ZC</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Playback API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Custom Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <valueName>Data Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <valueName>Eloqua Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <valueName>HubSpot Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <valueName>Lead Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <valueName>Marketo Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <valueName>Salesforce Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <controllingFieldValue>Ad Insights</controllingFieldValue>
+            <controllingFieldValue>QoE Insights</controllingFieldValue>
+            <valueName>Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audience</controllingFieldValue>
+            <valueName>Viewer Profiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <valueName>Aspect Ratio Incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Audio/Video Sync Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <valueName>Audio settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <valueName>Bad Quality / Artifacts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <valueName>Incorrect Resolution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Audio/Video Quality</controllingFieldValue>
+            <valueName>Unsupported Audio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>API Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Backend Issues (Dynamic Delivery)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>BC Live DVR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Beacon Studio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <valueName>Custom Fields</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Deep Linking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Device Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Geo Restriction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>HLS encryption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Ingestion Profiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>iOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Payment Store (Apple, Google, Roku, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Player Load Time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Referral to BGS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral to CSM (AM)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>SEO - Sitemap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>User Payments (Evergent, Stripe, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>User Subscriptions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beacon</controllingFieldValue>
+            <valueName>Video Editor OneTrust Cookie Consent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Mark Job As Free</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Pricing &amp; Plans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Problem making payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Request for Billing Statement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Billing</controllingFieldValue>
+            <valueName>Update Billing Info</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>3rd Party Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <valueName>Campaign Dashboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Media Sharing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Set-Up Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brightcove Campaign</controllingFieldValue>
+            <controllingFieldValue>Brightcove Engage</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>Upload Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <valueName>Channel Output</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Playout</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Live Input</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>BYO CDN Audit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>Byte Range Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>CDN Akamai GTM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>CDN China Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>CDN Migration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>CDN Setup (Dynamic Delivery)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>CDN Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>Delivery Method</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Delivery</controllingFieldValue>
+            <valueName>Remote Assets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <valueName>Registration issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <valueName>Sign-in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Account/Asset Configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account - Activate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <valueName>Account - Activate (BC Internal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account - Add</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account - Downgrade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account Lock - Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account Lock - Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account Trial Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account - Unlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Account - Upgrade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Akamai Analytics Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Auto Captioning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Custom fields settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>DD Account Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>DD Account settings - Multiple Audio Tracks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>DD Account Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>DD DRM Setup/Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Geo Filtering Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>HLS Encryption Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>IP Restriction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Marketplace Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Media Sharing Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live Account Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live - API key</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live - Audio-only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live - Low Latency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live - Scheduling on/off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live Trial extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live Trial Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Live Trial On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Audience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - BLive Account Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Module - Cloud Playout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Social On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Module - Zencoder - Forensic Watermarking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>No action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Playback Restriction On/Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>Purge Deleted Videos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <valueName>Remove Trial Account Restriction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings</controllingFieldValue>
+            <valueName>User - Roles and Permissions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <valueName>Account Creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings - AI</controllingFieldValue>
+            <valueName>Essential Enablement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Settings - ZC</controllingFieldValue>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <valueName>Credentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>BC Employee Last Day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Billing/Credit Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>DMCA Notification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>DMCA - Notification to offender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>IIR/SIR Translation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Non-DMCA Content Takedown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Product Release Notes and Documentation Task</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Publisher Notifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral BGS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral to Business Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <valueName>Referral to Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral to IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral to Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral to PM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <valueName>Referral to Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral to the NOC Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration</controllingFieldValue>
+            <valueName>Referral to TS leadership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Ad Insights</controllingFieldValue>
+            <controllingFieldValue>QoE Insights</controllingFieldValue>
+            <valueName>General Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <valueName>Images (Thumbnails &amp; Poster)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administration - ZC</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Job Concurrency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Ad Monetization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Ad Settings (Cloud Playout)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Ad Settings (CSAI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Ad Settings (SSAI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Ad Trafficking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Google PAL SDK SSAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Ingestion - SSAI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Outstream Player - Playback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Outstream Player - Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - Broken Ad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - Freewheel Plugin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - Freewheel SDK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - IMA3 Plugin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - IMA3 SDK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - Malformed Ad Tag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Playback - SSAI - Cloud Playout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Playback - SSAI - Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - SSAI - VoD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - Third Party Plugin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advertising</controllingFieldValue>
+            <valueName>Playback - VPAID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Analytics - Cloud Playout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Analytics - Data Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Analytics - Feature Parity Inquiries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Analytics Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Analytics - Live</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Analytics - Performance Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Billing Module</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Play Tracking investigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>Reporting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Reporting Discrepancies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Trending Now</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics and Billing</controllingFieldValue>
+            <valueName>Video Details Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - AEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Drupal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Hootsuite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party Integration - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Kollective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Ramp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Sharepoint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Sitecore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>3rd Party - Wordpress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Brightcove BLive API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Cross Device Resume (XDR)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Analytics API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Audience API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - CMS API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - CMS API - Master Retrieval API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Data Collection API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Delivery Rules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Delivery System API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Dynamic Ingest API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - EPG API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Image API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Ingest Profiles API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - In-Page Experiences API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - OAuth API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Playback Restrictions - Authentication - Audit API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Playback Restrictions - Authentication - Blacklist API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Playback Restrictions - Authentication - Key API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Playback Restrictions - Devices API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Playback Restrictions - Playback Rights API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Player Management API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Policy API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - Social Syndication API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Platform - SSAI API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Playback Authorization Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>Player APIs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API and Custom Dev</controllingFieldValue>
+            <valueName>SEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <valueName>Create New</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <valueName>Localization Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <valueName>Review Existing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS - Documentation (CS site/ Localization)</controllingFieldValue>
+            <valueName>Update Existing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Clipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Instagram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Live to Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Live to YouTube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Pinterest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - Twitter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution (Social)</controllingFieldValue>
+            <valueName>Social - YouTube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Audio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Audio Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <valueName>Captions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Clips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Formats &amp; Codecs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Job Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Live Streaming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Notification Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Output Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>S3 Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <valueName>User Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encoding Settings</controllingFieldValue>
+            <valueName>Video Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Engagement Data</controllingFieldValue>
+            <valueName>Discrepancies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Engagement Data</controllingFieldValue>
+            <valueName>Not displaying</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <valueName>Aspera Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <valueName>Network Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>File Transfers</controllingFieldValue>
+            <valueName>S3 Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Custom CSS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Custom Domain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Custom HTML</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>In-Page Experiences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Player Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Sites</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>SSL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Template Package Configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Templates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gallery</controllingFieldValue>
+            <valueName>Themes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QoE</controllingFieldValue>
+            <valueName>QoE Enablement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>QoE</controllingFieldValue>
+            <valueName>QoE Investigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Aspera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Dropbox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Error processing (Backend)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Error processing (Backend) - Legacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Google Drive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Ingestion Queue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>MRSS Ingestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Renditions (quality/issues)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingestion</controllingFieldValue>
+            <valueName>Source File Error/Settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>Download Timeout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>File Permissions Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>Input File Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>Other Error Code</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>Stuck Job</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>Transcoding Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Job Failures</controllingFieldValue>
+            <valueName>Unsupported Format</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <valueName>Cancellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <valueName>Completed - Third Party</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live Event Coverage</controllingFieldValue>
+            <valueName>Rejected Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>CDN/Origin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Channel Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Encoding/Packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <valueName>Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Front End Web or App</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Live Cloud Transcoding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>NOC Report</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Playback Quality Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live NOC</controllingFieldValue>
+            <valueName>Source Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <valueName>Encoding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Live Streaming (Akamai Legacy/Manual)</controllingFieldValue>
+            <valueName>Streaming Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <valueName>Cue Points</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <valueName>Tags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <valueName>Transcript</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metadata</controllingFieldValue>
+            <valueName>Video Metadata (Other)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <valueName>Brightcove to Brightcove</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <valueName>EOL - Static Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <valueName>MRSS Feed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <valueName>Ooyala to Brightcove</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <valueName>Retranscode or Transmux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration</controllingFieldValue>
+            <valueName>Spreadsheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missing Data</controllingFieldValue>
+            <valueName>Ingestion (Source S3)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missing Data</controllingFieldValue>
+            <valueName>Wicket (nativeresults)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>Android SDK 5.x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>Android SDK 6.x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>Android SDK 7.x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>Android SDK 8.x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>Android SDK 9.x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>Both Android/iOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>iOS SDK 5.x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>iOS SDK 6.x</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>Other Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>SDK Plugins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Development</controllingFieldValue>
+            <valueName>WebView</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Annotations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Experiences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Integrations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Interactivity API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Interactivity Module</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Playback Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Interactivity</controllingFieldValue>
+            <valueName>Widgets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>BC Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>Custom Report</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>Email Alert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>Field Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>NOC Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>Portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>Process Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>SF Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>TS Case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>TS Survey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce</controllingFieldValue>
+            <valueName>User Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zapier</controllingFieldValue>
+            <valueName>Zap Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zapier</controllingFieldValue>
+            <valueName>Zap Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Custom Task</controllingFieldValue>
+            <valueName>Time Tracker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Smart TV - Development</controllingFieldValue>
+            <valueName>Roku SDK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FAST - Frequency</controllingFieldValue>
+            <valueName>Ingestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FAST - Frequency</controllingFieldValue>
+            <valueName>MRSS Syndication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>CDN Issues (BYO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>CDN Issues (House/Named)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>DRM Issues (Dynamic Delivery)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>HLS Encryption Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Hosting/Server settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>HTTP and Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Local / Last mile Network Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Playback Restriction issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>Short Manifest TTL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback</controllingFieldValue>
+            <valueName>VC Geo-restriction issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <valueName>Asset-level restrictions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <valueName>License Keys Protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <valueName>Runtime restrictions (JWT) - Concurrent stream limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <valueName>Runtime restrictions (JWT) - Device limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Playback Restrictions</controllingFieldValue>
+            <valueName>Runtime restrictions (JWT) - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reports/Exports/Segments</controllingFieldValue>
+            <valueName>Adobe Magento Commerce Integration</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

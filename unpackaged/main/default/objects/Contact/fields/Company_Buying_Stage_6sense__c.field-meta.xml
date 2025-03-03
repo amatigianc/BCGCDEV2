@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Buying_Stage_6sense__c</fullName>
+    <description>A measure of an account’s buying stage and likelihood of being in-market for a specific product or service, using relevant signals of interest and engagement across known and anonymous intent and engagement.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A measure of an account’s buying stage and likelihood of being in-market for a specific product or service, using relevant signals of interest and engagement across known and anonymous intent and engagement.</inlineHelpText>
+    <label>Company Buying Stage (6sense)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

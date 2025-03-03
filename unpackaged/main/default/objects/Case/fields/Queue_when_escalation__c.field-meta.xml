@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_when_escalation__c</fullName>
+    <description>If the case was in a queue and not owned, this field should be selected.</description>
+    <label>Queue When Escalated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TSR queue</fullName>
+                <default>false</default>
+                <label>TSR queue</label>
+            </value>
+            <value>
+                <fullName>T1 queue</fullName>
+                <default>false</default>
+                <label>N&amp;U Queue</label>
+            </value>
+            <value>
+                <fullName>T2 Prod queue</fullName>
+                <default>false</default>
+                <label>T2 Prod queue</label>
+            </value>
+            <value>
+                <fullName>T2 Dev queue</fullName>
+                <default>false</default>
+                <label>T2 Dev queue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

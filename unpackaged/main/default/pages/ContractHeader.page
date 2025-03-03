@@ -1,0 +1,398 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/xml" controller="ContractHeaderController">
+    
+    <block font-family="arial" text-align="right" font-size="16pt">
+        {!documentTitle}
+    </block>
+
+    <block>
+        <table table-layout="fixed" width="100%" border-width="1px" margin-bottom="10">
+            <table-column column-width="60%" />
+            <table-column column-width="40%" />
+            <table-body>
+                <table-row>
+                    <table-cell border-width="0px"  padding="0pt">
+                        <!-- this is for the LEFT side of the header. -->
+                        <table table-layout="fixed" width="100%" border-width="1px" margin-bottom="10"> 
+                            <table-column column-width="30%" />
+                            <table-column column-width="70%" />
+                            <table-body>
+                                   <table-row>
+                                    <table-cell border-width="1px"  padding="1pt">
+                                        <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                            Company Name:
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border-width="1px"  padding="1pt">
+                                        <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                            {!HTMLENCODE(quote.SBQQ__BillingName__c)}
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                                
+                                <apex:outputPanel layout="none" rendered="{!quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Company Address:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!HTMLENCODE(quote.SBQQ__BillingStreet__c)}
+                                            </block>
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!quote.SBQQ__BillingCity__c}, {!quote.SBQQ__BillingState__c} {!quote.SBQQ__BillingPostalCode__c}
+                                            </block>
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!quote.SBQQ__BillingCountry__c}
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.isAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Order Currency:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!quote.CurrencyIsoCode}
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Company Email Address for Invoices:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!HTMLENCODE(quote.SBQQ__Opportunity2__r.Invoice_Email_s__c)}
+                                            </block>
+                                        </table-cell>
+                                      
+                                    </table-row>
+                                </apex:outputPanel>
+                                 <apex:outputPanel layout="none" rendered="{!quote.SBQQ__Opportunity2__r.Deal_Type__c == 'Renewal' || quote.SBQQ__Opportunity2__r.Deal_Type__c == 'Early Renewal'}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="sans-serif" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Due Date:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                               <apex:outputText value="{0,date,dd'-'MMM'-'yyyy}">
+                                                    <apex:param value="{!quote.Due_Date__c}" /> 
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.SBQQ__Opportunity2__r.Acting_as_Agency__c = true && quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                If Company is acting as an agent on behalf of a client. name client:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!quote.End_Customer_Name__c}
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                            </table-body>
+                        </table>
+                    </table-cell>
+                    <table-cell border-width="0px"  padding="0pt">
+                        <!-- this is for the RIGHT side of the header. -->
+                        <table table-layout="fixed" width="100%" border-width="1px" margin-bottom="10">
+                            <table-column column-width="40%" />
+                            <table-column column-width="60%" />
+                            <table-body>
+                                <table-row height="0px">
+                                    <table-cell border-width="1px"  padding="1pt">
+                                        <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                            &nbsp;
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border-width="1px"  padding="1pt">
+                                        <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                            &nbsp;
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                                <table-row>
+                                    <table-cell border-width="1px"  padding="1pt">
+                                        <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                            Quote Number:
+                                        </block>
+                                    </table-cell>
+                                    <table-cell border-width="1px"  padding="1pt">
+                                        <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                            {!HTMLENCODE(quote.Name)}
+                                        </block>
+                                    </table-cell>
+                                </table-row>
+                            <table-row>
+                                <table-cell border-width="1px"  padding="1pt">
+                                    <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                        Contract ID:
+                                    </block>
+                                </table-cell>
+                                <table-cell border-width="1px"  padding="1pt">
+                                    <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                        {!HTMLENCODE(quote.SBQQ__Opportunity2__r.Contract_Id__c)}
+                                    </block>
+                                </table-cell>
+                            </table-row>
+                                <apex:outputPanel layout="none" rendered="{!quote.isNotAddOn__c}">
+                                    
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Effective Date:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!quote.Outgoing_Document_Effective_Date__c}
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.SBQQ__Opportunity2__r.Deal_Type__c == 'Early Renewal' || quote.SBQQ__Opportunity2__r.Deal_Type__c == 'Renewal' || quote.isAddOn__c}">
+                                    
+                                <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Start Date:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                <apex:outputText value="{0,date,dd'-'MMM'-'yyyy}">
+                                                    <apex:param value="{!quote.SBQQ__StartDate__c}" /> 
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{! quote.Outgoing_Document_Hide_Start_Date__c == false && hasBAISetup && quote.SBQQ__Opportunity2__r.Deal_Type__c <> 'Renewal'}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                BAI Setup Start Date:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Date of Last Signature Below
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                BAI Start Date:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Date of Email to Company Indicating Completion of BAI Setup
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                 <apex:outputPanel layout="none" rendered="{!quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                Automatic Renewal:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">
+                                                {!autoRenewal}
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.isNotAddOn__c}">
+                                    <!-- <table-row>
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Order Currency:
+                                            </block>
+                                        </table-cell>       
+                                        <table-cell border-width="1px"  padding="1pt">
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                {!quote.CurrencyIsoCode}
+                                            </block>
+                                        </table-cell>         
+                                    </table-row> -->
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Payment Terms:
+                                            </block>
+                                        </table-cell>       
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                {!quote.SBQQ__PaymentTerms__c}
+                                            </block>
+                                        </table-cell>                 
+                                    </table-row>      
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Billing Frequency:
+                                            </block>
+                                        </table-cell>       
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                {!quote.SBQQ__BillingFrequency__c}
+                                            </block>
+                                        </table-cell>                    
+                                    </table-row> .
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(dateOfExistingAgreement)) && quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Date of Existing Agreement:
+                                            </block>
+                                        </table-cell>       
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                <apex:outputText value="{0,date,dd'-'MMM'-'yyyy}">
+                                                    <apex:param value="{!dateOfExistingAgreement}" /> 
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>                    
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.SBQQ__Opportunity2__r.Deal_Type__c <> 'Renewal' && quote.isNotAddOn__c && quote.SBQQ__Opportunity2__r.Early_Renewal_Credit_Amount__c != NULL}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Credits owed to Company pursuant to Existing Agreement:
+                                            </block>
+                                        </table-cell>       
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                <apex:outputText value="{0, number, ###,##0.00}">
+                                                    <apex:param value="{!quote.SBQQ__Opportunity2__r.Early_Renewal_Credit_Amount__c}"/>
+                                                </apex:outputText>                          
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.SBQQ__Opportunity2__r.Deal_Type__c <> 'Renewal' && quote.isNotAddOn__c && quote.SBQQ__Opportunity2__r.Amount_Due_to_BC__c != NULL}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Amounts owed by Company pursuant to Existing Agreement:
+                                            </block>
+                                        </table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                <apex:outputText value="{0, number, ###,##0.00}">
+                                                    <apex:param value="{!quote.SBQQ__Opportunity2__r.Amount_Due_to_BC__c}"/>
+                                                </apex:outputText>                                
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                
+                                <!-- #################################################################################################################################### -->
+                                <!--                                                        SovCRM: DP: 2011-12-02                                                        -->
+                                <!-- #################################################################################################################################### -->
+                                
+                                <apex:outputPanel layout="none" rendered="{!quote.Outgoing_Document_Show_First_Term_Fees__c && quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Initial Term</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.Initial_Term_Length__c}&nbsp;Months</block></table-cell>
+                                    </table-row>
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Initial Term Total Fees</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.CurrencyIsoCode} <apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!quote.Initial_Term_Total_Amount__c}" /></apex:outputText></block></table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.Outgoing_Document_Show_Renewal_Term__c && quote.isAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Renewal Term</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.SBQQ__RenewalTerm__c}</block></table-cell>
+                                    </table-row>
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Renewal Term Total Fees</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.CurrencyIsoCode} <apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!quote.ARR__c}" /></apex:outputText></block></table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!quote.Single_Term__c == false && quote.isNotAddOn__c && quote.SBQQ__SubscriptionTerm__c <> quote.Initial_Term_Length__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Mandatory Renewal Term</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.Mandatory_Renewal_Term__c}</block></table-cell>
+                                    </table-row>
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Mandatory Renewal Term Total Fees</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.CurrencyIsoCode} <apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!quote.Renewal_Term_Amount__c}" /></apex:outputText></block></table-cell>
+                                    </table-row>
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Total Term</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.SBQQ__SubscriptionTerm__c}&nbsp;Months</block></table-cell>
+                                    </table-row>
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">Total Fees</block></table-cell>
+                                        <table-cell border-width="1px"  padding="1pt"><block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold">{!quote.CurrencyIsoCode} <apex:outputText value="{0, number, ###,##0.00}"><apex:param value="{!quote.SBQQ__CustomerAmount__c}" /></apex:outputText></block></table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <!-- #################################################################################################################################### -->
+                                <!--                                                        SovCRM: DP: 2011-12-02                                                        -->
+                                <!-- #################################################################################################################################### -->
+                                
+                                
+                                <apex:outputPanel layout="none" rendered="{!supportPackage <> null && quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Support Package:
+                                            </block>
+                                        </table-cell>       
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                {!supportPackage}
+                                            </block>
+                                        </table-cell>
+                                    </table-row> 
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!NOT(ISBLANK(quote.SBQQ__Opportunity2__r.Requested_CDN__c)) && quote.isNotAddOn__c}">
+                                    <table-row>
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                Company CDN:
+                                            </block>
+                                        </table-cell>       
+                                        <table-cell border-width="1px"  padding="1pt"  >
+                                            <block font-family="arial" font-size= "9pt" text-align="left" color="#000000" font-weight="bold" >
+                                                {!quote.SBQQ__Opportunity2__r.Requested_CDN__c}
+                                            </block>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                            </table-body>
+                        </table>   
+                    </table-cell>
+                </table-row>
+            </table-body>
+        </table>
+    </block>
+</apex:page>

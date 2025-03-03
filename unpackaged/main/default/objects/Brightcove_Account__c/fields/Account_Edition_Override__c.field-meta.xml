@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Edition_Override__c</fullName>
+    <label>Account Edition (Override)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EXPRESS_100</fullName>
+                <default>false</default>
+                <label>EXPRESS_100</label>
+            </value>
+            <value>
+                <fullName>EXPRESS_200</fullName>
+                <default>false</default>
+                <label>EXPRESS_200</label>
+            </value>
+            <value>
+                <fullName>EXPRESS_500</fullName>
+                <default>false</default>
+                <label>EXPRESS_500</label>
+            </value>
+            <value>
+                <fullName>Express Retention $199 Conversion</fullName>
+                <default>false</default>
+                <label>Express Retention $199 Conversion</label>
+            </value>
+            <value>
+                <fullName>Express Retention $99 Conversion</fullName>
+                <default>false</default>
+                <label>Express Retention $99 Conversion</label>
+            </value>
+            <value>
+                <fullName>EXPRESS_PROMO_5</fullName>
+                <default>false</default>
+                <label>EXPRESS_PROMO_5</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite 3.0 - Elite</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite 3.0 - Elite</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite 3.0 - Enterprise</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite 3.0 - Enterprise</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite 3.0 - Professional</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite 3.0 - Professional</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite 3.0 - Starter I</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite 3.0 - Starter I</label>
+            </value>
+            <value>
+                <fullName>Video Marketing Suite 3.0 - Starter II</fullName>
+                <default>false</default>
+                <label>Video Marketing Suite 3.0 - Starter II</label>
+            </value>
+            <value>
+                <fullName>Enterprise Video Suite 2.0 - Starter</fullName>
+                <default>false</default>
+                <label>Enterprise Video Suite 2.0 - Starter</label>
+            </value>
+            <value>
+                <fullName>Enterprise Video Suite 2.0</fullName>
+                <default>false</default>
+                <label>Enterprise Video Suite 2.0</label>
+            </value>
+            <value>
+                <fullName>Brightcove Elite</fullName>
+                <default>false</default>
+                <label>Brightcove Elite</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Receive_NPS_Survey__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>KM:  This contact should not receive the Brightcove NPS Survey.  This is for reps/AMs to manage their NPS contacts without having to remove them from a contact role or make them an invalid contact just so they won&#39;t receive the NPS email.</description>
+    <inlineHelpText>Check this box if you do not want this contact to receive the NPS email.</inlineHelpText>
+    <label>Do Not Receive NPS Survey</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

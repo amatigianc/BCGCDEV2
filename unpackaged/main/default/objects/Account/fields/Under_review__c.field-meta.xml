@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Under_review__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>The account is being reviewed for deletion or merging.</description>
+    <inlineHelpText>The account is being reviewed for deletion or merging.</inlineHelpText>
+    <label>Under review?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Offer</fullName>
+    <active>true</active>
+    <description>The HOW / WHERE offers are promoted (online marketing, direct email, sponsorship, conferences, etc</description>
+    <label>Marketing Offer</label>
+    <picklistValues>
+        <picklist>Campaign_Business_Unit__c</picklist>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Division__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Offer_Language__c</picklist>
+        <values>
+            <fullName>English %28EN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English %28EN-GB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English %28EN-US%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French %28FR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German %28DE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian %28IT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese %28JA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean %28KO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish %28ES - LATAM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish %28ES%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Offer_Type__c</picklist>
+        <values>
+            <fullName>Analyst Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Study</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communication Opt-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content Bundle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Response %28Conversation%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infographic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLAY TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Beta Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Follow-up %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slideshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweepstakes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undefined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whitepaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eBook</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Play__c</picklist>
+        <values>
+            <fullName>Engage People</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monetize Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sell Products</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Region_Sub_Division__c</picklist>
+        <values>
+            <fullName>ANZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LATAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RoA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaign_Segment__c</picklist>
+        <values>
+            <fullName>Arts %26 Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broadcaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Festivals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publishers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Aborted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

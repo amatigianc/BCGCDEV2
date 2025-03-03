@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DB_Parent_Primary_Name__c</fullName>
+    <description>D&amp;B - Parent Business Primary Name - Mapped with &quot;Parent Business Name&quot; D&amp;B Element in D&amp;B Connect.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>D&amp;B - The single name by which the entity is primarily known or identified.</inlineHelpText>
+    <label>DB - Parent Primary Name</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

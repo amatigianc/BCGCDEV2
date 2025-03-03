@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_results__c</fullName>
+    <inlineHelpText>Minor issues are the ones that don&#39;t compromise the success of the event if the customer doesn&#39;t address them. Major issues are the ones that must be fixed for a successful event</inlineHelpText>
+    <label>Test Results</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No issues detected</fullName>
+                <default>false</default>
+                <label>No issues detected</label>
+            </value>
+            <value>
+                <fullName>Minor issues detected</fullName>
+                <default>false</default>
+                <label>Minor issues detected</label>
+            </value>
+            <value>
+                <fullName>Major issues detected</fullName>
+                <default>false</default>
+                <label>Major issues detected</label>
+            </value>
+            <value>
+                <fullName>No Test Conducted</fullName>
+                <default>false</default>
+                <label>No Test Conducted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

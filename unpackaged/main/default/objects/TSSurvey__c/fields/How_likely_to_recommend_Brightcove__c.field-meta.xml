@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_likely_to_recommend_Brightcove__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Based on your customer support experience, how likely is it that you would recommend Brightcove to a friend or a colleague?</inlineHelpText>
+    <label>How likely to recommend Brightcove</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

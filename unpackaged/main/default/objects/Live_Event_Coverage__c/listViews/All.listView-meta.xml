@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status__c</columns>
+    <columns>Live_Event_Coverage_Owner__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Human_readable_Event_Start__c</columns>
+    <columns>EventStartForWorkflow__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Event_Start_Year__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>2016</value>
+    </filters>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

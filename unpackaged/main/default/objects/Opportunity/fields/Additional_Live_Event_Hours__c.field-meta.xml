@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Live_Event_Hours__c</fullName>
+    <description>Changed label from &quot;Live Event Support Hours (NOC)&quot; --&gt; Live Event Support Hours (NOC)</description>
+    <externalId>false</externalId>
+    <label>Live Event Support Hours (NOC)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

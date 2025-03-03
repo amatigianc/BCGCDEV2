@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Score_5_pts_scale__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  CONTAINS(Name, &quot;2022&quot;)|| CONTAINS(Name, &quot;a5D8c&quot;)||  Name = &quot;NOC&quot; ||  CONTAINS(Name, &quot;GetFeedback&quot;), Survey_Average__c, (Survey_Average__c * 5)/10)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Survey Score (5 pts scale)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

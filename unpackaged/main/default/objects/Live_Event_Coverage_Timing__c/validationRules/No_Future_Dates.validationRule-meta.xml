@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Future_Dates</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ Start_of_Coverage__c &gt; NOW(),
+ End_of_Coverage__c &gt; NOW()
+)</errorConditionFormula>
+    <errorMessage>The Start of Coverage and End of Coverage can&#39;t be dates in the future.
+Please review your inputs.</errorMessage>
+</ValidationRule>

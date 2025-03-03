@@ -1,0 +1,73 @@
+<apex:page controller="PostChatRating" showHeader="false" sidebar="false">    
+    <style type="text/css">
+    .rating-info {
+        font-size: 15px;
+        margin: 1.8em 1.5em;
+        text-align: justify;
+    }
+
+    .rating-container {
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+
+    .rating-value {
+        display: inline-block;
+        margin: 0 2px;
+        text-decoration: none;
+        transition: 0.1s ease;
+    }
+
+    .rating-value:hover {
+        text-decoration: none;
+        transform: scale(1.2);
+    }
+
+    .five,
+    .satisfied {
+        color: #0e9a0e !important;
+    }
+
+    .four {
+        color: #a2c00a !important;
+    }
+
+    .three {
+        color: #FFD300 !important;
+    }
+
+    .two {
+        color: #FF8C00 !important;
+    }
+
+    .one,
+    .dissatisfied {
+        color: #FF0000 !important;
+    }
+</style>
+
+<p class="rating-info">
+    {!$Label.csat_part_1}
+    <br />
+    <br />
+    {!$Label.csat_part_2}<span class="satisfied"> {!$Label.csat_part_3} </span>{!$Label.csat_part_4}<span
+        class="dissatisfied"> {!$Label.csat_part_5} </span>{!$Label.csat_part_6}
+    <br />
+</p>
+
+<div class="rating-container">
+    <a href="https://www.getfeedback.com/r/ektNr7VV?Case_Contact_ID={!Case.ContactId}&Case_ID={!Case.Id}&Case_Account_ID={!Case.Account_Account_ID__c}&Case_Opened_Date={!dt}&Case_Owner_Full_Name={!Case.Case_Owner_full_name__c}&gf_q[11842817]=5"
+        target="_blank" class="rating-value five">5</a>
+    <a href="https://www.getfeedback.com/r/ektNr7VV?Case_Contact_ID={!Case.ContactId}&Case_ID={!Case.Id}&Case_Account_ID={!Case.Account_Account_ID__c}&Case_Opened_Date={!dt}&Case_Owner_Full_Name={!Case.Case_Owner_full_name__c}&gf_q[11842817]=4"
+        target="_blank" class="rating-value four">4</a>
+    <a href="https://www.getfeedback.com/r/ektNr7VV?Case_Contact_ID={!Case.ContactId}&Case_ID={!Case.Id}&Case_Account_ID={!Case.Account_Account_ID__c}&Case_Opened_Date={!dt}&Case_Owner_Full_Name={!Case.Case_Owner_full_name__c}&gf_q[11842817]=3"
+        target="_blank" class="rating-value three">3</a>
+    <a href="https://www.getfeedback.com/r/ektNr7VV?Case_Contact_ID={!Case.ContactId}&Case_ID={!Case.Id}&Case_Account_ID={!Case.Account_Account_ID__c}&Case_Opened_Date={!dt}&Case_Owner_Full_Name={!Case.Case_Owner_full_name__c}&gf_q[11842817]=2"
+        target="_blank" class="rating-value two">2</a>
+    <a href="https://www.getfeedback.com/r/ektNr7VV?Case_Contact_ID={!Case.ContactId}&Case_ID={!Case.Id}&Case_Account_ID={!Case.Account_Account_ID__c}&Case_Opened_Date={!dt}&Case_Owner_Full_Name={!Case.Case_Owner_full_name__c}&gf_q[11842817]=1"
+        target="_blank" class="rating-value one">1</a>
+</div>
+</apex:page>

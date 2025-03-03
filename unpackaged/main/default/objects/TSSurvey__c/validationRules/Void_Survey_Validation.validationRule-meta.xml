@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Void_Survey_Validation</fullName>
+    <active>true</active>
+    <description>The user can&#39;t edit the Void Survey checkbox without adding a Void Reason.</description>
+    <errorConditionFormula>AND(
+  ISBLANK(Void_Reason__c),
+  Void_Survey__c  = True 
+)</errorConditionFormula>
+    <errorMessage>The Void Reason needs to be added in order to void a survey.</errorMessage>
+</ValidationRule>

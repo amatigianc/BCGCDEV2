@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_instant_cue_point_test_player__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Test player: Create instant cue point using the Live module Control Room.</inlineHelpText>
+    <label>Create instant cue point - test player</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

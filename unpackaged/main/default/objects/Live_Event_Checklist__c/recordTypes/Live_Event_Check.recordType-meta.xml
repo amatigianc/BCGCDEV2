@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Event_Check</fullName>
+    <active>true</active>
+    <label>Live Event Check</label>
+    <picklistValues>
+        <picklist>Backup_Channel_Status__c</picklist>
+        <values>
+            <fullName>All Live streams experienced degradation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Live streams experienced downtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Live streams ran successfully</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Live streams experienced degradation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Live streams experienced downtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームが正常に流れていたことを確認しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームにおいてダウンタイムが発生しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームにおいて品質劣化が確認されました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>幾つかのストリームにおいてダウンタイムが発生しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>幾つかのストリームにおいて品質劣化が確認されました</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Backup_Job__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>不使用</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Status__c</picklist>
+        <values>
+            <fullName>All Live streams experienced degradation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Live streams experienced downtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Live streams ran successfully</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Live streams experienced degradation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Live streams experienced downtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームが正常に流れていたことを確認しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームにおいてダウンタイムが発生しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームにおいて品質劣化が確認されました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>幾つかのストリームにおいてダウンタイムが発生しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>幾つかのストリームにおいて品質劣化が確認されました</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cloud_DVR__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cloud_Playout__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>不使用</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contingency_Encoder__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>不使用</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DRM__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>不使用</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enconder__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>不使用</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Input_Drift_less_than_3s__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issues_observed_during_testing__c</picklist>
+        <values>
+            <fullName>Audio%2FVideo sync issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure of live jobs or redundancy group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Looping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macrobloking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Source stream disconnections</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Live_Event_Testing_Report_Status__c</picklist>
+        <values>
+            <fullName>Create Live Event Testing Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress - Creating Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report Created</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Output_Drift_less_than_12s__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Channel_Status__c</picklist>
+        <values>
+            <fullName>All Live streams experienced degradation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Live streams experienced downtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Live streams ran successfully</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Live streams experienced degradation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some Live streams experienced downtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームが正常に流れていたことを確認しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームにおいてダウンタイムが発生しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>全てのストリームにおいて品質劣化が確認されました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>幾つかのストリームにおいてダウンタイムが発生しました</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>幾つかのストリームにおいて品質劣化が確認されました</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Job__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>不使用</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SSAI__c</picklist>
+        <values>
+            <fullName>Not Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>不使用</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>正常</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>異常有</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_Features__c</picklist>
+        <values>
+            <fullName>BC Live %28API%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC Live %28Live module%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud DVR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud playout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Redundancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PigeonHole Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simulive plug-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom Integration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eCDN_Plugin_in_use__c</picklist>
+        <values>
+            <fullName>Kollective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramp Multicast%2B%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ramp Omni cache</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

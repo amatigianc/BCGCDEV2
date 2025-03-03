@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_Leads_Require_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>n2de__Is_rejected__c &amp;&amp; ISPICKVAL(Rejected_Reason__c  , &#39;&#39;)</errorConditionFormula>
+    <errorDisplayField>Rejected_Reason__c</errorDisplayField>
+    <errorMessage>A Rejected Reason must be set if a Lead is Rejected</errorMessage>
+</ValidationRule>

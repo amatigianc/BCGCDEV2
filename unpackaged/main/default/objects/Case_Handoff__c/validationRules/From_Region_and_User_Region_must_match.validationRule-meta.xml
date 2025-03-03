@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>From_Region_and_User_Region_must_match</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT( From_Region__c ) &lt;&gt;  TEXT($User.CS_Region__c )</errorConditionFormula>
+    <errorDisplayField>From_Region__c</errorDisplayField>
+    <errorMessage>From region must match your region</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Live_Event_Support_hours_available__c</fullName>
+    <externalId>false</externalId>
+    <formula>Total_Live_Event_Support_hours_sold__c - Total_Live_Event_Support_hours_booked__c - Live_Event_Support_Hours_used__c + Manual_Live_Event_Support__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Live Event Support Hours available</inlineHelpText>
+    <label>Total Live Event Support hours available</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

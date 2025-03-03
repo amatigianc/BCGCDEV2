@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brightcove_Integration_Point__c</fullName>
+    <label>Brightcove Integration Point</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advertising API</fullName>
+                <default>false</default>
+                <label>Advertising API</label>
+            </value>
+            <value>
+                <fullName>Analytics API</fullName>
+                <default>false</default>
+                <label>Analytics API</label>
+            </value>
+            <value>
+                <fullName>Android SDK</fullName>
+                <default>false</default>
+                <label>Android SDK</label>
+            </value>
+            <value>
+                <fullName>BEML</fullName>
+                <default>false</default>
+                <label>BEML</label>
+            </value>
+            <value>
+                <fullName>Brightcove Player API</fullName>
+                <default>false</default>
+                <label>Brightcove Player API</label>
+            </value>
+            <value>
+                <fullName>CMS API</fullName>
+                <default>false</default>
+                <label>CMS API</label>
+            </value>
+            <value>
+                <fullName>Dynamic Ingest API</fullName>
+                <default>false</default>
+                <label>Dynamic Ingest API</label>
+            </value>
+            <value>
+                <fullName>iOS SDK</fullName>
+                <default>false</default>
+                <label>iOS SDK</label>
+            </value>
+            <value>
+                <fullName>Media API</fullName>
+                <default>false</default>
+                <label>Media API</label>
+            </value>
+            <value>
+                <fullName>Smart Player API</fullName>
+                <default>false</default>
+                <label>Smart Player API</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

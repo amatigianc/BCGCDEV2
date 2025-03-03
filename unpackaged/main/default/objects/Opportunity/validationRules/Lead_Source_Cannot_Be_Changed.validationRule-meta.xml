@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_Cannot_Be_Changed</fullName>
+    <active>true</active>
+    <description>Once set, the Lead Source of an Opportunity cannot be altered.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Deal_Type__c ,&#39;New Business&#39;),
+NOT(ISBLANK(PRIORVALUE(LeadSource)) ),
+ISCHANGED(LeadSource),
+NOT( $Permission.Edit_Opportunity_Lead_Source )
+
+)
+
+
+/*
+AND(
+ISPICKVAL(Deal_Type__c ,&#39;New Business&#39;),
+NOT(ISNULL(PRIORVALUE(LeadSource))) &amp;&amp; ISCHANGED(LeadSource) &amp;&amp; NOT( $Permission.Edit_Opportunity_Lead_Source )) */</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>The Opportunity Lead Source cannot be changed once set.</errorMessage>
+</ValidationRule>

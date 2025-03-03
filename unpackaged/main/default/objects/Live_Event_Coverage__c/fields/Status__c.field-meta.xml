@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <inlineHelpText>Used by Customer Support for Event Coverage Tracking.</inlineHelpText>
+    <label>Coverage Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Checking details with AM</fullName>
+                <default>false</default>
+                <label>Checking details with AM</label>
+            </value>
+            <value>
+                <fullName>Pending - CS - Assigning Resource</fullName>
+                <default>false</default>
+                <label>Pending - CS - Assigning Resource</label>
+            </value>
+            <value>
+                <fullName>Pending - CS - Resource Booked</fullName>
+                <default>false</default>
+                <label>Pending - CS - Resource Booked</label>
+            </value>
+            <value>
+                <fullName>Closed - Rejected</fullName>
+                <default>false</default>
+                <label>Closed - Rejected</label>
+            </value>
+            <value>
+                <fullName>Closed - Completed [Business Hours]</fullName>
+                <default>false</default>
+                <label>Closed - Completed [Business Hours]</label>
+            </value>
+            <value>
+                <fullName>Closed - Completed [Off-Hours]</fullName>
+                <default>false</default>
+                <label>Closed - Completed [Off-Hours]</label>
+            </value>
+            <value>
+                <fullName>Closed - Completed [Mixed]</fullName>
+                <default>false</default>
+                <label>Closed - Completed [Mixed]</label>
+            </value>
+            <value>
+                <fullName>Need To Close</fullName>
+                <default>false</default>
+                <label>Need To Close</label>
+            </value>
+            <value>
+                <fullName>Closed - Duplicate</fullName>
+                <default>false</default>
+                <label>Closed - Duplicate</label>
+            </value>
+            <value>
+                <fullName>Open - Automated Monitoring</fullName>
+                <default>false</default>
+                <label>Open - Automated Monitoring</label>
+            </value>
+            <value>
+                <fullName>Closed - Automated Monitoring</fullName>
+                <default>false</default>
+                <label>Closed - Automated Monitoring</label>
+            </value>
+            <value>
+                <fullName>Open - Premium Monitoring</fullName>
+                <default>false</default>
+                <label>Open - Premium Monitoring</label>
+            </value>
+            <value>
+                <fullName>Closed - Premium Monitoring</fullName>
+                <default>false</default>
+                <label>Closed - Premium Monitoring</label>
+            </value>
+            <value>
+                <fullName>Pending - ProBono Event Rejected</fullName>
+                <default>false</default>
+                <label>Pending - ProBono Event Rejected</label>
+            </value>
+            <value>
+                <fullName>Closed - Canceled</fullName>
+                <default>false</default>
+                <label>Closed - Canceled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

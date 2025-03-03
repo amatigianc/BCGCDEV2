@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Use_Case__c</fullName>
+    <description>The main use case we will market to this account</description>
+    <label>Primary Use Case</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full-service OTT</fullName>
+                <default>false</default>
+                <label>Full-service OTT</label>
+            </value>
+            <value>
+                <fullName>Streaming Back-end</fullName>
+                <default>false</default>
+                <label>Streaming Back-end</label>
+            </value>
+            <value>
+                <fullName>Web/Mobile Publishing</fullName>
+                <default>false</default>
+                <label>Web/Mobile Publishing</label>
+            </value>
+            <value>
+                <fullName>Analytics &amp; Insights</fullName>
+                <default>false</default>
+                <label>Analytics &amp; Insights</label>
+            </value>
+            <value>
+                <fullName>Internal Comms</fullName>
+                <default>false</default>
+                <label>Internal Comms</label>
+            </value>
+            <value>
+                <fullName>External Comms</fullName>
+                <default>false</default>
+                <label>External Comms</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Bespoke Products</fullName>
+                <default>false</default>
+                <label>Bespoke Products</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

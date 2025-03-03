@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Categories__c</fullName>
+    <label>Solution Categories</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accessibility</fullName>
+                <default>false</default>
+                <label>Accessibility</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>AI and Video Enrichment</fullName>
+                <default>false</default>
+                <label>AI and Video Enrichment</label>
+            </value>
+            <value>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <fullName>Content and Social Syndication</fullName>
+                <default>false</default>
+                <label>Content and Social Syndication</label>
+            </value>
+            <value>
+                <fullName>Content Management System</fullName>
+                <default>false</default>
+                <label>Content Management System</label>
+            </value>
+            <value>
+                <fullName>Digital Asset Management</fullName>
+                <default>false</default>
+                <label>Digital Asset Management</label>
+            </value>
+            <value>
+                <fullName>DRM and Content Protection</fullName>
+                <default>false</default>
+                <label>DRM and Content Protection</label>
+            </value>
+            <value>
+                <fullName>eCommerce Platform</fullName>
+                <default>false</default>
+                <label>eCommerce Platform</label>
+            </value>
+            <value>
+                <fullName>Enterprise Content Deliver</fullName>
+                <default>false</default>
+                <label>Enterprise Content Deliver</label>
+            </value>
+            <value>
+                <fullName>Event Management Platform</fullName>
+                <default>false</default>
+                <label>Event Management Platform</label>
+            </value>
+            <value>
+                <fullName>Interactive Video</fullName>
+                <default>false</default>
+                <label>Interactive Video</label>
+            </value>
+            <value>
+                <fullName>Live Streaming Hardware/Software</fullName>
+                <default>false</default>
+                <label>Live Streaming Hardware/Software</label>
+            </value>
+            <value>
+                <fullName>LMS and Training Platform</fullName>
+                <default>false</default>
+                <label>LMS and Training Platform</label>
+            </value>
+            <value>
+                <fullName>Marketing Automation Platforms</fullName>
+                <default>false</default>
+                <label>Marketing Automation Platforms</label>
+            </value>
+            <value>
+                <fullName>OTT Platforms and Extensions</fullName>
+                <default>false</default>
+                <label>OTT Platforms and Extensions</label>
+            </value>
+            <value>
+                <fullName>Paywall, Subscriber Management and Payment Gateways</fullName>
+                <default>false</default>
+                <label>Paywall, Subscriber Management and Payment Gateways</label>
+            </value>
+            <value>
+                <fullName>Recommendations</fullName>
+                <default>false</default>
+                <label>Recommendations</label>
+            </value>
+            <value>
+                <fullName>Video Conferencing</fullName>
+                <default>false</default>
+                <label>Video Conferencing</label>
+            </value>
+            <value>
+                <fullName>Video Creation and Editing</fullName>
+                <default>false</default>
+                <label>Video Creation and Editing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

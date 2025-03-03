@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Termination_In_Process</fullName>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Client_Termination_Rights__c</columns>
+    <columns>Termination_Type__c</columns>
+    <columns>Client_Termination_Date_Stamp__c</columns>
+    <columns>Effective_Date__c</columns>
+    <columns>Deactivation_Date__c</columns>
+    <columns>Contract_URL__c</columns>
+    <columns>Brightcove_Accounts_to_Terminate__c</columns>
+    <columns>Reason_for_Win_Loss__c</columns>
+    <columns>Notes_reason_win_loss__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Client_Termination_Status__c</field>
+        <operation>equals</operation>
+        <value>In Process</value>
+    </filters>
+    <filters>
+        <field>X18_digit_Opportunity_ID__c</field>
+        <operation>notEqual</operation>
+        <value>0068c00000w9Pw7AAE</value>
+    </filters>
+    <label>Client Termination In Process</label>
+    <sharedTo>
+        <group>Finance_Approvals</group>
+    </sharedTo>
+</ListView>

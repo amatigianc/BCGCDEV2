@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Android_SDK_v6_11_0_or_later__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Using the Brightcove Native SDK for Android v6.11.0 or later.</inlineHelpText>
+    <label>Android SDK v6.11.0 or later</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

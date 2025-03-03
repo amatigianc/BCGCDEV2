@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Pricing_Type__c</fullName>
+    <inlineHelpText>The value in this field determines which pricing logic to use. See confluence for more information about Custom Pricing Types</inlineHelpText>
+    <label>Custom Pricing Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Custom_Pricing_Type</valueSetName>
+    </valueSet>
+</CustomField>

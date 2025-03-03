@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comments_for_Followup_Complete</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+Follow_up_complete__c =True,
+ISBLANK( Comments__c  )
+)</errorConditionFormula>
+    <errorMessage>You must enter comments when checking off the &quot;Follow-up Complete?&quot; check box</errorMessage>
+</ValidationRule>

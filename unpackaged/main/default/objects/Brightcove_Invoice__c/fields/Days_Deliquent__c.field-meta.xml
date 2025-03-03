@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Deliquent__c</fullName>
+    <description>I know that &quot;Delinquent&quot; is misspelled here. This is just the latest entry in the book of sin that has been started for the Fusion project. Instead of correcting the typo, we&#39;re just making sure that it&#39;s wrong in both places.  Another part of me has died today, and it&#39;s not even 9 am.</description>
+    <externalId>false</externalId>
+    <label>Days Deliquent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

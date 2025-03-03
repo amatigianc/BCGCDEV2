@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_Offer_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(
+NOT(ISBLANK(Last_Trial_Registration_Date__c)),
+&quot;Trial&quot;,
+
+IF( 
+OR(
+NOT(ISBLANK( Last_Sales_Inquiry_Date__c )),
+NOT(ISBLANK( Last_Live_Chat_Date__c )),
+NOT(ISBLANK(Next_Selling_Activity_Date__c))  
+)
+
+,
+&quot;Inquiry&quot;,
+
+IF(
+
+OR(
+NOT(ISBLANK( Last_Whitepaper_Download_Date__c )),
+NOT(ISBLANK(Last_Email_Clickthrough_Date__c)),
+NOT(ISBLANK(Last_Website_Visit_Date__c)) 
+)
+
+,
+&quot;Content&quot;,
+
+IF(
+OR(
+NOT(ISBLANK(Last_Event_Attendance_Date__c)),
+NOT(ISBLANK(Last_Webinar_Registration_Date__c)),
+NOT(ISBLANK(Last_Event_Registration_Date__c))
+) 
+,
+&quot;Event&quot;
+,
+IF(
+OR(
+NOT(ISBLANK(Last_Partner_Inquiry_Date__c)), 
+NOT(ISBLANK( Last_Partner_Referral_Date__c )) 
+)
+,
+&quot;partner inquiry&quot;,
+ 
+IF(
+AND(
+
+ 
+ISBLANK(Last_Trial_Registration_Date__c),
+ISBLANK(Last_Whitepaper_Download_Date__c ),
+ISBLANK(Last_Sales_Inquiry_Date__c ),
+ISBLANK(Last_Event_Attendance_Date__c),
+ISBLANK(Last_Webinar_Registration_Date__c),
+ISBLANK(Last_Event_Registration_Date__c),
+ISBLANK(Last_Partner_Inquiry_Date__c),
+ISBLANK(Last_Live_Chat_Date__c),
+ISBLANK(Last_Website_Visit_Date__c), 
+ISBLANK(Last_Email_Clickthrough_Date__c),
+DE_DaysFromCreate__c &gt; 1
+
+), &quot;Generic&quot;,&quot;&quot;
+
+)
+ 
+
+) /*Partner Inquiry IF*/
+) /*event IF*/
+) /*Inquiry if*/
+) /*content if*/
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DE - Offer Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<template>
+    <template if:true={attachments}>
+        <h3>Attachments from Emails Related to Case</h3>
+        <ul>
+            <template for:each={attachments} for:item="attachment">
+                <li key={attachment.downloadUrl}>
+                    <a href={attachment.downloadUrl} target="_blank">{attachment.title}</a>
+                </li>
+            </template>
+        </ul>
+    </template>
+    <template if:true={error}>
+        <p>Error: {errorMessage}</p>
+    </template>
+</template>

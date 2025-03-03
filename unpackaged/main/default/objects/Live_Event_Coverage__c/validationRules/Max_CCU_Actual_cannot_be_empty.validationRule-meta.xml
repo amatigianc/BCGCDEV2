@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_CCU_Actual_cannot_be_empty</fullName>
+    <active>true</active>
+    <description>Checks if the MAX CCU - Actual is null when closing the LE. A value is required</description>
+    <errorConditionFormula>AND(RecordType.Name  = &quot;Live_Event_Support&quot;,
+MAX_CCU_Actual__c == null,
+OR(
+TEXT( Status__c ) == &quot;Closed - Completed [Mixed]&quot;,
+TEXT( Status__c ) == &quot;Closed - Completed [Off-Hours]&quot;,
+TEXT( Status__c ) == &quot;Closed - Completed [Business Hours]&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>MAX_CCU_Actual__c</errorDisplayField>
+    <errorMessage>MAX CCU - Actual value is required to close the LE</errorMessage>
+</ValidationRule>

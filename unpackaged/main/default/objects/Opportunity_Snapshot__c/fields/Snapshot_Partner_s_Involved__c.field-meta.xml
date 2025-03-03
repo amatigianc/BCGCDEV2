@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Snapshot_Partner_s_Involved__c</fullName>
+    <description>Was a partner involved in the opportunity?</description>
+    <externalId>false</externalId>
+    <label>Snapshot Partner(s) Involved</label>
+    <length>25</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

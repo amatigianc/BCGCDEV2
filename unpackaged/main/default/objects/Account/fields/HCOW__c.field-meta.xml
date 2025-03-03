@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCOW__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Hot Customer Of The Week. Used to mark customers who are in need of every once of care and treatment we can give them.</description>
+    <label>Platinum Alerts Active (Deprecate)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

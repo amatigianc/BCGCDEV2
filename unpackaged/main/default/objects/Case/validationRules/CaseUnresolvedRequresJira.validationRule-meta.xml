@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseUnresolvedRequresJira</fullName>
+    <active>true</active>
+    <description>If a case is closed as unresolved it requires a jira</description>
+    <errorConditionFormula>AND(
+
+OR( 
+ISPICKVAL(Status , &#39;Closed - Unresolved&#39;),
+ISPICKVAL(Root_Cause__c, &#39;System Issue&#39;),
+ISPICKVAL(Root_Cause__c,&#39;Bug&#39;) 
+),
+
+Has_JIRA__c = false,
+NOT(ISPICKVAL(Root_Cause__c,&#39;Enhancement Request&#39;)),
+
+RecordType.DeveloperName = &#39;Technical_Support&#39;, /*Technical Support*/
+OR(
+$UserRole.Name = &quot;Technical Support Manager&quot;,
+$UserRole.Name = &quot;Technical Support Rep&quot;
+),
+NOT($Permission.ByPass_CaseUnresolvedRequresJira_ValidationRule)
+
+)</errorConditionFormula>
+    <errorDisplayField>JIRA_Key__c</errorDisplayField>
+    <errorMessage>Closed - Unresolved, Root Cause: Bug, System Issue, require a JIRA before closing the case. If this is for an Aha Idea please select Root Cause &quot;Enhancement Request&quot;</errorMessage>
+</ValidationRule>

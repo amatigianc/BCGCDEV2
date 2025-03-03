@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Event_Testing_Report_Status__c</fullName>
+    <description>Displays status of report creation</description>
+    <label>Live Event Testing Report Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Create Live Event Testing Report</fullName>
+                <default>false</default>
+                <label>Create Live Event Testing Report</label>
+            </value>
+            <value>
+                <fullName>In Progress - Creating Report</fullName>
+                <default>false</default>
+                <label>In Progress - Creating Report</label>
+            </value>
+            <value>
+                <fullName>Report Created</fullName>
+                <default>false</default>
+                <label>Report Created</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

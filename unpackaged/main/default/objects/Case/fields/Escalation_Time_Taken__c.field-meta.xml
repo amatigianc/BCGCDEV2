@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation_Time_Taken__c</fullName>
+    <description>This field will be populated when a T2 takes ownership once a case has been escalated.</description>
+    <inlineHelpText>This field is not editable. It will be modified with a trigger.</inlineHelpText>
+    <label>T2 Ownership Taken</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

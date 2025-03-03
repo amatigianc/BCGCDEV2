@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Set_Status_To__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK( &quot;/&quot; + Id + &quot;/e?save=1&amp;notifyContact=0&amp;cas7=Pending - Customer&amp;nooverride=1&amp;retURL=/&quot; + Id, &quot;Customer&quot;, &quot;_self&quot;)
++ &quot; - &quot; +
+HYPERLINK( &quot;/&quot; + Id + &quot;/e?save=1&amp;notifyContact=0&amp;cas7=Pending - Internal&amp;nooverride=1&amp;retURL=/&quot; + Id, &quot;Internal&quot;, &quot;_self&quot;)
++ &quot; - &quot; +
+HYPERLINK( &quot;/&quot; + Id + &quot;/e?save=1&amp;notifyContact=0&amp;cas7=Pending - Fix&amp;nooverride=1&amp;retURL=/&quot; + Id, &quot;Fix&quot;, &quot;_self&quot;)
++ &quot; - &quot; +
+HYPERLINK( &quot;/&quot; + Id + &quot;/e?save=1&amp;notifyContact=0&amp;cas7=Pending - ENG Task&amp;nooverride=1&amp;retURL=/&quot; + Id, &quot;ENG Task&quot;, &quot;_self&quot;)
++ &quot; - &quot; +
+HYPERLINK( &quot;/&quot; + Id + &quot;/e?save=1&amp;notifyContact=0&amp;cas7=Pending - System Issue&amp;nooverride=1&amp;retURL=/&quot; + Id, &quot;System Issue&quot;, &quot;_self&quot;)
++ &quot; - &quot; +
+HYPERLINK( &quot;/&quot; + Id + &quot;/e?save=1&amp;notifyContact=0&amp;cas7=Pending - AM/Sales&amp;nooverride=1&amp;retURL=/&quot; + Id, &quot;AM/Sales&quot;, &quot;_self&quot;)
++ &quot; - &quot; +
+HYPERLINK( &quot;/&quot; + Id + &quot;/e?save=1&amp;notifyContact=0&amp;cas7=Pending - 3rd Party&amp;nooverride=1&amp;retURL=/&quot; + Id, &quot;3rd Party&quot;, &quot;_self&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Set Status To</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

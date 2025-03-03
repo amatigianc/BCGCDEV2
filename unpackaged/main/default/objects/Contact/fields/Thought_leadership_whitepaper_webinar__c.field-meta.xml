@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thought_leadership_whitepaper_webinar__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Thought Leadership Whitepaper and Webinars</description>
+    <label>Thought leadership whitepaper &amp; webinar</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

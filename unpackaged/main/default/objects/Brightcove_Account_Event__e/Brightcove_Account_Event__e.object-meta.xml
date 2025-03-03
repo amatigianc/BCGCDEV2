@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This platform event is used to create a new BCAccount__c record when a new Brightcove_Account__c record is created. If  that sounds like data-duplicate, you&#39;re correct.  This technical debt is brought to you by the letter F, as in Fusion.  Instead of taking 5 minutes to change &quot;BCAccount__c&quot; to &quot;Brightcove_Account__c&quot;, we&#39;re going to create a new custom object called &quot;BCAccount__c&quot; and then create automation to create a record for it every time a new Brightcove_Account__c record is created.  If all of that sounds like more than 5 minutes of work, you&#39;d be correct!  If this sounds like madness, you&#39;d also be correct.  To whomever inherits this, you have my sincerest apologies.  I did not want this hell for me, and I do not wish it on you.  Like so much evil in this world, this all exists because I was ordered to do it.  May god have mercy on my soul.</description>
+    <eventType>HighVolume</eventType>
+    <label>Brightcove Account Event</label>
+    <pluralLabel>Brightcove Account Events</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

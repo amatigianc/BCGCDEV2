@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sends a case when a new user signs up for the community</description>
+        <name>Email_GC_support_brightcove_com</name>
+        <label>Email GC_support@brightcove.com</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Update_description</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Email_Body</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Email_recipient</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>Email_Sender</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Email_Subject</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>initCase</name>
+        <label>initCase</label>
+        <locationX>176</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>tmpCaseSupportPortal.Type</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Automated Task</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpCaseSupportPortal.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>System</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpCaseSupportPortal.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Email_Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>tmpCaseSupportPortal.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Email_Body</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CreateCase</targetReference>
+        </connector>
+    </assignments>
+    <environments>Default</environments>
+    <interviewLabel>Contact - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact - BC Portal New User</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>CreateCase</name>
+        <label>CreateCase</label>
+        <locationX>176</locationX>
+        <locationY>695</locationY>
+        <inputReference>tmpCaseSupportPortal</inputReference>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_description</name>
+        <label>Update description</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>initCase</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Description_Text</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Email_GC_support_brightcove_com</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0018c00002gbSf5AAE</stringValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Description_Text</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>NEW PORTAL SELFREG USER</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_Body</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Client Name:
+{!$Record.FirstName} {!$Record.LastName}
+
+
+
+Client Email:
+
+{!$Record.Email}
+Thank you for registering with Brightcove&#39;s Support Portal.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_recipient</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>gc_support@brightcove.com</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_Sender</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>supportops+autoreply@brightcove.com</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_Subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Support Portal New User</text>
+    </textTemplates>
+    <variables>
+        <name>tmpCaseSupportPortal</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pro_Bono_Reason__c</fullName>
+    <label>Pro-Bono Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Barter</fullName>
+                <default>false</default>
+                <label>Barter</label>
+            </value>
+            <value>
+                <fullName>Charity</fullName>
+                <default>false</default>
+                <label>Charity</label>
+            </value>
+            <value>
+                <fullName>Friends &amp; Family</fullName>
+                <default>false</default>
+                <label>Friends &amp; Family</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

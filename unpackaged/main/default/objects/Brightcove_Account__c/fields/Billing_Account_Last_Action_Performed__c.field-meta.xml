@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Account_Last_Action_Performed__c</fullName>
+    <label>Billing Account Last Action Performed</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Expiration Alert (30d)</fullName>
+                <default>false</default>
+                <label>Expiration Alert (30d)</label>
+            </value>
+            <value>
+                <fullName>Expiration Alert (15d)</fullName>
+                <default>false</default>
+                <label>Expiration Alert (15d)</label>
+            </value>
+            <value>
+                <fullName>Expiration Alert (0d)</fullName>
+                <default>false</default>
+                <label>Expiration Alert (0d)</label>
+            </value>
+            <value>
+                <fullName>Failed Payment Alert (0d)</fullName>
+                <default>false</default>
+                <label>Failed Payment Alert (0d)</label>
+            </value>
+            <value>
+                <fullName>Failed Payment Alert (15d)</fullName>
+                <default>false</default>
+                <label>Failed Payment Alert (15d)</label>
+            </value>
+            <value>
+                <fullName>Failed Payment Alert (30d)</fullName>
+                <default>false</default>
+                <label>Failed Payment Alert (30d)</label>
+            </value>
+            <value>
+                <fullName>Lockdown - Initiated</fullName>
+                <default>false</default>
+                <label>Lockdown - Initiated</label>
+            </value>
+            <value>
+                <fullName>Lockdown - Complete</fullName>
+                <default>false</default>
+                <label>Lockdown - Complete</label>
+            </value>
+            <value>
+                <fullName>Unlocked for Back Payment</fullName>
+                <default>false</default>
+                <label>Unlocked for Back Payment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

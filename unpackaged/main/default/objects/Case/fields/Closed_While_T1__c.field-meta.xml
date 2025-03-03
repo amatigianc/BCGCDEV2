@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_While_T1__c</fullName>
+    <formula>IF( Closed_While_T2_Dev__c = TRUE,FALSE,IF( Closed_While_T2_Prod__c  = TRUE,FALSE,DATEVALUE( ClosedDate ) &gt;  Owner:User.Date_Made_Tier_1__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Closed While T1</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

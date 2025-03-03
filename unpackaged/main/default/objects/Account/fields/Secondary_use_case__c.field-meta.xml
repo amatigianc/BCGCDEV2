@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_use_case__c</fullName>
+    <label>Secondary Use Case</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ad-supported video on demand</fullName>
+                <default>false</default>
+                <label>Ad-supported video on demand</label>
+            </value>
+            <value>
+                <fullName>Digital Marketing</fullName>
+                <default>false</default>
+                <label>Digital Marketing</label>
+            </value>
+            <value>
+                <fullName>Encoding Only</fullName>
+                <default>false</default>
+                <label>Encoding Only</label>
+            </value>
+            <value>
+                <fullName>Enterprise Training &amp; Education</fullName>
+                <default>false</default>
+                <label>Enterprise Training &amp; Education</label>
+            </value>
+            <value>
+                <fullName>HBBTV</fullName>
+                <default>false</default>
+                <label>HBBTV</label>
+            </value>
+            <value>
+                <fullName>Internal Communications</fullName>
+                <default>false</default>
+                <label>Internal Communications</label>
+            </value>
+            <value>
+                <fullName>Live Events</fullName>
+                <default>false</default>
+                <label>Live Events</label>
+            </value>
+            <value>
+                <fullName>Live Streaming</fullName>
+                <default>false</default>
+                <label>Live Streaming</label>
+            </value>
+            <value>
+                <fullName>Long-Form Ad-Supported VoD</fullName>
+                <default>false</default>
+                <label>Long-Form Ad-Supported VoD</label>
+            </value>
+            <value>
+                <fullName>Long Form Subscription VoD</fullName>
+                <default>false</default>
+                <label>Long Form Subscription VoD</label>
+            </value>
+            <value>
+                <fullName>Marketing / Brand Awareness</fullName>
+                <default>false</default>
+                <label>Marketing / Brand Awareness</label>
+            </value>
+            <value>
+                <fullName>Short-Form Ad-Supported VoD</fullName>
+                <default>false</default>
+                <label>Short-Form Ad-Supported VoD</label>
+            </value>
+            <value>
+                <fullName>Subscription Based VoD</fullName>
+                <default>false</default>
+                <label>Subscription Based VoD</label>
+            </value>
+            <value>
+                <fullName>Transactional VoD</fullName>
+                <default>false</default>
+                <label>Transactional VoD</label>
+            </value>
+            <value>
+                <fullName>TVE - US Network Only</fullName>
+                <default>false</default>
+                <label>TVE - US Network Only</label>
+            </value>
+            <value>
+                <fullName>UGC</fullName>
+                <default>false</default>
+                <label>UGC</label>
+            </value>
+            <value>
+                <fullName>UGC / EGC</fullName>
+                <default>false</default>
+                <label>UGC / EGC</label>
+            </value>
+            <value>
+                <fullName>User-Generated Content</fullName>
+                <default>false</default>
+                <label>User-Generated Content</label>
+            </value>
+            <value>
+                <fullName>Video on demand</fullName>
+                <default>false</default>
+                <label>Video on demand</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

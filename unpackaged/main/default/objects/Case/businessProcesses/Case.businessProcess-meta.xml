@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case</fullName>
+    <description>It defines the stages of the Cases</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Customer has replied</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Duplicate</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - First Response</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - No Response</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Spam</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Unresolved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Customer has replied</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Merged</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Need To Close</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Pending - 3rd Party</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - AM%2FSales</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - CS Leadership</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - CSM%2FSales</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Customer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Customer - Info Provided</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Customer - Info provided - 8</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Customer - Need More Info</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Customer - Need More Info - 8</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - ENG Task</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Fix</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Fix Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Internal</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - Product Enhancement</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending - System Issue</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

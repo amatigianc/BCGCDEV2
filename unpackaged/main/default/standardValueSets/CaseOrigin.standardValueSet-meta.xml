@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System</fullName>
+        <default>false</default>
+        <label>System</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Live Chat</fullName>
+        <default>false</default>
+        <label>Live Chat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chatter</fullName>
+        <default>false</default>
+        <label>Chatter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Automatic Process</fullName>
+        <default>false</default>
+        <label>Automatic Process</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BCKK Email</fullName>
+        <default>false</default>
+        <label>BCKK Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Forums</fullName>
+        <default>false</default>
+        <label>Forums</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Once Email</fullName>
+        <default>false</default>
+        <label>Once Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Portal</fullName>
+        <default>false</default>
+        <label>Portal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proactive Outreach</fullName>
+        <default>false</default>
+        <label>Proactive Outreach</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Operations Help</fullName>
+        <default>false</default>
+        <label>Sales Operations Help</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Slack (P+)</fullName>
+        <default>false</default>
+        <label>Slack (P+)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Networking - Facebook</fullName>
+        <default>false</default>
+        <label>Social Networking - Facebook</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Networking - Other</fullName>
+        <default>false</default>
+        <label>Social Networking - Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Networking - Twitter</fullName>
+        <default>false</default>
+        <label>Social Networking - Twitter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Support Operations Email</fullName>
+        <default>false</default>
+        <label>Support Operations Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Zencoder Email</fullName>
+        <default>false</default>
+        <label>Zencoder Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Zencoder NFL Email</fullName>
+        <default>false</default>
+        <label>Zencoder NFL Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Zencoder Urgent Email</fullName>
+        <default>false</default>
+        <label>Zencoder Urgent Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NOC</fullName>
+        <default>false</default>
+        <label>NOC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalation</fullName>
+        <default>false</default>
+        <label>Escalation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PlayTV</fullName>
+        <default>false</default>
+        <label>PlayTV</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Engage</fullName>
+        <default>false</default>
+        <label>Engage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SalesOpsCommunity</fullName>
+        <default>false</default>
+        <label>SalesOpsCommunity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Slack Internal</fullName>
+        <default>false</default>
+        <label>Slack Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proactive - Reporting</fullName>
+        <default>false</default>
+        <label>Proactive - Reporting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proactive - Premium</fullName>
+        <default>false</default>
+        <label>Proactive - Premium</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Proactive - Automated</fullName>
+        <default>false</default>
+        <label>Proactive - Automated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CSM Requests</fullName>
+        <default>false</default>
+        <label>CSM Requests</label>
+    </standardValue>
+</StandardValueSet>

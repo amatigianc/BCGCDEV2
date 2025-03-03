@@ -1,0 +1,3540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_ServiceDesk</fullName>
+    <active>true</active>
+    <businessProcess>Case</businessProcess>
+    <compactLayoutAssignment>case_header_TS</compactLayoutAssignment>
+    <description>Tickets managed by the Revenue Operation (Service Desk) team</description>
+    <label>Sales Service Desk</label>
+    <picklistValues>
+        <picklist>Assign_to_T2__c</picklist>
+        <values>
+            <fullName>T2 Developer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2 Production</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Language__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Sub_reason__c</picklist>
+        <values>
+            <fullName>3rd Party - AEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party - Drupal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party - Microsoft Teams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party - Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party - Sharepoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party - Sitecore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party - Wordpress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Party Integration - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API Outage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accessibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account - Activate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account - Activate %28BC Internal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account - Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account - Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account - Unlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account - Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Lock - Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Lock - Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Trial Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account%2FAsset Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Settings %28CSAI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Settings %28Cloud Playout%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Settings %28SSAI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Settings %28Studio%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Trafficking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adobe Magento Commerce Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akamai Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akamai Analytics Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics - Cloud Playout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics - Data Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics - Feature Parity Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics - Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics - Performance Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Android</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Android SDK 5%2Ex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Android SDK 6%2Ex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Android SDK 7%2Ex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AppleTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aspect Ratio Incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aspera Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aspera Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset-level restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio%2FVideo Sync Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio-Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Captioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC Employee Last Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BYO CDN Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backend Issues %28Dynamic Delivery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Quality %2F Artifacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing%2FCredit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Both Android%2FiOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Live API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove to Brightcove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN Akamai GTM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN China Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN Issues %28BYO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN Issues %28House%2FNamed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN Setup %28Dynamic Delivery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN%2FOrigin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaign Dashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Captions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Output</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chaptering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Captioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed - Third Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Config %2F Parameters %2F Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate %28Brightcove%2Ecom%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credentials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross Device Resume %28XDR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cue Points</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom CSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Dev%2E Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Domain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Event Packages Enablement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Fields</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom HTML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom fields settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DD Account Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DD Account Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DD Account settings - Multiple Audio Tracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DD DRM Setup%2FSettings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMCA - Notification to offender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMCA Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRM Issues %28Dynamic Delivery%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVR Adjustments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discrepancies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domain Restriction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Download Timeout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOL - Static Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eloqua Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encoder Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encoding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encoding%2FPackaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhancement Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error processing %28Backend%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error processing %28Backend%29 - Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Essential Enablement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTP Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>False-positive alert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Not Supported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>File Permissions Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formats %26 Codecs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front End Web or App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallery Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generic Stream Concurrency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geo Filtering Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geo Restriction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant Portal Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HLS Encryption Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HLS Encryption Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HLS encryption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HTTP and Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hosting%2FServer settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Spots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HubSpot Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IIR%2FSIR Translation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP Restriction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Images</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Images %28Thumbnails %26 Poster%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Page Experiences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Resolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingestion %28Source S3%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingestion - SSAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingestion Profiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingestion Queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Input File Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Input Stream Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Libraries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid syntax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Backend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - CDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Input latency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Input quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Loading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - Login</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issues - SSAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Concurrency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job%2FEvent Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Label management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Hand Nav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Keys Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Cloud Transcoding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live DRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Input</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Monitoring UI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Redundancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Streaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local %2F Last mile Network Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Localization Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Login Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Latency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRSS Feed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRSS Ingestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macroblocking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mark Job As Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketo Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketplace Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media - Closed Captions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media - Image Capture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media - Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media - Source replacement %2F retranscode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Module - %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Sharing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Sharing Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Cloud Playout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live - API key</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live - Audio-only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live - Low Latency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live - Scheduling on%2Foff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live Account Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live Trial Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live Trial On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Live Trial extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Social On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module - Zencoder - Forensic Watermarking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-DMCA Content Takedown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not displaying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notification Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ooyala to Brightcove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Error Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Output Options</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Output Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overlays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Password Reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Analytics API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Audience API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - CMS API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - CMS API - Master Retrieval API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Data Collection API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Delivery Rules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Delivery System API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Dynamic Ingest API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - EPG API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Image API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - In-Page Experiences API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Ingest Profiles API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - OAuth API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Playback API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Playback Restrictions - Authentication - Audit API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Playback Restrictions - Authentication - Blacklist API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Playback Restrictions - Authentication - Key API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Playback Restrictions - Devices API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Playback Restrictions - Playback Rights API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Player Management API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Policy API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - SSAI API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform - Social Syndication API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - Broken Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - Freewheel Plugin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - Freewheel SDK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - IMA3 Plugin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - IMA3 SDK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - Malformed Ad Tag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - Malformed or Empty Ad Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - SSAI - Cloud Playout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - SSAI - Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - SSAI - VoD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - Third Party Plugin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback - VPAID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Authorization Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Inquires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Quality Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Restriction On%2FOff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Restriction issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Player APIs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Player Load Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Player Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Player Version 7 Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Players Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playlist Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plugins - Brightcove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plugins - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing %26 Plans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem making payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Release Notes and Documentation Task</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publisher Notifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purge Deleted Videos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quiz%2FSurvey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTMP Outputs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral BGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to BGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to Business Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to CSM %28AM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to TS leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral to the NOC Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove Trial Account Restriction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rendition Selection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renditions %28quality%2Fissues%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting Discrepancies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Billing Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resizing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retranscode or Transmux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revoke Portal Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roku</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runtime restrictions %28JWT%29 - Concurrent stream limit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runtime restrictions %28JWT%29 - Device limit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runtime restrictions %28JWT%29 - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3 Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3 Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDK Plugins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEO - Sitemap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSAI Tracing Logs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Commerce Cloud B2C Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Migrating Customer - Cutover to VC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Set-Up Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Manifest TTL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sign-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simulive Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simulive Player</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sites</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social - Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social - Clipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social - Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social - Live to Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social - Live to YouTube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social - Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social - YouTube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Sharing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Source File Error%2FSettings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Source Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spreadsheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Streaming Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stuck Job</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Styling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support public docs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supported Encoders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Status Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Template Package Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Templates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Themes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transcode Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transcoding Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trending Now</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Account Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UI Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UI Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to log in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsupported Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsupported Format</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Billing Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upload Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upload Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Sentiment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VC Geo-restriction issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Metadata %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viewer Profiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event Config</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event Experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Event Template Enablement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watermarks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WebView</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wibbitz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wicket %28nativeresults%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoom Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iFrames</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iOS SDK 5%2Ex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iOS SDK 6%2Ex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iRooms</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Communication_Channels__c</picklist>
+        <values>
+            <fullName>Brightcove Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go To Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go to Assist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Meet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Video%2FPhone Bridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Communication_Channels_external__c</picklist>
+        <values>
+            <fullName>Brightcove Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email%2FCase Comments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go To Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go to Assist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Meet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Video%2FPhone Bridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Documentation_Used__c</picklist>
+        <values>
+            <fullName>Brightcove University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confluence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No documentation needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Documentation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>E2CP__Latest_Inbound_BH__c</picklist>
+        <values>
+            <fullName>Holiday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inside of Business Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outside of Business Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Escalated_to_Engineering__c</picklist>
+        <values>
+            <fullName>3rd Party Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN OPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data %26 Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interactivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Players</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zencoder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Escalating_As__c</picklist>
+        <values>
+            <fullName>T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TSR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Escalation_Reason__c</picklist>
+        <values>
+            <fullName>Lack of documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Process T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per leadership instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time spent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Feedback_Category__c</picklist>
+        <values>
+            <fullName>Communication issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did not understand the request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of urgency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slow responses</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language__c</picklist>
+        <values>
+            <fullName>Catalan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Monitoring_type__c</picklist>
+        <values>
+            <fullName>Automated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Case_Reason__c</picklist>
+        <values>
+            <fullName>API and Custom Dev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API and Custom Dev - ZC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Settings - AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Settings - ZC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administration - ZC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytics and Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audio%2FVideo Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Engage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS - Documentation %28CS site%2F Localization%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud Playout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Domain%2FSSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution %28Social%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encoding Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhancement Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>File Transfers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingestion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Failures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Event Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Streaming %28Akamai Legacy%2FManual%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metadata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTT Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reports%2FExports%2FSegments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Integrations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Studio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV App Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video%2Ejs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Player</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Websites</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Operations Help</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>SalesOpsCommunity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Player_Version__c</picklist>
+        <values>
+            <fullName>New Player</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>P1 - Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2 - Important</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3 - Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Process_Followed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Portal__c</picklist>
+        <values>
+            <fullName>Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Interactivity %28HapYak%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ooyala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV App Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Cloud</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Wicket Labs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zencoder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Audience Insights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove Engage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HapYak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ooyala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PlayTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zencoder</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Question_Area__c</picklist>
+        <values>
+            <fullName>Changes to record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Agreement Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InfoSec%2FSecurity Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing %26 Quote help</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting %26 Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Tools %26 Permissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training %26 Onboarding</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Queue_when_escalation__c</picklist>
+        <values>
+            <fullName>T1 queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2 Dev queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2 Prod queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TSR queue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Escalation__c</picklist>
+        <values>
+            <fullName>Customer expectations not met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer needs a call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inaccurate technical ability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner unavailable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priority increase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slow response from 3rd party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slow response from Sales%2FBilling%2FInternal team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slow response from engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slow responses from support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent customer event</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Root_Cause_Sub_Reason__c</picklist>
+        <values>
+            <fullName>3rd party%2Fvendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accedo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ad Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adobe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akamai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amazon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aspera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BGS Retainer %2F Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backlogged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brightcove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSM Follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration %2F Enviroment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Content Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dalet - Flex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Wrong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evergent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to %2F Knowledge gap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance window</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misconfiguration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neustar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New project %2F engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pigeonhole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question Answered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Enablement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System %2F Account Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ticket Review %26 Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time tracker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tool Creation %26 Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unexpected Outcome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Requested %28AOK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Requested %28System Deficiency%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workaround Provided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Root_Cause__c</picklist>
+        <values>
+            <fullName>3rd Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bug</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDN Slowness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSM%2FSales%2FBGS%2FFinance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client%2Fdelivery error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer training gaps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOL %28End of Life%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhancement Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>False-positive alert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Input latency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live system failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Source Encoder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Source Issue %28network%2C upload speed%2C ISP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Error</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SalesOps_Case_Resolution__c</picklist>
+        <values>
+            <fullName>6Sense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACV%2FTotalACV adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alyce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Answer provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - BSTS Jira Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Issue solved by Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Order form updated in PDF%2FWord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Price book updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Quote created or Adjusted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Rate Card Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Duplicated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensation issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract ID update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Cleanup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datanyze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DiscoverOrg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DocuSign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-MRR adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eloqua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gainsight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gong%2Eio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InsightSquare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kapost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kimble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New MRR adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Splits%2FTeam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oppty - Workflow Create</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oppty - Workflow Edit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent account update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product item customization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provided or Removed Tool Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate cards issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redirected To Appropropriate Resource</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RevOps portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing region update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing rule update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing team update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC Field Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC Record Merge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC Workflow Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDCHelp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Navigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Permission Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Pricing Committee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Status Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tableau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User - Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User - Deactivate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User - Group management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User - Profile management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User - Role management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xactly - Obero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yesware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>client hand-off</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SalesOps_Question_Area__c</picklist>
+        <values>
+            <fullName>Billing Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding_and_training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Products_and_Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC - Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC - BCAccount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC - Leads %26 Activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC - Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC - Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC_Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC_Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Tools</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Ops_Question_subject__c</picklist>
+        <values>
+            <fullName>3rd Party Resell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amend contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beacon Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bundle issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract add-on</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract naming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Bundle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise BYOCDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise DRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entry Points Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evergent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi CDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Off Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oppty xMRR - xACV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAS LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price books</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Pricing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote custom item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote standard item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate Cards manual adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMS Starter Add-Ons</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Send_Mass_Update__c</picklist>
+        <values>
+            <fullName>No - Do not send any updates to any of the cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes - Send an update to all selected cases using the Mass Update Template</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Package__c</picklist>
+        <values>
+            <fullName>DealDesk</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>T2_Escalation_Process_Reason__c</picklist>
+        <values>
+            <fullName>%5BZen%5D API and Custom Dev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%5BZen%5D DRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%5BZen%5D Integration Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%5BZen%5D Invalid Syntax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akamai Analytics Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akamai Analytics Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akamai CDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Android SDK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BC Open Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BYO%2FNamed CDN Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMS Connector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRM Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Collection API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enable Digital Master</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOS SDK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ooyala API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ooyala Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1 - Brightcove Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Playback Restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSO Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSO Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>T2_Escalation_Reason__c</picklist>
+        <values>
+            <fullName>Lack of Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Knowledge%2FTraining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Leadership Instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Straight to T2 - Per Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time Spent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tier__c</picklist>
+        <values>
+            <fullName>CSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2 Dev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2 Prod</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_escalation__c</picklist>
+        <values>
+            <fullName>Dev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prod</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Used_Talla__c</picklist>
+        <values>
+            <fullName>Brightcove University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confluence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No documentation needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used Salesforce Knowledge instead</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_can_we_help_you_with__c</picklist>
+        <values>
+            <fullName>Changes to record</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Agreement Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InfoSec%2FSecurity Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing %26 Quote help</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting %26 Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Tools %26 Permissions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training %26 Onboarding</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WorkIt2__Color__c</picklist>
+        <values>
+            <fullName>Default</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X3rd_Party__c</picklist>
+        <values>
+            <fullName>3play</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AWS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accedo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Akamai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleeng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudFront</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cvent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dalet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evergent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fastly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gigya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haivision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapyak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iris%2ETV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neustar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pigeonhole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vizio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>castLabs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>n2de__Action__c</picklist>
+        <values>
+            <fullName>Contacted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
