@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Case Comment with Attachment" icon-name="standard:case_comment">
+        <div class="slds-p-around_medium">
+            <!-- Textarea for entering case comment -->
+            <lightning-textarea
+                label="Enter Case Comment"
+                value={commentText}
+                onchange={handleCommentChange}
+                required>
+            </lightning-textarea>
+
+            <!-- File upload component for attaching a document -->
+            <lightning-file-upload
+                label="Upload Attachment"
+                name="fileUploader"
+                accept={acceptedFormats}
+                record-id={recordId}
+                onuploadfinished={handleUploadFinished}>
+            </lightning-file-upload>
+
+            <!-- Submit button to submit the comment and attachment -->
+            <div class="slds-m-top_medium">
+                <lightning-button
+                    label="Submit"
+                    variant="brand"
+                    onclick={handleSubmit}
+                    class="slds-m-top_medium">
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -4605,6 +4605,9 @@
         <recordType>Case.Technical_Support</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>CaseAttachmentComment__c-CaseAttachmentComment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
     </layoutAssignments>
     <objectPermissions>
@@ -4889,6 +4892,10 @@
         <recordType>TSSurvey__c.Surveys_All</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>CaseAttachmentComment__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>Hidden</visibility>
