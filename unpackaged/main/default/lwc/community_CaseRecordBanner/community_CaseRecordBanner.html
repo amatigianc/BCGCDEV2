@@ -4,20 +4,20 @@
       AAAAAAAAAA
       <lightning-card variant="Narrow">
         <template if:true={caseRecord.fields}>
-          <p class="slds-text-heading_small slds-m-bottom_small">
+          <p class="slds-text-heading_small slds-var-m-bottom_small">
             <strong
               >#<lightning-formatted-text
                 value={caseNumber}
               ></lightning-formatted-text
             ></strong>
           </p>
-          <p class="slds-text-heading_small slds-m-top_small">
+          <p class="slds-text-heading_small slds-var-m-top_small">
             <!--<strong>Case Subject: </strong>-->
             <lightning-formatted-text
               value={caseSubject}
             ></lightning-formatted-text>
           </p>
-          <p class="slds-text-heading_small slds-m-top_small">
+          <p class="slds-text-heading_small slds-var-m-top_small">
             <!--<strong>Support Package: </strong>-->
             <lightning-formatted-text
               value={caseSupportPackage}
@@ -36,29 +36,29 @@
           icon-position="left"
           title="Close Case"
           onclick={handleClick}
-          class="slds-m-left_x-small"
+          class="slds-var-m-left_x-small"
         ></lightning-button>
       </template>
     </div>
   </div>
 
   <lightning-card variant="Narrow">
-    <div class="slds-m-around_medium">
+    <div class="slds-var-m-around_medium">
       <template if:true={caseRecord.fields}>
-        <p class="slds-text-heading_small slds-m-bottom_small">
+        <p class="slds-text-heading_small slds-var-m-bottom_small">
           <strong
             >#<lightning-formatted-text
               value={caseNumber}
             ></lightning-formatted-text
           ></strong>
         </p>
-        <p class="slds-text-heading_small slds-m-top_small">
+        <p class="slds-text-heading_small slds-var-m-top_small">
           <!--<strong>Case Subject: </strong>-->
           <lightning-formatted-text
             value={caseSubject}
           ></lightning-formatted-text>
         </p>
-        <p class="slds-text-heading_small slds-m-top_small">
+        <p class="slds-text-heading_small slds-var-m-top_small">
           <!--<strong>Support Package: </strong>-->
           <lightning-formatted-text
             value={caseSupportPackage}
@@ -78,7 +78,7 @@
         icon-position="left"
         title="Close Case"
         onclick={handleClick}
-        class="slds-m-left_x-small"
+        class="slds-var-m-left_x-small"
       ></lightning-button>
     </template>
   </lightning-card>
