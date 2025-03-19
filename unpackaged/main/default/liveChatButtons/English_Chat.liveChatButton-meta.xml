@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatButton xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <autoGreeting>Hello {!LiveAgent_VisitorName}, one of our support engineers will be ready to assist you momentarily.
+
+Please do not navigate to any other page in the portal, or the chat session will be disconnected.</autoGreeting>
+    <customAgentName>Brightcove Support</customAgentName>
+    <deployments/>
+    <enableQueue>true</enableQueue>
+    <isActive>true</isActive>
+    <label>English Chat</label>
+    <optionsCustomRoutingIsEnabled>false</optionsCustomRoutingIsEnabled>
+    <optionsHasChasitorIdleTimeout>false</optionsHasChasitorIdleTimeout>
+    <optionsHasInviteAfterAccept>false</optionsHasInviteAfterAccept>
+    <optionsHasInviteAfterReject>false</optionsHasInviteAfterReject>
+    <optionsHasRerouteDeclinedRequest>false</optionsHasRerouteDeclinedRequest>
+    <optionsIsAutoAccept>false</optionsIsAutoAccept>
+    <optionsIsInviteAutoRemove>false</optionsIsInviteAutoRemove>
+    <perAgentQueueLength>2</perAgentQueueLength>
+    <postChatPage>BrightcovePostchatRating2022</postChatPage>
+    <routingType xsi:nil="true"/>
+    <site>BrightcoveCommunity</site>
+    <type>Standard</type>
+</LiveChatButton>
